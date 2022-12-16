@@ -15,4 +15,5 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   auth-thu = pkgs.callPackage ./pkgs/auth-thu { };
+  autodiff = pkgs.callPackage ./pkgs/autodiff { };
 }
