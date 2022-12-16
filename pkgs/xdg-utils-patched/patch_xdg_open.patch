@@ -1,0 +1,94 @@
+diff --git a/scripts/xdg-open.in b/scripts/xdg-open.in
+index 50e31e6..d71118f 100644
+--- a/scripts/xdg-open.in
++++ b/scripts/xdg-open.in
+@@ -281,48 +281,47 @@ search_desktop_file()
+ 
+     if [ -r "$file" ] ; then
+         command="$(get_key "${file}" "Exec" | first_word)"
+-        icon="$(get_key "${file}" "Icon")"
+-        # FIXME: Actually LC_MESSAGES should be used as described in
+-        # http://standards.freedesktop.org/desktop-entry-spec/latest/ar01s04.html
+-        localised_name="$(get_key "${file}" "Name")"
+-        set -- $(get_key "${file}" "Exec" | last_word)
+-        # We need to replace any occurrence of "%f", "%F" and
+-        # the like by the target file. We examine each
+-        # argument and append the modified argument to the
+-        # end then shift.
+-        local args=$#
+-        local replaced=0
+-        while [ $args -gt 0 ]; do
+-            case $1 in
+-                %[c])
+-                    replaced=1
+-                    arg="${localised_name}"
+-                    shift
+-                    set -- "$@" "$arg"
+-                    ;;
+-                %[fFuU])
+-                    replaced=1
+-                    arg="$target"
+-                    shift
+-                    set -- "$@" "$arg"
+-                    ;;
+-                %[i])
+-                    replaced=1
+-                    shift
+-                    set -- "$@" "--icon" "$icon"
+-                    ;;
+-                *)
+-                    arg="$1"
+-                    shift
+-                    set -- "$@" "$arg"
+-                    ;;
+-            esac
+-            args=$(( $args - 1 ))
+-        done
+-        [ $replaced -eq 1 ] || set -- "$@" "$target"
+-        env "$command" "$@"
+-
+-        if [ $? -eq 0 ]; then
++        if command -v "$command" >/dev/null 2>/dev/null; then
++            icon="$(get_key "${file}" "Icon")"
++            # FIXME: Actually LC_MESSAGES should be used as described in
++            # http://standards.freedesktop.org/desktop-entry-spec/latest/ar01s04.html
++            localised_name="$(get_key "${file}" "Name")"
++            set -- $(get_key "${file}" "Exec" | last_word)
++            # We need to replace any occurrence of "%f", "%F" and
++            # the like by the target file. We examine each
++            # argument and append the modified argument to the
++            # end then shift.
++            local args=$#
++            local replaced=0
++            while [ $args -gt 0 ]; do
++                case $1 in
++                    %[c])
++                        replaced=1
++                        arg="${localised_name}"
++                        shift
++                        set -- "$@" "$arg"
++                        ;;
++                    %[fFuU])
++                        replaced=1
++                        arg="$target"
++                        shift
++                        set -- "$@" "$arg"
++                        ;;
++                    %[i])
++                        replaced=1
++                        shift
++                        set -- "$@" "--icon" "$icon"
++                        ;;
++                    *)
++                        arg="$1"
++                        shift
++                        set -- "$@" "$arg"
++                        ;;
++                esac
++                args=$(( $args - 1 ))
++            done
++            [ $replaced -eq 1 ] || set -- "$@" "$target"
++            env "$command" "$@" >/dev/null 2>&1 &
+             exit_success
+         fi
+     fi
