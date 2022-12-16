@@ -13,7 +13,4 @@
   lib = import ./lib { inherit pkgs; }; # functions
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
-
-  auth-thu = pkgs.callPackage ./pkgs/auth-thu { };
-  autodiff = pkgs.callPackage ./pkgs/autodiff { };
-}
+} // (import ./pkgs { inherit pkgs; })
