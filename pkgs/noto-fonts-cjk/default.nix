@@ -53,17 +53,17 @@ let
     };
 in
 {
-  noto-fonts-cjk-sans-fix-weight = mkNotoCJK {
+  noto-fonts-cjk-sans-fix-weight = mkNotoCJK rec {
     typeface = "Sans";
     version = "2.004";
-    rev = "9f7f3c38eab63e1d1fddd8d50937fe4f1eacdb1d";
-    sha256 = "sha256-pNC/WJCYHSlU28E/CSFsrEMbyCe/6tjevDlOvDK9RwU=";
+    rev = "${typeface}${version}";
+    sha256 = "sha256-GXULnRPsIJRdiL3LdFtHbqTqSvegY2zodBxFm4P55to=";
   };
 
-  noto-fonts-cjk-serif-fix-weight = mkNotoCJK {
+  noto-fonts-cjk-serif-fix-weight = mkNotoCJK rec {
     typeface = "Serif";
-    version = "2.000";
-    rev = "9f7f3c38eab63e1d1fddd8d50937fe4f1eacdb1d";
-    sha256 = "sha256-Iy4lmWj5l+/Us/dJJ/Jl4MEojE9mrFnhNQxX2zhVngY=";
+    version = "2.001";
+    rev = "${typeface}${version}";
+    sha256 = "sha256-QZGnFXQlwfsOchKipimLczb8xV9BODMxpoxIXckoSYw=";
   };
 }
