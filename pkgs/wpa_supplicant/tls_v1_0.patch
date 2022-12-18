@@ -1,0 +1,13 @@
+diff --git a/src/eap_peer/eap_tls_common.c b/src/eap_peer/eap_tls_common.c
+index 6193b4bdb..b4c916782 100644
+--- a/src/eap_peer/eap_tls_common.c
++++ b/src/eap_peer/eap_tls_common.c
+@@ -70,7 +70,7 @@ static void eap_tls_params_flags(struct tls_connection_params *params,
+ 		params->flags &= ~TLS_CONN_DISABLE_SESSION_TICKET;
+ 	if (os_strstr(txt, "tls_disable_tlsv1_0=1"))
+ 		params->flags |= TLS_CONN_DISABLE_TLSv1_0;
+-	if (os_strstr(txt, "tls_disable_tlsv1_0=0")) {
++	if (true) {
+ 		params->flags &= ~TLS_CONN_DISABLE_TLSv1_0;
+ 		params->flags |= TLS_CONN_ENABLE_TLSv1_0;
+ 	}

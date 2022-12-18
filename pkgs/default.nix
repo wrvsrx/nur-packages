@@ -11,4 +11,5 @@ in
   gen-giraffe-wallpaper = callPackage ./gen-giraffe-wallpaper { };
   xdg-utils-patched = callPackage ./xdg-utils-patched { };
   pam_ssh_agent_auth = callPackage ./pam_ssh_agent_auth { };
+  wpa_supplicant = callPackage ./wpa_supplicant { };
 }
