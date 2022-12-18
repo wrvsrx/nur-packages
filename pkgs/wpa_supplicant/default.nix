@@ -1,4 +1,4 @@
 { wpa_supplicant }:
-wpa_supplicant.overrideAttrs (finalAttrs: prevAttrs: {
-  patches = prevAttrs.patches ++ [ ./tls_v1_0.patch ];
+wpa_supplicant.overrideAttrs (old: {
+  patches = old.patches ++ [ ./tls_v1_0.patch ];
 })
