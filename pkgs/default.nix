@@ -12,4 +12,5 @@ in
   xdg-utils-patched = callPackage ./xdg-utils-patched { };
   pam_ssh_agent_auth = callPackage ./pam_ssh_agent_auth { inherit (pkgs) pam_ssh_agent_auth; };
   wpa_supplicant = callPackage ./wpa_supplicant { inherit (pkgs) wpa_supplicant; };
+  osc52 = callPackage ./osc52 { };
 }
