@@ -1,6 +1,5 @@
 { clipcat, fetchFromGitHub }:
 clipcat.overrideAttrs (drv: rec {
-  version = "0.5.1";
   src = fetchFromGitHub {
     owner = "Icelk";
     repo = "clipcat";
