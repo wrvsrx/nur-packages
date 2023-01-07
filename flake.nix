@@ -10,9 +10,7 @@
         pkgs = import nixpkgs { inherit system; };
       in
       {
-        packages = import ./default.nix {
-          inherit pkgs;
-        };
+        packages = import ./overlay.nix { } pkgs;
         formatter = pkgs.nixpkgs-fmt;
       }
     );
