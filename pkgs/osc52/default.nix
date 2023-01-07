@@ -3,8 +3,8 @@ let
   src = fetchFromGitHub {
     owner = "wrvsrx";
     repo = "osc52";
-    rev = "3cec9d8cddde250529bf9696b6f15faf047e53d2";
-    sha256 = "WynHo7s817Z8W/Ob0k0HiWagpYvIg9lO8E2OpzuiQCQ=";
+    rev = "5a72b6d9cd489e1d2398762591e7524ccf320a65";
+    sha256 = "JAhA7bdzcRWokvHjMt5Hk6uwOkNFxalQ2xe0Z4bzRp4=";
   };
 in
 (haskellPackages.callPackage ./default-in-repo.nix { }).overrideAttrs (_: { inherit src; })
