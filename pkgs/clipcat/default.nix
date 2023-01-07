@@ -1,10 +1,10 @@
 { clipcat, fetchFromGitHub }:
 clipcat.overrideAttrs (drv: rec {
   src = fetchFromGitHub {
-    owner = "Icelk";
+    owner = "wrvsrx";
     repo = "clipcat";
-    rev = "81e05f72f677dfca97cea7a46288e0b15439fa3c";
-    sha256 = "54A9Fb4ekgxeQ24OPZglhHr7UWm4JYeM0UbK78eFvM8=";
+    rev = "a7ab152da731ad7922825b41a3b0f7b1615e8e29";
+    sha256 = "qPllm/F1LUtXgWwuZEc57LfNwBayytUYB/5LE1AcP1o=";
   };
   cargoDeps = drv.cargoDeps.overrideAttrs (_: {
     inherit src; # You need to pass "src" here again,
