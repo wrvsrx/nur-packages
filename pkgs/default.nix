@@ -14,5 +14,4 @@ in
   wpa_supplicant = callPackage ./wpa_supplicant { inherit (pkgs) wpa_supplicant; };
   osc52 = callPackage ./osc52 { };
   clipcat = callPackage ./clipcat { inherit (pkgs) clipcat; };
-  kitty = callPackage ./kitty { inherit (pkgs) kitty; };
 }
