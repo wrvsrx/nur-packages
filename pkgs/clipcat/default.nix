@@ -1,16 +1,65 @@
-{ clipcat, fetchFromGitHub }:
-clipcat.overrideAttrs (drv: rec {
+{ lib
+, installShellFiles
+, rustPlatform
+, rustfmt
+, xorg
+, pkg-config
+, llvmPackages
+, clang
+, protobuf
+, python3
+, fetchFromGitHub
+}:
+
+rustPlatform.buildRustPackage rec {
+  pname = "clipcat";
+  version = "0.5.0";
+
   src = fetchFromGitHub {
     owner = "wrvsrx";
     repo = "clipcat";
-    rev = "a7ab152da731ad7922825b41a3b0f7b1615e8e29";
-    sha256 = "qPllm/F1LUtXgWwuZEc57LfNwBayytUYB/5LE1AcP1o=";
+    rev = "70917241cdb344fc8ddf02fe359f710666f7647c";
+    sha256 = "QOfQKZv6gIpxzeHBKZx1ItC9nOcQfEcrDKFYqi9hFt0=";
   };
-  cargoDeps = drv.cargoDeps.overrideAttrs (_: {
-    inherit src; # You need to pass "src" here again,
-    # otherwise the old "src" will be used.
-    outputHash = "sha256-s80CGlIXcChyX5CEjIV8W7n//LmOSJA8SdC3CoZN2vg=";
-  });
-  cargoBuildFeatures = [ ];
-  cargoCheckFeatures = [ ];
-})
+
+  cargoLock = {
+    lockFile = "${src}/Cargo.lock";
+    outputHashes = {
+      "x11-clipboard-0.7.0" = "sha256-E/3R94DB3gHhK2mnEc1UF/i0FvbRHi4uDFmRZsAtXS0=";
+    };
+  };
+
+  # needed for internal protobuf c wrapper library
+  PROTOC = "${protobuf}/bin/protoc";
+  PROTOC_INCLUDE = "${protobuf}/include";
+
+  nativeBuildInputs = [
+    pkg-config
+
+    rustPlatform.bindgenHook
+
+    rustfmt
+    protobuf
+
+    python3
+
+    installShellFiles
+  ];
+  buildInputs = [ xorg.libxcb ];
+
+  buildFeatures = [ "all-bins" ];
+
+  postInstall = ''
+    installShellCompletion --bash completions/bash-completion/completions/*
+    installShellCompletion --fish completions/fish/completions/*
+    installShellCompletion --zsh  completions/zsh/site-functions/*
+  '';
+
+  meta = with lib; {
+    description = "Clipboard Manager written in Rust Programming Language";
+    homepage = "https://github.com/xrelkd/clipcat";
+    license = licenses.gpl3Only;
+    platforms = platforms.linux;
+    maintainers = with maintainers; [ xrelkd ];
+  };
+}
