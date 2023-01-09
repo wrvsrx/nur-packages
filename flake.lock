@@ -38,6 +38,29 @@
         "type": "github"
       }
     },
+    "giraffe-wallpaper": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1673089187,
+        "narHash": "sha256-ChGql5Or/J150c1lg2Pg6Cc/ZH0k69zMW1G2QTvy1wk=",
+        "owner": "wrvsrx",
+        "repo": "giraffe-wallpaper",
+        "rev": "2240da13220a6c04a9d39a42c4da40f8b3327be8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "wrvsrx",
+        "repo": "giraffe-wallpaper",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1672249180,
@@ -54,11 +77,36 @@
         "type": "github"
       }
     },
+    "osc52": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1673056600,
+        "narHash": "sha256-JAhA7bdzcRWokvHjMt5Hk6uwOkNFxalQ2xe0Z4bzRp4=",
+        "owner": "wrvsrx",
+        "repo": "osc52",
+        "rev": "5a72b6d9cd489e1d2398762591e7524ccf320a65",
+        "type": "github"
+      },
+      "original": {
+        "owner": "wrvsrx",
+        "repo": "osc52",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "clipcat": "clipcat",
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs"
+        "giraffe-wallpaper": "giraffe-wallpaper",
+        "nixpkgs": "nixpkgs",
+        "osc52": "osc52"
       }
     }
   },
