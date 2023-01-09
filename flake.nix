@@ -10,18 +10,20 @@
     };
   };
   outputs = { self, nixpkgs, flake-utils, clipcat }:
-    flake-utils.lib.eachDefaultSystem (system:
-      let
-        pkgs = import nixpkgs { inherit system; };
-      in
-      rec {
-        packages = flake-utils.lib.filterPackages system (
-          import ./pkgs { inherit pkgs; }
-          // { inherit (clipcat.packages."${system}") clipcat; }
-        );
-        overlays.default = final: prev: prev // packages;
-        checks = packages;
-        formatter = pkgs.nixpkgs-fmt;
-      }
-    );
+    let
+      toPackages = pkgs: flake-utils.lib.filterPackages pkgs.system (import ./pkgs { inherit pkgs; });
+    in
+    flake-utils.lib.eachDefaultSystem
+      (system:
+        let
+          pkgs = import nixpkgs { inherit system; };
+        in
+        rec {
+          packages = toPackages pkgs;
+          checks = packages;
+          formatter = pkgs.nixpkgs-fmt;
+        }
+      ) // {
+      overlays.default = final: prev: toPackages prev;
+    };
 }
