@@ -19,6 +19,7 @@
           import ./pkgs { inherit pkgs; }
           // { inherit (clipcat.packages."${system}") clipcat; }
         );
+        overlays.default = final: prev: prev // packages;
         checks = packages;
         formatter = pkgs.nixpkgs-fmt;
       }
