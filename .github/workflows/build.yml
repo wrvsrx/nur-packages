@@ -47,7 +47,9 @@ jobs:
           access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
     - name: Show flake metadata
       run: nix flake metadata
+    - name: Show flake information
+      run: nix flake show
     - name: Check evaluation
       run: nix flake check --no-build --no-allow-import-from-derivation
     - name: Build nix packages
-      run: nix flake check --no-allow-import-from-derivation
+      run: nix flake check --no-allow-import-from-derivation -v
