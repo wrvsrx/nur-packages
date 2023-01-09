@@ -1,5 +1,28 @@
 {
   "nodes": {
+    "clipcat": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1673201621,
+        "narHash": "sha256-QOfQKZv6gIpxzeHBKZx1ItC9nOcQfEcrDKFYqi9hFt0=",
+        "owner": "wrvsrx",
+        "repo": "clipcat",
+        "rev": "70917241cdb344fc8ddf02fe359f710666f7647c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "wrvsrx",
+        "repo": "clipcat",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "locked": {
         "lastModified": 1667395993,
@@ -33,6 +56,7 @@
     },
     "root": {
       "inputs": {
+        "clipcat": "clipcat",
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs"
       }

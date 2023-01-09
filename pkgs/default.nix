@@ -13,6 +13,5 @@ in
   pam_ssh_agent_auth = callPackage ./pam_ssh_agent_auth { inherit (pkgs) pam_ssh_agent_auth; };
   wpa_supplicant = callPackage ./wpa_supplicant { inherit (pkgs) wpa_supplicant; };
   osc52 = callPackage ./osc52 { };
-  clipcat = callPackage ./clipcat { };
   xclip = callPackage ./xclip { inherit (pkgs) xclip; };
 }
