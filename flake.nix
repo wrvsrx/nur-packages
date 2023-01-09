@@ -11,7 +11,7 @@
   };
   outputs = { self, nixpkgs, flake-utils, clipcat }:
     let
-      toPackages = pkgs: flake-utils.lib.filterPackages pkgs.system (import ./pkgs { inherit pkgs; });
+      toPackages = pkgs: import ./pkgs { inherit pkgs; };
     in
     flake-utils.lib.eachDefaultSystem
       (system:
@@ -19,7 +19,7 @@
           pkgs = import nixpkgs { inherit system; };
         in
         rec {
-          packages = toPackages pkgs;
+          packages = flake-utils.lib.filterPackages pkgs.system (toPackages pkgs);
           checks = packages;
           formatter = pkgs.nixpkgs-fmt;
         }
