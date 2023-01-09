@@ -1,6 +1,6 @@
 { xclip, fetchFromGitHub }:
 xclip.overrideAttrs (old: {
-  version = "0.14";
+  version = "dev";
   src = fetchFromGitHub {
     owner = "astrand";
     repo = "xclip";
