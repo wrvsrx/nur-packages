@@ -11,7 +11,8 @@
   };
   outputs = { self, nixpkgs, flake-utils, clipcat }:
     let
-      toPackages = pkgs: import ./pkgs { inherit pkgs; };
+      toPackages = pkgs: import ./pkgs { inherit pkgs; }
+        // { inherit (clipcat.packages.${pkgs.system}) clipcat; };
     in
     flake-utils.lib.eachDefaultSystem
       (system:
