@@ -1,7 +1,7 @@
 { buildGoModule, fetchFromGitHub, lib }:
 buildGoModule rec {
   pname = "auth-thu";
-  version = "v2.2.1";
+  version = "2.2.1";
   src = fetchFromGitHub ({
     owner = "z4yx";
     repo = "GoAuthing";
