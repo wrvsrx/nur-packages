@@ -12,4 +12,5 @@ in
   pam_ssh_agent_auth = callPackage ./pam_ssh_agent_auth { inherit (pkgs) pam_ssh_agent_auth; };
   wpa_supplicant = callPackage ./wpa_supplicant { inherit (pkgs) wpa_supplicant; };
   xclip = callPackage ./xclip { inherit (pkgs) xclip; };
+  wezterm = callPackage ./wezterm { inherit (pkgs) wezterm; };
 }
