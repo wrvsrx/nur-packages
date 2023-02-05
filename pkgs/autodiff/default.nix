@@ -1,15 +1,8 @@
-{ lib, stdenv, fetchFromGitHub, fetchpatch, cmake, eigen, catch2_3, python3 ? null }:
+{ lib, stdenv, fetchFromGitHub, fetchpatch, cmake, eigen, catch2_3, python3 ? null, source }:
 
 stdenv.mkDerivation rec {
-  pname = "autodiff";
-  version = "0.6.12";
-
-  src = fetchFromGitHub {
-    owner = "autodiff";
-    repo = "autodiff";
-    rev = "v${version}";
-    sha256 = "pSZtfVvS1B/uRKuV2aHKd3YwFU6zq1hr/99PbQRzJOU=";
-  };
+  inherit (source) pname src;
+  version = builtins.substring 1 (builtins.stringLength source.version - 1) source.version;
 
   nativeBuildInputs = [ cmake eigen catch2_3 ] ++ (if python3 != null then [ python3.pkgs.pybind11 ] else [ ]);
 

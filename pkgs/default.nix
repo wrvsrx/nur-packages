@@ -4,8 +4,8 @@ let
   sources = callPackage ./_sources/generated.nix { };
 in
 {
-  auth-thu = callPackage ./auth-thu { };
-  autodiff = callPackage ./autodiff { };
+  auth-thu = callPackage ./auth-thu { source = sources.auth-thu; };
+  autodiff = callPackage ./autodiff { source = sources.autodiff; };
   inherit (callPackage ./noto-fonts-cjk { })
     noto-fonts-cjk-sans-fix-weight
     noto-fonts-cjk-serif-fix-weight;

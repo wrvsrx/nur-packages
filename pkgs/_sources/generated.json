@@ -1,4 +1,44 @@
 {
+    "auth-thu": {
+        "cargoLocks": null,
+        "date": "2022-09-15",
+        "extract": null,
+        "name": "auth-thu",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "z4yx",
+            "repo": "GoAuthing",
+            "rev": "8247b3a47ca5fd4ed30fe0b50d3d3db6b4b96c37",
+            "sha256": "sha256-aIa2OfoXmbikWpMzEqD3fNLAynp7wA+3qhwQSnRe8DE=",
+            "type": "github"
+        },
+        "version": "8247b3a47ca5fd4ed30fe0b50d3d3db6b4b96c37"
+    },
+    "autodiff": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "autodiff",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "autodiff",
+            "repo": "autodiff",
+            "rev": "v0.6.12",
+            "sha256": "sha256-pSZtfVvS1B/uRKuV2aHKd3YwFU6zq1hr/99PbQRzJOU=",
+            "type": "github"
+        },
+        "version": "v0.6.12"
+    },
     "clipcat": {
         "cargoLocks": {
             "Cargo.lock": [
