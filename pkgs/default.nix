@@ -5,7 +5,7 @@ let
 in
 {
   auth-thu = callPackage ./auth-thu { source = sources.auth-thu; };
-  autodiff = callPackage ./autodiff { source = sources.autodiff; };
+  autodiff = callPackage ./autodiff { source = sources.autodiff; python3 = null; };
   inherit (callPackage ./noto-fonts-cjk { })
     noto-fonts-cjk-sans-fix-weight
     noto-fonts-cjk-serif-fix-weight;
