@@ -1,0 +1,5 @@
+# nvfetcher.toml
+[clipcat]
+src.git = "https://github.com/wrvsrx/clipcat"
+fetch.github = "wrvsrx/clipcat"
+cargo_locks = [ "Cargo.lock" ]

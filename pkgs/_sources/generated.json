@@ -1,0 +1,29 @@
+{
+    "clipcat": {
+        "cargoLocks": {
+            "Cargo.lock": [
+                "./clipcat-13b7c4e4065721c4ea6839a8b9d33d0324a65b1b/Cargo.lock",
+                {
+                    "x11-clipboard-0.7.0": "sha256-ToDy7vWPRYk8mrmL+77HJypE91b6z/NaDTUDgRe20d0="
+                }
+            ]
+        },
+        "date": "2023-01-14",
+        "extract": null,
+        "name": "clipcat",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "wrvsrx",
+            "repo": "clipcat",
+            "rev": "13b7c4e4065721c4ea6839a8b9d33d0324a65b1b",
+            "sha256": "sha256-55FQPX0/6A5Dm6yZ8FqxN4PM6EOPnG3FYti7B/k4XlE=",
+            "type": "github"
+        },
+        "version": "13b7c4e4065721c4ea6839a8b9d33d0324a65b1b"
+    }
+}

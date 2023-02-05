@@ -1,6 +1,7 @@
 { pkgs }:
 let
   inherit (pkgs) callPackage;
+  sources = callPackage ./_sources/generated.nix { };
 in
 {
   auth-thu = callPackage ./auth-thu { };
@@ -13,4 +14,5 @@ in
   wpa_supplicant = callPackage ./wpa_supplicant { inherit (pkgs) wpa_supplicant; };
   xclip = callPackage ./xclip { inherit (pkgs) xclip; };
   wezterm = callPackage ./wezterm { inherit (pkgs) wezterm; };
+  clipcat = callPackage ./clipcat { source = sources.clipcat; };
 }

@@ -3,11 +3,6 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
-    clipcat = {
-      url = "github:wrvsrx/clipcat";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
-    };
     giraffe-wallpaper = {
       url = "github:wrvsrx/giraffe-wallpaper";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -23,7 +18,6 @@
     { self
     , nixpkgs
     , flake-utils
-    , clipcat
     , giraffe-wallpaper
     , osc52
     }:
@@ -31,7 +25,6 @@
       toPackages = pkgs:
         import ./pkgs { inherit pkgs; }
         // {
-          clipcat = clipcat.packages.${pkgs.system}.default;
           giraffe-wallpaper = giraffe-wallpaper.packages.${pkgs.system}.default;
           osc52 = osc52.packages.${pkgs.system}.default;
         };
