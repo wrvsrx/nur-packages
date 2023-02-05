@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   inherit (source) pname src;
-  version = builtins.substring 1 (builtins.stringLength source.version - 1) source.version;
+  version = lib.removePrefix "v" source.version;
 
   nativeBuildInputs = [ cmake eigen catch2_3 ] ++ (if python3 != null then [ python3.pkgs.pybind11 ] else [ ]);
 
