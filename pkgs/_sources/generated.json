@@ -25,5 +25,45 @@
             "type": "github"
         },
         "version": "13b7c4e4065721c4ea6839a8b9d33d0324a65b1b"
+    },
+    "giraffe-wallpaper": {
+        "cargoLocks": null,
+        "date": "2023-01-07",
+        "extract": null,
+        "name": "giraffe-wallpaper",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "wrvsrx",
+            "repo": "giraffe-wallpaper",
+            "rev": "2240da13220a6c04a9d39a42c4da40f8b3327be8",
+            "sha256": "sha256-ChGql5Or/J150c1lg2Pg6Cc/ZH0k69zMW1G2QTvy1wk=",
+            "type": "github"
+        },
+        "version": "2240da13220a6c04a9d39a42c4da40f8b3327be8"
+    },
+    "osc52": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "osc52",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "wrvsrx",
+            "repo": "osc52",
+            "rev": "0.1.0.0",
+            "sha256": "sha256-JAhA7bdzcRWokvHjMt5Hk6uwOkNFxalQ2xe0Z4bzRp4=",
+            "type": "github"
+        },
+        "version": "0.1.0.0"
     }
 }

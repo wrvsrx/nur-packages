@@ -19,4 +19,27 @@
     };
     date = "2023-01-14";
   };
+  giraffe-wallpaper = {
+    pname = "giraffe-wallpaper";
+    version = "2240da13220a6c04a9d39a42c4da40f8b3327be8";
+    src = fetchFromGitHub ({
+      owner = "wrvsrx";
+      repo = "giraffe-wallpaper";
+      rev = "2240da13220a6c04a9d39a42c4da40f8b3327be8";
+      fetchSubmodules = false;
+      sha256 = "sha256-ChGql5Or/J150c1lg2Pg6Cc/ZH0k69zMW1G2QTvy1wk=";
+    });
+    date = "2023-01-07";
+  };
+  osc52 = {
+    pname = "osc52";
+    version = "0.1.0.0";
+    src = fetchFromGitHub ({
+      owner = "wrvsrx";
+      repo = "osc52";
+      rev = "0.1.0.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-JAhA7bdzcRWokvHjMt5Hk6uwOkNFxalQ2xe0Z4bzRp4=";
+    });
+  };
 }

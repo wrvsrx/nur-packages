@@ -1,6 +1,6 @@
 { pkgs }:
 let
-  inherit (pkgs) callPackage;
+  inherit (pkgs) callPackage haskellPackages;
   sources = callPackage ./_sources/generated.nix { };
 in
 {
@@ -15,4 +15,6 @@ in
   xclip = callPackage ./xclip { inherit (pkgs) xclip; };
   wezterm = callPackage ./wezterm { inherit (pkgs) wezterm; };
   clipcat = callPackage ./clipcat { source = sources.clipcat; };
+  giraffe-wallpaper = callPackage ./giraffe-wallpaper { source = sources.giraffe-wallpaper; };
+  osc52 = haskellPackages.callPackage ./osc52 { source = sources.osc52; };
 }

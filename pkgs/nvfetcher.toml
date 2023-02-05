@@ -3,3 +3,11 @@
 src.git = "https://github.com/wrvsrx/clipcat"
 fetch.github = "wrvsrx/clipcat"
 cargo_locks = [ "Cargo.lock" ]
+
+[osc52]
+src.github_tag = "wrvsrx/osc52"
+fetch.github = "wrvsrx/osc52"
+
+[giraffe-wallpaper]
+src.git = "https://github.com/wrvsrx/giraffe-wallpaper"
+fetch.github = "wrvsrx/giraffe-wallpaper"
