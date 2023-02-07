@@ -1,13 +1,18 @@
-diff --git a/src/eap_peer/eap_tls_common.c b/src/eap_peer/eap_tls_common.c
-index 6193b4bdb..b4c916782 100644
---- a/src/eap_peer/eap_tls_common.c
-+++ b/src/eap_peer/eap_tls_common.c
-@@ -70,7 +70,7 @@ static void eap_tls_params_flags(struct tls_connection_params *params,
- 		params->flags &= ~TLS_CONN_DISABLE_SESSION_TICKET;
- 	if (os_strstr(txt, "tls_disable_tlsv1_0=1"))
- 		params->flags |= TLS_CONN_DISABLE_TLSv1_0;
--	if (os_strstr(txt, "tls_disable_tlsv1_0=0")) {
-+	if (true) {
- 		params->flags &= ~TLS_CONN_DISABLE_TLSv1_0;
- 		params->flags |= TLS_CONN_ENABLE_TLSv1_0;
- 	}
+--- wpa-2.10.orig/src/crypto/tls_openssl.c
++++ wpa-2.10/src/crypto/tls_openssl.c
+@@ -1516,6 +1516,15 @@ static void tls_msg_cb(int write_p, int
+ 	struct tls_connection *conn = arg;
+ 	const u8 *pos = buf;
+ 
++#if OPENSSL_VERSION_NUMBER >= 0x30000000L
++	if ((SSL_version(ssl) == TLS1_VERSION ||
++	     SSL_version(ssl) == TLS1_1_VERSION) &&
++	    SSL_get_security_level(ssl) > 0) {
++		wpa_printf(MSG_DEBUG,
++			   "OpenSSL: Drop security level to 0 to allow TLS 1.0/1.1 use of MD5-SHA1 signature algorithm");
++		SSL_set_security_level(ssl, 0);
++	}
++#endif /* OpenSSL version >= 3.0 */
+ 	if (write_p == 2) {
+ 		wpa_printf(MSG_DEBUG,
+ 			   "OpenSSL: session ver=0x%x content_type=%d",
