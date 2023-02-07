@@ -16,13 +16,14 @@
       (system:
       let
         pkgs = import nixpkgs { inherit system; };
+        inherit (pkgs) mkShell;
       in
       rec {
         packages = flake-utils.lib.filterPackages pkgs.system (toPackages pkgs);
         checks = packages;
         formatter = pkgs.nixpkgs-fmt;
-      }
-      ) // {
+        devShells.default = mkShell { nativeBuildInputs = with pkgs; [ nvfetcher ]; };
+      }) // {
       overlays.default = final: prev: toPackages prev;
     };
 }
