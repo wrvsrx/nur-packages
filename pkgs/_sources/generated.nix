@@ -65,4 +65,16 @@
       sha256 = "sha256-JAhA7bdzcRWokvHjMt5Hk6uwOkNFxalQ2xe0Z4bzRp4=";
     });
   };
+  taskwarrior-to-dot = {
+    pname = "taskwarrior-to-dot";
+    version = "640e0c9caf3e42adfc214b9b95e2ec692a690b77";
+    src = fetchFromGitHub ({
+      owner = "wrvsrx";
+      repo = "taskwarrior-to-dot";
+      rev = "640e0c9caf3e42adfc214b9b95e2ec692a690b77";
+      fetchSubmodules = false;
+      sha256 = "sha256-QAv51BpKUtMldWJ4XcXS0dF7tWIxS1mVYCALwS2Et2c=";
+    });
+    date = "2023-02-12";
+  };
 }

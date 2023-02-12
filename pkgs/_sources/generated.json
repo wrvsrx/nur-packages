@@ -105,5 +105,25 @@
             "type": "github"
         },
         "version": "0.1.0.0"
+    },
+    "taskwarrior-to-dot": {
+        "cargoLocks": null,
+        "date": "2023-02-12",
+        "extract": null,
+        "name": "taskwarrior-to-dot",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "wrvsrx",
+            "repo": "taskwarrior-to-dot",
+            "rev": "640e0c9caf3e42adfc214b9b95e2ec692a690b77",
+            "sha256": "sha256-QAv51BpKUtMldWJ4XcXS0dF7tWIxS1mVYCALwS2Et2c=",
+            "type": "github"
+        },
+        "version": "640e0c9caf3e42adfc214b9b95e2ec692a690b77"
     }
 }

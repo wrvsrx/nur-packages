@@ -19,3 +19,7 @@ fetch.github = "z4yx/GoAuthing"
 [autodiff]
 src.github_tag = "autodiff/autodiff"
 fetch.github = "autodiff/autodiff"
+
+[taskwarrior-to-dot]
+src.git = "https://github.com/wrvsrx/taskwarrior-to-dot"
+fetch.github = "wrvsrx/taskwarrior-to-dot"

@@ -17,4 +17,5 @@ in
   clipcat = callPackage ./clipcat { source = sources.clipcat; };
   giraffe-wallpaper = callPackage ./giraffe-wallpaper { source = sources.giraffe-wallpaper; };
   osc52 = haskellPackages.callPackage ./osc52 { source = sources.osc52; };
+  taskwarrior-to-dot = haskellPackages.callPackage ./taskwarrior-to-dot { source = sources.taskwarrior-to-dot; };
 }
