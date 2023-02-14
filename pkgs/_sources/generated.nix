@@ -67,14 +67,14 @@
   };
   taskwarrior-to-dot = {
     pname = "taskwarrior-to-dot";
-    version = "7cdd1a9c81a5f115d56f0c8e8f7a4d9277b78d6a";
+    version = "6dd3a75c875b8552750b9fb129174727eab3f1bf";
     src = fetchFromGitHub ({
       owner = "wrvsrx";
       repo = "taskwarrior-to-dot";
-      rev = "7cdd1a9c81a5f115d56f0c8e8f7a4d9277b78d6a";
+      rev = "6dd3a75c875b8552750b9fb129174727eab3f1bf";
       fetchSubmodules = false;
-      sha256 = "sha256-OQTzKHbS1v2XoMag/FBHdBPWuXnnGcgo/8rLRVn+BMk=";
+      sha256 = "sha256-YdXw4Vj7MVJFDbpWXCMBt1/y2tkeOf8fF6U0nC2tlIw=";
     });
-    date = "2023-02-12";
+    date = "2023-02-14";
   };
 }
