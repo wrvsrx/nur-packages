@@ -108,7 +108,7 @@
     },
     "taskwarrior-to-dot": {
         "cargoLocks": null,
-        "date": "2023-02-14",
+        "date": "2023-02-16",
         "extract": null,
         "name": "taskwarrior-to-dot",
         "passthru": null,
@@ -120,10 +120,10 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "taskwarrior-to-dot",
-            "rev": "6dd3a75c875b8552750b9fb129174727eab3f1bf",
-            "sha256": "sha256-YdXw4Vj7MVJFDbpWXCMBt1/y2tkeOf8fF6U0nC2tlIw=",
+            "rev": "55e60233b90d3cb3a3a822f04b2ec3c810cd299b",
+            "sha256": "sha256-DvWc5ohoK01ACg/0Ybe7hguMG6KJ1wuUvY29/CyTOd4=",
             "type": "github"
         },
-        "version": "6dd3a75c875b8552750b9fb129174727eab3f1bf"
+        "version": "55e60233b90d3cb3a3a822f04b2ec3c810cd299b"
     }
 }
