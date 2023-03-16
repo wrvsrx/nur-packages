@@ -2,28 +2,22 @@
   description = "My personal NUR repository";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
+    flake-parts.url = "github:hercules-ci/flake-parts";
   };
   outputs =
     { self
     , nixpkgs
-    , flake-utils
-    }:
-    let
-      toPackages = pkgs: import ./pkgs { inherit pkgs; };
-    in
-    flake-utils.lib.eachDefaultSystem
-      (system:
-      let
-        pkgs = import nixpkgs { inherit system; };
-        inherit (pkgs) mkShell;
-      in
-      rec {
-        packages = flake-utils.lib.filterPackages pkgs.system (toPackages pkgs);
+    , flake-parts
+    }@inputs:
+    flake-parts.lib.mkFlake { inherit inputs; } {
+      imports = [ inputs.flake-parts.flakeModules.easyOverlay ];
+      systems = [ "x86_64-linux" ];
+      perSystem = { system, pkgs, ... }: rec {
+        packages = import ./pkgs { inherit pkgs; };
+        overlayAttrs = packages;
         checks = packages;
         formatter = pkgs.nixpkgs-fmt;
-        devShells.default = mkShell { nativeBuildInputs = with pkgs; [ nvfetcher ]; };
-      }) // {
-      overlays.default = final: prev: toPackages prev;
+        devShells.default = pkgs.mkShell { nativeBuildInputs = [ pkgs.nvfetcher ]; };
+      };
     };
 }
