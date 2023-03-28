@@ -1,24 +1,4 @@
 {
-    "auth-thu": {
-        "cargoLocks": null,
-        "date": "2023-03-18",
-        "extract": null,
-        "name": "auth-thu",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "z4yx",
-            "repo": "GoAuthing",
-            "rev": "4361f28acdf2b160cf437899b8dddde1721d3397",
-            "sha256": "sha256-gaG081qa47l1domXPnXZquyDwQ+50w3VQ19aR592NuM=",
-            "type": "github"
-        },
-        "version": "4361f28acdf2b160cf437899b8dddde1721d3397"
-    },
     "autodiff": {
         "cargoLocks": null,
         "date": null,

@@ -12,10 +12,6 @@ fetch.github = "wrvsrx/osc52"
 src.git = "https://github.com/wrvsrx/giraffe-wallpaper"
 fetch.github = "wrvsrx/giraffe-wallpaper"
 
-[auth-thu]
-src.git = "https://github.com/z4yx/GoAuthing"
-fetch.github = "z4yx/GoAuthing"
-
 [autodiff]
 src.github_tag = "autodiff/autodiff"
 fetch.github = "autodiff/autodiff"
