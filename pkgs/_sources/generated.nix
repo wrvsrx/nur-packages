@@ -42,6 +42,18 @@
     });
     date = "2023-01-07";
   };
+  noto-fonts-emoji-monochrome = {
+    pname = "noto-fonts-emoji-monochrome";
+    version = "d5f498241b3b77beddce3a53ee802c34b1fa46c4";
+    src = fetchFromGitHub ({
+      owner = "wrvsrx";
+      repo = "noto-emoji";
+      rev = "d5f498241b3b77beddce3a53ee802c34b1fa46c4";
+      fetchSubmodules = false;
+      sha256 = "sha256-NpT4SUUq7JfenAfz+XvV/My2rxTntX99zdwp9RKcySo=";
+    });
+    date = "2023-03-28";
+  };
   osc52 = {
     pname = "osc52";
     version = "0.1.0.0";

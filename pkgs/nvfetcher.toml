@@ -19,3 +19,7 @@ fetch.github = "autodiff/autodiff"
 [taskwarrior-to-dot]
 src.git = "https://github.com/wrvsrx/taskwarrior-to-dot"
 fetch.github = "wrvsrx/taskwarrior-to-dot"
+
+[noto-fonts-emoji-monochrome]
+src.git = "https://github.com/wrvsrx/noto-emoji"
+fetch.github = "wrvsrx/noto-emoji"

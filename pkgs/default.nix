@@ -16,4 +16,5 @@ in
   giraffe-wallpaper = callPackage ./giraffe-wallpaper { source = sources.giraffe-wallpaper; };
   osc52 = haskellPackages.callPackage ./osc52 { source = sources.osc52; };
   taskwarrior-to-dot = haskellPackages.callPackage ./taskwarrior-to-dot { source = sources.taskwarrior-to-dot; };
+  noto-fonts-emoji-monochrome = callPackage ./noto-fonts-emoji-monochrome { source = sources.noto-fonts-emoji-monochrome; };
 }
