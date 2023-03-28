@@ -3,25 +3,25 @@
 {
   auth-thu = {
     pname = "auth-thu";
-    version = "8247b3a47ca5fd4ed30fe0b50d3d3db6b4b96c37";
+    version = "4361f28acdf2b160cf437899b8dddde1721d3397";
     src = fetchFromGitHub ({
       owner = "z4yx";
       repo = "GoAuthing";
-      rev = "8247b3a47ca5fd4ed30fe0b50d3d3db6b4b96c37";
+      rev = "4361f28acdf2b160cf437899b8dddde1721d3397";
       fetchSubmodules = false;
-      sha256 = "sha256-aIa2OfoXmbikWpMzEqD3fNLAynp7wA+3qhwQSnRe8DE=";
+      sha256 = "sha256-gaG081qa47l1domXPnXZquyDwQ+50w3VQ19aR592NuM=";
     });
-    date = "2022-09-15";
+    date = "2023-03-18";
   };
   autodiff = {
     pname = "autodiff";
-    version = "v0.6.12";
+    version = "v1.0.1";
     src = fetchFromGitHub ({
       owner = "autodiff";
       repo = "autodiff";
-      rev = "v0.6.12";
+      rev = "v1.0.1";
       fetchSubmodules = false;
-      sha256 = "sha256-pSZtfVvS1B/uRKuV2aHKd3YwFU6zq1hr/99PbQRzJOU=";
+      sha256 = "sha256-9WwsNU9reWss7E3ztRdgjlw4zHca+Z6jwQkGXWD2s+Y=";
     });
   };
   clipcat = {

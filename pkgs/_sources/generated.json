@@ -1,7 +1,7 @@
 {
     "auth-thu": {
         "cargoLocks": null,
-        "date": "2022-09-15",
+        "date": "2023-03-18",
         "extract": null,
         "name": "auth-thu",
         "passthru": null,
@@ -13,11 +13,11 @@
             "name": null,
             "owner": "z4yx",
             "repo": "GoAuthing",
-            "rev": "8247b3a47ca5fd4ed30fe0b50d3d3db6b4b96c37",
-            "sha256": "sha256-aIa2OfoXmbikWpMzEqD3fNLAynp7wA+3qhwQSnRe8DE=",
+            "rev": "4361f28acdf2b160cf437899b8dddde1721d3397",
+            "sha256": "sha256-gaG081qa47l1domXPnXZquyDwQ+50w3VQ19aR592NuM=",
             "type": "github"
         },
-        "version": "8247b3a47ca5fd4ed30fe0b50d3d3db6b4b96c37"
+        "version": "4361f28acdf2b160cf437899b8dddde1721d3397"
     },
     "autodiff": {
         "cargoLocks": null,
@@ -33,11 +33,11 @@
             "name": null,
             "owner": "autodiff",
             "repo": "autodiff",
-            "rev": "v0.6.12",
-            "sha256": "sha256-pSZtfVvS1B/uRKuV2aHKd3YwFU6zq1hr/99PbQRzJOU=",
+            "rev": "v1.0.1",
+            "sha256": "sha256-9WwsNU9reWss7E3ztRdgjlw4zHca+Z6jwQkGXWD2s+Y=",
             "type": "github"
         },
-        "version": "v0.6.12"
+        "version": "v1.0.1"
     },
     "clipcat": {
         "cargoLocks": {
