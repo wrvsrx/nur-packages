@@ -17,6 +17,6 @@ stdenvNoCC.mkDerivation {
     homepage = "https://fonts.google.com/noto/specimen/Noto+Emoji";
     license = licenses.ofl;
     platforms = platforms.all;
-    maintainers = [];
+    maintainers = [ ];
   };
 }
