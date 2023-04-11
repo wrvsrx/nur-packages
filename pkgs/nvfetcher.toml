@@ -23,3 +23,7 @@ fetch.github = "wrvsrx/taskwarrior-to-dot"
 [noto-fonts-emoji-monochrome]
 src.git = "https://github.com/wrvsrx/noto-emoji"
 fetch.github = "wrvsrx/noto-emoji"
+
+[xclip]
+src.git = "https://github.com/astrand/xclip"
+fetch.github = "astrand/xclip"

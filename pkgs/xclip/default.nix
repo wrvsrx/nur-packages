@@ -1,10 +1,5 @@
-{ xclip, fetchFromGitHub }:
+{ xclip, source }:
+# To fix https://github.com/astrand/xclip/issues/131
 xclip.overrideAttrs (old: {
-  version = "dev";
-  src = fetchFromGitHub {
-    owner = "astrand";
-    repo = "xclip";
-    rev = "b372f73579d30f9ba998ffd0a73694e7abe2c313";
-    sha256 = "pBGRV2h7JiNZ4Im3NySEq1UGNW65MpvTjpTxy0m8jc4=";
-  };
+  inherit (source) version src;
 })

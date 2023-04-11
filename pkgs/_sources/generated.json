@@ -125,5 +125,25 @@
             "type": "github"
         },
         "version": "7bb99dcc14d35d14859af09b4888ec8ffa536a8f"
+    },
+    "xclip": {
+        "cargoLocks": null,
+        "date": "2022-01-29",
+        "extract": null,
+        "name": "xclip",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "astrand",
+            "repo": "xclip",
+            "rev": "b372f73579d30f9ba998ffd0a73694e7abe2c313",
+            "sha256": "sha256-pBGRV2h7JiNZ4Im3NySEq1UGNW65MpvTjpTxy0m8jc4=",
+            "type": "github"
+        },
+        "version": "b372f73579d30f9ba998ffd0a73694e7abe2c313"
     }
 }
