@@ -1,4 +1,5 @@
 { xdg-utils, fetchFromGitLab }:
+# merge https://gitlab.freedesktop.org/xdg/xdg-utils/-/merge_requests/55
 xdg-utils.overrideAttrs (finalAttrs: prevAttrs: {
   src = fetchFromGitLab {
     domain = "gitlab.freedesktop.org";
