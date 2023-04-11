@@ -1,4 +1,44 @@
 {
+    "autobean-format": {
+        "cargoLocks": null,
+        "date": "2023-04-08",
+        "extract": null,
+        "name": "autobean-format",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "SEIAROTg",
+            "repo": "autobean-format",
+            "rev": "b2137ffd5977c4eacd64fc0c457aa5a7ffbc4b5c",
+            "sha256": "sha256-e5YBny0d2pK6GieXzPYyFKGVh0tdJb5uA5dmn5cFKHk=",
+            "type": "github"
+        },
+        "version": "b2137ffd5977c4eacd64fc0c457aa5a7ffbc4b5c"
+    },
+    "autobean-refactor": {
+        "cargoLocks": null,
+        "date": "2023-04-01",
+        "extract": null,
+        "name": "autobean-refactor",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "SEIAROTg",
+            "repo": "autobean-refactor",
+            "rev": "e169518327eb008f881615b2442ebe27a32dd90e",
+            "sha256": "sha256-eObrTU9LGlEKfQQ81Iq7sfwjilQbkVdVDPh5hbeZb4Q=",
+            "type": "github"
+        },
+        "version": "e169518327eb008f881615b2442ebe27a32dd90e"
+    },
     "autodiff": {
         "cargoLocks": null,
         "date": null,

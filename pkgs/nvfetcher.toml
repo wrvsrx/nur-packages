@@ -27,3 +27,11 @@ fetch.github = "wrvsrx/noto-emoji"
 [xclip]
 src.git = "https://github.com/astrand/xclip"
 fetch.github = "astrand/xclip"
+
+[autobean-format]
+src.git = "https://github.com/SEIAROTg/autobean-format"
+fetch.github = "SEIAROTg/autobean-format"
+
+[autobean-refactor]
+src.git = "https://github.com/SEIAROTg/autobean-refactor"
+fetch.github = "SEIAROTg/autobean-refactor"
