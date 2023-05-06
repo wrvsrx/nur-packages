@@ -148,7 +148,7 @@
     },
     "taskwarrior-to-dot": {
         "cargoLocks": null,
-        "date": "2023-02-16",
+        "date": "2023-04-21",
         "extract": null,
         "name": "taskwarrior-to-dot",
         "passthru": null,
@@ -160,11 +160,31 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "taskwarrior-to-dot",
-            "rev": "7bb99dcc14d35d14859af09b4888ec8ffa536a8f",
-            "sha256": "sha256-gcGKQnnN73jfl2lS7h9cW1PIvRYTQL+FmDir8Gsxzq8=",
+            "rev": "12e2cf0f6f072e644da2f0335b1e04ac64c9ea3c",
+            "sha256": "sha256-oQaQjSRQpf3nVH2DPeWYgSHXELzI9pPCLEbZg94mTA4=",
             "type": "github"
         },
-        "version": "7bb99dcc14d35d14859af09b4888ec8ffa536a8f"
+        "version": "12e2cf0f6f072e644da2f0335b1e04ac64c9ea3c"
+    },
+    "vdirsyncer": {
+        "cargoLocks": null,
+        "date": "2023-05-06",
+        "extract": null,
+        "name": "vdirsyncer",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "wrvsrx",
+            "repo": "vdirsyncer",
+            "rev": "46c5622291136be6393654786a6895524e80600f",
+            "sha256": "sha256-IrKMIEZQiccO3//Twh6oG5YS/ybIwNZD3nTaIPfEsDE=",
+            "type": "github"
+        },
+        "version": "46c5622291136be6393654786a6895524e80600f"
     },
     "xclip": {
         "cargoLocks": null,

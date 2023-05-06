@@ -91,15 +91,27 @@
   };
   taskwarrior-to-dot = {
     pname = "taskwarrior-to-dot";
-    version = "7bb99dcc14d35d14859af09b4888ec8ffa536a8f";
+    version = "12e2cf0f6f072e644da2f0335b1e04ac64c9ea3c";
     src = fetchFromGitHub ({
       owner = "wrvsrx";
       repo = "taskwarrior-to-dot";
-      rev = "7bb99dcc14d35d14859af09b4888ec8ffa536a8f";
+      rev = "12e2cf0f6f072e644da2f0335b1e04ac64c9ea3c";
       fetchSubmodules = false;
-      sha256 = "sha256-gcGKQnnN73jfl2lS7h9cW1PIvRYTQL+FmDir8Gsxzq8=";
+      sha256 = "sha256-oQaQjSRQpf3nVH2DPeWYgSHXELzI9pPCLEbZg94mTA4=";
     });
-    date = "2023-02-16";
+    date = "2023-04-21";
+  };
+  vdirsyncer = {
+    pname = "vdirsyncer";
+    version = "46c5622291136be6393654786a6895524e80600f";
+    src = fetchFromGitHub ({
+      owner = "wrvsrx";
+      repo = "vdirsyncer";
+      rev = "46c5622291136be6393654786a6895524e80600f";
+      fetchSubmodules = false;
+      sha256 = "sha256-IrKMIEZQiccO3//Twh6oG5YS/ybIwNZD3nTaIPfEsDE=";
+    });
+    date = "2023-05-06";
   };
   xclip = {
     pname = "xclip";

@@ -35,3 +35,8 @@ fetch.github = "SEIAROTg/autobean-format"
 [autobean-refactor]
 src.git = "https://github.com/SEIAROTg/autobean-refactor"
 fetch.github = "SEIAROTg/autobean-refactor"
+
+[vdirsyncer]
+src.git = "https://github.com/wrvsrx/vdirsyncer"
+src.branch = "use-vcard-4"
+fetch.github = "wrvsrx/vdirsyncer"

@@ -2,6 +2,10 @@
 let
   inherit (pkgs) callPackage haskellPackages;
   sources = callPackage ./_sources/generated.nix { };
+  pythonWithPackages = pkgs.python3.override {
+    self = pythonWithPackages;
+    packageOverrides = import ./python-modules/python-packages.nix { inherit sources; };
+  };
 in
 {
   auth-thu = callPackage ./auth-thu { };
@@ -17,4 +21,5 @@ in
   osc52 = haskellPackages.callPackage ./osc52 { source = sources.osc52; };
   taskwarrior-to-dot = haskellPackages.callPackage ./taskwarrior-to-dot { source = sources.taskwarrior-to-dot; };
   noto-fonts-emoji-monochrome = callPackage ./noto-fonts-emoji-monochrome { source = sources.noto-fonts-emoji-monochrome; };
+  vdirsyncer = with pythonWithPackages.pkgs; toPythonApplication vdirsyncer;
 }
