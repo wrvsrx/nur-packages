@@ -126,6 +126,26 @@
         },
         "version": "d5f498241b3b77beddce3a53ee802c34b1fa46c4"
     },
+    "nvim-numbertoggle": {
+        "cargoLocks": null,
+        "date": "2023-05-02",
+        "extract": null,
+        "name": "nvim-numbertoggle",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "sitiom",
+            "repo": "nvim-numbertoggle",
+            "rev": "1dcc1507578f6f216917065da9dac169670dbcd3",
+            "sha256": "sha256-AYuSdolDXPZC2hZ7i/Mgg3iAP0SYrn7PcIGpDHXTn7c=",
+            "type": "github"
+        },
+        "version": "1dcc1507578f6f216917065da9dac169670dbcd3"
+    },
     "osc52": {
         "cargoLocks": null,
         "date": null,
@@ -148,7 +168,7 @@
     },
     "taskwarrior-to-dot": {
         "cargoLocks": null,
-        "date": "2023-04-21",
+        "date": "2023-05-07",
         "extract": null,
         "name": "taskwarrior-to-dot",
         "passthru": null,
@@ -160,11 +180,11 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "taskwarrior-to-dot",
-            "rev": "12e2cf0f6f072e644da2f0335b1e04ac64c9ea3c",
-            "sha256": "sha256-oQaQjSRQpf3nVH2DPeWYgSHXELzI9pPCLEbZg94mTA4=",
+            "rev": "0fce081d01fcb086ae66079cd48c472d153e824b",
+            "sha256": "sha256-S3KtBHzLNhbPnzZthL4ZobfJLGuoLGhZe/hPgMifXsM=",
             "type": "github"
         },
-        "version": "12e2cf0f6f072e644da2f0335b1e04ac64c9ea3c"
+        "version": "0fce081d01fcb086ae66079cd48c472d153e824b"
     },
     "vdirsyncer": {
         "cargoLocks": null,

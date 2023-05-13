@@ -2,6 +2,7 @@ let
   to-normal-packages = import ./to-normal-packages;
   to-sources = import ./to-sources;
   to-python-modules = import ./to-python-modules;
+  to-vim-plugins = import ./to-vim-plugins;
   pkgs-to-python-modules = pkgs: to-python-modules { inherit pkgs to-sources; };
   pkgs-to-packages = pkgs:
     let
@@ -15,7 +16,12 @@ let
       };
     in
     normal-packages // python-packages;
+  pkgs-to-vim-plugins = pkgs: to-vim-plugins { inherit pkgs to-sources; };
 in
 {
-  inherit pkgs-to-packages pkgs-to-python-modules;
+  inherit
+    pkgs-to-packages
+    pkgs-to-python-modules
+    pkgs-to-vim-plugins
+    ;
 }

@@ -9,7 +9,11 @@
   };
   outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } ({ withSystem, ... }:
     let
-      inherit (import ./pkgs) pkgs-to-packages pkgs-to-python-modules;
+      inherit (import ./pkgs)
+        pkgs-to-packages
+        pkgs-to-python-modules
+        pkgs-to-vim-plugins
+        ;
     in
     {
       systems = [ "x86_64-linux" ];
@@ -18,6 +22,7 @@
         overlays.default = final: prev:
           (pkgs-to-packages prev) // {
             pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [ (pkgs-to-python-modules prev) ];
+            vimPlugins = prev.vimPlugins // (pkgs-to-vim-plugins prev);
           };
       };
       perSystem = { system, pkgs, ... }: rec {

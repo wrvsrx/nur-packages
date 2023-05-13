@@ -78,6 +78,18 @@
     });
     date = "2023-03-28";
   };
+  nvim-numbertoggle = {
+    pname = "nvim-numbertoggle";
+    version = "1dcc1507578f6f216917065da9dac169670dbcd3";
+    src = fetchFromGitHub ({
+      owner = "sitiom";
+      repo = "nvim-numbertoggle";
+      rev = "1dcc1507578f6f216917065da9dac169670dbcd3";
+      fetchSubmodules = false;
+      sha256 = "sha256-AYuSdolDXPZC2hZ7i/Mgg3iAP0SYrn7PcIGpDHXTn7c=";
+    });
+    date = "2023-05-02";
+  };
   osc52 = {
     pname = "osc52";
     version = "0.1.0.0";
@@ -91,15 +103,15 @@
   };
   taskwarrior-to-dot = {
     pname = "taskwarrior-to-dot";
-    version = "12e2cf0f6f072e644da2f0335b1e04ac64c9ea3c";
+    version = "0fce081d01fcb086ae66079cd48c472d153e824b";
     src = fetchFromGitHub ({
       owner = "wrvsrx";
       repo = "taskwarrior-to-dot";
-      rev = "12e2cf0f6f072e644da2f0335b1e04ac64c9ea3c";
+      rev = "0fce081d01fcb086ae66079cd48c472d153e824b";
       fetchSubmodules = false;
-      sha256 = "sha256-oQaQjSRQpf3nVH2DPeWYgSHXELzI9pPCLEbZg94mTA4=";
+      sha256 = "sha256-S3KtBHzLNhbPnzZthL4ZobfJLGuoLGhZe/hPgMifXsM=";
     });
-    date = "2023-04-21";
+    date = "2023-05-07";
   };
   vdirsyncer = {
     pname = "vdirsyncer";
