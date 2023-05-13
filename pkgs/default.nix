@@ -1,25 +1,21 @@
-{ pkgs }:
 let
-  inherit (pkgs) callPackage haskellPackages;
-  sources = callPackage ./_sources/generated.nix { };
-  pythonWithPackages = pkgs.python3.override {
-    self = pythonWithPackages;
-    packageOverrides = import ./python-modules/python-packages.nix { inherit sources; };
-  };
+  to-normal-packages = import ./to-normal-packages;
+  to-sources = import ./to-sources;
+  to-python-modules = import ./to-python-modules;
+  pkgs-to-python-modules = pkgs: to-python-modules { inherit pkgs to-sources; };
+  pkgs-to-packages = pkgs:
+    let
+      normal-packages = to-normal-packages { inherit pkgs to-sources; };
+      pythonWithPackages = pkgs.python3.override {
+        self = pythonWithPackages;
+        packageOverrides = to-python-modules { inherit to-sources pkgs; };
+      };
+      python-packages = {
+        vdirsyncer = with pythonWithPackages.pkgs; toPythonApplication vdirsyncer;
+      };
+    in
+    normal-packages // python-packages;
 in
 {
-  auth-thu = callPackage ./auth-thu { };
-  autodiff = callPackage ./autodiff { source = sources.autodiff; };
-  inherit (callPackage ./noto-fonts-cjk { })
-    noto-fonts-cjk-sans-fix-weight
-    noto-fonts-cjk-serif-fix-weight;
-  xdg-utils-patched = callPackage ./xdg-utils-patched { };
-  pam_ssh_agent_auth = callPackage ./pam_ssh_agent_auth { inherit (pkgs) pam_ssh_agent_auth; };
-  xclip = callPackage ./xclip { inherit (pkgs) xclip; source = sources.xclip; };
-  clipcat = callPackage ./clipcat { source = sources.clipcat; };
-  giraffe-wallpaper = callPackage ./giraffe-wallpaper { source = sources.giraffe-wallpaper; };
-  osc52 = haskellPackages.callPackage ./osc52 { source = sources.osc52; };
-  taskwarrior-to-dot = haskellPackages.callPackage ./taskwarrior-to-dot { source = sources.taskwarrior-to-dot; };
-  noto-fonts-emoji-monochrome = callPackage ./noto-fonts-emoji-monochrome { source = sources.noto-fonts-emoji-monochrome; };
-  vdirsyncer = with pythonWithPackages.pkgs; toPythonApplication vdirsyncer;
+  inherit pkgs-to-packages pkgs-to-python-modules;
 }
