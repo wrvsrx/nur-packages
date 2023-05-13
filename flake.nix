@@ -14,11 +14,12 @@
         pkgs-to-python-modules
         pkgs-to-vim-plugins
         ;
+      templates = import ./templates;
     in
     {
       systems = [ "x86_64-linux" ];
       flake = {
-        templates = import ./templates;
+        inherit templates;
         overlays.default = final: prev:
           (pkgs-to-packages prev) // {
             pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [ (pkgs-to-python-modules prev) ];
