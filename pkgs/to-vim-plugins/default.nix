@@ -2,10 +2,12 @@
 let
   sources = to-sources { inherit pkgs; };
   inherit (pkgs.vimUtils) buildVimPluginFrom2Nix;
+  inherit (pkgs) callPackage;
 in
 {
   nvim-numbertoggle = buildVimPluginFrom2Nix {
     inherit (sources.nvim-numbertoggle) pname version src;
     meta.homepage = "https://github.com/sitiom/nvim-numbertoggle";
   };
+  coc-zk = callPackage ./coc-zk { source = sources.coc-zk; };
 }

@@ -27,7 +27,7 @@
           };
       };
       perSystem = { system, pkgs, ... }: rec {
-        packages = pkgs-to-packages pkgs;
+        packages = pkgs-to-packages pkgs // (pkgs-to-vim-plugins pkgs);
         checks = packages;
         formatter = pkgs.nixpkgs-fmt;
         devShells.default = pkgs.mkShell { nativeBuildInputs = [ pkgs.nvfetcher ]; };

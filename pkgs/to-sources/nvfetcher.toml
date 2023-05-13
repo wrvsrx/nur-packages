@@ -44,3 +44,7 @@ fetch.github = "wrvsrx/vdirsyncer"
 [nvim-numbertoggle]
 src.git = "https://github.com/sitiom/nvim-numbertoggle"
 fetch.github = "sitiom/nvim-numbertoggle"
+
+[coc-zk]
+src.git = "https://github.com/wrvsrx/coc-zk"
+fetch.github = "wrvsrx/coc-zk"
