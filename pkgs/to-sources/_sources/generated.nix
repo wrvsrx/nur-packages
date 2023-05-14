@@ -56,15 +56,15 @@
   };
   coc-zk = {
     pname = "coc-zk";
-    version = "d863688f06d43b4e57e283d90a89d3be91c4c147";
+    version = "dd2a2d1d911e1044f59cf39f2e69df80b44c0d97";
     src = fetchFromGitHub ({
       owner = "wrvsrx";
       repo = "coc-zk";
-      rev = "d863688f06d43b4e57e283d90a89d3be91c4c147";
+      rev = "dd2a2d1d911e1044f59cf39f2e69df80b44c0d97";
       fetchSubmodules = false;
-      sha256 = "sha256-OCtev2AGg/AQPa2mzJFEhJrh8Jsg9Q13xbghBCDlmlM=";
+      sha256 = "sha256-52rj04AcHV67J0ES6FxUiJ5JBN4CSD4IirWB3T8sTtk=";
     });
-    date = "2023-05-13";
+    date = "2023-05-14";
   };
   giraffe-wallpaper = {
     pname = "giraffe-wallpaper";

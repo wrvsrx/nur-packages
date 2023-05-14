@@ -88,7 +88,7 @@
     },
     "coc-zk": {
         "cargoLocks": null,
-        "date": "2023-05-13",
+        "date": "2023-05-14",
         "extract": null,
         "name": "coc-zk",
         "passthru": null,
@@ -100,11 +100,11 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "coc-zk",
-            "rev": "d863688f06d43b4e57e283d90a89d3be91c4c147",
-            "sha256": "sha256-OCtev2AGg/AQPa2mzJFEhJrh8Jsg9Q13xbghBCDlmlM=",
+            "rev": "dd2a2d1d911e1044f59cf39f2e69df80b44c0d97",
+            "sha256": "sha256-52rj04AcHV67J0ES6FxUiJ5JBN4CSD4IirWB3T8sTtk=",
             "type": "github"
         },
-        "version": "d863688f06d43b4e57e283d90a89d3be91c4c147"
+        "version": "dd2a2d1d911e1044f59cf39f2e69df80b44c0d97"
     },
     "giraffe-wallpaper": {
         "cargoLocks": null,
