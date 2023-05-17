@@ -100,11 +100,11 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "coc-zk",
-            "rev": "dd2a2d1d911e1044f59cf39f2e69df80b44c0d97",
-            "sha256": "sha256-52rj04AcHV67J0ES6FxUiJ5JBN4CSD4IirWB3T8sTtk=",
+            "rev": "7bba1b4f9641d91ab54b5b5d46c3465bce59cc0b",
+            "sha256": "sha256-GJAvmgesThmb3FJb8Wk5dBZF+grtG8cGNQEYbMOjyc4=",
             "type": "github"
         },
-        "version": "dd2a2d1d911e1044f59cf39f2e69df80b44c0d97"
+        "version": "7bba1b4f9641d91ab54b5b5d46c3465bce59cc0b"
     },
     "giraffe-wallpaper": {
         "cargoLocks": null,
