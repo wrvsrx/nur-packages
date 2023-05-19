@@ -108,7 +108,7 @@
     },
     "giraffe-wallpaper": {
         "cargoLocks": null,
-        "date": "2023-01-07",
+        "date": "2023-05-19",
         "extract": null,
         "name": "giraffe-wallpaper",
         "passthru": null,
@@ -120,11 +120,11 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "giraffe-wallpaper",
-            "rev": "2240da13220a6c04a9d39a42c4da40f8b3327be8",
-            "sha256": "sha256-ChGql5Or/J150c1lg2Pg6Cc/ZH0k69zMW1G2QTvy1wk=",
+            "rev": "0bd05dc95fcad8ac6d46269f7d4901cfed94dd47",
+            "sha256": "sha256-Sda39TIuyp7hB0T3RaQpVf6UXP1mkbkDAE0V/sU0fds=",
             "type": "github"
         },
-        "version": "2240da13220a6c04a9d39a42c4da40f8b3327be8"
+        "version": "0bd05dc95fcad8ac6d46269f7d4901cfed94dd47"
     },
     "noto-fonts-emoji-monochrome": {
         "cargoLocks": null,
