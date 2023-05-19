@@ -12,6 +12,6 @@ stdenv.mkDerivation {
   '';
   installPhase = ''
     mkdir -p $out/share
-    cp output.png $out/share/wallpaper.png
+    cp output.bmp $out/share/wallpaper.bmp
   '';
 }
