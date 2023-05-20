@@ -68,15 +68,15 @@
   };
   giraffe-wallpaper = {
     pname = "giraffe-wallpaper";
-    version = "0bd05dc95fcad8ac6d46269f7d4901cfed94dd47";
+    version = "118f8cdb2946138126ae761442521d0d1375b2a4";
     src = fetchFromGitHub ({
       owner = "wrvsrx";
       repo = "giraffe-wallpaper";
-      rev = "0bd05dc95fcad8ac6d46269f7d4901cfed94dd47";
+      rev = "118f8cdb2946138126ae761442521d0d1375b2a4";
       fetchSubmodules = false;
-      sha256 = "sha256-Sda39TIuyp7hB0T3RaQpVf6UXP1mkbkDAE0V/sU0fds=";
+      sha256 = "sha256-fxv1y1DF+rKnvCZ9nij2qyJ37f4p6Lt9a5WCOaZ9kao=";
     });
-    date = "2023-05-19";
+    date = "2023-05-20";
   };
   noto-fonts-emoji-monochrome = {
     pname = "noto-fonts-emoji-monochrome";
