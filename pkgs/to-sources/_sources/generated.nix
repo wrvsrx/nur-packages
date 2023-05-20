@@ -68,13 +68,13 @@
   };
   giraffe-wallpaper = {
     pname = "giraffe-wallpaper";
-    version = "118f8cdb2946138126ae761442521d0d1375b2a4";
+    version = "6fc686fe7b43cb6be8eaf3a9dc42177eb355eadd";
     src = fetchFromGitHub ({
       owner = "wrvsrx";
       repo = "giraffe-wallpaper";
-      rev = "118f8cdb2946138126ae761442521d0d1375b2a4";
+      rev = "6fc686fe7b43cb6be8eaf3a9dc42177eb355eadd";
       fetchSubmodules = false;
-      sha256 = "sha256-fxv1y1DF+rKnvCZ9nij2qyJ37f4p6Lt9a5WCOaZ9kao=";
+      sha256 = "sha256-vbpK1+ipg3KzBaX9g8zZiYU8abvKBMkOZKmP8r89wFg=";
     });
     date = "2023-05-20";
   };
