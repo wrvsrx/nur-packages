@@ -1,17 +1,37 @@
 {
   "nodes": {
+    "flake-lock": {
+      "inputs": {
+        "flake-parts": "flake-parts",
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1684722268,
+        "narHash": "sha256-RgSh+vSucWWKemULlI5CeHUfYUaKZR6KmvdYdxZLRTQ=",
+        "owner": "wrvsrx",
+        "repo": "flake-lock",
+        "rev": "25dfe2e01a1167cd166ff52dc57507cedc9d477c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "wrvsrx",
+        "repo": "flake-lock",
+        "type": "github"
+      }
+    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
+          "flake-lock",
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1682984683,
-        "narHash": "sha256-fSMthG+tp60AHhNmaHc4StT3ltfHkQsJtN8GhfLWmtI=",
+        "lastModified": 1683560683,
+        "narHash": "sha256-XAygPMN5Xnk/W2c1aW0jyEa6lfMDZWlQgiNtmHXytPc=",
         "owner": "hercules-ci",
         "repo": "flake-parts",
-        "rev": "86684881e184f41aa322e653880e497b66429f3e",
+        "rev": "006c75898cf814ef9497252b022e91c946ba8e17",
         "type": "github"
       },
       "original": {
@@ -22,24 +42,31 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1683020768,
-        "narHash": "sha256-ZyZl6k9NWS5QPwD3NoAVz/eSgodQDvl+y+fu8MVbrHc=",
+        "lastModified": 1684570954,
+        "narHash": "sha256-FX5y4Sm87RWwfu9PI71XFvuRpZLowh00FQpIJ1WfXqE=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "44f30edf5661d86fb3a95841c35127f3d0ea8b0f",
+        "rev": "3005f20ce0aaa58169cdee57c8aa12e5f1b6e1b3",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixpkgs-unstable",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
     },
     "root": {
       "inputs": {
-        "flake-parts": "flake-parts",
-        "nixpkgs": "nixpkgs"
+        "flake-lock": "flake-lock",
+        "flake-parts": [
+          "flake-lock",
+          "flake-parts"
+        ],
+        "nixpkgs": [
+          "flake-lock",
+          "nixpkgs"
+        ]
       }
     }
   },

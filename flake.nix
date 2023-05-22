@@ -1,11 +1,9 @@
 {
   description = "My personal NUR repository";
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    flake-parts = {
-      url = "github:hercules-ci/flake-parts";
-      inputs.nixpkgs-lib.follows = "nixpkgs";
-    };
+    flake-lock.url = "github:wrvsrx/flake-lock";
+    nixpkgs.follows = "flake-lock/nixpkgs";
+    flake-parts.follows = "flake-lock/flake-parts";
   };
   outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } ({ withSystem, ... }:
     let
