@@ -12,6 +12,7 @@
     perSystem = { pkgs, ... }: rec {
       packages.default = pkgs.callPackage ./default.nix { };
       devShells.default = pkgs.mkShell { inputsFrom = [ packages.default ]; };
+      formatter = pkgs.nixpkgs-fmt;
     };
   };
 }
