@@ -15,8 +15,9 @@ let
       python-packages = {
         vdirsyncer = with pythonWithPackages.pkgs; toPythonApplication vdirsyncer;
       };
+      vim-plugins = pkgs-to-vim-plugins pkgs;
     in
-    normal-packages // python-packages;
+    normal-packages // python-packages // vim-plugins;
   pkgs-to-vim-plugins = pkgs: to-vim-plugins { inherit pkgs to-sources; };
 in
 {
