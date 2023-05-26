@@ -4,9 +4,10 @@ let
   to-python-modules = import ./to-python-modules;
   to-vim-plugins = import ./to-vim-plugins;
   pkgs-to-python-modules = pkgs: to-python-modules { inherit pkgs to-sources; };
+  pkgs-to-normal-packages = pkgs: to-normal-packages { inherit pkgs to-sources; };
   pkgs-to-packages = pkgs:
     let
-      normal-packages = to-normal-packages { inherit pkgs to-sources; };
+      normal-packages = pkgs-to-normal-packages pkgs;
       pythonWithPackages = pkgs.python3.override {
         self = pythonWithPackages;
         packageOverrides = to-python-modules { inherit to-sources pkgs; };
@@ -20,6 +21,7 @@ let
 in
 {
   inherit
+    pkgs-to-normal-packages
     pkgs-to-packages
     pkgs-to-python-modules
     pkgs-to-vim-plugins
