@@ -12,9 +12,18 @@ let
         self = pythonWithPackages;
         packageOverrides = to-python-modules { inherit to-sources pkgs; };
       };
-      python-packages = {
-        vdirsyncer = with pythonWithPackages.pkgs; toPythonApplication vdirsyncer;
-      };
+      python-packages =
+        let
+          inherit (pythonWithPackages.pkgs)
+            toPythonApplication
+            vdirsyncer
+            compdb
+            ;
+        in
+        {
+          vdirsyncer = toPythonApplication vdirsyncer;
+          compdb = toPythonApplication compdb;
+        };
       vim-plugins = pkgs-to-vim-plugins pkgs;
     in
     normal-packages // python-packages // vim-plugins;

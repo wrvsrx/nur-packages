@@ -106,6 +106,21 @@
         },
         "version": "7bba1b4f9641d91ab54b5b5d46c3465bce59cc0b"
     },
+    "compdb": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "compdb",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-c0cbrdAeXmnIFvs6Tg0BTwmcKCbuKD31cWzXsZAred0=",
+            "type": "url",
+            "url": "https://pypi.org/packages/source/c/compdb/compdb-0.2.0.tar.gz"
+        },
+        "version": "0.2.0"
+    },
     "giraffe-wallpaper": {
         "cargoLocks": null,
         "date": "2023-05-20",

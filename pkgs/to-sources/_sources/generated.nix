@@ -66,6 +66,14 @@
     };
     date = "2023-05-14";
   };
+  compdb = {
+    pname = "compdb";
+    version = "0.2.0";
+    src = fetchurl {
+      url = "https://pypi.org/packages/source/c/compdb/compdb-0.2.0.tar.gz";
+      sha256 = "sha256-c0cbrdAeXmnIFvs6Tg0BTwmcKCbuKD31cWzXsZAred0=";
+    };
+  };
   giraffe-wallpaper = {
     pname = "giraffe-wallpaper";
     version = "6fc686fe7b43cb6be8eaf3a9dc42177eb355eadd";
