@@ -1,7 +1,7 @@
 {
     "autobean-format": {
         "cargoLocks": null,
-        "date": "2023-04-11",
+        "date": "2023-05-30",
         "extract": null,
         "name": "autobean-format",
         "passthru": null,
@@ -13,11 +13,11 @@
             "name": null,
             "owner": "SEIAROTg",
             "repo": "autobean-format",
-            "rev": "b1222f3ca1bfc771baca276876c3c6df99911bc4",
-            "sha256": "sha256-3UzZTyaTc4QXH3VnUNEUU+X/1kswTm4QDsO1KMU1B/E=",
+            "rev": "46e49297d353dd999e72721a442e456152d6d18f",
+            "sha256": "sha256-KmX8Ppya29q6HNnNDjPnTNqzVcUVsHdcKsLJWcPO79s=",
             "type": "github"
         },
-        "version": "b1222f3ca1bfc771baca276876c3c6df99911bc4"
+        "version": "46e49297d353dd999e72721a442e456152d6d18f"
     },
     "autobean-refactor": {
         "cargoLocks": null,

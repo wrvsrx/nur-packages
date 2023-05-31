@@ -3,15 +3,15 @@
 {
   autobean-format = {
     pname = "autobean-format";
-    version = "b1222f3ca1bfc771baca276876c3c6df99911bc4";
+    version = "46e49297d353dd999e72721a442e456152d6d18f";
     src = fetchFromGitHub {
       owner = "SEIAROTg";
       repo = "autobean-format";
-      rev = "b1222f3ca1bfc771baca276876c3c6df99911bc4";
+      rev = "46e49297d353dd999e72721a442e456152d6d18f";
       fetchSubmodules = false;
-      sha256 = "sha256-3UzZTyaTc4QXH3VnUNEUU+X/1kswTm4QDsO1KMU1B/E=";
+      sha256 = "sha256-KmX8Ppya29q6HNnNDjPnTNqzVcUVsHdcKsLJWcPO79s=";
     };
-    date = "2023-04-11";
+    date = "2023-05-30";
   };
   autobean-refactor = {
     pname = "autobean-refactor";
