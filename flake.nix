@@ -4,11 +4,6 @@
     flake-lock.url = "github:wrvsrx/flake-lock";
     nixpkgs.follows = "flake-lock/nixpkgs";
     flake-parts.follows = "flake-lock/flake-parts";
-    # TODO: remove it after nvfetcher's update is merged into nixpkgs
-    nvfetcher = {
-      url = "github:berberman/nvfetcher";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
   outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } ({ withSystem, ... }:
     let
@@ -34,7 +29,7 @@
         packages = pkgs-to-packages pkgs;
         checks = packages;
         formatter = pkgs.nixpkgs-fmt;
-        devShells.default = pkgs.mkShell { nativeBuildInputs = [ inputs.nvfetcher.packages."${system}".default ]; };
+        devShells.default = pkgs.mkShell { nativeBuildInputs = [ pkgs.nvfetcher ]; };
       };
     });
 }
