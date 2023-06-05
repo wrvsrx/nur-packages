@@ -15,15 +15,15 @@
   };
   autobean-refactor = {
     pname = "autobean-refactor";
-    version = "e169518327eb008f881615b2442ebe27a32dd90e";
+    version = "12c4d6daa01b9971714b7357c0dc879a545f0808";
     src = fetchFromGitHub {
       owner = "SEIAROTg";
       repo = "autobean-refactor";
-      rev = "e169518327eb008f881615b2442ebe27a32dd90e";
+      rev = "12c4d6daa01b9971714b7357c0dc879a545f0808";
       fetchSubmodules = false;
-      sha256 = "sha256-eObrTU9LGlEKfQQ81Iq7sfwjilQbkVdVDPh5hbeZb4Q=";
+      sha256 = "sha256-e71Jwvtmlsn3CyW1gItAbw28zlF3ON+K2rEiTRJ9y6U=";
     };
-    date = "2023-04-01";
+    date = "2023-06-02";
   };
   autodiff = {
     pname = "autodiff";

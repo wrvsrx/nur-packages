@@ -21,7 +21,7 @@
     },
     "autobean-refactor": {
         "cargoLocks": null,
-        "date": "2023-04-01",
+        "date": "2023-06-02",
         "extract": null,
         "name": "autobean-refactor",
         "passthru": null,
@@ -33,11 +33,11 @@
             "name": null,
             "owner": "SEIAROTg",
             "repo": "autobean-refactor",
-            "rev": "e169518327eb008f881615b2442ebe27a32dd90e",
-            "sha256": "sha256-eObrTU9LGlEKfQQ81Iq7sfwjilQbkVdVDPh5hbeZb4Q=",
+            "rev": "12c4d6daa01b9971714b7357c0dc879a545f0808",
+            "sha256": "sha256-e71Jwvtmlsn3CyW1gItAbw28zlF3ON+K2rEiTRJ9y6U=",
             "type": "github"
         },
-        "version": "e169518327eb008f881615b2442ebe27a32dd90e"
+        "version": "12c4d6daa01b9971714b7357c0dc879a545f0808"
     },
     "autodiff": {
         "cargoLocks": null,
