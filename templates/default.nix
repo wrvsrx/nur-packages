@@ -1,9 +1,12 @@
 {
   default = {
     path = ./default;
-    description = "wrvsrx's flake template";
-    welcomeText = ''
-      Hello world!
-    '';
+    description = "init an empty package";
+    welcomeText = "";
+  };
+  shell = {
+    path = ./shell;
+    description = "init an empty shell";
+    welcomeText = "";
   };
 }
