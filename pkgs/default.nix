@@ -23,6 +23,11 @@ let
         {
           vdirsyncer = toPythonApplication vdirsyncer;
           compdb = toPythonApplication compdb;
+          inherit (pythonWithPackages.pkgs)
+            autobean-format
+            autobean-refactor
+            OpenEXR
+            ;
         };
       vim-plugins = pkgs-to-vim-plugins pkgs;
     in
