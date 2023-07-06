@@ -8,7 +8,7 @@ let
   pkgs-to-packages = pkgs:
     let
       normal-packages = pkgs-to-normal-packages pkgs;
-      pythonWithPackages = pkgs.python3.override {
+      pythonWithPackages = pkgs.python311.override {
         self = pythonWithPackages;
         packageOverrides = to-python-modules { inherit to-sources pkgs; };
       };
