@@ -11,37 +11,37 @@
   };
   autobean-format = {
     pname = "autobean-format";
-    version = "46e49297d353dd999e72721a442e456152d6d18f";
+    version = "cd9f59148e4a8d5cbbbe132b9bd8e2a4ba2c657b";
     src = fetchFromGitHub {
       owner = "SEIAROTg";
       repo = "autobean-format";
-      rev = "46e49297d353dd999e72721a442e456152d6d18f";
+      rev = "cd9f59148e4a8d5cbbbe132b9bd8e2a4ba2c657b";
       fetchSubmodules = false;
-      sha256 = "sha256-KmX8Ppya29q6HNnNDjPnTNqzVcUVsHdcKsLJWcPO79s=";
+      sha256 = "sha256-G7YUvS1Bnp7XPBcBgARtkffxLo/qbKI0Yv9KxTpsIeM=";
     };
-    date = "2023-05-30";
+    date = "2023-07-05";
   };
   autobean-refactor = {
     pname = "autobean-refactor";
-    version = "12c4d6daa01b9971714b7357c0dc879a545f0808";
+    version = "36fedaf8e7104d6da06b28936bcf6dae2b5267bf";
     src = fetchFromGitHub {
       owner = "SEIAROTg";
       repo = "autobean-refactor";
-      rev = "12c4d6daa01b9971714b7357c0dc879a545f0808";
+      rev = "36fedaf8e7104d6da06b28936bcf6dae2b5267bf";
       fetchSubmodules = false;
-      sha256 = "sha256-e71Jwvtmlsn3CyW1gItAbw28zlF3ON+K2rEiTRJ9y6U=";
+      sha256 = "sha256-MxCVuk7kuAA0GixII4XbWGPDk54mwKUeK7s0gGVgnF8=";
     };
-    date = "2023-06-02";
+    date = "2023-07-01";
   };
   autodiff = {
     pname = "autodiff";
-    version = "v1.0.2";
+    version = "v1.0.3";
     src = fetchFromGitHub {
       owner = "autodiff";
       repo = "autodiff";
-      rev = "v1.0.2";
+      rev = "v1.0.3";
       fetchSubmodules = false;
-      sha256 = "sha256-2ED7UiyOJw4OdGvihJ25lce127+lGjWyC7MaBKCyNmg=";
+      sha256 = "sha256-hdIbEIZrxA5EA3XY4MIazRv3DazUjpuDJRCgq8+kJQg=";
     };
   };
   clipcat = {
@@ -139,15 +139,15 @@
   };
   taskwarrior-to-dot = {
     pname = "taskwarrior-to-dot";
-    version = "ce707be843f4e6e19b1b5462392e927314f2ced4";
+    version = "3843a5d1e0144b610b9364f01882315b0e4ac454";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "taskwarrior-to-dot";
-      rev = "ce707be843f4e6e19b1b5462392e927314f2ced4";
+      rev = "3843a5d1e0144b610b9364f01882315b0e4ac454";
       fetchSubmodules = false;
-      sha256 = "sha256-QpLFmYq8U2KDU85Bz6YllBvqtbXcfEJSzLpXP4Qdp5Q=";
+      sha256 = "sha256-908FOAjlJObBWmeDw6dkBBMUY1YKHUuyeMvaiPHOdOo=";
     };
-    date = "2023-05-28";
+    date = "2023-07-01";
   };
   vdirsyncer = {
     pname = "vdirsyncer";

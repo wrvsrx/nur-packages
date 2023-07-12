@@ -16,7 +16,7 @@
     },
     "autobean-format": {
         "cargoLocks": null,
-        "date": "2023-05-30",
+        "date": "2023-07-05",
         "extract": null,
         "name": "autobean-format",
         "passthru": null,
@@ -28,15 +28,15 @@
             "name": null,
             "owner": "SEIAROTg",
             "repo": "autobean-format",
-            "rev": "46e49297d353dd999e72721a442e456152d6d18f",
-            "sha256": "sha256-KmX8Ppya29q6HNnNDjPnTNqzVcUVsHdcKsLJWcPO79s=",
+            "rev": "cd9f59148e4a8d5cbbbe132b9bd8e2a4ba2c657b",
+            "sha256": "sha256-G7YUvS1Bnp7XPBcBgARtkffxLo/qbKI0Yv9KxTpsIeM=",
             "type": "github"
         },
-        "version": "46e49297d353dd999e72721a442e456152d6d18f"
+        "version": "cd9f59148e4a8d5cbbbe132b9bd8e2a4ba2c657b"
     },
     "autobean-refactor": {
         "cargoLocks": null,
-        "date": "2023-06-02",
+        "date": "2023-07-01",
         "extract": null,
         "name": "autobean-refactor",
         "passthru": null,
@@ -48,11 +48,11 @@
             "name": null,
             "owner": "SEIAROTg",
             "repo": "autobean-refactor",
-            "rev": "12c4d6daa01b9971714b7357c0dc879a545f0808",
-            "sha256": "sha256-e71Jwvtmlsn3CyW1gItAbw28zlF3ON+K2rEiTRJ9y6U=",
+            "rev": "36fedaf8e7104d6da06b28936bcf6dae2b5267bf",
+            "sha256": "sha256-MxCVuk7kuAA0GixII4XbWGPDk54mwKUeK7s0gGVgnF8=",
             "type": "github"
         },
-        "version": "12c4d6daa01b9971714b7357c0dc879a545f0808"
+        "version": "36fedaf8e7104d6da06b28936bcf6dae2b5267bf"
     },
     "autodiff": {
         "cargoLocks": null,
@@ -68,11 +68,11 @@
             "name": null,
             "owner": "autodiff",
             "repo": "autodiff",
-            "rev": "v1.0.2",
-            "sha256": "sha256-2ED7UiyOJw4OdGvihJ25lce127+lGjWyC7MaBKCyNmg=",
+            "rev": "v1.0.3",
+            "sha256": "sha256-hdIbEIZrxA5EA3XY4MIazRv3DazUjpuDJRCgq8+kJQg=",
             "type": "github"
         },
-        "version": "v1.0.2"
+        "version": "v1.0.3"
     },
     "clipcat": {
         "cargoLocks": {
@@ -233,7 +233,7 @@
     },
     "taskwarrior-to-dot": {
         "cargoLocks": null,
-        "date": "2023-05-28",
+        "date": "2023-07-01",
         "extract": null,
         "name": "taskwarrior-to-dot",
         "passthru": null,
@@ -245,11 +245,11 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "taskwarrior-to-dot",
-            "rev": "ce707be843f4e6e19b1b5462392e927314f2ced4",
-            "sha256": "sha256-QpLFmYq8U2KDU85Bz6YllBvqtbXcfEJSzLpXP4Qdp5Q=",
+            "rev": "3843a5d1e0144b610b9364f01882315b0e4ac454",
+            "sha256": "sha256-908FOAjlJObBWmeDw6dkBBMUY1YKHUuyeMvaiPHOdOo=",
             "type": "github"
         },
-        "version": "ce707be843f4e6e19b1b5462392e927314f2ced4"
+        "version": "3843a5d1e0144b610b9364f01882315b0e4ac454"
     },
     "vdirsyncer": {
         "cargoLocks": null,
