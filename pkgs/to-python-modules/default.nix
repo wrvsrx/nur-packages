@@ -7,5 +7,5 @@ self: super: {
   autobean-refactor = self.callPackage ./autobean-refactor { source = sources.autobean-refactor; };
   vdirsyncer = self.callPackage ./vdirsyncer { inherit (super) vdirsyncer; source = sources.vdirsyncer; };
   compdb = self.callPackage ./compdb { source = sources.compdb; };
-  OpenEXR = self.callPackage ./OpenEXR { };
+  OpenEXR = self.callPackage ./OpenEXR { source = sources.OpenEXR; };
 }

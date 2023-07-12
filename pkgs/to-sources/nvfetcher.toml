@@ -52,3 +52,7 @@ fetch.github = "wrvsrx/coc-zk"
 [compdb]
 src.pypi = "compdb"
 fetch.pypi = "compdb"
+
+[OpenEXR]
+src.pypi = "OpenEXR"
+fetch.pypi = "OpenEXR"

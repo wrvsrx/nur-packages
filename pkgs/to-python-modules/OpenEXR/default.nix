@@ -2,16 +2,11 @@
 , openexr
 , typeguard
 , packaging
-, fetchPypi
+, source
 }:
 
-buildPythonPackage rec {
-  pname = "OpenEXR";
-  version = "1.3.9";
-  src = fetchPypi {
-    inherit pname version;
-    sha256 = "sha256-z/zROQYpHvGoGzacHA6Qdkjs0kNjZohzaR9EhmcEqyE=";
-  };
+buildPythonPackage {
+  inherit (source) pname version src;
   doCheck = false;
   patches = [ ./openexr.patch ];
   buildInputs = [ openexr ];
