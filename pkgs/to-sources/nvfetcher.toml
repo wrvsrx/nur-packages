@@ -56,3 +56,7 @@ fetch.pypi = "compdb"
 [OpenEXR]
 src.pypi = "OpenEXR"
 fetch.pypi = "OpenEXR"
+
+[googletrans]
+src.manual = "4.0.0rc1"
+fetch.pypi = "googletrans"

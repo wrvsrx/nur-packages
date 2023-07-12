@@ -27,6 +27,7 @@ let
             autobean-format
             autobean-refactor
             OpenEXR
+            googletrans
             ;
         };
       vim-plugins = pkgs-to-vim-plugins pkgs;

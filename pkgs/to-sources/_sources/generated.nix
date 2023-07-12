@@ -94,6 +94,14 @@
     };
     date = "2023-05-20";
   };
+  googletrans = {
+    pname = "googletrans";
+    version = "4.0.0rc1";
+    src = fetchurl {
+      url = "https://pypi.org/packages/source/g/googletrans/googletrans-4.0.0rc1.tar.gz";
+      sha256 = "sha256-dN9HsJLi1WZSIBnRSePx11cyVwrXbq+OFK6+/8Emw3I=";
+    };
+  };
   noto-fonts-emoji-monochrome = {
     pname = "noto-fonts-emoji-monochrome";
     version = "d5f498241b3b77beddce3a53ee802c34b1fa46c4";
