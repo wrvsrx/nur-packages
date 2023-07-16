@@ -82,8 +82,8 @@
       sha256 = "sha256-c0cbrdAeXmnIFvs6Tg0BTwmcKCbuKD31cWzXsZAred0=";
     };
   };
-  cycodebase = {
-    pname = "cycodebase";
+  cyCodeBase = {
+    pname = "cyCodeBase";
     version = "537433d04eb35755aa2ab0738bfe978aa42e3ce9";
     src = fetchFromGitHub {
       owner = "cemyuksel";

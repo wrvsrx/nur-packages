@@ -136,11 +136,11 @@
         },
         "version": "0.2.0"
     },
-    "cycodebase": {
+    "cyCodeBase": {
         "cargoLocks": null,
         "date": "2023-06-03",
         "extract": null,
-        "name": "cycodebase",
+        "name": "cyCodeBase",
         "passthru": null,
         "pinned": false,
         "src": {

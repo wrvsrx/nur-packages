@@ -61,6 +61,6 @@ fetch.pypi = "OpenEXR"
 src.manual = "4.0.0rc1"
 fetch.pypi = "googletrans"
 
-[cycodebase]
+[cyCodeBase]
 src.git = "https://github.com/cemyuksel/cyCodeBase"
 fetch.github = "cemyuksel/cyCodeBase"
