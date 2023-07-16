@@ -136,6 +136,26 @@
         },
         "version": "0.2.0"
     },
+    "cycodebase": {
+        "cargoLocks": null,
+        "date": "2023-06-03",
+        "extract": null,
+        "name": "cycodebase",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "cemyuksel",
+            "repo": "cyCodeBase",
+            "rev": "537433d04eb35755aa2ab0738bfe978aa42e3ce9",
+            "sha256": "sha256-io9JkH2cVnmBV39764LWCBHCRV8BW92rOZ4vyKI9ASE=",
+            "type": "github"
+        },
+        "version": "537433d04eb35755aa2ab0738bfe978aa42e3ce9"
+    },
     "giraffe-wallpaper": {
         "cargoLocks": null,
         "date": "2023-05-20",

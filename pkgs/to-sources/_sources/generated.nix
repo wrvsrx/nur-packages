@@ -82,6 +82,18 @@
       sha256 = "sha256-c0cbrdAeXmnIFvs6Tg0BTwmcKCbuKD31cWzXsZAred0=";
     };
   };
+  cycodebase = {
+    pname = "cycodebase";
+    version = "537433d04eb35755aa2ab0738bfe978aa42e3ce9";
+    src = fetchFromGitHub {
+      owner = "cemyuksel";
+      repo = "cyCodeBase";
+      rev = "537433d04eb35755aa2ab0738bfe978aa42e3ce9";
+      fetchSubmodules = false;
+      sha256 = "sha256-io9JkH2cVnmBV39764LWCBHCRV8BW92rOZ4vyKI9ASE=";
+    };
+    date = "2023-06-03";
+  };
   giraffe-wallpaper = {
     pname = "giraffe-wallpaper";
     version = "6fc686fe7b43cb6be8eaf3a9dc42177eb355eadd";
