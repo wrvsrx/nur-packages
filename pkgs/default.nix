@@ -28,6 +28,7 @@ let
             autobean-refactor
             OpenEXR
             googletrans
+            jaxtyping
             ;
         };
       vim-plugins = pkgs-to-vim-plugins pkgs;

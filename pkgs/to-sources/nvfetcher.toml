@@ -64,3 +64,7 @@ fetch.pypi = "googletrans"
 [cyCodeBase]
 src.git = "https://github.com/cemyuksel/cyCodeBase"
 fetch.github = "cemyuksel/cyCodeBase"
+
+[jaxtyping]
+src.pypi = "jaxtyping"
+fetch.pypi = "jaxtyping"

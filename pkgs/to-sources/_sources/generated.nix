@@ -114,6 +114,14 @@
       sha256 = "sha256-dN9HsJLi1WZSIBnRSePx11cyVwrXbq+OFK6+/8Emw3I=";
     };
   };
+  jaxtyping = {
+    pname = "jaxtyping";
+    version = "0.2.20";
+    src = fetchurl {
+      url = "https://pypi.org/packages/source/j/jaxtyping/jaxtyping-0.2.20.tar.gz";
+      sha256 = "sha256-3CvRXgCy84rF3cAtOouwIC8XA62RAx6RS8d6do2duMU=";
+    };
+  };
   noto-fonts-emoji-monochrome = {
     pname = "noto-fonts-emoji-monochrome";
     version = "d5f498241b3b77beddce3a53ee802c34b1fa46c4";

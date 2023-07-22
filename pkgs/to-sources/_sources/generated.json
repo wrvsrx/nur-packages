@@ -191,6 +191,21 @@
         },
         "version": "4.0.0rc1"
     },
+    "jaxtyping": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "jaxtyping",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-3CvRXgCy84rF3cAtOouwIC8XA62RAx6RS8d6do2duMU=",
+            "type": "url",
+            "url": "https://pypi.org/packages/source/j/jaxtyping/jaxtyping-0.2.20.tar.gz"
+        },
+        "version": "0.2.20"
+    },
     "noto-fonts-emoji-monochrome": {
         "cargoLocks": null,
         "date": "2023-03-28",
