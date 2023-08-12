@@ -8,7 +8,7 @@ index 920f055..39378eb 100644
  include(autodiffInstallCMakeConfigFiles)
 +
 +configure_file(cmake/autodiff.pc.in autodiff.pc @ONLY)
-+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/autodiff.pc DESTINATION "${CMAKE_INSTALL_LIBDIR}/pkgconfig")
++install(FILES ${CMAKE_CURRENT_BINARY_DIR}/autodiff.pc DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pkgconfig")
 diff --git a/cmake/autodiff.pc.in b/cmake/autodiff.pc.in
 new file mode 100644
 index 0000000..95aada6
@@ -17,8 +17,8 @@ index 0000000..95aada6
 @@ -0,0 +1,9 @@
 +prefix=@CMAKE_INSTALL_PREFIX@
 +exec_prefix=${prefix}
-+libdir=${prefix}/@LIBRARY_INSTALL_DIR@
-+includedir=${prefix}/@INCLUDE_INSTALL_DIR@
++libdir=@CMAKE_INSTALL_FULL_LIBDIR@
++includedir=@CMAKE_INSTALL_FULL_INCLUDEDIR@
 +
 +Name: autodiff
 +Description: automatic differentiation made easier for C++
