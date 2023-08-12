@@ -19,4 +19,5 @@ in
   noto-fonts-emoji-monochrome = callPackage ./noto-fonts-emoji-monochrome { source = sources.noto-fonts-emoji-monochrome; };
   cyCodeBase = callPackage ./cyCodeBase { source = sources.cyCodeBase; };
   quill-cpp = callPackage ./quill-cpp { source = sources.quill-cpp; };
+  lyra = callPackage ./lyra { source = sources.lyra; };
 }

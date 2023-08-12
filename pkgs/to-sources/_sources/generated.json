@@ -206,6 +206,26 @@
         },
         "version": "0.2.20"
     },
+    "lyra": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "lyra",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "bfgroup",
+            "repo": "Lyra",
+            "rev": "1.6.1",
+            "sha256": "sha256-tS2SPLiKaL8C35AmOXyJPstFUfynkE/A53rurqiySbI=",
+            "type": "github"
+        },
+        "version": "1.6.1"
+    },
     "noto-fonts-emoji-monochrome": {
         "cargoLocks": null,
         "date": "2023-03-28",

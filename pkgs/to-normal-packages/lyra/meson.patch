@@ -1,0 +1,110 @@
+diff --git a/include/meson.build b/include/meson.build
+new file mode 100644
+index 0000000..ace92d9
+--- /dev/null
++++ b/include/meson.build
+@@ -0,0 +1,38 @@
++headers = [
++	'lyra/arg.hpp',
++	'lyra/args.hpp',
++	'lyra/arguments.hpp',
++	'lyra/cli.hpp',
++	'lyra/cli_parser.hpp',
++	'lyra/command.hpp',
++	'lyra/detail/bound.hpp',
++	'lyra/detail/choices.hpp',
++	'lyra/detail/deprecated_parser_customization.hpp',
++	'lyra/detail/from_string.hpp',
++	'lyra/detail/invoke_lambda.hpp',
++	'lyra/detail/parse.hpp',
++	'lyra/detail/print.hpp',
++	'lyra/detail/result.hpp',
++	'lyra/detail/tokens.hpp',
++	'lyra/detail/trait_utils.hpp',
++	'lyra/detail/unary_lambda_traits.hpp',
++	'lyra/exe_name.hpp',
++	'lyra/group.hpp',
++	'lyra/help.hpp',
++	'lyra/literal.hpp',
++	'lyra/lyra.hpp',
++	'lyra/main.hpp',
++	'lyra/opt.hpp',
++	'lyra/option_style.hpp',
++	'lyra/parser.hpp',
++	'lyra/parser_result.hpp',
++	'lyra/val.hpp',
++	'lyra/version.hpp'
++]
++
++inc_dir = include_directories('.')
++
++foreach header : headers
++	install_headers(header, preserve_path: true)
++endforeach
++
+diff --git a/meson.build b/meson.build
+index 4e75220..88099f5 100644
+--- a/meson.build
++++ b/meson.build
+@@ -30,49 +30,20 @@
+ #   dependencies : lyra_dep)
+ # ----
+ 
+-project('Lyra','cpp',
+-	version: '1.6',
++project('lyra','cpp',
++	version: '1.6.1',
+ 	default_options : ['cpp_std=c++11', 'cpp_eh=none', 'b_lto=true', 'warning_level=3'],
+ 	license: 'BSL-1.0')
+ 
+-src = [
+-	'include/lyra/arg.hpp',
+-	'include/lyra/args.hpp',
+-	'include/lyra/arguments.hpp',
+-	'include/lyra/cli.hpp',
+-	'include/lyra/cli_parser.hpp',
+-	'include/lyra/command.hpp',
+-	'include/lyra/detail/bound.hpp',
+-	'include/lyra/detail/choices.hpp',
+-	'include/lyra/detail/deprecated_parser_customization.hpp',
+-	'include/lyra/detail/from_string.hpp',
+-	'include/lyra/detail/invoke_lambda.hpp',
+-	'include/lyra/detail/parse.hpp',
+-	'include/lyra/detail/print.hpp',
+-	'include/lyra/detail/result.hpp',
+-	'include/lyra/detail/tokens.hpp',
+-	'include/lyra/detail/trait_utils.hpp',
+-	'include/lyra/detail/unary_lambda_traits.hpp',
+-	'include/lyra/exe_name.hpp',
+-	'include/lyra/group.hpp',
+-	'include/lyra/help.hpp',
+-	'include/lyra/literal.hpp',
+-	'include/lyra/lyra.hpp',
+-	'include/lyra/main.hpp',
+-	'include/lyra/opt.hpp',
+-	'include/lyra/option_style.hpp',
+-	'include/lyra/parser.hpp',
+-	'include/lyra/parser_result.hpp',
+-	'include/lyra/val.hpp',
+-	'include/lyra/version.hpp'
+-]
++subdir('include')
+ 
+-inc_dir = [include_directories('include')]
++lyra_dep = declare_dependency(include_directories: inc_dir)
+ 
+-lyra_lib = shared_library('lyra',
+-	sources : src,
+-	include_directories: inc_dir,
+-	install: true,
+-	install_dir : '/usr/lib')
+-
+-lyra_dep = declare_dependency(include_directories: inc_dir, link_with: lyra_lib)
++pkg = import('pkgconfig')
++pkg.generate(
++	subdirs : 'lyra',
++	version : meson.project_version(),
++	name : meson.project_name(),
++	description : 'A simple to use, composing, header only, command line arguments parser for C++ 11 and beyond.',
++	url: 'https://github.com/bfgroup/Lyra',
++)

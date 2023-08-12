@@ -72,3 +72,7 @@ fetch.pypi = "jaxtyping"
 [quill-cpp]
 src.github_tag = "odygrd/quill"
 fetch.github = "odygrd/quill"
+
+[lyra]
+src.github_tag = "bfgroup/Lyra"
+fetch.github = "bfgroup/Lyra"

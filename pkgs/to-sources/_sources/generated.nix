@@ -122,6 +122,17 @@
       sha256 = "sha256-3CvRXgCy84rF3cAtOouwIC8XA62RAx6RS8d6do2duMU=";
     };
   };
+  lyra = {
+    pname = "lyra";
+    version = "1.6.1";
+    src = fetchFromGitHub {
+      owner = "bfgroup";
+      repo = "Lyra";
+      rev = "1.6.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-tS2SPLiKaL8C35AmOXyJPstFUfynkE/A53rurqiySbI=";
+    };
+  };
   noto-fonts-emoji-monochrome = {
     pname = "noto-fonts-emoji-monochrome";
     version = "d5f498241b3b77beddce3a53ee802c34b1fa46c4";
