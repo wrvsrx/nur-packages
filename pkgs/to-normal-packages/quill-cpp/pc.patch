@@ -1,0 +1,22 @@
+diff --git a/quill/cmake/quill.pc.in b/quill/cmake/quill.pc.in
+index c89694f..97c87fe 100644
+--- a/quill/cmake/quill.pc.in
++++ b/quill/cmake/quill.pc.in
+@@ -1,8 +1,8 @@
+ prefix=@CMAKE_INSTALL_PREFIX@
+ exec_prefix=@CMAKE_INSTALL_PREFIX@
+ 
+-libdir=${exec_prefix}/@CMAKE_INSTALL_LIBDIR@
+-includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@
++libdir=@CMAKE_INSTALL_FULL_LIBDIR@
++includedir=@CMAKE_INSTALL_FULL_INCLUDEDIR@
+ 
+ Name: quill
+ Description: Low Latency C++ Logging Library
+@@ -10,4 +10,4 @@ URL: https://github.com/odygrd/quill
+ Version: @QUILL_VERSION@
+ CFlags: -I${includedir}
+ Libs: -L${libdir} -lquill -lpthread
+-Requires: @PKG_CONFIG_REQUIRES@
+\ No newline at end of file
++Requires: @PKG_CONFIG_REQUIRES@

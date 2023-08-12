@@ -18,4 +18,5 @@ in
   taskwarrior-to-dot = haskellPackages.callPackage ./taskwarrior-to-dot { source = sources.taskwarrior-to-dot; };
   noto-fonts-emoji-monochrome = callPackage ./noto-fonts-emoji-monochrome { source = sources.noto-fonts-emoji-monochrome; };
   cyCodeBase = callPackage ./cyCodeBase { source = sources.cyCodeBase; };
+  quill-cpp = callPackage ./quill-cpp { source = sources.quill-cpp; };
 }

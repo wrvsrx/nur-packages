@@ -157,6 +157,17 @@
       sha256 = "sha256-JAhA7bdzcRWokvHjMt5Hk6uwOkNFxalQ2xe0Z4bzRp4=";
     };
   };
+  quill-cpp = {
+    pname = "quill-cpp";
+    version = "v3.3.1";
+    src = fetchFromGitHub {
+      owner = "odygrd";
+      repo = "quill";
+      rev = "v3.3.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-aPGAinaws60aGinUD926QgM3Mywym7tnNXJRq1xtXA0=";
+    };
+  };
   taskwarrior-to-dot = {
     pname = "taskwarrior-to-dot";
     version = "3843a5d1e0144b610b9364f01882315b0e4ac454";

@@ -68,3 +68,7 @@ fetch.github = "cemyuksel/cyCodeBase"
 [jaxtyping]
 src.pypi = "jaxtyping"
 fetch.pypi = "jaxtyping"
+
+[quill-cpp]
+src.github_tag = "odygrd/quill"
+fetch.github = "odygrd/quill"
