@@ -1,4 +1,11 @@
-{ lib, stdenv, fetchFromGitHub, fetchpatch, cmake, eigen, catch2_3, python3 ? null, source }:
+{ lib
+, stdenv
+, cmake
+, eigen
+, catch2_3
+, python3 ? null
+, source
+}:
 
 stdenv.mkDerivation rec {
   inherit (source) pname src;
