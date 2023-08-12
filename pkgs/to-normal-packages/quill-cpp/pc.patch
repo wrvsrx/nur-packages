@@ -1,3 +1,16 @@
+diff --git a/quill/CMakeLists.txt b/quill/CMakeLists.txt
+index 10dee3d..99f7cb2 100644
+--- a/quill/CMakeLists.txt
++++ b/quill/CMakeLists.txt
+@@ -222,7 +222,7 @@ if (QUILL_MASTER_PROJECT OR QUILL_ENABLE_INSTALL)
+     set(QUILL_INC_DIR ${CMAKE_INSTALL_INCLUDEDIR} CACHE STRING
+             "Installation directory for include files, relative to ${CMAKE_INSTALL_PREFIX}.")
+ 
+-    set(QUILL_PKGCONFIG_DIR ${CMAKE_INSTALL_PREFIX}/pkgconfig CACHE PATH
++    set(QUILL_PKGCONFIG_DIR ${CMAKE_INSTALL_PREFIX}/share/pkgconfig CACHE PATH
+             "Installation directory for pkgconfig (.pc) files, relative to ${CMAKE_INSTALL_PREFIX}.")
+ 
+     # Generate the version, config and target files into the build directory.
 diff --git a/quill/cmake/quill.pc.in b/quill/cmake/quill.pc.in
 index c89694f..97c87fe 100644
 --- a/quill/cmake/quill.pc.in
