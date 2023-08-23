@@ -32,5 +32,5 @@ mkDerivation {
   ];
   homepage = "https://github.com/wrvsrx/taskwarrior-to-dot";
   license = lib.licenses.mit;
-  mainProgram = "taskwarrior-to-dot";
+  mainProgram = "taskwarrior-utils";
 }

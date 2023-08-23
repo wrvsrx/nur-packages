@@ -306,11 +306,11 @@
         },
         "version": "v3.3.1"
     },
-    "taskwarrior-to-dot": {
+    "taskwarrior-utils": {
         "cargoLocks": null,
-        "date": "2023-07-01",
+        "date": "2023-08-23",
         "extract": null,
-        "name": "taskwarrior-to-dot",
+        "name": "taskwarrior-utils",
         "passthru": null,
         "pinned": false,
         "src": {
@@ -320,11 +320,11 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "taskwarrior-to-dot",
-            "rev": "3843a5d1e0144b610b9364f01882315b0e4ac454",
-            "sha256": "sha256-908FOAjlJObBWmeDw6dkBBMUY1YKHUuyeMvaiPHOdOo=",
+            "rev": "e5db1281e40d8230c65d4313f4d50d841497d694",
+            "sha256": "sha256-Xk8I/qcXmj4wfvDCHflBY42SG8jJEtNpYKXVx3lRmoM=",
             "type": "github"
         },
-        "version": "3843a5d1e0144b610b9364f01882315b0e4ac454"
+        "version": "e5db1281e40d8230c65d4313f4d50d841497d694"
     },
     "vdirsyncer": {
         "cargoLocks": null,

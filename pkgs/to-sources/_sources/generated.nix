@@ -179,17 +179,17 @@
       sha256 = "sha256-aPGAinaws60aGinUD926QgM3Mywym7tnNXJRq1xtXA0=";
     };
   };
-  taskwarrior-to-dot = {
-    pname = "taskwarrior-to-dot";
-    version = "3843a5d1e0144b610b9364f01882315b0e4ac454";
+  taskwarrior-utils = {
+    pname = "taskwarrior-utils";
+    version = "e5db1281e40d8230c65d4313f4d50d841497d694";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "taskwarrior-to-dot";
-      rev = "3843a5d1e0144b610b9364f01882315b0e4ac454";
+      rev = "e5db1281e40d8230c65d4313f4d50d841497d694";
       fetchSubmodules = false;
-      sha256 = "sha256-908FOAjlJObBWmeDw6dkBBMUY1YKHUuyeMvaiPHOdOo=";
+      sha256 = "sha256-Xk8I/qcXmj4wfvDCHflBY42SG8jJEtNpYKXVx3lRmoM=";
     };
-    date = "2023-07-01";
+    date = "2023-08-23";
   };
   vdirsyncer = {
     pname = "vdirsyncer";

@@ -16,7 +16,7 @@ fetch.github = "wrvsrx/giraffe-wallpaper"
 src.github_tag = "autodiff/autodiff"
 fetch.github = "autodiff/autodiff"
 
-[taskwarrior-to-dot]
+[taskwarrior-utils]
 src.git = "https://github.com/wrvsrx/taskwarrior-to-dot"
 fetch.github = "wrvsrx/taskwarrior-to-dot"
 

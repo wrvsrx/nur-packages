@@ -15,7 +15,7 @@ in
   clipcat = callPackage ./clipcat { source = sources.clipcat; };
   giraffe-wallpaper = callPackage ./giraffe-wallpaper { source = sources.giraffe-wallpaper; };
   osc52 = haskellPackages.callPackage ./osc52 { source = sources.osc52; };
-  taskwarrior-to-dot = haskellPackages.callPackage ./taskwarrior-to-dot { source = sources.taskwarrior-to-dot; };
+  taskwarrior-utils = haskellPackages.callPackage ./taskwarrior-utils { source = sources.taskwarrior-utils; };
   noto-fonts-emoji-monochrome = callPackage ./noto-fonts-emoji-monochrome { source = sources.noto-fonts-emoji-monochrome; };
   cyCodeBase = callPackage ./cyCodeBase { source = sources.cyCodeBase; };
   quill-cpp = callPackage ./quill-cpp { source = sources.quill-cpp; };
