@@ -3,7 +3,7 @@ let
   inherit (pkgs) callPackage haskellPackages;
   sources = to-sources { inherit pkgs; };
 in
-{
+rec {
   auth-thu = callPackage ./auth-thu { };
   autodiff = callPackage ./autodiff { source = sources.autodiff; };
   inherit (callPackage ./noto-fonts-cjk { })
@@ -20,4 +20,6 @@ in
   cyCodeBase = callPackage ./cyCodeBase { source = sources.cyCodeBase; };
   quill-cpp = callPackage ./quill-cpp { source = sources.quill-cpp; };
   lyra = callPackage ./lyra { source = sources.lyra; };
+  trime-data = callPackage ./trime-data { };
+  copy-trime-data-to = callPackage ./copy-trime-data-to { inherit trime-data; };
 }
