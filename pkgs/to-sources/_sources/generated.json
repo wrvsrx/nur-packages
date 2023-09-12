@@ -268,7 +268,7 @@
     },
     "osc52": {
         "cargoLocks": null,
-        "date": null,
+        "date": "2023-09-12",
         "extract": null,
         "name": "osc52",
         "passthru": null,
@@ -280,11 +280,11 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "osc52",
-            "rev": "0.1.0.0",
-            "sha256": "sha256-JAhA7bdzcRWokvHjMt5Hk6uwOkNFxalQ2xe0Z4bzRp4=",
+            "rev": "477b99c8a1053183ede9978b2fe00dbcdb7c4b91",
+            "sha256": "sha256-A4SIzkKs02csNGaETmU/9P0n8mjx6hjeTUbTjSi8unI=",
             "type": "github"
         },
-        "version": "0.1.0.0"
+        "version": "477b99c8a1053183ede9978b2fe00dbcdb7c4b91"
     },
     "quill-cpp": {
         "cargoLocks": null,

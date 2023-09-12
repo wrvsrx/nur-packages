@@ -159,14 +159,15 @@
   };
   osc52 = {
     pname = "osc52";
-    version = "0.1.0.0";
+    version = "477b99c8a1053183ede9978b2fe00dbcdb7c4b91";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "osc52";
-      rev = "0.1.0.0";
+      rev = "477b99c8a1053183ede9978b2fe00dbcdb7c4b91";
       fetchSubmodules = false;
-      sha256 = "sha256-JAhA7bdzcRWokvHjMt5Hk6uwOkNFxalQ2xe0Z4bzRp4=";
+      sha256 = "sha256-A4SIzkKs02csNGaETmU/9P0n8mjx6hjeTUbTjSi8unI=";
     };
+    date = "2023-09-12";
   };
   quill-cpp = {
     pname = "quill-cpp";

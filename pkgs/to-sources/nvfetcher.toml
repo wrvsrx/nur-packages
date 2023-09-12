@@ -5,7 +5,7 @@ fetch.github = "wrvsrx/clipcat"
 cargo_locks = [ "Cargo.lock" ]
 
 [osc52]
-src.github_tag = "wrvsrx/osc52"
+src.git = "https://github.com/wrvsrx/osc52"
 fetch.github = "wrvsrx/osc52"
 
 [giraffe-wallpaper]
