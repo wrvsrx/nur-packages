@@ -22,4 +22,5 @@ rec {
   lyra = callPackage ./lyra { source = sources.lyra; };
   trime-data = callPackage ./trime-data { };
   copy-trime-data-to = callPackage ./copy-trime-data-to { inherit trime-data; };
+  calibre = callPackage ./calibre { inherit (pkgs) calibre; };
 }
