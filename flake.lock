@@ -18,17 +18,18 @@
     },
     "flake-lock": {
       "inputs": {
+        "flake-compat": "flake-compat",
         "flake-parts": "flake-parts",
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs",
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1696232150,
-        "narHash": "sha256-YCMoUx9xiX59DMnVsmyuJmZcLO/8hTsj6cIM9JB83qk=",
+        "lastModified": 1696235796,
+        "narHash": "sha256-KHjE0X0sJSlOk9NIEZK+ralMrdEOa8HEuYvo0uNqaxQ=",
         "owner": "wrvsrx",
         "repo": "flake-lock",
-        "rev": "90eab498f9dbbeddd50cec3967d8906aa2be9196",
+        "rev": "9a6106b5a11e1c5df2511d329d71dfb6b4f08c26",
         "type": "github"
       },
       "original": {
@@ -97,7 +98,10 @@
     },
     "nvfetcher": {
       "inputs": {
-        "flake-compat": "flake-compat",
+        "flake-compat": [
+          "flake-lock",
+          "flake-compat"
+        ],
         "flake-utils": [
           "flake-lock",
           "flake-utils"

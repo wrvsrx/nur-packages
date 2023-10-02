@@ -8,6 +8,7 @@
       url = "github:berberman/nvfetcher";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-lock/flake-utils";
+      inputs.flake-compat.follows = "flake-lock/flake-compat";
     };
   };
   outputs = inputs': inputs'.flake-parts.lib.mkFlake { inputs = inputs'; } ({ withSystem, inputs, ... }:
