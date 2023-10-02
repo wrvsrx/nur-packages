@@ -1,11 +1,11 @@
 { pkgs, to-sources }:
 let
   sources = to-sources { inherit pkgs; };
-  inherit (pkgs.vimUtils) buildVimPluginFrom2Nix;
+  inherit (pkgs.vimUtils) buildVimPlugin;
   inherit (pkgs) callPackage;
 in
 {
-  nvim-numbertoggle = buildVimPluginFrom2Nix {
+  nvim-numbertoggle = buildVimPlugin {
     inherit (sources.nvim-numbertoggle) pname version src;
     meta.homepage = "https://github.com/sitiom/nvim-numbertoggle";
   };
