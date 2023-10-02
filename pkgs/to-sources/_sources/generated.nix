@@ -11,15 +11,15 @@
   };
   autobean-format = {
     pname = "autobean-format";
-    version = "cd9f59148e4a8d5cbbbe132b9bd8e2a4ba2c657b";
+    version = "7849d89eefb433036736bbb1c3168eb02337d34c";
     src = fetchFromGitHub {
       owner = "SEIAROTg";
       repo = "autobean-format";
-      rev = "cd9f59148e4a8d5cbbbe132b9bd8e2a4ba2c657b";
+      rev = "7849d89eefb433036736bbb1c3168eb02337d34c";
       fetchSubmodules = false;
-      sha256 = "sha256-G7YUvS1Bnp7XPBcBgARtkffxLo/qbKI0Yv9KxTpsIeM=";
+      sha256 = "sha256-UvPHcJjgLJzhvh+CGPO8oco0eXc5gTJ1wHXV5pYwnV0=";
     };
-    date = "2023-07-05";
+    date = "2023-09-17";
   };
   autobean-refactor = {
     pname = "autobean-refactor";
@@ -84,15 +84,15 @@
   };
   cyCodeBase = {
     pname = "cyCodeBase";
-    version = "537433d04eb35755aa2ab0738bfe978aa42e3ce9";
+    version = "ede026f5c1976faa90709690a4290161ed05c19b";
     src = fetchFromGitHub {
       owner = "cemyuksel";
       repo = "cyCodeBase";
-      rev = "537433d04eb35755aa2ab0738bfe978aa42e3ce9";
+      rev = "ede026f5c1976faa90709690a4290161ed05c19b";
       fetchSubmodules = false;
-      sha256 = "sha256-io9JkH2cVnmBV39764LWCBHCRV8BW92rOZ4vyKI9ASE=";
+      sha256 = "sha256-1wBpadgCNbcrp4kRn4XLjbthtxuzMuOMNC/hbREHbiE=";
     };
-    date = "2023-06-03";
+    date = "2023-07-26";
   };
   giraffe-wallpaper = {
     pname = "giraffe-wallpaper";
@@ -116,10 +116,10 @@
   };
   jaxtyping = {
     pname = "jaxtyping";
-    version = "0.2.20";
+    version = "0.2.22";
     src = fetchurl {
-      url = "https://pypi.org/packages/source/j/jaxtyping/jaxtyping-0.2.20.tar.gz";
-      sha256 = "sha256-3CvRXgCy84rF3cAtOouwIC8XA62RAx6RS8d6do2duMU=";
+      url = "https://pypi.org/packages/source/j/jaxtyping/jaxtyping-0.2.22.tar.gz";
+      sha256 = "sha256-rfCmswmOx6IBZa29wBnpDxtSSURiNntdEsCl6iVV0iM=";
     };
   };
   lyra = {
@@ -147,15 +147,15 @@
   };
   nvim-numbertoggle = {
     pname = "nvim-numbertoggle";
-    version = "1dcc1507578f6f216917065da9dac169670dbcd3";
+    version = "50fef7e421a27294e834084625ad0dd8cffee72c";
     src = fetchFromGitHub {
       owner = "sitiom";
       repo = "nvim-numbertoggle";
-      rev = "1dcc1507578f6f216917065da9dac169670dbcd3";
+      rev = "50fef7e421a27294e834084625ad0dd8cffee72c";
       fetchSubmodules = false;
-      sha256 = "sha256-AYuSdolDXPZC2hZ7i/Mgg3iAP0SYrn7PcIGpDHXTn7c=";
+      sha256 = "sha256-QBK3blWxY6RBIDgRM/Wig+D1KX/zOkmnNGF1Xz2x8tg=";
     };
-    date = "2023-05-02";
+    date = "2023-09-05";
   };
   osc52 = {
     pname = "osc52";
@@ -182,15 +182,15 @@
   };
   taskwarrior-utils = {
     pname = "taskwarrior-utils";
-    version = "e5db1281e40d8230c65d4313f4d50d841497d694";
+    version = "8128ff22e672de756f1904031cd258587eadb5f4";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "taskwarrior-to-dot";
-      rev = "e5db1281e40d8230c65d4313f4d50d841497d694";
+      rev = "8128ff22e672de756f1904031cd258587eadb5f4";
       fetchSubmodules = false;
-      sha256 = "sha256-Xk8I/qcXmj4wfvDCHflBY42SG8jJEtNpYKXVx3lRmoM=";
+      sha256 = "sha256-KndkuGNGLDAMcn1duWnuhAMhtQDo27+MjiTOVfWOJYg=";
     };
-    date = "2023-08-23";
+    date = "2023-08-24";
   };
   vdirsyncer = {
     pname = "vdirsyncer";
