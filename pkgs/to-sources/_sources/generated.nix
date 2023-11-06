@@ -62,6 +62,18 @@
     };
     date = "2023-01-14";
   };
+  cnpy = {
+    pname = "cnpy";
+    version = "4e8810b1a8637695171ed346ce68f6984e585ef4";
+    src = fetchFromGitHub {
+      owner = "rogersce";
+      repo = "cnpy";
+      rev = "4e8810b1a8637695171ed346ce68f6984e585ef4";
+      fetchSubmodules = false;
+      sha256 = "sha256-NMPDpeNoqvqAhwQk4J+TFw+BtNLI4R+CXpzXQ6hB/LU=";
+    };
+    date = "2018-05-31";
+  };
   coc-zk = {
     pname = "coc-zk";
     version = "7bba1b4f9641d91ab54b5b5d46c3465bce59cc0b";

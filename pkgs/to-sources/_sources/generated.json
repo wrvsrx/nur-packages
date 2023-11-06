@@ -101,6 +101,26 @@
         },
         "version": "13b7c4e4065721c4ea6839a8b9d33d0324a65b1b"
     },
+    "cnpy": {
+        "cargoLocks": null,
+        "date": "2018-05-31",
+        "extract": null,
+        "name": "cnpy",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "rogersce",
+            "repo": "cnpy",
+            "rev": "4e8810b1a8637695171ed346ce68f6984e585ef4",
+            "sha256": "sha256-NMPDpeNoqvqAhwQk4J+TFw+BtNLI4R+CXpzXQ6hB/LU=",
+            "type": "github"
+        },
+        "version": "4e8810b1a8637695171ed346ce68f6984e585ef4"
+    },
     "coc-zk": {
         "cargoLocks": null,
         "date": "2023-05-14",

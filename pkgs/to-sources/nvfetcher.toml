@@ -84,3 +84,7 @@ fetch.github = "nyue/hougeo"
 [happly]
 src.git = "https://github.com/nmwsharp/happly"
 fetch.github = "nmwsharp/happly"
+
+[cnpy]
+src.git = "https://github.com/rogersce/cnpy"
+fetch.github = "rogersce/cnpy"
