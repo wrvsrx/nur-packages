@@ -114,6 +114,18 @@
       sha256 = "sha256-dN9HsJLi1WZSIBnRSePx11cyVwrXbq+OFK6+/8Emw3I=";
     };
   };
+  happly = {
+    pname = "happly";
+    version = "cfa2611550bc7da65855a78af0574b65deb81766";
+    src = fetchFromGitHub {
+      owner = "nmwsharp";
+      repo = "happly";
+      rev = "cfa2611550bc7da65855a78af0574b65deb81766";
+      fetchSubmodules = false;
+      sha256 = "sha256-fHExfJ6WpOHEvFw4M9l9Ur1AaHQfSlzaKcq4dylYhpk=";
+    };
+    date = "2022-01-06";
+  };
   hougeo = {
     pname = "hougeo";
     version = "7e48d2bda0f94fc96b2d8b2917d5ef306ba83c97";

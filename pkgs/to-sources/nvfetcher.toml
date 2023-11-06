@@ -80,3 +80,7 @@ fetch.github = "bfgroup/Lyra"
 [hougeo]
 src.git = "https://github.com/nyue/hougeo"
 fetch.github = "nyue/hougeo"
+
+[happly]
+src.git = "https://github.com/nmwsharp/happly"
+fetch.github = "nmwsharp/happly"

@@ -19,4 +19,5 @@ rec {
   trime-data = callPackage ./trime-data { };
   copy-trime-data-to = callPackage ./copy-trime-data-to { inherit trime-data; };
   hougeo = callPackage ./hougeo { source = sources.hougeo; };
+  happly = callPackage ./happly { source = sources.happly; };
 }
