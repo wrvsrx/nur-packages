@@ -114,6 +114,18 @@
       sha256 = "sha256-dN9HsJLi1WZSIBnRSePx11cyVwrXbq+OFK6+/8Emw3I=";
     };
   };
+  hougeo = {
+    pname = "hougeo";
+    version = "7e48d2bda0f94fc96b2d8b2917d5ef306ba83c97";
+    src = fetchFromGitHub {
+      owner = "nyue";
+      repo = "hougeo";
+      rev = "7e48d2bda0f94fc96b2d8b2917d5ef306ba83c97";
+      fetchSubmodules = false;
+      sha256 = "sha256-QbPT7oJH835hfdP+o2ON9gQliuktDu4vmS5zzyG8Wfg=";
+    };
+    date = "2015-10-31";
+  };
   jaxtyping = {
     pname = "jaxtyping";
     version = "0.2.22";

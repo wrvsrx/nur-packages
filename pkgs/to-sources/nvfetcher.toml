@@ -76,3 +76,7 @@ fetch.github = "odygrd/quill"
 [lyra]
 src.github_tag = "bfgroup/Lyra"
 fetch.github = "bfgroup/Lyra"
+
+[hougeo]
+src.git = "https://github.com/nyue/hougeo"
+fetch.github = "nyue/hougeo"

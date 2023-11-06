@@ -191,6 +191,26 @@
         },
         "version": "4.0.0rc1"
     },
+    "hougeo": {
+        "cargoLocks": null,
+        "date": "2015-10-31",
+        "extract": null,
+        "name": "hougeo",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "nyue",
+            "repo": "hougeo",
+            "rev": "7e48d2bda0f94fc96b2d8b2917d5ef306ba83c97",
+            "sha256": "sha256-QbPT7oJH835hfdP+o2ON9gQliuktDu4vmS5zzyG8Wfg=",
+            "type": "github"
+        },
+        "version": "7e48d2bda0f94fc96b2d8b2917d5ef306ba83c97"
+    },
     "jaxtyping": {
         "cargoLocks": null,
         "date": null,
