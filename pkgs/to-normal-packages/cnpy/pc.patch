@@ -21,5 +21,6 @@ index 0000000..0b4a408
 +
 +Name: cnpy
 +Description: library to read/write .npy and .npz files in C/C++
++Version: undefined
 +Libs: -L${libdir} -lcnpy
 +Cflags: -I${includedir}

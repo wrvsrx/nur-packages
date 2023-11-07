@@ -21,6 +21,7 @@ index 0000000..da66a22
 +
 +Name: hougeo
 +Description: lightweight c++ library for reading and writing of houdini geometry file format (json/bson)
++Version: undefined
 +Libs: -L${libdir} -lhougeo
 +Cflags: -I${includedir}
 diff --git a/hougeo/ttl/meta/typelist.hpp b/hougeo/ttl/meta/typelist.hpp
