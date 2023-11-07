@@ -88,3 +88,7 @@ fetch.github = "nmwsharp/happly"
 [cnpy]
 src.git = "https://github.com/rogersce/cnpy"
 fetch.github = "rogersce/cnpy"
+
+[amgcl]
+src.github_tag = "ddemidov/amgcl"
+fetch.github = "ddemidov/amgcl"

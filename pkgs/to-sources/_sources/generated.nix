@@ -9,6 +9,17 @@
       sha256 = "sha256-z/zROQYpHvGoGzacHA6Qdkjs0kNjZohzaR9EhmcEqyE=";
     };
   };
+  amgcl = {
+    pname = "amgcl";
+    version = "1.4.4";
+    src = fetchFromGitHub {
+      owner = "ddemidov";
+      repo = "amgcl";
+      rev = "1.4.4";
+      fetchSubmodules = false;
+      sha256 = "sha256-PSIWbOyBtJTVslp3tP5YX81YzTQC5DCfs4WhwwmwFew=";
+    };
+  };
   autobean-format = {
     pname = "autobean-format";
     version = "7849d89eefb433036736bbb1c3168eb02337d34c";

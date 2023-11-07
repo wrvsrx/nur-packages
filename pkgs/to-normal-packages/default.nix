@@ -21,4 +21,5 @@ rec {
   hougeo = callPackage ./hougeo { source = sources.hougeo; };
   happly = callPackage ./happly { source = sources.happly; };
   cnpy = callPackage ./cnpy { source = sources.cnpy; };
+  amgcl = callPackage ./amgcl { source = sources.amgcl; };
 }
