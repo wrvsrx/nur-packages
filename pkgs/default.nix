@@ -7,10 +7,15 @@ let
   pkgs-to-python-modules = pkgs: to-python-modules { inherit pkgs to-sources; };
   pkgs-to-normal-packages = pkgs: to-normal-packages { inherit pkgs to-sources; };
   pkgs-to-override-packages = pkgs: to-override-packages { inherit pkgs to-sources; };
-  pkgs-to-packages = pkgs:
+  pkgs-to-flat-packages = pkgs:
     let
       normal-packages = pkgs-to-normal-packages pkgs;
       override-packages = pkgs-to-override-packages pkgs;
+    in
+    normal-packages // override-packages;
+  pkgs-to-packages = pkgs:
+    let
+      flat-packages = pkgs-to-flat-packages pkgs;
       pythonWithPackages = pkgs.python311.override {
         self = pythonWithPackages;
         packageOverrides = to-python-modules { inherit to-sources pkgs; };
@@ -36,13 +41,13 @@ let
         };
       vim-plugins = pkgs-to-vim-plugins pkgs;
     in
-    normal-packages // override-packages // python-packages // vim-plugins;
+    flat-packages // python-packages // vim-plugins;
   pkgs-to-vim-plugins = pkgs: to-vim-plugins { inherit pkgs to-sources; };
 in
 {
   inherit
-    pkgs-to-normal-packages
     pkgs-to-packages
+    pkgs-to-flat-packages
     pkgs-to-python-modules
     pkgs-to-vim-plugins
     ;

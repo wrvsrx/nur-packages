@@ -8,8 +8,8 @@
   outputs = inputs': inputs'.flake-parts.lib.mkFlake { inputs = inputs'; } ({ withSystem, inputs, ... }:
     let
       inherit (import ./pkgs)
-        pkgs-to-normal-packages
         pkgs-to-packages
+        pkgs-to-flat-packages
         pkgs-to-python-modules
         pkgs-to-vim-plugins
         ;
@@ -20,7 +20,7 @@
       flake = {
         inherit templates;
         overlays.default = final: prev:
-          (pkgs-to-normal-packages prev) // {
+          (pkgs-to-flat-packages prev) // {
             pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [ (pkgs-to-python-modules prev) ];
             vimPlugins = prev.vimPlugins // (pkgs-to-vim-plugins prev);
           };
