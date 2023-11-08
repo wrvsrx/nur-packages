@@ -10,16 +10,18 @@ rec {
     noto-fonts-cjk-sans-fix-weight
     noto-fonts-cjk-serif-fix-weight;
   xdg-utils-patched = callPackage ./xdg-utils-patched { };
-  giraffe-wallpaper = callPackage ./giraffe-wallpaper { source = sources.giraffe-wallpaper; };
-  osc52 = haskellPackages.callPackage ./osc52 { source = sources.osc52; };
-  taskwarrior-utils = haskellPackages.callPackage ./taskwarrior-utils { source = sources.taskwarrior-utils; };
   noto-fonts-emoji-monochrome = callPackage ./noto-fonts-emoji-monochrome { source = sources.noto-fonts-emoji-monochrome; };
   cyCodeBase = callPackage ./cyCodeBase { source = sources.cyCodeBase; };
   quill-cpp = callPackage ./quill-cpp { source = sources.quill-cpp; };
   trime-data = callPackage ./trime-data { };
-  copy-trime-data-to = callPackage ./copy-trime-data-to { inherit trime-data; };
   hougeo = callPackage ./hougeo { source = sources.hougeo; };
   happly = callPackage ./happly { source = sources.happly; };
   cnpy = callPackage ./cnpy { source = sources.cnpy; };
   amgcl = callPackage ./amgcl { source = sources.amgcl; };
+
+  # my packages
+  giraffe-wallpaper = callPackage ./giraffe-wallpaper { source = sources.giraffe-wallpaper; };
+  osc52 = haskellPackages.callPackage ./osc52 { source = sources.osc52; };
+  taskwarrior-utils = haskellPackages.callPackage ./taskwarrior-utils { source = sources.taskwarrior-utils; };
+  copy-trime-data-to = callPackage ./copy-trime-data-to { inherit trime-data; };
 }
