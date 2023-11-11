@@ -18,6 +18,7 @@ rec {
   happly = callPackage ./happly { source = sources.happly; };
   cnpy = callPackage ./cnpy { source = sources.cnpy; };
   amgcl = callPackage ./amgcl { source = sources.amgcl; };
+  cuda-samples = callPackage ./cuda-samples { };
 
   # my packages
   giraffe-wallpaper = callPackage ./giraffe-wallpaper { source = sources.giraffe-wallpaper; };
