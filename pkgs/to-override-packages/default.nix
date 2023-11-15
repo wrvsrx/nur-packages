@@ -8,5 +8,4 @@ in
   xclip = callPackage ./xclip { inherit (pkgs) xclip; source = sources.xclip; };
   clipcat = callPackage ./clipcat { source = sources.clipcat; };
   lyra = callPackage ./lyra { source = sources.lyra; };
-  calibre = callPackage ./calibre { inherit (pkgs) calibre; };
 }
