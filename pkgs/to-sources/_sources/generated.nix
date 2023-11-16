@@ -263,4 +263,15 @@
     };
     date = "2022-01-29";
   };
+  yalantinglibs = {
+    pname = "yalantinglibs";
+    version = "v0.2.6";
+    src = fetchFromGitHub {
+      owner = "alibaba";
+      repo = "yalantinglibs";
+      rev = "v0.2.6";
+      fetchSubmodules = false;
+      sha256 = "sha256-2so/OMBC2IptIXHvV2d79JVn2AIOonkaHBRKZvQy+PQ=";
+    };
+  };
 }
