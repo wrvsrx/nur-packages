@@ -163,10 +163,10 @@
   };
   jaxtyping = {
     pname = "jaxtyping";
-    version = "0.2.22";
+    version = "0.2.23";
     src = fetchurl {
-      url = "https://pypi.org/packages/source/j/jaxtyping/jaxtyping-0.2.22.tar.gz";
-      sha256 = "sha256-rfCmswmOx6IBZa29wBnpDxtSSURiNntdEsCl6iVV0iM=";
+      url = "https://pypi.org/packages/source/j/jaxtyping/jaxtyping-0.2.23.tar.gz";
+      sha256 = "sha256-imZiV+pbMzu3SFWY/TMSQg+t6xk7im+eT+D9xRtk35Q=";
     };
   };
   lyra = {
@@ -194,15 +194,15 @@
   };
   nvim-numbertoggle = {
     pname = "nvim-numbertoggle";
-    version = "50fef7e421a27294e834084625ad0dd8cffee72c";
+    version = "9ab95e60ea5ec138e1b2332e0fc18b8e5de464c6";
     src = fetchFromGitHub {
       owner = "sitiom";
       repo = "nvim-numbertoggle";
-      rev = "50fef7e421a27294e834084625ad0dd8cffee72c";
+      rev = "9ab95e60ea5ec138e1b2332e0fc18b8e5de464c6";
       fetchSubmodules = false;
-      sha256 = "sha256-QBK3blWxY6RBIDgRM/Wig+D1KX/zOkmnNGF1Xz2x8tg=";
+      sha256 = "sha256-1QImFgjpfsLJ6xxb1HZPQdBH/QGPtYs5bQ7v5Mxa/nY=";
     };
-    date = "2023-09-05";
+    date = "2023-10-09";
   };
   osc52 = {
     pname = "osc52";
@@ -218,13 +218,13 @@
   };
   quill-cpp = {
     pname = "quill-cpp";
-    version = "v3.3.1";
+    version = "v3.4.0";
     src = fetchFromGitHub {
       owner = "odygrd";
       repo = "quill";
-      rev = "v3.3.1";
+      rev = "v3.4.0";
       fetchSubmodules = false;
-      sha256 = "sha256-aPGAinaws60aGinUD926QgM3Mywym7tnNXJRq1xtXA0=";
+      sha256 = "sha256-Q6BWTdKR+RbsLLVuyyhVGKr7FsEgENEG++dUF8HmOi0=";
     };
   };
   taskwarrior-utils = {
