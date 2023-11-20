@@ -12,7 +12,6 @@ rec {
   xdg-utils-patched = callPackage ./xdg-utils-patched { };
   noto-fonts-emoji-monochrome = callPackage ./noto-fonts-emoji-monochrome { source = sources.noto-fonts-emoji-monochrome; };
   cyCodeBase = callPackage ./cyCodeBase { source = sources.cyCodeBase; };
-  quill-cpp = callPackage ./quill-cpp { source = sources.quill-cpp; };
   trime-data = callPackage ./trime-data { };
   hougeo = callPackage ./hougeo { source = sources.hougeo; };
   happly = callPackage ./happly { source = sources.happly; };

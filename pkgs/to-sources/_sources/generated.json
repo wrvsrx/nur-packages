@@ -366,26 +366,6 @@
         },
         "version": "477b99c8a1053183ede9978b2fe00dbcdb7c4b91"
     },
-    "quill-cpp": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "quill-cpp",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "odygrd",
-            "repo": "quill",
-            "rev": "v3.4.0",
-            "sha256": "sha256-Q6BWTdKR+RbsLLVuyyhVGKr7FsEgENEG++dUF8HmOi0=",
-            "type": "github"
-        },
-        "version": "v3.4.0"
-    },
     "taskwarrior-utils": {
         "cargoLocks": null,
         "date": "2023-08-24",

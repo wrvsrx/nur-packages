@@ -216,17 +216,6 @@
     };
     date = "2023-09-12";
   };
-  quill-cpp = {
-    pname = "quill-cpp";
-    version = "v3.4.0";
-    src = fetchFromGitHub {
-      owner = "odygrd";
-      repo = "quill";
-      rev = "v3.4.0";
-      fetchSubmodules = false;
-      sha256 = "sha256-Q6BWTdKR+RbsLLVuyyhVGKr7FsEgENEG++dUF8HmOi0=";
-    };
-  };
   taskwarrior-utils = {
     pname = "taskwarrior-utils";
     version = "8128ff22e672de756f1904031cd258587eadb5f4";
