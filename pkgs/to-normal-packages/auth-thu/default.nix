@@ -9,7 +9,7 @@ buildGoModule {
     fetchSubmodules = false;
     sha256 = "sha256-aIa2OfoXmbikWpMzEqD3fNLAynp7wA+3qhwQSnRe8DE=";
   });
-  vendorSha256 = "sha256-LSGyy4i4JWopX54wWXZwEtRQfijCgA618FeQErwdy8o=";
+  vendorHash = "sha256-LSGyy4i4JWopX54wWXZwEtRQfijCgA618FeQErwdy8o=";
   subPackages = [ "cli" ];
   postInstall = ''
     mv $out/bin/cli $out/bin/$pname
