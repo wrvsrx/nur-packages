@@ -92,3 +92,7 @@ fetch.github = "ddemidov/amgcl"
 [yalantinglibs]
 src.github_tag = "alibaba/yalantinglibs"
 fetch.github = "alibaba/yalantinglibs"
+
+[calendar-visualization]
+src.git = "https://github.com/wrvsrx/calendar-visualization"
+fetch.github = "wrvsrx/calendar-visualization"

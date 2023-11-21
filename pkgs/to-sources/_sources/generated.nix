@@ -55,6 +55,18 @@
       sha256 = "sha256-hdIbEIZrxA5EA3XY4MIazRv3DazUjpuDJRCgq8+kJQg=";
     };
   };
+  calendar-visualization = {
+    pname = "calendar-visualization";
+    version = "6dabd0bfddbbc5cacf67f56d842b8d10316765f9";
+    src = fetchFromGitHub {
+      owner = "wrvsrx";
+      repo = "calendar-visualization";
+      rev = "6dabd0bfddbbc5cacf67f56d842b8d10316765f9";
+      fetchSubmodules = false;
+      sha256 = "sha256-mvQ9kx4rXGG0CcT77PzTttHulTp+YKHSczgI8qV0HoA=";
+    };
+    date = "2023-11-21";
+  };
   clipcat = {
     pname = "clipcat";
     version = "13b7c4e4065721c4ea6839a8b9d33d0324a65b1b";

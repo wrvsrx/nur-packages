@@ -94,6 +94,26 @@
         },
         "version": "v1.0.3"
     },
+    "calendar-visualization": {
+        "cargoLocks": null,
+        "date": "2023-11-21",
+        "extract": null,
+        "name": "calendar-visualization",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "wrvsrx",
+            "repo": "calendar-visualization",
+            "rev": "6dabd0bfddbbc5cacf67f56d842b8d10316765f9",
+            "sha256": "sha256-mvQ9kx4rXGG0CcT77PzTttHulTp+YKHSczgI8qV0HoA=",
+            "type": "github"
+        },
+        "version": "6dabd0bfddbbc5cacf67f56d842b8d10316765f9"
+    },
     "clipcat": {
         "cargoLocks": {
             "Cargo.lock": [

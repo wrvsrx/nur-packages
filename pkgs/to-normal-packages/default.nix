@@ -25,4 +25,5 @@ rec {
   taskwarrior-utils = haskellPackages.callPackage ./taskwarrior-utils { source = sources.taskwarrior-utils; };
   copy-trime-data-to = callPackage ./copy-trime-data-to { inherit trime-data; };
   yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };
+  calendar-visualization = haskellPackages.callPackage ./calendar-visualization { source = sources.calendar-visualization; };
 }
