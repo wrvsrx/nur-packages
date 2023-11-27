@@ -36,9 +36,23 @@
     "typescript": "^5.0.4"
   },
   "activationEvents": [
-    "*"
+    "workspaceContains:.zk/config.toml"
   ],
   "contributes": {
+    "rootPatterns": [
+      {
+        "filetype": "markdown",
+        "patterns": [
+          ".zk"
+        ]
+      },
+      {
+        "filetype": "pandoc",
+        "patterns": [
+          ".zk"
+        ]
+      }
+    ],
     "configuration": {
       "type": "object",
       "title": "coc-zk configuration",
@@ -56,6 +70,8 @@
     "lib/index.js"
   ],
   "dependencies": {
-    "@types/node": "^20.1.3"
+    "@types/node": "^20.1.3",
+    "@types/yargs": "^17.0.32",
+    "yargs": "^17.7.2"
   }
 }
