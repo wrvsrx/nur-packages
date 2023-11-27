@@ -298,6 +298,22 @@
       };
     }
     {
+      name = "_types_yargs_parser___yargs_parser_21.0.3.tgz";
+      path = fetchurl {
+        name = "_types_yargs_parser___yargs_parser_21.0.3.tgz";
+        url  = "https://registry.yarnpkg.com/@types/yargs-parser/-/yargs-parser-21.0.3.tgz";
+        sha512 = "I4q9QU9MQv4oEOz4tAHJtNz1cwuLxn2F3xcc2iV5WdqLPpUnj30aUuxt1mAxYTG+oe8CZMV/+6rU4S4gRDzqtQ==";
+      };
+    }
+    {
+      name = "_types_yargs___yargs_17.0.32.tgz";
+      path = fetchurl {
+        name = "_types_yargs___yargs_17.0.32.tgz";
+        url  = "https://registry.yarnpkg.com/@types/yargs/-/yargs-17.0.32.tgz";
+        sha512 = "xQ67Yc/laOG5uMfX/093MRlGGCIBzZMarVa+gfNKJxWAIgykYpVGkBdbqEzGDDfCrVUj6Hiff4mTZ5BA6TmAog==";
+      };
+    }
+    {
       name = "_typescript_eslint_eslint_plugin___eslint_plugin_5.59.5.tgz";
       path = fetchurl {
         name = "_typescript_eslint_eslint_plugin___eslint_plugin_5.59.5.tgz";
@@ -482,6 +498,14 @@
       };
     }
     {
+      name = "cliui___cliui_8.0.1.tgz";
+      path = fetchurl {
+        name = "cliui___cliui_8.0.1.tgz";
+        url  = "https://registry.yarnpkg.com/cliui/-/cliui-8.0.1.tgz";
+        sha512 = "BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ==";
+      };
+    }
+    {
       name = "coc.nvim___coc.nvim_0.0.80.tgz";
       path = fetchurl {
         name = "coc.nvim___coc.nvim_0.0.80.tgz";
@@ -583,6 +607,14 @@
         name = "esbuild___esbuild_0.17.18.tgz";
         url  = "https://registry.yarnpkg.com/esbuild/-/esbuild-0.17.18.tgz";
         sha512 = "z1lix43jBs6UKjcZVKOw2xx69ffE2aG0PygLL5qJ9OS/gy0Ewd1gW/PUQIOIQGXBHWNywSc0floSKoMFF8aK2w==";
+      };
+    }
+    {
+      name = "escalade___escalade_3.1.1.tgz";
+      path = fetchurl {
+        name = "escalade___escalade_3.1.1.tgz";
+        url  = "https://registry.yarnpkg.com/escalade/-/escalade-3.1.1.tgz";
+        sha512 = "k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==";
       };
     }
     {
@@ -791,6 +823,14 @@
         name = "fs.realpath___fs.realpath_1.0.0.tgz";
         url  = "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz";
         sha512 = "OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==";
+      };
+    }
+    {
+      name = "get_caller_file___get_caller_file_2.0.5.tgz";
+      path = fetchurl {
+        name = "get_caller_file___get_caller_file_2.0.5.tgz";
+        url  = "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz";
+        sha512 = "DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==";
       };
     }
     {
@@ -1218,6 +1258,14 @@
       };
     }
     {
+      name = "require_directory___require_directory_2.1.1.tgz";
+      path = fetchurl {
+        name = "require_directory___require_directory_2.1.1.tgz";
+        url  = "https://registry.yarnpkg.com/require-directory/-/require-directory-2.1.1.tgz";
+        sha512 = "fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==";
+      };
+    }
+    {
       name = "resolve_from___resolve_from_4.0.0.tgz";
       path = fetchurl {
         name = "resolve_from___resolve_from_4.0.0.tgz";
@@ -1450,11 +1498,35 @@
       };
     }
     {
+      name = "y18n___y18n_5.0.8.tgz";
+      path = fetchurl {
+        name = "y18n___y18n_5.0.8.tgz";
+        url  = "https://registry.yarnpkg.com/y18n/-/y18n-5.0.8.tgz";
+        sha512 = "0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==";
+      };
+    }
+    {
       name = "yallist___yallist_4.0.0.tgz";
       path = fetchurl {
         name = "yallist___yallist_4.0.0.tgz";
         url  = "https://registry.yarnpkg.com/yallist/-/yallist-4.0.0.tgz";
         sha512 = "3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==";
+      };
+    }
+    {
+      name = "yargs_parser___yargs_parser_21.1.1.tgz";
+      path = fetchurl {
+        name = "yargs_parser___yargs_parser_21.1.1.tgz";
+        url  = "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-21.1.1.tgz";
+        sha512 = "tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==";
+      };
+    }
+    {
+      name = "yargs___yargs_17.7.2.tgz";
+      path = fetchurl {
+        name = "yargs___yargs_17.7.2.tgz";
+        url  = "https://registry.yarnpkg.com/yargs/-/yargs-17.7.2.tgz";
+        sha512 = "7dSzzRQ++CKnNI/krKnYRV7JKKPUXMEh61soaHKg9mrWEhzFWhFnxPxGl+69cD1Ou63C13NUPCnmIcrvqCuM6w==";
       };
     }
     {
