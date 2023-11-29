@@ -16,13 +16,10 @@ stdenv.mkDerivation rec {
     sha256 = "sha256-lt6HpU1hmRf6pISpDnlJ38ovWuVOIFGR9DCC8rDYaiQ=";
     sparseCheckout = [ "Common" ];
   };
-  buildInputs = [
-    (haskellPackages.ghcWithPackages (ps: with ps;[
-      raw-strings-qq
-      extra
-    ]))
+  patches = [
+    ./meson.patch
+    ./cpp20.patch
   ];
-  patches = [ ./meson.patch ];
   generateMesonPhase = ''
     runghc Main > meson.build
   '';
@@ -32,5 +29,9 @@ stdenv.mkDerivation rec {
     cmake
     ninja
     pkg-config
+    (haskellPackages.ghcWithPackages (ps: with ps;[
+      raw-strings-qq
+      extra
+    ]))
   ];
 }
