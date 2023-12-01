@@ -69,21 +69,20 @@
   };
   clipcat = {
     pname = "clipcat";
-    version = "13b7c4e4065721c4ea6839a8b9d33d0324a65b1b";
+    version = "v0.9.0";
     src = fetchFromGitHub {
-      owner = "wrvsrx";
+      owner = "xrelkd";
       repo = "clipcat";
-      rev = "13b7c4e4065721c4ea6839a8b9d33d0324a65b1b";
+      rev = "v0.9.0";
       fetchSubmodules = false;
-      sha256 = "sha256-55FQPX0/6A5Dm6yZ8FqxN4PM6EOPnG3FYti7B/k4XlE=";
+      sha256 = "sha256-P/8C+Gfmcuy7DGbH8+y6ZYlRrmV5t9U/uiykZ4bERSU=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./clipcat-13b7c4e4065721c4ea6839a8b9d33d0324a65b1b/Cargo.lock;
+      lockFile = ./clipcat-v0.9.0/Cargo.lock;
       outputHashes = {
-        "x11-clipboard-0.7.0" = "sha256-ToDy7vWPRYk8mrmL+77HJypE91b6z/NaDTUDgRe20d0=";
+        
       };
     };
-    date = "2023-01-14";
   };
   cnpy = {
     pname = "cnpy";

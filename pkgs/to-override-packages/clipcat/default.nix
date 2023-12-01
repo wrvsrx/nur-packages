@@ -4,15 +4,14 @@
 , rustfmt
 , xorg
 , pkg-config
-, llvmPackages
-, clang
 , protobuf
 , python3
 , source
 }:
 
 rustPlatform.buildRustPackage {
-  inherit (source) pname version src;
+  inherit (source) pname src;
+  version = lib.removePrefix "v" source.version;
   cargoLock = source.cargoLock."Cargo.lock";
 
   # needed for internal protobuf c wrapper library
@@ -33,7 +32,7 @@ rustPlatform.buildRustPackage {
   ];
   buildInputs = [ xorg.libxcb ];
 
-  buildFeatures = [ "all-bins,all-backends" ];
+  # buildFeatures = [ "all-bins,all-backends" ];
 
   postInstall = ''
     installShellCompletion --bash completions/bash-completion/completions/*
