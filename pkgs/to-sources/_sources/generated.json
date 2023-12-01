@@ -114,31 +114,6 @@
         },
         "version": "6dabd0bfddbbc5cacf67f56d842b8d10316765f9"
     },
-    "clipcat": {
-        "cargoLocks": {
-            "Cargo.lock": [
-                "./clipcat-v0.9.0/Cargo.lock",
-                {}
-            ]
-        },
-        "date": null,
-        "extract": null,
-        "name": "clipcat",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "xrelkd",
-            "repo": "clipcat",
-            "rev": "v0.9.0",
-            "sha256": "sha256-P/8C+Gfmcuy7DGbH8+y6ZYlRrmV5t9U/uiykZ4bERSU=",
-            "type": "github"
-        },
-        "version": "v0.9.0"
-    },
     "cnpy": {
         "cargoLocks": null,
         "date": "2018-05-31",

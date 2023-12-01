@@ -1,9 +1,4 @@
 # nvfetcher.toml
-[clipcat]
-src.github_tag = "xrelkd/clipcat"
-fetch.github = "xrelkd/clipcat"
-cargo_locks = [ "Cargo.lock" ]
-
 [osc52]
 src.git = "https://github.com/wrvsrx/osc52"
 fetch.github = "wrvsrx/osc52"

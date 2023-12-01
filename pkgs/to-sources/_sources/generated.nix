@@ -67,23 +67,6 @@
     };
     date = "2023-11-21";
   };
-  clipcat = {
-    pname = "clipcat";
-    version = "v0.9.0";
-    src = fetchFromGitHub {
-      owner = "xrelkd";
-      repo = "clipcat";
-      rev = "v0.9.0";
-      fetchSubmodules = false;
-      sha256 = "sha256-P/8C+Gfmcuy7DGbH8+y6ZYlRrmV5t9U/uiykZ4bERSU=";
-    };
-    cargoLock."Cargo.lock" = {
-      lockFile = ./clipcat-v0.9.0/Cargo.lock;
-      outputHashes = {
-        
-      };
-    };
-  };
   cnpy = {
     pname = "cnpy";
     version = "4e8810b1a8637695171ed346ce68f6984e585ef4";
