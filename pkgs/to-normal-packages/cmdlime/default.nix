@@ -10,8 +10,8 @@ stdenv.mkDerivation {
   version = lib.removePrefix "v" source.version;
   patches = [ ./seal.patch ];
   prePatch = ''
-    mkdir -p include/cmdlime/detail
-    cp --no-preserve=mode,ownership -r ${sfun}/include/sfun include/cmdlime/detail/external
+    mkdir -p include/cmdlime/detail/external
+    cp --no-preserve=mode,ownership -r ${sfun}/include/sfun include/cmdlime/detail/external/sfun
     find include/cmdlime/detail/external -name '*.h' | xargs -d '\n' sed -i 's/namespace sfun/namepace cmdlime::sfun/g'
   '';
   buildInputs = [ seal_lake ];
