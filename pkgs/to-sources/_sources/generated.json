@@ -379,6 +379,26 @@
         },
         "version": "ca84d624a8280c5354ea4d90cd29648804c6c489"
     },
+    "sfun": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "sfun",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "kamchatka-volcano",
+            "repo": "sfun",
+            "rev": "v5.0.0",
+            "sha256": "sha256-HJo7rlKv0NaF6hC46EK5xlcAlCXeQIQiXRJaQoANqpA=",
+            "type": "github"
+        },
+        "version": "v5.0.0"
+    },
     "structopt": {
         "cargoLocks": null,
         "date": null,

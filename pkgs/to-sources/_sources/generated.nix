@@ -222,6 +222,17 @@
     };
     date = "2023-01-18";
   };
+  sfun = {
+    pname = "sfun";
+    version = "v5.0.0";
+    src = fetchFromGitHub {
+      owner = "kamchatka-volcano";
+      repo = "sfun";
+      rev = "v5.0.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-HJo7rlKv0NaF6hC46EK5xlcAlCXeQIQiXRJaQoANqpA=";
+    };
+  };
   structopt = {
     pname = "structopt";
     version = "v0.1.3";

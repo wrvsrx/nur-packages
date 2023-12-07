@@ -21,7 +21,7 @@ rec {
   structopt = callPackage ./structopt { source = sources.structopt; };
   utfcpp = callPackage ./utfcpp { source = sources.utfcpp; };
   seal_lake = callPackage ./seal_lake { source = sources.seal_lake; };
-  # sfun = callPackage ./sfun { source = sources.sfun; };
+  sfun = callPackage ./sfun { source = sources.sfun; inherit utfcpp seal_lake; };
 
   # my packages
   giraffe-wallpaper = callPackage ./giraffe-wallpaper { source = sources.giraffe-wallpaper; };
