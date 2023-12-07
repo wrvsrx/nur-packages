@@ -18,6 +18,7 @@ rec {
   cnpy = callPackage ./cnpy { source = sources.cnpy; };
   amgcl = callPackage ./amgcl { source = sources.amgcl; };
   cuda-samples = callPackage ./cuda-samples { };
+  structopt = callPackage ./structopt { source = sources.structopt; };
 
   # my packages
   giraffe-wallpaper = callPackage ./giraffe-wallpaper { source = sources.giraffe-wallpaper; };

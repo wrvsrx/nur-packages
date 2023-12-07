@@ -210,6 +210,17 @@
     };
     date = "2023-09-12";
   };
+  structopt = {
+    pname = "structopt";
+    version = "v0.1.3";
+    src = fetchFromGitHub {
+      owner = "p-ranav";
+      repo = "structopt";
+      rev = "v0.1.3";
+      fetchSubmodules = false;
+      sha256 = "sha256-AyWtJ+EyTN2LEXLM5OSQB3ITzqLLRoirzkWnjwLHOIA=";
+    };
+  };
   taskwarrior-utils = {
     pname = "taskwarrior-utils";
     version = "8128ff22e672de756f1904031cd258587eadb5f4";

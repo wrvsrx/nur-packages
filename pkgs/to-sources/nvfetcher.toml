@@ -91,3 +91,7 @@ fetch.github = "alibaba/yalantinglibs"
 [calendar-visualization]
 src.git = "https://github.com/wrvsrx/calendar-visualization"
 fetch.github = "wrvsrx/calendar-visualization"
+
+[structopt]
+src.github_tag = "p-ranav/structopt"
+fetch.github = "p-ranav/structopt"

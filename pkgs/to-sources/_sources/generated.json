@@ -359,6 +359,26 @@
         },
         "version": "477b99c8a1053183ede9978b2fe00dbcdb7c4b91"
     },
+    "structopt": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "structopt",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "p-ranav",
+            "repo": "structopt",
+            "rev": "v0.1.3",
+            "sha256": "sha256-AyWtJ+EyTN2LEXLM5OSQB3ITzqLLRoirzkWnjwLHOIA=",
+            "type": "github"
+        },
+        "version": "v0.1.3"
+    },
     "taskwarrior-utils": {
         "cargoLocks": null,
         "date": "2023-08-24",
