@@ -19,6 +19,7 @@ rec {
   amgcl = callPackage ./amgcl { source = sources.amgcl; };
   cuda-samples = callPackage ./cuda-samples { };
   structopt = callPackage ./structopt { source = sources.structopt; };
+  utfcpp = callPackage ./utfcpp { source = sources.utfcpp; };
 
   # my packages
   giraffe-wallpaper = callPackage ./giraffe-wallpaper { source = sources.giraffe-wallpaper; };

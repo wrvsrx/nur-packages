@@ -399,6 +399,26 @@
         },
         "version": "8128ff22e672de756f1904031cd258587eadb5f4"
     },
+    "utfcpp": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "utfcpp",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "nemtrif",
+            "repo": "utfcpp",
+            "rev": "v4.0.3",
+            "sha256": "sha256-QVSgBlZWRcHnMFAAshdWmfbIJlqP2a+zQXiIPgzpiGc=",
+            "type": "github"
+        },
+        "version": "v4.0.3"
+    },
     "vdirsyncer": {
         "cargoLocks": null,
         "date": "2023-05-06",

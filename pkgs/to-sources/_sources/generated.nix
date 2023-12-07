@@ -233,6 +233,17 @@
     };
     date = "2023-08-24";
   };
+  utfcpp = {
+    pname = "utfcpp";
+    version = "v4.0.3";
+    src = fetchFromGitHub {
+      owner = "nemtrif";
+      repo = "utfcpp";
+      rev = "v4.0.3";
+      fetchSubmodules = false;
+      sha256 = "sha256-QVSgBlZWRcHnMFAAshdWmfbIJlqP2a+zQXiIPgzpiGc=";
+    };
+  };
   vdirsyncer = {
     pname = "vdirsyncer";
     version = "46c5622291136be6393654786a6895524e80600f";
