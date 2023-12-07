@@ -67,6 +67,18 @@
     };
     date = "2023-11-21";
   };
+  cmdlime = {
+    pname = "cmdlime";
+    version = "80d9673456b4cb8223ad9cf176ec88d61a388c70";
+    src = fetchFromGitHub {
+      owner = "kamchatka-volcano";
+      repo = "cmdlime";
+      rev = "80d9673456b4cb8223ad9cf176ec88d61a388c70";
+      fetchSubmodules = false;
+      sha256 = "sha256-SHum/OoVEaktqmR7tgNozGSQ8Ct14FHeycuL8mAnZbM=";
+    };
+    date = "2023-08-29";
+  };
   cnpy = {
     pname = "cnpy";
     version = "4e8810b1a8637695171ed346ce68f6984e585ef4";

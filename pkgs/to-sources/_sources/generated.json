@@ -114,6 +114,26 @@
         },
         "version": "6dabd0bfddbbc5cacf67f56d842b8d10316765f9"
     },
+    "cmdlime": {
+        "cargoLocks": null,
+        "date": "2023-08-29",
+        "extract": null,
+        "name": "cmdlime",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "kamchatka-volcano",
+            "repo": "cmdlime",
+            "rev": "80d9673456b4cb8223ad9cf176ec88d61a388c70",
+            "sha256": "sha256-SHum/OoVEaktqmR7tgNozGSQ8Ct14FHeycuL8mAnZbM=",
+            "type": "github"
+        },
+        "version": "80d9673456b4cb8223ad9cf176ec88d61a388c70"
+    },
     "cnpy": {
         "cargoLocks": null,
         "date": "2018-05-31",

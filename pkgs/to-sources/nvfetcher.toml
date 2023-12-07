@@ -107,3 +107,7 @@ fetch.github = "kamchatka-volcano/seal_lake"
 [sfun]
 src.github_tag = "kamchatka-volcano/sfun"
 fetch.github = "kamchatka-volcano/sfun"
+
+[cmdlime]
+src.git = "https://github.com/kamchatka-volcano/cmdlime"
+fetch.github = "kamchatka-volcano/cmdlime"
