@@ -359,6 +359,26 @@
         },
         "version": "477b99c8a1053183ede9978b2fe00dbcdb7c4b91"
     },
+    "seal_lake": {
+        "cargoLocks": null,
+        "date": "2023-01-18",
+        "extract": null,
+        "name": "seal_lake",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "kamchatka-volcano",
+            "repo": "seal_lake",
+            "rev": "ca84d624a8280c5354ea4d90cd29648804c6c489",
+            "sha256": "sha256-h146QkqgOuZkqj8mJwuMVVbE+dclQrT3bo9dp3K0QUU=",
+            "type": "github"
+        },
+        "version": "ca84d624a8280c5354ea4d90cd29648804c6c489"
+    },
     "structopt": {
         "cargoLocks": null,
         "date": null,

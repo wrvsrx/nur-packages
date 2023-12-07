@@ -210,6 +210,18 @@
     };
     date = "2023-09-12";
   };
+  seal_lake = {
+    pname = "seal_lake";
+    version = "ca84d624a8280c5354ea4d90cd29648804c6c489";
+    src = fetchFromGitHub {
+      owner = "kamchatka-volcano";
+      repo = "seal_lake";
+      rev = "ca84d624a8280c5354ea4d90cd29648804c6c489";
+      fetchSubmodules = false;
+      sha256 = "sha256-h146QkqgOuZkqj8mJwuMVVbE+dclQrT3bo9dp3K0QUU=";
+    };
+    date = "2023-01-18";
+  };
   structopt = {
     pname = "structopt";
     version = "v0.1.3";

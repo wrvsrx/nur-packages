@@ -99,3 +99,11 @@ fetch.github = "p-ranav/structopt"
 [utfcpp]
 src.github_tag = "nemtrif/utfcpp"
 fetch.github = "nemtrif/utfcpp"
+
+[seal_lake]
+src.git = "https://github.com/kamchatka-volcano/seal_lake"
+fetch.github = "kamchatka-volcano/seal_lake"
+
+[sfun]
+src.github_tag = "kamchatka-volcano/sfun"
+fetch.github = "kamchatka-volcano/sfun"
