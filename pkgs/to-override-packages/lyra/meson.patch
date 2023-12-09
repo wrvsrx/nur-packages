@@ -7,7 +7,7 @@ index c88b8f5..7f89ab5 100644
  
  project('Lyra','cpp',
 -	version: '1.6',
-+	version: '1.6.1',
++	version: 'dev',
  	default_options : ['cpp_std=c++11', 'cpp_eh=none', 'b_lto=true', 'warning_level=3'],
  	license: 'BSL-1.0')
  
@@ -55,7 +55,7 @@ index aace962..e44a500 100644
  
  project('Lyra','cpp',
 -	version: '1.6',
-+	version: '1.6.1',
++	version: 'dev',
  	default_options : ['cpp_std=c++11', 'cpp_eh=none', 'b_lto=true', 'warning_level=3'],
  	license: 'BSL-1.0')
  

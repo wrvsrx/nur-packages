@@ -65,7 +65,7 @@ src.pypi = "jaxtyping"
 fetch.pypi = "jaxtyping"
 
 [lyra]
-src.github_tag = "bfgroup/Lyra"
+src.git = "https://github.com/bfgroup/Lyra"
 fetch.github = "bfgroup/Lyra"
 
 [hougeo]

@@ -177,14 +177,15 @@
   };
   lyra = {
     pname = "lyra";
-    version = "1.6.1";
+    version = "a8bb6e22ea4dcd507292ecdb6443bad23ef7bfeb";
     src = fetchFromGitHub {
       owner = "bfgroup";
       repo = "Lyra";
-      rev = "1.6.1";
+      rev = "a8bb6e22ea4dcd507292ecdb6443bad23ef7bfeb";
       fetchSubmodules = false;
-      sha256 = "sha256-tS2SPLiKaL8C35AmOXyJPstFUfynkE/A53rurqiySbI=";
+      sha256 = "sha256-8Y2p6A73UvWr0mKVgMW5LchRRp5DtAg/R1vZB6q2zOA=";
     };
+    date = "2023-04-23";
   };
   noto-fonts-emoji-monochrome = {
     pname = "noto-fonts-emoji-monochrome";
