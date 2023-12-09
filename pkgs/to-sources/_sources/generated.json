@@ -96,7 +96,7 @@
     },
     "calendar-visualization": {
         "cargoLocks": null,
-        "date": "2023-11-21",
+        "date": "2023-12-09",
         "extract": null,
         "name": "calendar-visualization",
         "passthru": null,
@@ -108,11 +108,11 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "calendar-visualization",
-            "rev": "6dabd0bfddbbc5cacf67f56d842b8d10316765f9",
-            "sha256": "sha256-mvQ9kx4rXGG0CcT77PzTttHulTp+YKHSczgI8qV0HoA=",
+            "rev": "50b9a4ef9ceec28fcfe5320a828730f88c1e0de8",
+            "sha256": "sha256-MWd7B3UfyQHabVdxw3jU3yPS6yrDB2ePU+VdivNVbIQ=",
             "type": "github"
         },
-        "version": "6dabd0bfddbbc5cacf67f56d842b8d10316765f9"
+        "version": "50b9a4ef9ceec28fcfe5320a828730f88c1e0de8"
     },
     "cmdlime": {
         "cargoLocks": null,

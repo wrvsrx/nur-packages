@@ -57,15 +57,15 @@
   };
   calendar-visualization = {
     pname = "calendar-visualization";
-    version = "6dabd0bfddbbc5cacf67f56d842b8d10316765f9";
+    version = "50b9a4ef9ceec28fcfe5320a828730f88c1e0de8";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "calendar-visualization";
-      rev = "6dabd0bfddbbc5cacf67f56d842b8d10316765f9";
+      rev = "50b9a4ef9ceec28fcfe5320a828730f88c1e0de8";
       fetchSubmodules = false;
-      sha256 = "sha256-mvQ9kx4rXGG0CcT77PzTttHulTp+YKHSczgI8qV0HoA=";
+      sha256 = "sha256-MWd7B3UfyQHabVdxw3jU3yPS6yrDB2ePU+VdivNVbIQ=";
     };
-    date = "2023-11-21";
+    date = "2023-12-09";
   };
   cmdlime = {
     pname = "cmdlime";
