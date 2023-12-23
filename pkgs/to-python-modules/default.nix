@@ -10,4 +10,5 @@ self: super: {
   OpenEXR = self.callPackage ./OpenEXR { source = sources.OpenEXR; };
   googletrans = self.callPackage ./googletrans { inherit (super) googletrans; source = sources.googletrans; };
   jaxtyping = self.callPackage ./jaxtyping { source = sources.jaxtyping; };
+  meson-patched = self.callPackage ./meson { inherit (super) meson; };
 }

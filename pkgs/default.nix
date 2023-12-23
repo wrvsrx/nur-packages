@@ -26,11 +26,13 @@ let
             toPythonApplication
             vdirsyncer
             compdb
+            meson-patched
             ;
         in
         {
           vdirsyncer = toPythonApplication vdirsyncer;
           compdb = toPythonApplication compdb;
+          meson-patched = toPythonApplication meson-patched;
           inherit (pythonWithPackages.pkgs)
             autobean-format
             autobean-refactor
