@@ -419,6 +419,26 @@
         },
         "version": "v5.0.0"
     },
+    "spdlog": {
+        "cargoLocks": null,
+        "date": "2024-01-01",
+        "extract": null,
+        "name": "spdlog",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "gabime",
+            "repo": "spdlog",
+            "rev": "1ef8d3ce348daf5d580e27fc68e91628ce42c1f4",
+            "sha256": "sha256-vdKPRiicSnCcuaYDw+0XqM9FACCMelrL5TQY/H1KeUM=",
+            "type": "github"
+        },
+        "version": "1ef8d3ce348daf5d580e27fc68e91628ce42c1f4"
+    },
     "structopt": {
         "cargoLocks": null,
         "date": null,

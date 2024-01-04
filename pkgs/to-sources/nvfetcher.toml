@@ -111,3 +111,7 @@ fetch.github = "kamchatka-volcano/sfun"
 [cmdlime]
 src.git = "https://github.com/kamchatka-volcano/cmdlime"
 fetch.github = "kamchatka-volcano/cmdlime"
+
+[spdlog]
+src.git = "https://github.com/gabime/spdlog"
+fetch.github = "gabime/spdlog"

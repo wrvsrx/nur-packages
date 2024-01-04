@@ -8,4 +8,5 @@ in
   xclip = callPackage ./xclip { inherit (pkgs) xclip; source = sources.xclip; };
   lyra = callPackage ./lyra { source = sources.lyra; };
   meson-patched = callPackage ./meson { };
+  spdlog = callPackage ./spdlog { source = sources.spdlog; };
 }

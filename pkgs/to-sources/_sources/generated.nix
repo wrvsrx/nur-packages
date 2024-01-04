@@ -246,6 +246,18 @@
       sha256 = "sha256-HJo7rlKv0NaF6hC46EK5xlcAlCXeQIQiXRJaQoANqpA=";
     };
   };
+  spdlog = {
+    pname = "spdlog";
+    version = "1ef8d3ce348daf5d580e27fc68e91628ce42c1f4";
+    src = fetchFromGitHub {
+      owner = "gabime";
+      repo = "spdlog";
+      rev = "1ef8d3ce348daf5d580e27fc68e91628ce42c1f4";
+      fetchSubmodules = false;
+      sha256 = "sha256-vdKPRiicSnCcuaYDw+0XqM9FACCMelrL5TQY/H1KeUM=";
+    };
+    date = "2024-01-01";
+  };
   structopt = {
     pname = "structopt";
     version = "v0.1.3";
