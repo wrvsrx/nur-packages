@@ -12,7 +12,7 @@ stdenv.mkDerivation rec {
   src = fetchFromGitHub {
     owner = "NVIDIA";
     repo = "cuda-samples";
-    rev = "v${version}";
+    rev = "03309a2d4275a9186b748e033ee5f90a11492a2f";
     sha256 = "sha256-lt6HpU1hmRf6pISpDnlJ38ovWuVOIFGR9DCC8rDYaiQ=";
     sparseCheckout = [ "Common" ];
   };
