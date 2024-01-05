@@ -67,6 +67,18 @@
     };
     date = "2023-12-09";
   };
+  cccl = {
+    pname = "cccl";
+    version = "b4d490bcfa859c537ac8d3567437298401d9d9fd";
+    src = fetchFromGitHub {
+      owner = "NVIDIA";
+      repo = "cccl";
+      rev = "b4d490bcfa859c537ac8d3567437298401d9d9fd";
+      fetchSubmodules = false;
+      sha256 = "sha256-CCQ9JWnk9/MzvODVivkjFx/5HSVCnWm4v16l4kVgv4I=";
+    };
+    date = "2024-01-03";
+  };
   cmdlime = {
     pname = "cmdlime";
     version = "80d9673456b4cb8223ad9cf176ec88d61a388c70";

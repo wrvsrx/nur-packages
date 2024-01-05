@@ -26,6 +26,10 @@
           };
       };
       perSystem = { system, pkgs, ... }: rec {
+        _module.args.pkgs = import inputs.nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+        };
         packages = pkgs-to-packages pkgs;
         checks = packages;
         formatter = pkgs.nixpkgs-fmt;

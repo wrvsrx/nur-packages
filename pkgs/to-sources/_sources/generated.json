@@ -114,6 +114,26 @@
         },
         "version": "50b9a4ef9ceec28fcfe5320a828730f88c1e0de8"
     },
+    "cccl": {
+        "cargoLocks": null,
+        "date": "2024-01-03",
+        "extract": null,
+        "name": "cccl",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "NVIDIA",
+            "repo": "cccl",
+            "rev": "b4d490bcfa859c537ac8d3567437298401d9d9fd",
+            "sha256": "sha256-CCQ9JWnk9/MzvODVivkjFx/5HSVCnWm4v16l4kVgv4I=",
+            "type": "github"
+        },
+        "version": "b4d490bcfa859c537ac8d3567437298401d9d9fd"
+    },
     "cmdlime": {
         "cargoLocks": null,
         "date": "2023-08-29",
