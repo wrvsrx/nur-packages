@@ -69,15 +69,15 @@
   };
   cccl = {
     pname = "cccl";
-    version = "b4d490bcfa859c537ac8d3567437298401d9d9fd";
+    version = "c4eda1aea304c012270dbd10235e60eaf47bd06f";
     src = fetchFromGitHub {
       owner = "NVIDIA";
       repo = "cccl";
-      rev = "b4d490bcfa859c537ac8d3567437298401d9d9fd";
+      rev = "c4eda1aea304c012270dbd10235e60eaf47bd06f";
       fetchSubmodules = false;
-      sha256 = "sha256-CCQ9JWnk9/MzvODVivkjFx/5HSVCnWm4v16l4kVgv4I=";
+      sha256 = "sha256-0A9nbuX0xwULDJam5Q8Al5XJa7vGd0yn/41gKV7nzFY=";
     };
-    date = "2024-01-03";
+    date = "2023-12-16";
   };
   cmdlime = {
     pname = "cmdlime";

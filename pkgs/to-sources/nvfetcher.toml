@@ -118,4 +118,5 @@ fetch.github = "gabime/spdlog"
 
 [cccl]
 src.git = "https://github.com/NVIDIA/cccl"
+src.branch = "branch/2.3.x"
 fetch.github = "NVIDIA/cccl"

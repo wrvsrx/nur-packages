@@ -116,7 +116,7 @@
     },
     "cccl": {
         "cargoLocks": null,
-        "date": "2024-01-03",
+        "date": "2023-12-16",
         "extract": null,
         "name": "cccl",
         "passthru": null,
@@ -128,11 +128,11 @@
             "name": null,
             "owner": "NVIDIA",
             "repo": "cccl",
-            "rev": "b4d490bcfa859c537ac8d3567437298401d9d9fd",
-            "sha256": "sha256-CCQ9JWnk9/MzvODVivkjFx/5HSVCnWm4v16l4kVgv4I=",
+            "rev": "c4eda1aea304c012270dbd10235e60eaf47bd06f",
+            "sha256": "sha256-0A9nbuX0xwULDJam5Q8Al5XJa7vGd0yn/41gKV7nzFY=",
             "type": "github"
         },
-        "version": "b4d490bcfa859c537ac8d3567437298401d9d9fd"
+        "version": "c4eda1aea304c012270dbd10235e60eaf47bd06f"
     },
     "cmdlime": {
         "cargoLocks": null,
