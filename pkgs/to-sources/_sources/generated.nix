@@ -179,14 +179,6 @@
     };
     date = "2015-10-31";
   };
-  jaxtyping = {
-    pname = "jaxtyping";
-    version = "0.2.23";
-    src = fetchurl {
-      url = "https://pypi.org/packages/source/j/jaxtyping/jaxtyping-0.2.23.tar.gz";
-      sha256 = "sha256-imZiV+pbMzu3SFWY/TMSQg+t6xk7im+eT+D9xRtk35Q=";
-    };
-  };
   lyra = {
     pname = "lyra";
     version = "a8bb6e22ea4dcd507292ecdb6443bad23ef7bfeb";

@@ -60,10 +60,6 @@ fetch.pypi = "googletrans"
 src.git = "https://github.com/cemyuksel/cyCodeBase"
 fetch.github = "cemyuksel/cyCodeBase"
 
-[jaxtyping]
-src.pypi = "jaxtyping"
-fetch.pypi = "jaxtyping"
-
 [lyra]
 src.git = "https://github.com/bfgroup/Lyra"
 fetch.github = "bfgroup/Lyra"

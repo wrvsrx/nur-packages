@@ -304,21 +304,6 @@
         },
         "version": "7e48d2bda0f94fc96b2d8b2917d5ef306ba83c97"
     },
-    "jaxtyping": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "jaxtyping",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-imZiV+pbMzu3SFWY/TMSQg+t6xk7im+eT+D9xRtk35Q=",
-            "type": "url",
-            "url": "https://pypi.org/packages/source/j/jaxtyping/jaxtyping-0.2.23.tar.gz"
-        },
-        "version": "0.2.23"
-    },
     "lyra": {
         "cargoLocks": null,
         "date": "2023-04-23",

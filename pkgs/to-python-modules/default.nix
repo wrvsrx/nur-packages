@@ -9,5 +9,4 @@ self: super: {
   compdb = self.callPackage ./compdb { source = sources.compdb; };
   OpenEXR = self.callPackage ./OpenEXR { source = sources.OpenEXR; };
   googletrans = self.callPackage ./googletrans { inherit (super) googletrans; source = sources.googletrans; };
-  jaxtyping = self.callPackage ./jaxtyping { source = sources.jaxtyping; };
 }
