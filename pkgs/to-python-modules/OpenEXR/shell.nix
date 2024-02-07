@@ -3,8 +3,7 @@
 , openexr
 }:
 let
-  pythonOverride = final: prev: {
-  };
+  pythonOverride = final: prev: { };
   python = python3.override {
     packageOverrides = pythonOverride;
   };
