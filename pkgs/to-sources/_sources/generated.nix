@@ -157,15 +157,15 @@
   };
   happly = {
     pname = "happly";
-    version = "cfa2611550bc7da65855a78af0574b65deb81766";
+    version = "8a606309daaa680eee495c8279feb0b704148f4a";
     src = fetchFromGitHub {
       owner = "nmwsharp";
       repo = "happly";
-      rev = "cfa2611550bc7da65855a78af0574b65deb81766";
+      rev = "8a606309daaa680eee495c8279feb0b704148f4a";
       fetchSubmodules = false;
-      sha256 = "sha256-fHExfJ6WpOHEvFw4M9l9Ur1AaHQfSlzaKcq4dylYhpk=";
+      sha256 = "sha256-KKQdvRxqSXq3Q0TlcpDr+YGlUV3oP7PaE1V2KoP0rXg=";
     };
-    date = "2022-01-06";
+    date = "2024-02-06";
   };
   hougeo = {
     pname = "hougeo";
