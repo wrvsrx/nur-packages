@@ -69,15 +69,15 @@
   };
   cccl = {
     pname = "cccl";
-    version = "c4eda1aea304c012270dbd10235e60eaf47bd06f";
+    version = "d4ca07a7da2a59e28a1b2a659881c7574146d240";
     src = fetchFromGitHub {
       owner = "NVIDIA";
       repo = "cccl";
-      rev = "c4eda1aea304c012270dbd10235e60eaf47bd06f";
+      rev = "d4ca07a7da2a59e28a1b2a659881c7574146d240";
       fetchSubmodules = false;
-      sha256 = "sha256-0A9nbuX0xwULDJam5Q8Al5XJa7vGd0yn/41gKV7nzFY=";
+      sha256 = "sha256-D79EWf7//QQ0pTZD6OxqktV9dh3PNKm9UADkKmVRGMA=";
     };
-    date = "2023-12-16";
+    date = "2024-01-30";
   };
   cmdlime = {
     pname = "cmdlime";
@@ -252,15 +252,15 @@
   };
   spdlog = {
     pname = "spdlog";
-    version = "1ef8d3ce348daf5d580e27fc68e91628ce42c1f4";
+    version = "696db97f672e9082e50e50af315d0f4234c82397";
     src = fetchFromGitHub {
       owner = "gabime";
       repo = "spdlog";
-      rev = "1ef8d3ce348daf5d580e27fc68e91628ce42c1f4";
+      rev = "696db97f672e9082e50e50af315d0f4234c82397";
       fetchSubmodules = false;
-      sha256 = "sha256-vdKPRiicSnCcuaYDw+0XqM9FACCMelrL5TQY/H1KeUM=";
+      sha256 = "sha256-17k5di2NLwrkCBHa6esYV3703e+DQhj0NjOgQ5pnI/Q=";
     };
-    date = "2024-01-01";
+    date = "2024-01-16";
   };
   structopt = {
     pname = "structopt";
@@ -287,13 +287,13 @@
   };
   utfcpp = {
     pname = "utfcpp";
-    version = "v4.0.3";
+    version = "v4.0.5";
     src = fetchFromGitHub {
       owner = "nemtrif";
       repo = "utfcpp";
-      rev = "v4.0.3";
+      rev = "v4.0.5";
       fetchSubmodules = false;
-      sha256 = "sha256-QVSgBlZWRcHnMFAAshdWmfbIJlqP2a+zQXiIPgzpiGc=";
+      sha256 = "sha256-oKVFUjCvkHjqifZe98aUe68IBUaAZYWU2S2rxyAA9Cg=";
     };
   };
   vdirsyncer = {
@@ -322,13 +322,13 @@
   };
   yalantinglibs = {
     pname = "yalantinglibs";
-    version = "v0.2.6";
+    version = "v0.3.0";
     src = fetchFromGitHub {
       owner = "alibaba";
       repo = "yalantinglibs";
-      rev = "v0.2.6";
+      rev = "v0.3.0";
       fetchSubmodules = false;
-      sha256 = "sha256-2so/OMBC2IptIXHvV2d79JVn2AIOonkaHBRKZvQy+PQ=";
+      sha256 = "sha256-Su3mnC7hsw0T0u6HfsnYAwXml2T7CABySv7a18+KnK0=";
     };
   };
 }

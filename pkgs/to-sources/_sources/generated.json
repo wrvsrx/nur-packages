@@ -116,7 +116,7 @@
     },
     "cccl": {
         "cargoLocks": null,
-        "date": "2023-12-16",
+        "date": "2024-01-30",
         "extract": null,
         "name": "cccl",
         "passthru": null,
@@ -128,11 +128,11 @@
             "name": null,
             "owner": "NVIDIA",
             "repo": "cccl",
-            "rev": "c4eda1aea304c012270dbd10235e60eaf47bd06f",
-            "sha256": "sha256-0A9nbuX0xwULDJam5Q8Al5XJa7vGd0yn/41gKV7nzFY=",
+            "rev": "d4ca07a7da2a59e28a1b2a659881c7574146d240",
+            "sha256": "sha256-D79EWf7//QQ0pTZD6OxqktV9dh3PNKm9UADkKmVRGMA=",
             "type": "github"
         },
-        "version": "c4eda1aea304c012270dbd10235e60eaf47bd06f"
+        "version": "d4ca07a7da2a59e28a1b2a659881c7574146d240"
     },
     "cmdlime": {
         "cargoLocks": null,
@@ -426,7 +426,7 @@
     },
     "spdlog": {
         "cargoLocks": null,
-        "date": "2024-01-01",
+        "date": "2024-01-16",
         "extract": null,
         "name": "spdlog",
         "passthru": null,
@@ -438,11 +438,11 @@
             "name": null,
             "owner": "gabime",
             "repo": "spdlog",
-            "rev": "1ef8d3ce348daf5d580e27fc68e91628ce42c1f4",
-            "sha256": "sha256-vdKPRiicSnCcuaYDw+0XqM9FACCMelrL5TQY/H1KeUM=",
+            "rev": "696db97f672e9082e50e50af315d0f4234c82397",
+            "sha256": "sha256-17k5di2NLwrkCBHa6esYV3703e+DQhj0NjOgQ5pnI/Q=",
             "type": "github"
         },
-        "version": "1ef8d3ce348daf5d580e27fc68e91628ce42c1f4"
+        "version": "696db97f672e9082e50e50af315d0f4234c82397"
     },
     "structopt": {
         "cargoLocks": null,
@@ -498,11 +498,11 @@
             "name": null,
             "owner": "nemtrif",
             "repo": "utfcpp",
-            "rev": "v4.0.3",
-            "sha256": "sha256-QVSgBlZWRcHnMFAAshdWmfbIJlqP2a+zQXiIPgzpiGc=",
+            "rev": "v4.0.5",
+            "sha256": "sha256-oKVFUjCvkHjqifZe98aUe68IBUaAZYWU2S2rxyAA9Cg=",
             "type": "github"
         },
-        "version": "v4.0.3"
+        "version": "v4.0.5"
     },
     "vdirsyncer": {
         "cargoLocks": null,
@@ -558,10 +558,10 @@
             "name": null,
             "owner": "alibaba",
             "repo": "yalantinglibs",
-            "rev": "v0.2.6",
-            "sha256": "sha256-2so/OMBC2IptIXHvV2d79JVn2AIOonkaHBRKZvQy+PQ=",
+            "rev": "v0.3.0",
+            "sha256": "sha256-Su3mnC7hsw0T0u6HfsnYAwXml2T7CABySv7a18+KnK0=",
             "type": "github"
         },
-        "version": "v0.2.6"
+        "version": "v0.3.0"
     }
 }
