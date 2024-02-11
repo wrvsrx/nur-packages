@@ -57,15 +57,15 @@
   };
   calendar-visualization = {
     pname = "calendar-visualization";
-    version = "369cf93cb36a892ac9024ebd5fcdd0bded08813b";
+    version = "c963404dbeb51bc6264e079b3240c279ce6f7848";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "calendar-visualization";
-      rev = "369cf93cb36a892ac9024ebd5fcdd0bded08813b";
+      rev = "c963404dbeb51bc6264e079b3240c279ce6f7848";
       fetchSubmodules = false;
-      sha256 = "sha256-lBvzMKZyQUDikxu5eKLhNv0wlWZhV+s6FfhsEm4cZDg=";
+      sha256 = "sha256-7os8dEoOMmcXK8/DBmi1n8KVgXnPhcMv1xakiwIN2r0=";
     };
-    date = "2024-01-13";
+    date = "2024-02-11";
   };
   cccl = {
     pname = "cccl";
