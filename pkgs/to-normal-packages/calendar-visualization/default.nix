@@ -12,6 +12,7 @@
 , iCalendar
 , lib
 , optparse-applicative
+, pretty-simple
 , split
 , text
 , time
@@ -36,6 +37,7 @@ mkDerivation {
     filepath
     iCalendar
     optparse-applicative
+    pretty-simple
     split
     text
     time
