@@ -9,7 +9,6 @@ rec {
   inherit (callPackage ./noto-fonts-cjk { })
     noto-fonts-cjk-sans-fix-weight
     noto-fonts-cjk-serif-fix-weight;
-  xdg-utils-patched = callPackage ./xdg-utils-patched { };
   noto-fonts-emoji-monochrome = callPackage ./noto-fonts-emoji-monochrome { source = sources.noto-fonts-emoji-monochrome; };
   cyCodeBase = callPackage ./cyCodeBase { source = sources.cyCodeBase; };
   trime-data = callPackage ./trime-data { };
