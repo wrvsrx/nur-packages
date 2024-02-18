@@ -96,8 +96,8 @@ stdenv.mkDerivation (finalAttrs: {
     })
     (fetchpatch {
       name = "build-from-git-without-internet";
-      url = "https://github.com/kovidgoyal/calibre/compare/86471d3a030b6aa9d6a421d147bfdd95add523ef...c58d4a129952f9b5ab841472e9fd7e6d54a30652.patch";
-      hash = "sha256-3x66nFFh9ovD0QCibSmLXvTqF42Tr9zY2z5d3SC/t5Q=";
+      url = "https://github.com/kovidgoyal/calibre/commit/4b7c79f71821e9d13edff5d04249c5decf1093a0.patch";
+      hash = "sha256-1czbc5Z5BsvtyVWnQwFH3Wsn+31RfahjulwtXHJVQKA=";
     })
   ]
   ++ lib.optional (!unrarSupport) ./dont_build_unrar_plugin.patch;
@@ -199,7 +199,7 @@ stdenv.mkDerivation (finalAttrs: {
     # this is get from https://code.calibre-ebook.com/ua-popularity
     # It's not reproducible, so we have to pack it in repo
     # this file can be generated using `python fetch-ua.py`
-    UA_POPULARITY = "${./ua-popularity.json}";
+    UA_POPULARITY = "${./ua-popularity.txt}";
   };
 
   buildPhase = ''
