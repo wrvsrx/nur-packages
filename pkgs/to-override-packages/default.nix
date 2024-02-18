@@ -9,4 +9,5 @@ in
   lyra = callPackage ./lyra { source = sources.lyra; };
   meson-patched = callPackage ./meson { };
   spdlog = callPackage ./spdlog { inherit (pkgs) spdlog; source = sources.spdlog; };
+  calibre = pkgs.qt6Packages.callPackage ./calibre { podofo = pkgs.podofo010; };
 }
