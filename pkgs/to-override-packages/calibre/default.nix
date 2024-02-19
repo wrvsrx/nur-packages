@@ -33,12 +33,26 @@
 , fetchFromGitHub
 , sphinx
 , liberation_ttf
-, mathjax-src ? null
-, hyphenation-src ? null
-, translations-src ? null
+, mathjax ? fetchFromGitHub {
+    repo = "MathJax";
+    owner = "mathjax";
+    rev = "3.1.4";
+    hash = "sha256-viEg8xBUAsrMRH2m5fMXhcejMuN5bR+EntIGgP0Rb+c=";
+  }
+, hyphenation ? fetchFromGitHub {
+    owner = "LibreOffice";
+    repo = "dictionaries";
+    rev = "libreoffice-7.6.5.2";
+    sha256 = "sha256-hGXumAvZXa5Rl/PANLsEV23YE50QjPmzA51DYKhvQBk=";
+  }
+, translations ? fetchFromGitHub {
+    owner = "kovidgoyal";
+    repo = "calibre-translations";
+    rev = "bce1a26a9be187e6daf57fb6548d3fc7ad5a709a";
+    sha256 = "sha256-2rMosLGcJNFQPlAjHI+ft+IApdsERdK4aVLgcrGShzc=";
+  }
 }:
 let
-  nullOrX = x: y: if x == null then y else x;
   iso-codes-zip = stdenv.mkDerivation rec {
     pname = "iso-codes-zip";
     inherit (isocodes) src version;
@@ -50,25 +64,7 @@ let
     '';
     installPhase = "cp main.zip $out";
   };
-  mathjax = nullOrX mathjax-src (fetchFromGitHub {
-    repo = "MathJax";
-    owner = "mathjax";
-    rev = "3.1.4";
-    hash = "sha256-viEg8xBUAsrMRH2m5fMXhcejMuN5bR+EntIGgP0Rb+c=";
-  });
   liberation_fonts = "${liberation_ttf}/share/fonts/truetype";
-  hyphenation = nullOrX hyphenation-src (fetchFromGitHub {
-    owner = "LibreOffice";
-    repo = "dictionaries";
-    rev = "libreoffice-7.6.5.2";
-    sha256 = "sha256-hGXumAvZXa5Rl/PANLsEV23YE50QjPmzA51DYKhvQBk=";
-  });
-  translations = nullOrX translations-src (fetchFromGitHub {
-    owner = "kovidgoyal";
-    repo = "calibre-translations";
-    rev = "bce1a26a9be187e6daf57fb6548d3fc7ad5a709a";
-    sha256 = "sha256-2rMosLGcJNFQPlAjHI+ft+IApdsERdK4aVLgcrGShzc=";
-  });
 in
 
 stdenv.mkDerivation (finalAttrs: {
@@ -96,8 +92,8 @@ stdenv.mkDerivation (finalAttrs: {
     })
     (fetchpatch {
       name = "build-from-git-without-internet";
-      url = "https://github.com/kovidgoyal/calibre/commit/4b7c79f71821e9d13edff5d04249c5decf1093a0.patch";
-      hash = "sha256-1czbc5Z5BsvtyVWnQwFH3Wsn+31RfahjulwtXHJVQKA=";
+      url = "https://github.com/wrvsrx/calibre/compare/v7.5.1...build-from-source-simple.patch";
+      hash = "sha256-Trkkk9iz4QtRzpnY/WcbAm/qAsBKKFOWjaWI8oQbSTw=";
     })
   ]
   ++ lib.optional (!unrarSupport) ./dont_build_unrar_plugin.patch;
@@ -194,17 +190,17 @@ stdenv.mkDerivation (finalAttrs: {
     PODOFO_LIB_DIR = "${podofo.lib}/lib";
     ISOCODE_ZIP = "${iso-codes-zip}";
     ISOCODE_VERSION = iso-codes-zip.version;
-    CACERT = "${cacert}/etc/ssl/certs/ca-bundle.crt";
-    TRANSLATIONS = "${translations}";
-    # this is get from https://code.calibre-ebook.com/ua-popularity
-    # It's not reproducible, so we have to pack it in repo
-    # this file can be generated using `python fetch-ua.py`
-    UA_POPULARITY = "${./ua-popularity.txt}";
   };
 
   buildPhase = ''
-    mkdir temp
-    cp "${cacert}/etc/ssl/certs/ca-bundle.crt" resources/mozilla-ca-certs.pem
+    # manually copy some generated files here
+    cp ${cacert}/etc/ssl/certs/ca-bundle.crt resources/mozilla-ca-certs.pem
+    # this is get from https://code.calibre-ebook.com/ua-popularity
+    # It's not reproducible, so we have to pack it in repo
+    # this file can be generated using `python fetch-ua.py`
+    cp ${./user-agent-data.json} resources/user-agent-data.json
+    cp -r --no-preserve=mode ${translations} translations
+
     ${python3Packages.python.pythonOnBuildForHost.interpreter} setup.py bootstrap \
       --path-to-mathjax=${mathjax} \
       --path-to-liberation_fonts=${liberation_fonts} \
@@ -216,6 +212,8 @@ stdenv.mkDerivation (finalAttrs: {
     runHook preInstall
 
     export HOME=$TMPDIR/fakehome
+    export XDG_DATA_HOME=$out/share
+    export XDG_UTILS_INSTALL_MODE="user"
 
     ${python3Packages.python.pythonOnBuildForHost.interpreter} setup.py install --root=$out \
       --prefix=$out \
@@ -277,4 +275,5 @@ stdenv.mkDerivation (finalAttrs: {
     platforms = lib.platforms.unix;
     broken = stdenv.isDarwin;
   };
+  passthru.updateScript = ./fetch-ua.py;
 })
