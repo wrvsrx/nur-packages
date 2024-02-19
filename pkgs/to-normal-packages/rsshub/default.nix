@@ -7,6 +7,7 @@ let
     inherit (source) pname version;
     yarnLock = ./yarn.lock;
     packageJSON = ./package.json;
+    yarnNix = ./yarn.nix;
   };
 in
 stdenvNoCC.mkDerivation {
