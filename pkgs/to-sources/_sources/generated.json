@@ -384,6 +384,26 @@
         },
         "version": "477b99c8a1053183ede9978b2fe00dbcdb7c4b91"
     },
+    "rsshub": {
+        "cargoLocks": null,
+        "date": "2024-02-19",
+        "extract": null,
+        "name": "rsshub",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "DIYGod",
+            "repo": "RSSHub",
+            "rev": "58a1e11dfa89f7af833e24825b342e7fbfd9c1c1",
+            "sha256": "sha256-LwD4XuCMCpYT33qolLG7Ydspryc6hKUko3aBXCaDrGc=",
+            "type": "github"
+        },
+        "version": "58a1e11dfa89f7af833e24825b342e7fbfd9c1c1"
+    },
     "seal_lake": {
         "cargoLocks": null,
         "date": "2023-01-18",

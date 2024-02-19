@@ -23,7 +23,7 @@ rec {
   sfun = callPackage ./sfun { source = sources.sfun; inherit utfcpp seal_lake; };
   cmdlime = callPackage ./cmdlime { source = sources.cmdlime; inherit sfun seal_lake; };
   cccl = callPackage ./cccl { source = sources.cccl; };
-  rsshub = callPackage ./rsshub { };
+  rsshub = callPackage ./rsshub { source = sources.rsshub; };
 
   # my packages
   giraffe-wallpaper = callPackage ./giraffe-wallpaper { source = sources.giraffe-wallpaper; };

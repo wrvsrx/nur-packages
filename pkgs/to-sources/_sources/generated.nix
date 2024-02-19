@@ -227,6 +227,18 @@
     };
     date = "2023-09-12";
   };
+  rsshub = {
+    pname = "rsshub";
+    version = "58a1e11dfa89f7af833e24825b342e7fbfd9c1c1";
+    src = fetchFromGitHub {
+      owner = "DIYGod";
+      repo = "RSSHub";
+      rev = "58a1e11dfa89f7af833e24825b342e7fbfd9c1c1";
+      fetchSubmodules = false;
+      sha256 = "sha256-LwD4XuCMCpYT33qolLG7Ydspryc6hKUko3aBXCaDrGc=";
+    };
+    date = "2024-02-19";
+  };
   seal_lake = {
     pname = "seal_lake";
     version = "ca84d624a8280c5354ea4d90cd29648804c6c489";

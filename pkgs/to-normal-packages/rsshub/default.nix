@@ -1,18 +1,19 @@
-{ pkgs
-, system
+{ mkYarnModules
+, stdenvNoCC
+, source
 }:
 let
-  nodePackages = import ./node2nix-generated {
-    inherit pkgs system;
-    inherit (pkgs) nodejs;
+  a = mkYarnModules {
+    inherit (source) pname version;
+    yarnLock = ./yarn.lock;
+    packageJSON = ./package.json;
   };
 in
-nodePackages.rsshub.override {
-  nativeBuildInputs = [ pkgs.pkg-config ];
-  buildInputs = with pkgs; [
-    pango
-    cairo
-    pixman
-  ];
-  PUPPETEER_SKIP_DOWNLOAD = 1;
+stdenvNoCC.mkDerivation {
+  inherit (source) pname version src;
+  unpackPhase = "true";
+  installPhase = ''
+    cp -r --no-preserve=mode $src $out
+    ln -s ${a}/node_modules $out/node_modules
+  '';
 }
