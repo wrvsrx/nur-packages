@@ -67,6 +67,17 @@
     };
     date = "2024-02-11";
   };
+  calibre = {
+    pname = "calibre";
+    version = "v7.5.1";
+    src = fetchFromGitHub {
+      owner = "kovidgoyal";
+      repo = "calibre";
+      rev = "v7.5.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-FH9+MHJkHJYEaxoqTTlm6gJkq+RpdXoK5F2erZP+ECI=";
+    };
+  };
   cccl = {
     pname = "cccl";
     version = "d4ca07a7da2a59e28a1b2a659881c7574146d240";

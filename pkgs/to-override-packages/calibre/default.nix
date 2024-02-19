@@ -51,6 +51,7 @@
     rev = "bce1a26a9be187e6daf57fb6548d3fc7ad5a709a";
     sha256 = "sha256-2rMosLGcJNFQPlAjHI+ft+IApdsERdK4aVLgcrGShzc=";
   }
+, source
 }:
 let
   iso-codes-zip = stdenv.mkDerivation rec {
@@ -68,15 +69,7 @@ let
 in
 
 stdenv.mkDerivation (finalAttrs: {
-  pname = "calibre";
-  version = "7.5.1";
-
-  src = fetchFromGitHub {
-    owner = "kovidgoyal";
-    repo = "calibre";
-    rev = "v${finalAttrs.version}";
-    sha256 = "sha256-FH9+MHJkHJYEaxoqTTlm6gJkq+RpdXoK5F2erZP+ECI=";
-  };
+  inherit (source) pname version src;
 
   patches = [
     #  allow for plugin update check, but no calibre version check
