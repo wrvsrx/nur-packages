@@ -1,20 +1,17 @@
-{ mkYarnModules
-, stdenvNoCC
+{ mkYarnPackage
 , source
 }:
-let
-  a = mkYarnModules {
-    inherit (source) pname version;
-    yarnLock = ./yarn.lock;
-    packageJSON = ./package.json;
-    yarnNix = ./yarn.nix;
-  };
-in
-stdenvNoCC.mkDerivation {
+mkYarnPackage {
   inherit (source) pname version src;
-  unpackPhase = "true";
+  packageJSON = ./package.json;
+  yarnLock = ./yarn.lock;
+  yarnNix = ./yarn.nix;
+  buildPhase = "true";
   installPhase = ''
-    cp -r --no-preserve=mode $src $out
-    ln -s ${a}/node_modules $out/node_modules
+    yarn --offline pack --filename main.tgz
+    mkdir -p $out
+    tar xzf main.tgz --strip-components=1 -C $out
+    ln -s $node_modules $out/node_modules
   '';
+  distPhase = "true";
 }
