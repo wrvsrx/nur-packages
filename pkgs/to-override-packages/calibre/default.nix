@@ -69,7 +69,8 @@ let
 in
 
 stdenv.mkDerivation (finalAttrs: {
-  inherit (source) pname version src;
+  inherit (source) pname src;
+  version = lib.removePrefix "v" source.version;
 
   patches = [
     #  allow for plugin update check, but no calibre version check
