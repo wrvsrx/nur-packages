@@ -124,3 +124,7 @@ fetch.github = "DIYGod/RSSHub"
 [calibre]
 src.github_tag = "kovidgoyal/calibre"
 fetch.github = "kovidgoyal/calibre"
+
+[metacubexd]
+src.github_tag = "MetaCubeX/metacubexd"
+fetch.url = "https://github.com/MetaCubeX/metacubexd/releases/download/$ver/compressed-dist.tgz"

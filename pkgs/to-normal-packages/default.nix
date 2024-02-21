@@ -24,6 +24,7 @@ rec {
   cmdlime = callPackage ./cmdlime { source = sources.cmdlime; inherit sfun seal_lake; };
   cccl = callPackage ./cccl { source = sources.cccl; };
   rsshub = callPackage ./rsshub { source = sources.rsshub; };
+  metacubexd = callPackage ./metacubexd { source = sources.metacubexd; };
 
   # my packages
   giraffe-wallpaper = callPackage ./giraffe-wallpaper { source = sources.giraffe-wallpaper; };

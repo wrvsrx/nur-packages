@@ -202,6 +202,14 @@
     };
     date = "2023-04-23";
   };
+  metacubexd = {
+    pname = "metacubexd";
+    version = "v1.135.0";
+    src = fetchurl {
+      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.135.0/compressed-dist.tgz";
+      sha256 = "sha256-37+oAO7vt57mO0G2L3+NcO2ndpxs3PP4+ogVNnWoGBc=";
+    };
+  };
   noto-fonts-emoji-monochrome = {
     pname = "noto-fonts-emoji-monochrome";
     version = "d5f498241b3b77beddce3a53ee802c34b1fa46c4";

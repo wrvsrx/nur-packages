@@ -344,6 +344,21 @@
         },
         "version": "a8bb6e22ea4dcd507292ecdb6443bad23ef7bfeb"
     },
+    "metacubexd": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "metacubexd",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-37+oAO7vt57mO0G2L3+NcO2ndpxs3PP4+ogVNnWoGBc=",
+            "type": "url",
+            "url": "https://github.com/MetaCubeX/metacubexd/releases/download/v1.135.0/compressed-dist.tgz"
+        },
+        "version": "v1.135.0"
+    },
     "noto-fonts-emoji-monochrome": {
         "cargoLocks": null,
         "date": "2023-03-28",
