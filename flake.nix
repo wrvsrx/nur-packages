@@ -2,6 +2,11 @@
   description = "My personal NUR repository";
   inputs = {
     flake-lock.url = "github:wrvsrx/flake-lock";
+    pnpm2nix-nzbr = {
+      url = "github:nzbr/pnpm2nix-nzbr";
+      inputs.nixpkgs.follows = "flake-lock/nixpkgs";
+      inputs.flake-utils.follows = "flake-lock/flake-utils";
+    };
     nixpkgs.follows = "flake-lock/nixpkgs";
     flake-parts.follows = "flake-lock/flake-parts";
   };
@@ -50,6 +55,7 @@
         _module.args.pkgs = import inputs.nixpkgs {
           inherit system;
           config.allowUnfree = true;
+          overlays = [ inputs.pnpm2nix-nzbr.overlays.default ];
         };
         packages = pkgs-to-packages pkgs;
         checks = packages;

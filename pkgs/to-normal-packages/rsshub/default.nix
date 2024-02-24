@@ -1,17 +1,19 @@
-{ mkYarnPackage
+{ mkPnpmPackage
+, stdenvNoCC
 , source
 }:
-mkYarnPackage {
+let
+  node-modules = (mkPnpmPackage {
+    inherit (source) pname version src;
+    installEnv.PUPPETEER_SKIP_DOWNLOAD = "1";
+    noDevDependencies = true;
+  }).passthru.nodeModules;
+in
+stdenvNoCC.mkDerivation {
   inherit (source) pname version src;
-  packageJSON = ./package.json;
-  yarnLock = ./yarn.lock;
-  yarnNix = ./yarn.nix;
-  buildPhase = "true";
   installPhase = ''
-    yarn --offline pack --filename main.tgz
     mkdir -p $out
-    tar xzf main.tgz --strip-components=1 -C $out
-    ln -s $node_modules $out/node_modules
+    ln -s ${node-modules}/node_modules $out/node_modules
+    cp -r lib $out/lib
   '';
-  distPhase = "true";
 }
