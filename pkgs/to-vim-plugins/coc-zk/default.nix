@@ -3,9 +3,6 @@
 }:
 mkYarnPackage {
   inherit (source) pname version src;
-  packageJSON = ./package.json;
-  yarnLock = ./yarn.lock;
-  yarnNix = ./yarn.nix;
   buildPhase = ''
     yarn --offline build
   '';
