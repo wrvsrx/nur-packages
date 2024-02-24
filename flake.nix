@@ -46,9 +46,14 @@
             inputs.self.lib.importFlake src flake.inputs;
         };
         overlays.default = final: prev:
-          (pkgs-to-flat-packages prev) // {
-            pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [ (pkgs-to-python-modules prev) ];
-            vimPlugins = prev.vimPlugins // (pkgs-to-vim-plugins prev);
+          let
+            pkgs = prev // {
+              mkPnpmPackage = inputs.pnpm2nix-nzbr.overlays.default { } prev;
+            };
+          in
+          (pkgs-to-flat-packages pkgs) // {
+            pythonPackagesExtensions = pkgs.pythonPackagesExtensions ++ [ (pkgs-to-python-modules pkgs) ];
+            vimPlugins = pkgs.vimPlugins // (pkgs-to-vim-plugins pkgs);
           };
       };
       perSystem = { system, pkgs, ... }: rec {
