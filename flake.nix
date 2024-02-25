@@ -47,13 +47,11 @@
         };
         overlays.default = final: prev:
           let
-            pkgs = prev // {
-              mkPnpmPackage = inputs.pnpm2nix-nzbr.overlays.default { } prev;
-            };
+            pkgs = prev.extend inputs.pnpm2nix-nzbr.overlays.default;
           in
-          (pkgs-to-flat-packages pkgs) // {
-            pythonPackagesExtensions = pkgs.pythonPackagesExtensions ++ [ (pkgs-to-python-modules pkgs) ];
-            vimPlugins = pkgs.vimPlugins // (pkgs-to-vim-plugins pkgs);
+          pkgs-to-flat-packages pkgs // {
+            pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [ (pkgs-to-python-modules pkgs) ];
+            vimPlugins = prev.vimPlugins // (pkgs-to-vim-plugins pkgs);
           };
       };
       perSystem = { system, pkgs, ... }: rec {
@@ -69,3 +67,4 @@
       };
     });
 }
+
