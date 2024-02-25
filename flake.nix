@@ -47,7 +47,9 @@
         };
         overlays.default = final: prev:
           let
-            pkgs = prev.extend inputs.pnpm2nix-nzbr.overlays.default;
+            # it seems that using `extend` cause OOM, so we have to use a worse solution
+            # reference: https://github.com/NixOS/nix/issues/8285
+            pkgs = prev // (inputs.pnpm2nix-nzbr.overlays.default { } prev);
           in
           pkgs-to-flat-packages pkgs // {
             pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [ (pkgs-to-python-modules pkgs) ];

@@ -23,7 +23,7 @@ rec {
   sfun = callPackage ./sfun { source = sources.sfun; inherit utfcpp seal_lake; };
   cmdlime = callPackage ./cmdlime { source = sources.cmdlime; inherit sfun seal_lake; };
   cccl = callPackage ./cccl { source = sources.cccl; };
-  rsshub = callPackage ./rsshub { source = sources.rsshub; };
+  rsshub = callPackage ./rsshub { source = sources.rsshub; inherit (pkgs) mkPnpmPackage; };
   metacubexd = callPackage ./metacubexd { source = sources.metacubexd; };
 
   # my packages
