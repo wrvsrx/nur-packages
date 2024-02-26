@@ -47,8 +47,7 @@
         };
         overlays.default = final: prev:
           let
-            # it seems that using `extend` cause OOM, so we have to use a worse solution
-            # reference: https://github.com/NixOS/nix/issues/8285
+            # it seems that using `extend` cause infinite evaluation of overlays
             pkgs = prev // (inputs.pnpm2nix-nzbr.overlays.default { } prev);
           in
           pkgs-to-flat-packages pkgs // {
@@ -60,7 +59,16 @@
         _module.args.pkgs = import inputs.nixpkgs {
           inherit system;
           config.allowUnfree = true;
-          overlays = [ inputs.pnpm2nix-nzbr.overlays.default ];
+          overlays = [
+            inputs.pnpm2nix-nzbr.overlays.default
+            (final: prev: {
+              pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [
+                (final: prev: {
+                  nvchecker = final.callPackage ./pkgs/to-python-modules/nvchecker { };
+                })
+              ];
+            })
+          ];
         };
         packages = pkgs-to-packages pkgs;
         checks = packages;
