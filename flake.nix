@@ -59,16 +59,7 @@
         _module.args.pkgs = import inputs.nixpkgs {
           inherit system;
           config.allowUnfree = true;
-          overlays = [
-            inputs.pnpm2nix-nzbr.overlays.default
-            (final: prev: {
-              pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [
-                (final: prev: {
-                  nvchecker = final.callPackage ./pkgs/to-python-modules/nvchecker { };
-                })
-              ];
-            })
-          ];
+          overlays = [ inputs.pnpm2nix-nzbr.overlays.default ];
         };
         packages = pkgs-to-packages pkgs;
         checks = packages;
