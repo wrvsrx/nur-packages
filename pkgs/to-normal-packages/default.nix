@@ -2,18 +2,7 @@
 let
   inherit (pkgs) callPackage haskellPackages;
   sources = to-sources { inherit pkgs; };
-  callIFD =
-    { callPackage
-    , source
-    , src ? source.src
-    , pname ? source.pname
-    , version ? source.version
-    , otherArgs ? { }
-    }:
-    (callPackage src otherArgs).overrideAttrs {
-      name = "${pname}-${version}";
-      inherit pname version;
-    };
+  callIFD = import ../callIFD.nix;
 in
 rec {
   auth-thu = callPackage ./auth-thu { };
