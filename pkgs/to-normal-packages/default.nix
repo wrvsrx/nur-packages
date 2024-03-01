@@ -2,6 +2,18 @@
 let
   inherit (pkgs) callPackage haskellPackages;
   sources = to-sources { inherit pkgs; };
+  callIFD =
+    { callPackage
+    , source
+    , src ? source.src
+    , pname ? source.pname
+    , version ? source.version
+    , otherArgs ? { }
+    }:
+    (callPackage src otherArgs).overrideAttrs {
+      name = "${pname}-${version}";
+      inherit pname version;
+    };
 in
 rec {
   auth-thu = callPackage ./auth-thu { };
@@ -25,12 +37,19 @@ rec {
   cccl = callPackage ./cccl { source = sources.cccl; };
   rsshub = callPackage ./rsshub { source = sources.rsshub; inherit (pkgs) mkPnpmPackage; };
   metacubexd = callPackage ./metacubexd { source = sources.metacubexd; };
+  yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };
 
   # my packages
-  giraffe-wallpaper = callPackage ./giraffe-wallpaper { source = sources.giraffe-wallpaper; };
-  osc52 = haskellPackages.callPackage ./osc52 { source = sources.osc52; };
-  taskwarrior-utils = haskellPackages.callPackage ./taskwarrior-utils { source = sources.taskwarrior-utils; };
+  giraffe-wallpaper = callIFD {
+    inherit callPackage;
+    source = sources.giraffe-wallpaper;
+    otherArgs = {
+      width = 3840;
+      height = 2160;
+    };
+  };
+  osc52 = callIFD { inherit (haskellPackages) callPackage; source = sources.osc52; };
+  taskwarrior-utils = callIFD { inherit (haskellPackages) callPackage; source = sources.taskwarrior-utils; };
+  calendar-visualization = callIFD { inherit (haskellPackages) callPackage; source = sources.calendar-visualization; };
   copy-trime-data-to = callPackage ./copy-trime-data-to { inherit trime-data; };
-  yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };
-  calendar-visualization = haskellPackages.callPackage ./calendar-visualization { source = sources.calendar-visualization; };
 }
