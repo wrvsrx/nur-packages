@@ -51,5 +51,4 @@ rec {
   osc52 = callIFD { inherit (haskellPackages) callPackage; source = sources.osc52; };
   taskwarrior-utils = callIFD { inherit (haskellPackages) callPackage; source = sources.taskwarrior-utils; };
   calendar-visualization = callIFD { inherit (haskellPackages) callPackage; source = sources.calendar-visualization; };
-  copy-trime-data-to = callPackage ./copy-trime-data-to { inherit trime-data; };
 }
