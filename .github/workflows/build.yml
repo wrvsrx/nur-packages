@@ -1,12 +1,7 @@
-name: "Build and populate cache"
+name: "Test nur build"
 on:
   pull_request:
   push:
-  schedule:
-    # rebuild everyday at 2:51
-    # TIP: Choose a random time here so not all repositories are build at once:
-    # https://www.random.org/clock-times/?num=1&earliest=01%3A00&latest=08%3A00&interval=5&format=html&rnd=new
-    - cron:  '51 2 * * *'
 jobs:
   tests:
     strategy:
@@ -46,7 +41,7 @@ jobs:
     - name: Show flake metadata
       run: nix flake metadata
     - name: Show flake information
-      run: nix flake show
+      run: nix flake show --allow-import-from-derivation
     - name: Check evaluation
       run: nix flake check --no-build
     - name: Build nix packages
