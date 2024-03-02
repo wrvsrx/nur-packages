@@ -22,15 +22,15 @@
   };
   auth-thu = {
     pname = "auth-thu";
-    version = "40e2145985c532504bc6dea05c96bc28e7e9e41d";
+    version = "d828582922eeecf43baac7d1da4c4e533aa1dd66";
     src = fetchFromGitHub {
       owner = "z4yx";
       repo = "GoAuthing";
-      rev = "40e2145985c532504bc6dea05c96bc28e7e9e41d";
+      rev = "d828582922eeecf43baac7d1da4c4e533aa1dd66";
       fetchSubmodules = false;
-      sha256 = "sha256-cqtDzfYVDPTeDRfB9WPJqvG4AgFANDmKwZ/nXkL6RYg=";
+      sha256 = "sha256-EyeG2jyi4cQ0k8xChW9azipClJMdwUSuT0OPDBS+u28=";
     };
-    date = "2023-12-19";
+    date = "2024-03-02";
   };
   autobean-format = {
     pname = "autobean-format";

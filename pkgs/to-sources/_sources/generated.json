@@ -36,7 +36,7 @@
     },
     "auth-thu": {
         "cargoLocks": null,
-        "date": "2023-12-19",
+        "date": "2024-03-02",
         "extract": null,
         "name": "auth-thu",
         "passthru": null,
@@ -48,11 +48,11 @@
             "name": null,
             "owner": "z4yx",
             "repo": "GoAuthing",
-            "rev": "40e2145985c532504bc6dea05c96bc28e7e9e41d",
-            "sha256": "sha256-cqtDzfYVDPTeDRfB9WPJqvG4AgFANDmKwZ/nXkL6RYg=",
+            "rev": "d828582922eeecf43baac7d1da4c4e533aa1dd66",
+            "sha256": "sha256-EyeG2jyi4cQ0k8xChW9azipClJMdwUSuT0OPDBS+u28=",
             "type": "github"
         },
-        "version": "40e2145985c532504bc6dea05c96bc28e7e9e41d"
+        "version": "d828582922eeecf43baac7d1da4c4e533aa1dd66"
     },
     "autobean-format": {
         "cargoLocks": null,
