@@ -42,7 +42,8 @@ jobs:
       run: nix flake metadata
     - name: Show flake information
       run: nix flake show --allow-import-from-derivation
-    - name: Check evaluation
-      run: nix flake check --no-build
+    # comment this procedure since nix flake check --no-build doesn't work when IFD is used
+    # - name: Check evaluation
+    #   run: nix flake check --no-build
     - name: Build nix packages
       run: nix flake check -v
