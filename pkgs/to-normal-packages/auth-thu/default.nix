@@ -1,19 +1,20 @@
-{ buildGoModule, fetchFromGitHub, lib }:
+{ buildGoModule
+, fetchurl
+, lib
+, source
+}:
 buildGoModule {
-  pname = "auth-thu";
-  version = "dev";
-  src = fetchFromGitHub ({
-    owner = "z4yx";
-    repo = "GoAuthing";
-    rev = "8247b3a47ca5fd4ed30fe0b50d3d3db6b4b96c37";
-    fetchSubmodules = false;
-    sha256 = "sha256-aIa2OfoXmbikWpMzEqD3fNLAynp7wA+3qhwQSnRe8DE=";
-  });
-  vendorHash = "sha256-LSGyy4i4JWopX54wWXZwEtRQfijCgA618FeQErwdy8o=";
+  inherit (source) pname src;
+  version = source.version;
+  vendorHash = "sha256-GRviH+w9WjjuvE0078NU4b9Hf/ZqBaQ9BxiWXeiGeWU=";
+  patches = [
+    (fetchurl {
+      url = "https://github.com/z4yx/GoAuthing/pull/35/commits/5692ef96394416339f507b86cef648a4d4f0937c.patch";
+      hash = "sha256-qBV6gMioAu7wvyVfP9JNPXF1SLaqxblYCxRO9hLVgv8=";
+    })
+  ];
   subPackages = [ "cli" ];
-  postInstall = ''
-    mv $out/bin/cli $out/bin/$pname
-  '';
+  postInstall = "mv $out/bin/cli $out/bin/$pname";
   meta = with lib; {
     description =
       "Authentication utility for srun4000 (auth.tsinghua.edu.cn / net.tsinghua.edu.cn / Tsinghua-IPv4)";

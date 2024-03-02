@@ -20,6 +20,18 @@
       sha256 = "sha256-PSIWbOyBtJTVslp3tP5YX81YzTQC5DCfs4WhwwmwFew=";
     };
   };
+  auth-thu = {
+    pname = "auth-thu";
+    version = "40e2145985c532504bc6dea05c96bc28e7e9e41d";
+    src = fetchFromGitHub {
+      owner = "z4yx";
+      repo = "GoAuthing";
+      rev = "40e2145985c532504bc6dea05c96bc28e7e9e41d";
+      fetchSubmodules = false;
+      sha256 = "sha256-cqtDzfYVDPTeDRfB9WPJqvG4AgFANDmKwZ/nXkL6RYg=";
+    };
+    date = "2023-12-19";
+  };
   autobean-format = {
     pname = "autobean-format";
     version = "7849d89eefb433036736bbb1c3168eb02337d34c";

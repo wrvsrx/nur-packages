@@ -5,7 +5,7 @@ let
   callIFD = import ../callIFD.nix;
 in
 rec {
-  auth-thu = callPackage ./auth-thu { };
+  auth-thu = callPackage ./auth-thu { source = sources.auth-thu; };
   autodiff = callPackage ./autodiff { source = sources.autodiff; };
   inherit (callPackage ./noto-fonts-cjk { })
     noto-fonts-cjk-sans-fix-weight
