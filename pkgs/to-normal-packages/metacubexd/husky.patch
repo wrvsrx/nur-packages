@@ -1,0 +1,18 @@
+diff --git a/package.json b/package.json
+index c6fd398..398409e 100644
+--- a/package.json
++++ b/package.json
+@@ -5,11 +5,11 @@
+   "license": "MIT",
+   "type": "module",
+   "scripts": {
+-    "build": "vite build",
++    "build": "node node_modules/.bin/vite build",
+     "dev": "vite",
+     "format": "prettier -w .",
+     "lint": "eslint --fix .",
+-    "prepare": "husky",
++    "prepare": "node node_modules/.bin/husky",
+     "pwa-assets-generator": "pwa-assets-generator",
+     "serve": "vite preview"
+   },

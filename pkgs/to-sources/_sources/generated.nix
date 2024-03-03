@@ -217,9 +217,12 @@
   metacubexd = {
     pname = "metacubexd";
     version = "v1.135.0";
-    src = fetchurl {
-      url = "https://github.com/MetaCubeX/metacubexd/releases/download/v1.135.0/compressed-dist.tgz";
-      sha256 = "sha256-37+oAO7vt57mO0G2L3+NcO2ndpxs3PP4+ogVNnWoGBc=";
+    src = fetchFromGitHub {
+      owner = "MetaCubeX";
+      repo = "metacubexd";
+      rev = "v1.135.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-bN8hIE3w0d+Fjd6FrCFSdKbrjI3Ny9qCyKrmA6t7310=";
     };
   };
   noto-fonts-emoji-monochrome = {

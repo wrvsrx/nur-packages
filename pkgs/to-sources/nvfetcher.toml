@@ -127,7 +127,7 @@ fetch.github = "kovidgoyal/calibre"
 
 [metacubexd]
 src.github_tag = "MetaCubeX/metacubexd"
-fetch.url = "https://github.com/MetaCubeX/metacubexd/releases/download/$ver/compressed-dist.tgz"
+fetch.github = "MetaCubeX/metacubexd"
 
 [auth-thu]
 src.git = "https://github.com/z4yx/GoAuthing"
