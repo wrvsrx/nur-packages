@@ -53,7 +53,7 @@ let
     buildPhase = ''
       cp -r ${node_modules_cache} cache
       export XDG_CACHE_HOME=$PWD/cache
-      chmod 755 $PWD/cache/.bun/install/cache
+      chmod +w $PWD/cache/.bun/install/cache
       bun install --frozen-lockfile --verbose --production
       bun run build
     '';
