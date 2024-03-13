@@ -86,7 +86,7 @@
         };
         packages = pkgs-to-packages pkgs;
         checks = packages;
-        formatter = pkgs.nixpkgs-fmt;
+        formatter = pkgs.nixfmt-rfc-style;
         devShells.default = pkgs.mkShell { nativeBuildInputs = [ pkgs.nvfetcher ]; };
       };
     });
