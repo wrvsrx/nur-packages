@@ -1,8 +1,9 @@
-{ cudaPackages
-, cmake
-, python3
-, stdenv
-, source
+{
+  cudaPackages,
+  cmake,
+  python3,
+  stdenv,
+  source,
 }:
 stdenv.mkDerivation {
   inherit (source) pname version src;
@@ -11,9 +12,7 @@ stdenv.mkDerivation {
     python3
     cudaPackages.cuda_nvcc
   ];
-  buildInputs = [
-    cudaPackages.cuda_cudart
-  ];
+  buildInputs = [ cudaPackages.cuda_cudart ];
   cmakeFlags = [
     "-DCCCL_ENABLE_TESTING=OFF"
     "-DCCCL_ENABLE_EXAMPLES=OFF"

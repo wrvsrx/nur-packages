@@ -1,12 +1,13 @@
-{ stdenv
-, bun
-, nodePackages
-, vips
-, lib
-, source
-, pkg-config
-, python3
-, zlib
+{
+  stdenv,
+  bun,
+  nodePackages,
+  vips,
+  lib,
+  source,
+  pkg-config,
+  python3,
+  zlib,
 }:
 let
   inherit (source) pname src;

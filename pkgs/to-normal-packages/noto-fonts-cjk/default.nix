@@ -1,19 +1,25 @@
-{ stdenv
-, stdenvNoCC
-, lib
-, fetchFromGitHub
-, fetchurl
-, cairo
-, nixosTests
-, pkg-config
-, pngquant
-, which
-, imagemagick
-, zopfli
-, buildPackages
+{
+  stdenv,
+  stdenvNoCC,
+  lib,
+  fetchFromGitHub,
+  fetchurl,
+  cairo,
+  nixosTests,
+  pkg-config,
+  pngquant,
+  which,
+  imagemagick,
+  zopfli,
+  buildPackages,
 }:
 let
-  mkNotoCJK = { typeface, version, sha256 }:
+  mkNotoCJK =
+    {
+      typeface,
+      version,
+      sha256,
+    }:
     stdenvNoCC.mkDerivation {
       pname = "noto-fonts-cjk-${lib.toLower typeface}";
       inherit version;
@@ -49,7 +55,10 @@ let
         '';
         license = licenses.ofl;
         platforms = platforms.all;
-        maintainers = with maintainers; [ mathnerd314 emily ];
+        maintainers = with maintainers; [
+          mathnerd314
+          emily
+        ];
       };
     };
 in

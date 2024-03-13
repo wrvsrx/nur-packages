@@ -1,10 +1,11 @@
-{ meson
-, cmake
-, ninja
-, pkg-config
-, haskellPackages
-, stdenv
-, fetchFromGitHub
+{
+  meson,
+  cmake,
+  ninja,
+  pkg-config,
+  haskellPackages,
+  stdenv,
+  fetchFromGitHub,
 }:
 stdenv.mkDerivation rec {
   pname = "cuda-samples";
@@ -29,9 +30,11 @@ stdenv.mkDerivation rec {
     cmake
     ninja
     pkg-config
-    (haskellPackages.ghcWithPackages (ps: with ps;[
-      raw-strings-qq
-      extra
-    ]))
+    (haskellPackages.ghcWithPackages (
+      ps: with ps; [
+        raw-strings-qq
+        extra
+      ]
+    ))
   ];
 }

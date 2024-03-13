@@ -1,6 +1,7 @@
-{ rime-data
-, fetchFromGitHub
-, stdenvNoCC
+{
+  rime-data,
+  fetchFromGitHub,
+  stdenvNoCC,
 }:
 stdenvNoCC.mkDerivation rec {
   pname = "trime-data";

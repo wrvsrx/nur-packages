@@ -1,2 +1,1 @@
-{ pkgs }:
-pkgs.callPackage ./_sources/generated.nix { }
+{ pkgs }: pkgs.callPackage ./_sources/generated.nix { }

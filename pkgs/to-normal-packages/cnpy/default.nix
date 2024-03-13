@@ -1,7 +1,8 @@
-{ stdenv
-, cmake
-, source
-, zlib
+{
+  stdenv,
+  cmake,
+  source,
+  zlib,
 }:
 stdenv.mkDerivation {
   inherit (source) pname src version;
@@ -9,4 +10,3 @@ stdenv.mkDerivation {
   nativeBuildInputs = [ cmake ];
   propagatedBuildInputs = [ zlib ];
 }
-

@@ -1,8 +1,9 @@
-{ stdenv
-, meson
-, ninja
-, pkg-config
-, source
+{
+  stdenv,
+  meson,
+  ninja,
+  pkg-config,
+  source,
 }:
 stdenv.mkDerivation {
   inherit (source) pname version src;

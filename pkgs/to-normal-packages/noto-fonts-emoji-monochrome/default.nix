@@ -1,7 +1,8 @@
-{ stdenvNoCC
-, lib
-, nixosTests
-, source
+{
+  stdenvNoCC,
+  lib,
+  nixosTests,
+  source,
 }:
 stdenvNoCC.mkDerivation {
   inherit (source) pname version src;

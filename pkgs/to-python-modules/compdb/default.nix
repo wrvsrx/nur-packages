@@ -1,4 +1,8 @@
-{ lib, buildPythonPackage, source }:
+{
+  lib,
+  buildPythonPackage,
+  source,
+}:
 
 buildPythonPackage {
   inherit (source) pname version src;

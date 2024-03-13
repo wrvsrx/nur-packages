@@ -1,7 +1,8 @@
-{ stdenv
-, meson
-, ninja
-, source
+{
+  stdenv,
+  meson,
+  ninja,
+  source,
 }:
 stdenv.mkDerivation {
   inherit (source) pname src version;
@@ -11,4 +12,3 @@ stdenv.mkDerivation {
     ninja
   ];
 }
-

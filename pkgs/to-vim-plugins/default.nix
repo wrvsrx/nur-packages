@@ -10,5 +10,8 @@ in
     inherit (sources.nvim-numbertoggle) pname version src;
     meta.homepage = "https://github.com/sitiom/nvim-numbertoggle";
   };
-  coc-zk = callIFD { inherit callPackage; source = sources.coc-zk; };
+  coc-zk = callIFD {
+    inherit callPackage;
+    source = sources.coc-zk;
+  };
 }

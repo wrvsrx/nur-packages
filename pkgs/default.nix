@@ -7,13 +7,15 @@ let
   pkgs-to-python-modules = pkgs: to-python-modules { inherit pkgs to-sources; };
   pkgs-to-normal-packages = pkgs: to-normal-packages { inherit pkgs to-sources; };
   pkgs-to-override-packages = pkgs: to-override-packages { inherit pkgs to-sources; };
-  pkgs-to-flat-packages = pkgs:
+  pkgs-to-flat-packages =
+    pkgs:
     let
       normal-packages = pkgs-to-normal-packages pkgs;
       override-packages = pkgs-to-override-packages pkgs;
     in
     normal-packages // override-packages;
-  pkgs-to-packages = pkgs:
+  pkgs-to-packages =
+    pkgs:
     let
       flat-packages = pkgs-to-flat-packages pkgs;
       pythonWithPackages = pkgs.python311.override {
@@ -22,11 +24,7 @@ let
       };
       python-packages =
         let
-          inherit (pythonWithPackages.pkgs)
-            toPythonApplication
-            vdirsyncer
-            compdb
-            ;
+          inherit (pythonWithPackages.pkgs) toPythonApplication vdirsyncer compdb;
         in
         {
           vdirsyncer = toPythonApplication vdirsyncer;

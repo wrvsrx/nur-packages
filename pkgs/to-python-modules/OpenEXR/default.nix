@@ -1,8 +1,9 @@
-{ buildPythonPackage
-, openexr
-, typeguard
-, packaging
-, source
+{
+  buildPythonPackage,
+  openexr,
+  typeguard,
+  packaging,
+  source,
 }:
 
 buildPythonPackage {

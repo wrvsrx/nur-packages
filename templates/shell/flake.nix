@@ -7,11 +7,18 @@
     flake-parts.follows = "flake-lock/flake-parts";
   };
 
-  outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } ({ inputs, ... }: {
-    systems = [ "x86_64-linux" ];
-    perSystem = { pkgs, ... }: {
-      devShells.default = pkgs.callPackage ./shell.nix { };
-      formatter = pkgs.nixpkgs-fmt;
-    };
-  });
+  outputs =
+    inputs:
+    inputs.flake-parts.lib.mkFlake { inherit inputs; } (
+      { inputs, ... }:
+      {
+        systems = [ "x86_64-linux" ];
+        perSystem =
+          { pkgs, ... }:
+          {
+            devShells.default = pkgs.callPackage ./shell.nix { };
+            formatter = pkgs.nixpkgs-fmt;
+          };
+      }
+    );
 }

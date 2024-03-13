@@ -1,6 +1,7 @@
-{ buildGoModule
-, lib
-, source
+{
+  buildGoModule,
+  lib,
+  source,
 }:
 buildGoModule {
   inherit (source) pname src;
@@ -9,8 +10,7 @@ buildGoModule {
   subPackages = [ "cli" ];
   postInstall = "mv $out/bin/cli $out/bin/$pname";
   meta = with lib; {
-    description =
-      "Authentication utility for srun4000 (auth.tsinghua.edu.cn / net.tsinghua.edu.cn / Tsinghua-IPv4)";
+    description = "Authentication utility for srun4000 (auth.tsinghua.edu.cn / net.tsinghua.edu.cn / Tsinghua-IPv4)";
     homepage = "https://github.com/z4yx/GoAuthing";
     license = licenses.gpl3Only;
   };

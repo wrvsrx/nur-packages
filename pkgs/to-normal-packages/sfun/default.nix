@@ -1,9 +1,10 @@
-{ stdenv
-, cmake
-, source
-, utfcpp
-, lib
-, seal_lake
+{
+  stdenv,
+  cmake,
+  source,
+  utfcpp,
+  lib,
+  seal_lake,
 }:
 stdenv.mkDerivation {
   inherit (source) pname src;

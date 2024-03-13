@@ -9,8 +9,11 @@ rec {
   autodiff = callPackage ./autodiff { source = sources.autodiff; };
   inherit (callPackage ./noto-fonts-cjk { })
     noto-fonts-cjk-sans-fix-weight
-    noto-fonts-cjk-serif-fix-weight;
-  noto-fonts-emoji-monochrome = callPackage ./noto-fonts-emoji-monochrome { source = sources.noto-fonts-emoji-monochrome; };
+    noto-fonts-cjk-serif-fix-weight
+    ;
+  noto-fonts-emoji-monochrome = callPackage ./noto-fonts-emoji-monochrome {
+    source = sources.noto-fonts-emoji-monochrome;
+  };
   cyCodeBase = callPackage ./cyCodeBase { source = sources.cyCodeBase; };
   trime-data = callPackage ./trime-data { };
   hougeo = callPackage ./hougeo { source = sources.hougeo; };
@@ -21,10 +24,19 @@ rec {
   structopt = callPackage ./structopt { source = sources.structopt; };
   utfcpp = callPackage ./utfcpp { source = sources.utfcpp; };
   seal_lake = callPackage ./seal_lake { source = sources.seal_lake; };
-  sfun = callPackage ./sfun { source = sources.sfun; inherit utfcpp seal_lake; };
-  cmdlime = callPackage ./cmdlime { source = sources.cmdlime; inherit sfun seal_lake; };
+  sfun = callPackage ./sfun {
+    source = sources.sfun;
+    inherit utfcpp seal_lake;
+  };
+  cmdlime = callPackage ./cmdlime {
+    source = sources.cmdlime;
+    inherit sfun seal_lake;
+  };
   cccl = callPackage ./cccl { source = sources.cccl; };
-  rsshub = callPackage ./rsshub { source = sources.rsshub; inherit (pkgs) mkPnpmPackage; };
+  rsshub = callPackage ./rsshub {
+    source = sources.rsshub;
+    inherit (pkgs) mkPnpmPackage;
+  };
   metacubexd = callPackage ./metacubexd { source = sources.metacubexd; };
   yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };
 
@@ -37,7 +49,16 @@ rec {
       height = 2160;
     };
   };
-  osc52 = callIFD { inherit (haskellPackages) callPackage; source = sources.osc52; };
-  taskwarrior-utils = callIFD { inherit (haskellPackages) callPackage; source = sources.taskwarrior-utils; };
-  calendar-visualization = callIFD { inherit (haskellPackages) callPackage; source = sources.calendar-visualization; };
+  osc52 = callIFD {
+    inherit (haskellPackages) callPackage;
+    source = sources.osc52;
+  };
+  taskwarrior-utils = callIFD {
+    inherit (haskellPackages) callPackage;
+    source = sources.taskwarrior-utils;
+  };
+  calendar-visualization = callIFD {
+    inherit (haskellPackages) callPackage;
+    source = sources.calendar-visualization;
+  };
 }

@@ -1,8 +1,9 @@
-{ buildPythonPackage
-, lark
-, pdm-pep517
-, source
-, typing-extensions
+{
+  buildPythonPackage,
+  lark,
+  pdm-pep517,
+  source,
+  typing-extensions,
 }:
 buildPythonPackage {
   inherit (source) pname version src;
