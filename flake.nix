@@ -1,7 +1,7 @@
 {
   description = "My personal NUR repository";
   inputs = {
-    flake-lock.url = "github:wrvsrx/flake-lock";
+    flake-lock.url = "/home/wrvsrx/Documents/flake-lock";
     pnpm2nix-nzbr = {
       url = "github:nzbr/pnpm2nix-nzbr";
       inputs.nixpkgs.follows = "flake-lock/nixpkgs";

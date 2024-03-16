@@ -39,6 +39,7 @@ rec {
   };
   metacubexd = callPackage ./metacubexd { source = sources.metacubexd; };
   yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };
+  yuzu = (callPackage ./yuzu { source = sources.yuzu; }).early-access;
 
   # my packages
   giraffe-wallpaper = callIFD {
