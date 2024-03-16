@@ -132,3 +132,8 @@ fetch.github = "MetaCubeX/metacubexd"
 [auth-thu]
 src.git = "https://github.com/z4yx/GoAuthing"
 fetch.github = "z4yx/GoAuthing"
+
+[yuzu]
+src.git = "https://github.com/yuzu-mirror/yuzu"
+git.fetchSubmodules = true
+fetch.github = "yuzu-mirror/yuzu"

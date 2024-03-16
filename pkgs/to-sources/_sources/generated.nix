@@ -377,4 +377,16 @@
       sha256 = "sha256-Su3mnC7hsw0T0u6HfsnYAwXml2T7CABySv7a18+KnK0=";
     };
   };
+  yuzu = {
+    pname = "yuzu";
+    version = "4ad024d2fc9d12a131d69deb1b07b7be36dc4f17";
+    src = fetchFromGitHub {
+      owner = "yuzu-mirror";
+      repo = "yuzu";
+      rev = "4ad024d2fc9d12a131d69deb1b07b7be36dc4f17";
+      fetchSubmodules = true;
+      sha256 = "sha256-YxPbzqgQ8Hh2evs+57LSnvOWrVIm1ukaCWzlzB6otk4=";
+    };
+    date = "2024-03-15";
+  };
 }

@@ -643,5 +643,25 @@
             "type": "github"
         },
         "version": "v0.3.0"
+    },
+    "yuzu": {
+        "cargoLocks": null,
+        "date": "2024-03-15",
+        "extract": null,
+        "name": "yuzu",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "yuzu-mirror",
+            "repo": "yuzu",
+            "rev": "4ad024d2fc9d12a131d69deb1b07b7be36dc4f17",
+            "sha256": "sha256-YxPbzqgQ8Hh2evs+57LSnvOWrVIm1ukaCWzlzB6otk4=",
+            "type": "github"
+        },
+        "version": "4ad024d2fc9d12a131d69deb1b07b7be36dc4f17"
     }
 }
