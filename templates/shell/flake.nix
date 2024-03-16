@@ -17,7 +17,7 @@
           { pkgs, ... }:
           {
             devShells.default = pkgs.callPackage ./shell.nix { };
-            formatter = pkgs.nixpkgs-fmt;
+            formatter = pkgs.nixfmt-rfc-style;
           };
       }
     );
