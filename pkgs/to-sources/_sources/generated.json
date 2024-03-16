@@ -148,11 +148,11 @@
             "name": null,
             "owner": "kovidgoyal",
             "repo": "calibre",
-            "rev": "v7.5.1",
-            "sha256": "sha256-FH9+MHJkHJYEaxoqTTlm6gJkq+RpdXoK5F2erZP+ECI=",
+            "rev": "v7.7.0",
+            "sha256": "sha256-ZtxJWPtptrfHnDK3toJwYKgJ4I3v6Wnx8XzzfNUmA3s=",
             "type": "github"
         },
-        "version": "v7.5.1"
+        "version": "v7.7.0"
     },
     "cccl": {
         "cargoLocks": null,
