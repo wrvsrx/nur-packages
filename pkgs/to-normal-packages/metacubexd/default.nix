@@ -32,7 +32,7 @@ let
       bun install --frozen-lockfile --verbose --production --ignore-scripts
     '';
     installPhase = "cp -r cache $out";
-    outputHash = "sha256-+rMPDEM4f+DVDkTLs4cKa0167ZE05R52OiAW+CfO350=";
+    outputHash = "sha256-xuFQajgU+W/k6NIYKuV9AQAGX3OkU0h5SBr+KT1zBi0=";
     outputHashAlgo = "sha256";
     outputHashMode = "recursive";
     dontFixup = true;
