@@ -137,3 +137,11 @@ fetch.github = "z4yx/GoAuthing"
 src.git = "https://github.com/yuzu-mirror/yuzu"
 git.fetchSubmodules = true
 fetch.github = "yuzu-mirror/yuzu"
+
+[compat-list]
+src.git = "https://github.com/flathub/org.yuzu_emu.yuzu"
+fetch.github = "flathub/org.yuzu_emu.yuzu"
+
+[nx_tzdb]
+src.github_tag = "lat9nq/tzdb_to_nx"
+fetch.url = "https://github.com/lat9nq/tzdb_to_nx/releases/download/$ver/$ver.zip"

@@ -1,6 +1,6 @@
 { pkgs, to-sources }:
 let
-  inherit (pkgs) callPackage haskellPackages;
+  inherit (pkgs) callPackage haskellPackages qt6Packages;
   sources = to-sources { inherit pkgs; };
   callIFD = import ../callIFD.nix;
 in
@@ -39,7 +39,12 @@ rec {
   };
   metacubexd = callPackage ./metacubexd { source = sources.metacubexd; };
   yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };
-  yuzu-early-access = callPackage ./yuzu-earyly-access { source = sources.yuzu; };
+  nx_tzdb = callPackage ./nx_tzdb { source = sources.nx_tzdb; };
+  compat-list = callPackage ./compat-list { source = sources.compat-list; };
+  yuzu-early-access = qt6Packages.callPackage ./yuzu-earyly-access {
+    source = sources.yuzu;
+    inherit nx_tzdb compat-list;
+  };
 
   # my packages
   giraffe-wallpaper = callIFD {
