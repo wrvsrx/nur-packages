@@ -34,18 +34,10 @@
   yasm,
   zlib,
   zstd,
+  source,
 }:
 stdenv.mkDerivation (finalAttrs: {
-  pname = "yuzu";
-  version = "1715";
-
-  src = fetchFromGitHub {
-    owner = "yuzu-emu";
-    repo = "yuzu-mainline";
-    rev = "mainline-0-${finalAttrs.version}";
-    hash = "sha256-ctmySxBLI/1/0ekvqOq+FsWq73iHa/awARtCgZ/ztXs=";
-    fetchSubmodules = true;
-  };
+  inherit (source) pname version src;
 
   nativeBuildInputs = [
     cmake
@@ -169,7 +161,7 @@ stdenv.mkDerivation (finalAttrs: {
   meta = with lib; {
     homepage = "https://yuzu-emu.org";
     changelog = "https://yuzu-emu.org/entry";
-    description = "An experimental Nintendo Switch emulator written in C++";
+    description = "An experimental Nintendo Switch emulator written in C++ - early access branch";
     longDescription = ''
       An experimental Nintendo Switch emulator written in C++.
       Using the mainline branch is recommended for general usage.
