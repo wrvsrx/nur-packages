@@ -1,9 +1,4 @@
-{
-  qt6Packages,
-  makeScopeWithSplicing',
-  generateSplicesForMkScope,
-  source,
-}:
+{ qt6Packages, source }:
 let
   compat-list = qt6Packages.callPackage ./compat-list.nix { };
   nx_tzdb = qt6Packages.callPackage ./nx_tzdb.nix { };

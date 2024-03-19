@@ -1,7 +1,6 @@
 {
   lib,
   stdenv,
-  fetchFromGitHub,
   nix-update-script,
   wrapQtAppsHook,
   autoconf,
