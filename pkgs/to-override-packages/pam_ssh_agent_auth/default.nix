@@ -1,2 +1,4 @@
 { pam_ssh_agent_auth }:
-pam_ssh_agent_auth.overrideAttrs (old: { patches = old.patches ++ [ ./remove_root_need.patch ]; })
+pam_ssh_agent_auth.overrideAttrs (old: {
+  patches = old.patches ++ [ ./remove_root_need.patch ];
+})
