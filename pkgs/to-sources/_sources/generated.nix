@@ -291,7 +291,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = true;
-      sha256 = "sha256-zwqeLeMh9pTHXYgW0hMjGK8zsBk6JzzSQz7RsBRCDy8=";
+      sha256 = "sha256-+O6/rHmYlIXTuoiXoY36tW1As69s1di9lEMunphu688=";
     };
     date = "2024-04-02";
   };
