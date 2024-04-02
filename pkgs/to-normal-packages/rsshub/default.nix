@@ -1,9 +1,8 @@
 {
   mkPnpmPackage,
   stdenvNoCC,
-  chromium,
   nodePackages,
-  git,
+  gitMinimal,
   source,
 }:
 let
@@ -17,9 +16,8 @@ in
 stdenvNoCC.mkDerivation {
   inherit (source) pname version src;
   buildInputs = [
-    chromium
     nodePackages.pnpm
-    git
+    gitMinimal
   ];
   buildPhase = ''
     ln -s ${node-modules}/node_modules node_modules
