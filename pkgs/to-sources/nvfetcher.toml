@@ -120,6 +120,7 @@ fetch.github = "NVIDIA/cccl"
 [rsshub]
 src.git = "https://github.com/DIYGod/RSSHub"
 fetch.github = "DIYGod/RSSHub"
+git.leaveDotGit = true
 
 [calibre]
 src.github_tag = "kovidgoyal/calibre"

@@ -1,6 +1,9 @@
 {
   mkPnpmPackage,
   stdenvNoCC,
+  chromium,
+  nodePackages,
+  git,
   source,
 }:
 let
@@ -8,14 +11,21 @@ let
     (mkPnpmPackage {
       inherit (source) pname version src;
       installEnv.PUPPETEER_SKIP_DOWNLOAD = "1";
-      noDevDependencies = true;
+      # noDevDependencies = true;
     }).passthru.nodeModules;
 in
 stdenvNoCC.mkDerivation {
   inherit (source) pname version src;
+  buildInputs = [
+    chromium
+    nodePackages.pnpm
+    git
+  ];
+  buildPhase = ''
+    ln -s ${node-modules}/node_modules node_modules
+    pnpm build
+  '';
   installPhase = ''
-    mkdir -p $out
-    ln -s ${node-modules}/node_modules $out/node_modules
-    cp -r lib $out/lib
+    cp -r . $out
   '';
 }
