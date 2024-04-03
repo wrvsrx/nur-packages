@@ -341,15 +341,15 @@
   };
   taskwarrior-utils = {
     pname = "taskwarrior-utils";
-    version = "8128ff22e672de756f1904031cd258587eadb5f4";
+    version = "911ff711c665153b3ed9ba409671e674797eb481";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "taskwarrior-to-dot";
-      rev = "8128ff22e672de756f1904031cd258587eadb5f4";
+      rev = "911ff711c665153b3ed9ba409671e674797eb481";
       fetchSubmodules = false;
-      sha256 = "sha256-KndkuGNGLDAMcn1duWnuhAMhtQDo27+MjiTOVfWOJYg=";
+      sha256 = "sha256-63JOdhdLcoEyUFx6KEMdcB6clXobBgsJ4NRUPYTD4AA=";
     };
-    date = "2023-08-24";
+    date = "2024-04-03";
   };
   utfcpp = {
     pname = "utfcpp";
