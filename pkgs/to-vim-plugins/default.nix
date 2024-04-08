@@ -10,6 +10,10 @@ in
     inherit (sources.nvim-numbertoggle) pname version src;
     meta.homepage = "https://github.com/sitiom/nvim-numbertoggle";
   };
+  linediff-vim = buildVimPlugin {
+    inherit (sources.linediff-vim) pname version src;
+    meta.homepage = "https://github.com/AndrewRadev/linediff.vim";
+  };
   coc-zk = callIFD {
     inherit callPackage;
     source = sources.coc-zk;

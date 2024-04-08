@@ -214,6 +214,19 @@
     };
     date = "2015-10-31";
   };
+  linediff-vim = {
+    pname = "linediff-vim";
+    version = "245d16328c47a132574e0fa4298d24a0f78b20b0";
+    src = fetchgit {
+      url = "https://github.com/AndrewRadev/linediff.vim";
+      rev = "245d16328c47a132574e0fa4298d24a0f78b20b0";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "sha256-3VxpJpogPFBmo966GB90sQvcj/Ah56lGyR/y/WV3QT0=";
+    };
+    date = "2023-03-15";
+  };
   lyra = {
     pname = "lyra";
     version = "a8bb6e22ea4dcd507292ecdb6443bad23ef7bfeb";
