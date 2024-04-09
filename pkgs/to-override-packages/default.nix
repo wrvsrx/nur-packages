@@ -14,8 +14,4 @@ in
     inherit (pkgs) spdlog;
     source = sources.spdlog;
   };
-  calibre = pkgs.qt6Packages.callPackage ./calibre {
-    podofo = pkgs.podofo010;
-    source = sources.calibre;
-  };
 }
