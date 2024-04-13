@@ -10,8 +10,4 @@ in
     source = sources.xclip;
   };
   lyra = callPackage ./lyra { source = sources.lyra; };
-  spdlog = callPackage ./spdlog {
-    inherit (pkgs) spdlog;
-    source = sources.spdlog;
-  };
 }

@@ -55,16 +55,4 @@ rec {
       height = 2160;
     };
   };
-  osc52 = callIFD {
-    inherit (haskellPackages) callPackage;
-    source = sources.osc52;
-  };
-  taskwarrior-utils = callIFD {
-    inherit (haskellPackages) callPackage;
-    source = sources.taskwarrior-utils;
-  };
-  calendar-visualization = callIFD {
-    inherit (haskellPackages) callPackage;
-    source = sources.calendar-visualization;
-  };
 }

@@ -29,7 +29,8 @@ let
     buildPhase = ''
       mkdir cache
       export XDG_CACHE_HOME=$PWD/cache
-      bun install --frozen-lockfile --verbose --production --ignore-scripts
+      # bun's update breaks `bun.lockb` sometimes
+      bun install --verbose --ignore-scripts
     '';
     installPhase = "cp -r cache $out";
     outputHash = "sha256-xuFQajgU+W/k6NIYKuV9AQAGX3OkU0h5SBr+KT1zBi0=";
@@ -55,7 +56,8 @@ let
       cp -r ${node_modules_cache} cache
       export XDG_CACHE_HOME=$PWD/cache
       chmod +w $PWD/cache/.bun/install/cache
-      bun install --frozen-lockfile --verbose --production
+      # bun's update breaks `bun.lockb` sometimes
+      bun install --verbose
       bun run build
     '';
     installPhase = "cp -r dist $out";
