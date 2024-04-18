@@ -37,7 +37,10 @@ rec {
     source = sources.rsshub;
     inherit (pkgs) mkPnpmPackage;
   };
-  metacubexd = callPackage ./metacubexd { source = sources.metacubexd; };
+  metacubexd = callPackage ./metacubexd {
+    source = sources.metacubexd;
+    inherit (pkgs) mkPnpmPackage;
+  };
   yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };
   nx_tzdb = callPackage ./nx_tzdb { source = sources.nx_tzdb; };
   compat-list = callPackage ./compat-list { source = sources.compat-list; };
