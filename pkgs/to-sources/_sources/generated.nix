@@ -241,13 +241,13 @@
   };
   metacubexd = {
     pname = "metacubexd";
-    version = "v1.135.1";
+    version = "v1.138.0";
     src = fetchFromGitHub {
       owner = "MetaCubeX";
       repo = "metacubexd";
-      rev = "v1.135.1";
+      rev = "v1.138.0";
       fetchSubmodules = false;
-      sha256 = "sha256-xizY9tCTxlUTmBmjtBwwgdeUw5qX0QCmZ1deannP/OY=";
+      sha256 = "sha256-SFqXmH9buSPak5jjFaf1tSDw9HUmJgIbfjYOXXiQssI=";
     };
   };
   noto-fonts-emoji-monochrome = {
