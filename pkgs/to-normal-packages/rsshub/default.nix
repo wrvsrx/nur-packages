@@ -5,17 +5,14 @@
   writeText,
   writeShellScriptBin,
   bash,
+  fetchpatch,
+  applyPatches,
   source,
 }:
 let
-  node-modules =
-    (mkPnpmPackage {
-      inherit (source) pname version src;
-      installEnv.PUPPETEER_SKIP_DOWNLOAD = "1";
-      # noDevDependencies = true;
-    }).passthru.nodeModules;
-  rsshub-website = stdenvNoCC.mkDerivation {
-    inherit (source) pname version src;
+  patched-src = applyPatches {
+    name = "patched-rsshub-src";
+    inherit (source) src;
     patches = [
       (writeText "git.patch" ''
         diff --git a/lib/utils/git-hash.ts b/lib/utils/git-hash.ts
@@ -48,7 +45,22 @@ let
          
          export { gitHash, gitDate };
       '')
+      (fetchpatch {
+        url = "https://github.com/wrvsrx/RSSHub/commit/91dd48083edbf8e6370b8e98844d04dad5a3390c.patch";
+        hash = "sha256-72OygZh7XNDpFMrgxxRRNS/911NkoCBTH9POz2kWtw4=";
+      })
     ];
+  };
+  node-modules =
+    (mkPnpmPackage {
+      inherit (source) pname version;
+      src = "${patched-src}";
+      installEnv.PUPPETEER_SKIP_DOWNLOAD = "1";
+      noDevDependencies = true;
+    }).passthru.nodeModules;
+  rsshub-website = stdenvNoCC.mkDerivation {
+    inherit (source) pname version;
+    src = patched-src;
     buildInputs = [ nodePackages.pnpm ];
     buildPhase = ''
       ln -s ${node-modules}/node_modules node_modules
