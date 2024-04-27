@@ -296,15 +296,15 @@
   };
   rsshub = {
     pname = "rsshub";
-    version = "c7f277eca8ba7765bb8c89ebce19e632b46e715f";
+    version = "db2b5cc326a825072c579c1492b609773dc4687d";
     src = fetchFromGitHub {
       owner = "DIYGod";
       repo = "RSSHub";
-      rev = "c7f277eca8ba7765bb8c89ebce19e632b46e715f";
+      rev = "db2b5cc326a825072c579c1492b609773dc4687d";
       fetchSubmodules = false;
-      sha256 = "sha256-S+M8ctEfnHT5qBdalcPJqmv6t1lGfOnTFVYO+tkD8/E=";
+      sha256 = "sha256-tzUPUDZux8Z9PZ1WlGlv9Rh+Q8LSuiGPIPlZNv7uwhE=";
     };
-    date = "2024-04-23";
+    date = "2024-04-27";
   };
   seal_lake = {
     pname = "seal_lake";
