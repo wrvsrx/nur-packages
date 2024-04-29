@@ -1,6 +1,6 @@
 { pkgs, to-sources }:
 let
-  inherit (pkgs) callPackage haskellPackages qt6Packages;
+  inherit (pkgs) callPackage qt6Packages;
   sources = to-sources { inherit pkgs; };
   callIFD = import ../callIFD.nix;
 in
@@ -15,7 +15,6 @@ rec {
     source = sources.noto-fonts-emoji-monochrome;
   };
   cyCodeBase = callPackage ./cyCodeBase { source = sources.cyCodeBase; };
-  trime-data = callPackage ./trime-data { };
   hougeo = callPackage ./hougeo { source = sources.hougeo; };
   happly = callPackage ./happly { source = sources.happly; };
   cnpy = callPackage ./cnpy { source = sources.cnpy; };
