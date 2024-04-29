@@ -149,3 +149,7 @@ fetch.url = "https://github.com/lat9nq/tzdb_to_nx/releases/download/$ver/$ver.zi
 [linediff-vim]
 src.git = "https://github.com/AndrewRadev/linediff.vim"
 fetch.git = "https://github.com/AndrewRadev/linediff.vim"
+
+[iCalendar]
+src.git = "https://github.com/wrvsrx/iCalendar"
+fetch.github = "wrvsrx/iCalendar"

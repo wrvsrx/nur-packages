@@ -7,14 +7,8 @@ let
 in
 rec {
   iCalendar =
-    (pkgs.haskell.lib.overrideSrc prev.iCalendar {
-      src = pkgs.fetchFromGitHub {
-        owner = "wrvsrx";
-        repo = "iCalendar";
-        rev = "e2f5f700294ae0d205b6bf2e372f3a99f801d7fc";
-        hash = "sha256-e2aZr8Vh/HJnTV8GwIDMzGTZBZdYf72NtapHElHw0gg=";
-      };
-    }).overrideAttrs
+    (pkgs.haskell.lib.overrideSrc prev.iCalendar { inherit (sources.iCalendar) version src; })
+    .overrideAttrs
       (old: {
         meta = old.meta // {
           broken = false;
