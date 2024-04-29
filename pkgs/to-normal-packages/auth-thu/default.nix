@@ -4,8 +4,7 @@
   source,
 }:
 buildGoModule {
-  inherit (source) pname src;
-  version = source.version;
+  inherit (source) pname src version;
   vendorHash = "sha256-GRviH+w9WjjuvE0078NU4b9Hf/ZqBaQ9BxiWXeiGeWU=";
   subPackages = [ "cli" ];
   postInstall = "mv $out/bin/cli $out/bin/$pname";

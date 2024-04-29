@@ -38,7 +38,7 @@ let
             googletrans
             ;
         };
-      haskell-packages = (pkgs-to-haskell-overlay pkgs { } pkgs.haskellPackages);
+      haskell-packages = pkgs-to-haskell-overlay pkgs { } pkgs.haskellPackages;
       vim-plugins = pkgs-to-vim-plugins pkgs;
     in
     flat-packages // python-packages // vim-plugins // haskell-packages;
