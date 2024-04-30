@@ -134,26 +134,6 @@
         },
         "version": "c963404dbeb51bc6264e079b3240c279ce6f7848"
     },
-    "calibre": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "calibre",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "kovidgoyal",
-            "repo": "calibre",
-            "rev": "v7.7.0",
-            "sha256": "sha256-ZtxJWPtptrfHnDK3toJwYKgJ4I3v6Wnx8XzzfNUmA3s=",
-            "type": "github"
-        },
-        "version": "v7.7.0"
-    },
     "cccl": {
         "cargoLocks": null,
         "date": "2024-01-30",
