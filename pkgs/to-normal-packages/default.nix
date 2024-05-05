@@ -43,9 +43,11 @@ rec {
   yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };
   nx_tzdb = callPackage ./nx_tzdb { source = sources.nx_tzdb; };
   compat-list = callPackage ./compat-list { source = sources.compat-list; };
-  yuzu-early-access = qt6Packages.callPackage ./yuzu-earyly-access {
-    source = sources.yuzu;
-    inherit nx_tzdb compat-list;
+  yuzu-early-access = import ./yuzu {
+    sources = {
+      inherit (sources) yuzu nx_tzdb compat-list;
+    };
+    inherit pkgs;
   };
 
   # my packages
