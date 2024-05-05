@@ -1,6 +1,6 @@
 { pkgs, to-sources }:
 let
-  inherit (pkgs) callPackage qt6Packages;
+  inherit (pkgs) callPackage;
   sources = to-sources { inherit pkgs; };
   callIFD = import ../callIFD.nix;
 in
@@ -43,9 +43,9 @@ rec {
   yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };
   nx_tzdb = callPackage ./nx_tzdb { source = sources.nx_tzdb; };
   compat-list = callPackage ./compat-list { source = sources.compat-list; };
-  yuzu-early-access = import ./yuzu {
+  yuzu = import ./yuzu {
     sources = {
-      inherit (sources) yuzu nx_tzdb compat-list;
+      inherit (sources) suyu nx_tzdb compat-list;
     };
     inherit pkgs;
   };

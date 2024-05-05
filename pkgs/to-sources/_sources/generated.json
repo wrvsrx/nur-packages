@@ -598,6 +598,25 @@
         },
         "version": "v0.1.3"
     },
+    "suyu": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "suyu",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": true,
+            "fetchSubmodules": true,
+            "leaveDotGit": true,
+            "name": null,
+            "rev": "42f3dd309e8d89aef74344c5a66d0d1c7d7789a4",
+            "sha256": "sha256-B15AaXjfr+Ux/+f1Van3LIIFZ6AsM8vT4lHDgGbEWAE=",
+            "type": "git",
+            "url": "https://git.suyu.dev/suyu/suyu"
+        },
+        "version": "42f3dd309e8d89aef74344c5a66d0d1c7d7789a4"
+    },
     "taskwarrior-utils": {
         "cargoLocks": null,
         "date": "2024-04-03",
@@ -697,25 +716,5 @@
             "type": "github"
         },
         "version": "v0.3.0"
-    },
-    "yuzu": {
-        "cargoLocks": null,
-        "date": "2024-03-15",
-        "extract": null,
-        "name": "yuzu",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": true,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "yuzu-mirror",
-            "repo": "yuzu",
-            "rev": "4ad024d2fc9d12a131d69deb1b07b7be36dc4f17",
-            "sha256": "sha256-YxPbzqgQ8Hh2evs+57LSnvOWrVIm1ukaCWzlzB6otk4=",
-            "type": "github"
-        },
-        "version": "4ad024d2fc9d12a131d69deb1b07b7be36dc4f17"
     }
 }

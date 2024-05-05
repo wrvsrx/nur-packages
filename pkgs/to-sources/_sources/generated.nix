@@ -353,6 +353,18 @@
       sha256 = "sha256-AyWtJ+EyTN2LEXLM5OSQB3ITzqLLRoirzkWnjwLHOIA=";
     };
   };
+  suyu = {
+    pname = "suyu";
+    version = "42f3dd309e8d89aef74344c5a66d0d1c7d7789a4";
+    src = fetchgit {
+      url = "https://git.suyu.dev/suyu/suyu";
+      rev = "42f3dd309e8d89aef74344c5a66d0d1c7d7789a4";
+      fetchSubmodules = true;
+      deepClone = true;
+      leaveDotGit = true;
+      sha256 = "sha256-B15AaXjfr+Ux/+f1Van3LIIFZ6AsM8vT4lHDgGbEWAE=";
+    };
+  };
   taskwarrior-utils = {
     pname = "taskwarrior-utils";
     version = "911ff711c665153b3ed9ba409671e674797eb481";
@@ -410,17 +422,5 @@
       fetchSubmodules = false;
       sha256 = "sha256-Su3mnC7hsw0T0u6HfsnYAwXml2T7CABySv7a18+KnK0=";
     };
-  };
-  yuzu = {
-    pname = "yuzu";
-    version = "4ad024d2fc9d12a131d69deb1b07b7be36dc4f17";
-    src = fetchFromGitHub {
-      owner = "yuzu-mirror";
-      repo = "yuzu";
-      rev = "4ad024d2fc9d12a131d69deb1b07b7be36dc4f17";
-      fetchSubmodules = true;
-      sha256 = "sha256-YxPbzqgQ8Hh2evs+57LSnvOWrVIm1ukaCWzlzB6otk4=";
-    };
-    date = "2024-03-15";
   };
 }

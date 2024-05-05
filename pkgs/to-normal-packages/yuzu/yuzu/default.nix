@@ -33,12 +33,16 @@
   yasm,
   zlib,
   zstd,
+  gitMinimal,
   source,
 }:
 stdenv.mkDerivation (finalAttrs: {
-  inherit (source) pname version src;
+  pname = "yuzu";
+  version = "4716";
+  inherit (source) src;
 
   nativeBuildInputs = [
+    gitMinimal
     cmake
     glslang
     pkg-config
@@ -130,6 +134,8 @@ stdenv.mkDerivation (finalAttrs: {
   qtWrapperArgs = [ "--prefix LD_LIBRARY_PATH : ${vulkan-loader}/lib" ];
 
   preConfigure = ''
+    git reset 15e6e48bef0216480661444a8d8b348c1cca47bb --hard
+    git submodule update
     # see https://github.com/NixOS/nixpkgs/issues/114044, setting this through cmakeFlags does not work.
     cmakeFlagsArray+=(
       "-DTITLE_BAR_FORMAT_IDLE=${finalAttrs.pname} | ${finalAttrs.version} (nixpkgs) {}"
@@ -147,7 +153,7 @@ stdenv.mkDerivation (finalAttrs: {
   '';
 
   postInstall = ''
-    install -Dm444 $src/dist/72-yuzu-input.rules $out/lib/udev/rules.d/72-yuzu-input.rules
+    install -Dm444 ../dist/72-yuzu-input.rules $out/lib/udev/rules.d/72-yuzu-input.rules
   '';
 
   passthru.updateScript = nix-update-script {
