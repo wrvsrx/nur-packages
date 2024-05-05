@@ -100,7 +100,7 @@
               overlays = [ inputs.pnpm2nix-nzbr.overlays.default ];
             };
             packages = pkgs-to-packages pkgs;
-            checks = builtins.removeAttrs packages [ "suyu" ];
+            checks = builtins.removeAttrs packages [ "yuzu" ];
             formatter = pkgs.nixfmt-rfc-style;
             devShells.default = pkgs.mkShell { nativeBuildInputs = [ pkgs.nvfetcher ]; };
           };
