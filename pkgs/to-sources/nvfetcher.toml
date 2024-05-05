@@ -129,14 +129,6 @@ fetch.github = "MetaCubeX/metacubexd"
 src.git = "https://github.com/z4yx/GoAuthing"
 fetch.github = "z4yx/GoAuthing"
 
-[suyu]
-# Its submodules has been redirected to a forked version
-src.manual = "42f3dd309e8d89aef74344c5a66d0d1c7d7789a4"
-git.fetchSubmodules = true
-git.leaveDotGit = true
-git.deepClone = true
-fetch.git = "https://git.suyu.dev/suyu/suyu"
-
 [compat-list]
 src.git = "https://github.com/flathub/org.yuzu_emu.yuzu"
 fetch.github = "flathub/org.yuzu_emu.yuzu"

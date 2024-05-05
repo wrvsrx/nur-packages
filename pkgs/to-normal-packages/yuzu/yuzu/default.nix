@@ -33,16 +33,30 @@
   yasm,
   zlib,
   zstd,
-  gitMinimal,
-  source,
+  fetchgit,
+  coreutils,
 }:
+let
+  src = fetchgit {
+    url = "https://git.suyu.dev/suyu/suyu";
+    rev = "42f3dd309e8d89aef74344c5a66d0d1c7d7789a4";
+    fetchSubmodules = true;
+    deepClone = true;
+    leaveDotGit = true;
+    sha256 = "sha256-LsVLOGWVuuMgi7ZrZgPh+JRTv4NEGOqM1Hp6X62zItE=";
+    postFetch = ''
+      ${coreutils}/bin/env --chdir=$out git reset 15e6e48bef0216480661444a8d8b348c1cca47bb --hard
+      ${coreutils}/bin/env --chdir=$out git submodule update
+      rm -rf $out/.git
+    '';
+  };
+in
 stdenv.mkDerivation (finalAttrs: {
   pname = "yuzu";
   version = "4716";
-  inherit (source) src;
+  inherit src;
 
   nativeBuildInputs = [
-    gitMinimal
     cmake
     glslang
     pkg-config
@@ -134,8 +148,6 @@ stdenv.mkDerivation (finalAttrs: {
   qtWrapperArgs = [ "--prefix LD_LIBRARY_PATH : ${vulkan-loader}/lib" ];
 
   preConfigure = ''
-    git reset 15e6e48bef0216480661444a8d8b348c1cca47bb --hard
-    git submodule update
     # see https://github.com/NixOS/nixpkgs/issues/114044, setting this through cmakeFlags does not work.
     cmakeFlagsArray+=(
       "-DTITLE_BAR_FORMAT_IDLE=${finalAttrs.pname} | ${finalAttrs.version} (nixpkgs) {}"

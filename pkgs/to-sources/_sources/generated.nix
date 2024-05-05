@@ -353,18 +353,6 @@
       sha256 = "sha256-AyWtJ+EyTN2LEXLM5OSQB3ITzqLLRoirzkWnjwLHOIA=";
     };
   };
-  suyu = {
-    pname = "suyu";
-    version = "42f3dd309e8d89aef74344c5a66d0d1c7d7789a4";
-    src = fetchgit {
-      url = "https://git.suyu.dev/suyu/suyu";
-      rev = "42f3dd309e8d89aef74344c5a66d0d1c7d7789a4";
-      fetchSubmodules = true;
-      deepClone = true;
-      leaveDotGit = true;
-      sha256 = "sha256-B15AaXjfr+Ux/+f1Van3LIIFZ6AsM8vT4lHDgGbEWAE=";
-    };
-  };
   taskwarrior-utils = {
     pname = "taskwarrior-utils";
     version = "911ff711c665153b3ed9ba409671e674797eb481";
