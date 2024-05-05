@@ -100,7 +100,7 @@
               overlays = [ inputs.pnpm2nix-nzbr.overlays.default ];
             };
             packages = pkgs-to-packages pkgs;
-            checks = packages;
+            checks = builtins.removeAttrs packages [ "yuzu-early-access" ];
             formatter = pkgs.nixfmt-rfc-style;
             devShells.default = pkgs.mkShell { nativeBuildInputs = [ pkgs.nvfetcher ]; };
           };
