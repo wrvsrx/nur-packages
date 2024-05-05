@@ -41,8 +41,6 @@ rec {
     inherit (pkgs) mkPnpmPackage;
   };
   yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };
-  nx_tzdb = callPackage ./nx_tzdb { source = sources.nx_tzdb; };
-  compat-list = callPackage ./compat-list { source = sources.compat-list; };
   yuzu = import ./yuzu {
     sources = {
       inherit (sources) suyu nx_tzdb compat-list;
