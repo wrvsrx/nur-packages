@@ -7,7 +7,12 @@ in
 rec {
   auth-thu = callPackage ./auth-thu { source = sources.auth-thu; };
   autodiff = callPackage ./autodiff { source = sources.autodiff; };
-  inherit (callPackage ./noto-fonts-cjk { })
+  inherit
+    (callPackage ./noto-fonts-cjk {
+      sources = {
+        inherit (sources) noto-fonts-cjk-sans-fix-weight noto-fonts-cjk-serif-fix-weight;
+      };
+    })
     noto-fonts-cjk-sans-fix-weight
     noto-fonts-cjk-serif-fix-weight
     ;
@@ -19,7 +24,7 @@ rec {
   happly = callPackage ./happly { source = sources.happly; };
   cnpy = callPackage ./cnpy { source = sources.cnpy; };
   amgcl = callPackage ./amgcl { source = sources.amgcl; };
-  cuda-samples = callPackage ./cuda-samples { };
+  cuda-samples = callPackage ./cuda-samples { source = sources.cuda-samples; };
   structopt = callPackage ./structopt { source = sources.structopt; };
   utfcpp = callPackage ./utfcpp { source = sources.utfcpp; };
   seal_lake = callPackage ./seal_lake { source = sources.seal_lake; };

@@ -12,25 +12,18 @@
   imagemagick,
   zopfli,
   buildPackages,
+  sources,
 }:
 let
   mkNotoCJK =
     {
       typeface,
       version,
-      sha256,
+      src,
     }:
     stdenvNoCC.mkDerivation {
       pname = "noto-fonts-cjk-${lib.toLower typeface}";
-      inherit version;
-
-      src = fetchFromGitHub {
-        owner = "googlefonts";
-        repo = "noto-cjk";
-        rev = "${typeface}${version}";
-        inherit sha256;
-        sparseCheckout = [ "${typeface}/OTC" ];
-      };
+      inherit version src;
 
       installPhase = ''
         install -m444 -Dt $out/share/fonts/opentype/noto-cjk ${typeface}/OTC/*.ttc
@@ -66,12 +59,12 @@ in
   noto-fonts-cjk-sans-fix-weight = mkNotoCJK {
     typeface = "Sans";
     version = "2.004";
-    sha256 = "sha256-GXULnRPsIJRdiL3LdFtHbqTqSvegY2zodBxFm4P55to=";
+    inherit (sources.noto-fonts-cjk-sans-fix-weight) src;
   };
 
   noto-fonts-cjk-serif-fix-weight = mkNotoCJK {
     typeface = "Serif";
     version = "2.001";
-    sha256 = "sha256-QZGnFXQlwfsOchKipimLczb8xV9BODMxpoxIXckoSYw=";
+    inherit (sources.noto-fonts-cjk-serif-fix-weight) src;
   };
 }

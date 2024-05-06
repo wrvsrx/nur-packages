@@ -96,6 +96,36 @@
         "type": "github"
       }
     },
+    "nvfetcher": {
+      "inputs": {
+        "flake-compat": [
+          "flake-lock",
+          "flake-compat"
+        ],
+        "flake-utils": [
+          "flake-lock",
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "flake-lock",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1714983130,
+        "narHash": "sha256-8vSbH/BwYg+ktb1/3O6HcnflZ2onzG24YHy7rm4ijqc=",
+        "owner": "wrvsrx",
+        "repo": "nvfetcher",
+        "rev": "bc5bc905a788f88f8c10ef9c0f4ca5234441685b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "wrvsrx",
+        "ref": "sparseCheckout",
+        "repo": "nvfetcher",
+        "type": "github"
+      }
+    },
     "pnpm2nix-nzbr": {
       "inputs": {
         "flake-utils": [
@@ -132,6 +162,7 @@
           "flake-lock",
           "nixpkgs"
         ],
+        "nvfetcher": "nvfetcher",
         "pnpm2nix-nzbr": "pnpm2nix-nzbr"
       }
     },

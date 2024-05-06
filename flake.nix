@@ -9,6 +9,12 @@
     };
     nixpkgs.follows = "flake-lock/nixpkgs";
     flake-parts.follows = "flake-lock/flake-parts";
+    nvfetcher = {
+      url = "github:wrvsrx/nvfetcher/sparseCheckout";
+      inputs.nixpkgs.follows = "flake-lock/nixpkgs";
+      inputs.flake-utils.follows = "flake-lock/flake-utils";
+      inputs.flake-compat.follows = "flake-lock/flake-compat";
+    };
   };
   outputs =
     inputs':
@@ -102,7 +108,7 @@
             packages = pkgs-to-packages pkgs;
             checks = builtins.removeAttrs packages [ "yuzu" ];
             formatter = pkgs.nixfmt-rfc-style;
-            devShells.default = pkgs.mkShell { nativeBuildInputs = [ pkgs.nvfetcher ]; };
+            devShells.default = pkgs.mkShell { nativeBuildInputs = [ inputs.nvfetcher.packages."${system}".default ]; };
           };
       }
     );
