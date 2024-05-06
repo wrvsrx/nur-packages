@@ -17,7 +17,6 @@
       repo = "amgcl";
       rev = "1.4.4";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-PSIWbOyBtJTVslp3tP5YX81YzTQC5DCfs4WhwwmwFew=";
     };
   };
@@ -29,7 +28,6 @@
       repo = "GoAuthing";
       rev = "d828582922eeecf43baac7d1da4c4e533aa1dd66";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-EyeG2jyi4cQ0k8xChW9azipClJMdwUSuT0OPDBS+u28=";
     };
     date = "2024-03-02";
@@ -42,7 +40,6 @@
       repo = "autobean-format";
       rev = "7849d89eefb433036736bbb1c3168eb02337d34c";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-UvPHcJjgLJzhvh+CGPO8oco0eXc5gTJ1wHXV5pYwnV0=";
     };
     date = "2023-09-17";
@@ -55,7 +52,6 @@
       repo = "autobean-refactor";
       rev = "36fedaf8e7104d6da06b28936bcf6dae2b5267bf";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-MxCVuk7kuAA0GixII4XbWGPDk54mwKUeK7s0gGVgnF8=";
     };
     date = "2023-07-01";
@@ -68,7 +64,6 @@
       repo = "autodiff";
       rev = "v1.0.3";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-hdIbEIZrxA5EA3XY4MIazRv3DazUjpuDJRCgq8+kJQg=";
     };
   };
@@ -80,7 +75,6 @@
       repo = "calendar-visualization";
       rev = "099535c19755f7f26cc9dd7651dbb8e201783e9f";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-PcOeBPW53BtZSuz0AD+jMmlGlFvZBaZT71AFo83wRJU=";
     };
     date = "2024-05-02";
@@ -93,7 +87,6 @@
       repo = "cccl";
       rev = "d4ca07a7da2a59e28a1b2a659881c7574146d240";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-D79EWf7//QQ0pTZD6OxqktV9dh3PNKm9UADkKmVRGMA=";
     };
     date = "2024-01-30";
@@ -106,7 +99,6 @@
       repo = "cmdlime";
       rev = "80d9673456b4cb8223ad9cf176ec88d61a388c70";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-SHum/OoVEaktqmR7tgNozGSQ8Ct14FHeycuL8mAnZbM=";
     };
     date = "2023-08-29";
@@ -119,7 +111,6 @@
       repo = "cnpy";
       rev = "4e8810b1a8637695171ed346ce68f6984e585ef4";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-NMPDpeNoqvqAhwQk4J+TFw+BtNLI4R+CXpzXQ6hB/LU=";
     };
     date = "2018-05-31";
@@ -132,7 +123,6 @@
       repo = "coc-zk";
       rev = "128028b3be56590d42f531170eb451ae193b5271";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-dzrwL07uZIkau33QWeQBBIUs8oLfED0JNAdOKaroJf0=";
     };
     date = "2024-04-30";
@@ -145,7 +135,6 @@
       repo = "org.yuzu_emu.yuzu";
       rev = "4abf1d239aba843180abfed58fa8541432fece5b";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-rBnsW8ijDEPCXzIkbfQnyhSFhIv91+jIkNPosVHJ2UY=";
     };
     date = "2024-03-04";
@@ -166,6 +155,8 @@
       repo = "cuda-samples";
       rev = "03309a2d4275a9186b748e033ee5f90a11492a2f";
       fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
       sparseCheckout = [ "Common" ];
       sha256 = "sha256-lt6HpU1hmRf6pISpDnlJ38ovWuVOIFGR9DCC8rDYaiQ=";
     };
@@ -178,7 +169,6 @@
       repo = "cyCodeBase";
       rev = "ede026f5c1976faa90709690a4290161ed05c19b";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-1wBpadgCNbcrp4kRn4XLjbthtxuzMuOMNC/hbREHbiE=";
     };
     date = "2023-07-26";
@@ -191,7 +181,6 @@
       repo = "giraffe-wallpaper";
       rev = "6fc686fe7b43cb6be8eaf3a9dc42177eb355eadd";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-vbpK1+ipg3KzBaX9g8zZiYU8abvKBMkOZKmP8r89wFg=";
     };
     date = "2023-05-20";
@@ -212,7 +201,6 @@
       repo = "happly";
       rev = "8a606309daaa680eee495c8279feb0b704148f4a";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-KKQdvRxqSXq3Q0TlcpDr+YGlUV3oP7PaE1V2KoP0rXg=";
     };
     date = "2024-02-06";
@@ -225,7 +213,6 @@
       repo = "hougeo";
       rev = "7e48d2bda0f94fc96b2d8b2917d5ef306ba83c97";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-QbPT7oJH835hfdP+o2ON9gQliuktDu4vmS5zzyG8Wfg=";
     };
     date = "2015-10-31";
@@ -238,7 +225,6 @@
       repo = "iCalendar";
       rev = "e2f5f700294ae0d205b6bf2e372f3a99f801d7fc";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-e2aZr8Vh/HJnTV8GwIDMzGTZBZdYf72NtapHElHw0gg=";
     };
     date = "2024-04-13";
@@ -265,7 +251,6 @@
       repo = "Lyra";
       rev = "a8bb6e22ea4dcd507292ecdb6443bad23ef7bfeb";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-8Y2p6A73UvWr0mKVgMW5LchRRp5DtAg/R1vZB6q2zOA=";
     };
     date = "2023-04-23";
@@ -278,7 +263,6 @@
       repo = "metacubexd";
       rev = "v1.138.0";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-SFqXmH9buSPak5jjFaf1tSDw9HUmJgIbfjYOXXiQssI=";
     };
   };
@@ -290,6 +274,8 @@
       repo = "noto-cjk";
       rev = "Sans2.004";
       fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
       sparseCheckout = [ "Sans/OTC" ];
       sha256 = "sha256-GXULnRPsIJRdiL3LdFtHbqTqSvegY2zodBxFm4P55to=";
     };
@@ -302,6 +288,8 @@
       repo = "noto-cjk";
       rev = "Serif2.002";
       fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
       sparseCheckout = [ "Serif/OTC" ];
       sha256 = "sha256-ihbhbv875XEHupFUzIdEweukqEmwQXCXCiTG7qisE64=";
     };
@@ -314,7 +302,6 @@
       repo = "noto-emoji";
       rev = "d5f498241b3b77beddce3a53ee802c34b1fa46c4";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-NpT4SUUq7JfenAfz+XvV/My2rxTntX99zdwp9RKcySo=";
     };
     date = "2023-03-28";
@@ -327,7 +314,6 @@
       repo = "nvim-numbertoggle";
       rev = "9ab95e60ea5ec138e1b2332e0fc18b8e5de464c6";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-1QImFgjpfsLJ6xxb1HZPQdBH/QGPtYs5bQ7v5Mxa/nY=";
     };
     date = "2023-10-09";
@@ -348,7 +334,6 @@
       repo = "osc52";
       rev = "477b99c8a1053183ede9978b2fe00dbcdb7c4b91";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-A4SIzkKs02csNGaETmU/9P0n8mjx6hjeTUbTjSi8unI=";
     };
     date = "2023-09-12";
@@ -361,7 +346,6 @@
       repo = "RSSHub";
       rev = "db2b5cc326a825072c579c1492b609773dc4687d";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-tzUPUDZux8Z9PZ1WlGlv9Rh+Q8LSuiGPIPlZNv7uwhE=";
     };
     date = "2024-04-27";
@@ -374,7 +358,6 @@
       repo = "seal_lake";
       rev = "ca84d624a8280c5354ea4d90cd29648804c6c489";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-h146QkqgOuZkqj8mJwuMVVbE+dclQrT3bo9dp3K0QUU=";
     };
     date = "2023-01-18";
@@ -387,7 +370,6 @@
       repo = "sfun";
       rev = "v5.0.0";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-HJo7rlKv0NaF6hC46EK5xlcAlCXeQIQiXRJaQoANqpA=";
     };
   };
@@ -399,7 +381,6 @@
       repo = "spdlog";
       rev = "696db97f672e9082e50e50af315d0f4234c82397";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-17k5di2NLwrkCBHa6esYV3703e+DQhj0NjOgQ5pnI/Q=";
     };
     date = "2024-01-16";
@@ -412,7 +393,6 @@
       repo = "structopt";
       rev = "v0.1.3";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-AyWtJ+EyTN2LEXLM5OSQB3ITzqLLRoirzkWnjwLHOIA=";
     };
   };
@@ -424,7 +404,6 @@
       repo = "taskwarrior-to-dot";
       rev = "911ff711c665153b3ed9ba409671e674797eb481";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-63JOdhdLcoEyUFx6KEMdcB6clXobBgsJ4NRUPYTD4AA=";
     };
     date = "2024-04-03";
@@ -437,7 +416,6 @@
       repo = "utfcpp";
       rev = "v4.0.5";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-oKVFUjCvkHjqifZe98aUe68IBUaAZYWU2S2rxyAA9Cg=";
     };
   };
@@ -449,7 +427,6 @@
       repo = "vdirsyncer";
       rev = "46c5622291136be6393654786a6895524e80600f";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-IrKMIEZQiccO3//Twh6oG5YS/ybIwNZD3nTaIPfEsDE=";
     };
     date = "2023-05-06";
@@ -462,7 +439,6 @@
       repo = "xclip";
       rev = "b372f73579d30f9ba998ffd0a73694e7abe2c313";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-pBGRV2h7JiNZ4Im3NySEq1UGNW65MpvTjpTxy0m8jc4=";
     };
     date = "2022-01-29";
@@ -475,7 +451,6 @@
       repo = "yalantinglibs";
       rev = "v0.3.0";
       fetchSubmodules = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-Su3mnC7hsw0T0u6HfsnYAwXml2T7CABySv7a18+KnK0=";
     };
   };
