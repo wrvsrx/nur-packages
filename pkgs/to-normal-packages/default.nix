@@ -3,19 +3,13 @@ let
   inherit (pkgs) callPackage;
   sources = to-sources { inherit pkgs; };
   callIFD = import ../callIFD.nix;
+  mkNotoCJK = callPackage ./noto-fonts-cjk { };
 in
 rec {
   auth-thu = callPackage ./auth-thu { source = sources.auth-thu; };
   autodiff = callPackage ./autodiff { source = sources.autodiff; };
-  inherit
-    (callPackage ./noto-fonts-cjk {
-      sources = {
-        inherit (sources) noto-fonts-cjk-sans-fix-weight noto-fonts-cjk-serif-fix-weight;
-      };
-    })
-    noto-fonts-cjk-sans-fix-weight
-    noto-fonts-cjk-serif-fix-weight
-    ;
+  noto-fonts-cjk-sans-fix-weight = mkNotoCJK { source = sources.noto-fonts-cjk-sans-fix-weight; };
+  noto-fonts-cjk-serif-fix-weight = mkNotoCJK { source = sources.noto-fonts-cjk-serif-fix-weight; };
   noto-fonts-emoji-monochrome = callPackage ./noto-fonts-emoji-monochrome {
     source = sources.noto-fonts-emoji-monochrome;
   };

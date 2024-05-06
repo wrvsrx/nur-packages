@@ -1,29 +1,20 @@
 {
-  stdenv,
   stdenvNoCC,
   lib,
-  fetchFromGitHub,
-  fetchurl,
-  cairo,
   nixosTests,
-  pkg-config,
-  pngquant,
-  which,
-  imagemagick,
-  zopfli,
-  buildPackages,
-  sources,
 }:
 let
   mkNotoCJK =
-    {
-      typeface,
-      version,
-      src,
-    }:
+    { source }:
+    let
+      ver = source.version;
+      typeface = builtins.substring 0 (builtins.stringLength ver - 5) ver;
+      version = builtins.substring (builtins.stringLength ver - 5) 5 ver;
+    in
     stdenvNoCC.mkDerivation {
       pname = "noto-fonts-cjk-${lib.toLower typeface}";
-      inherit version src;
+      inherit version;
+      inherit (source) src;
 
       installPhase = ''
         install -m444 -Dt $out/share/fonts/opentype/noto-cjk ${typeface}/OTC/*.ttc
@@ -55,16 +46,4 @@ let
       };
     };
 in
-{
-  noto-fonts-cjk-sans-fix-weight = mkNotoCJK {
-    typeface = "Sans";
-    version = "2.004";
-    inherit (sources.noto-fonts-cjk-sans-fix-weight) src;
-  };
-
-  noto-fonts-cjk-serif-fix-weight = mkNotoCJK {
-    typeface = "Serif";
-    version = "2.001";
-    inherit (sources.noto-fonts-cjk-serif-fix-weight) src;
-  };
-}
+mkNotoCJK
