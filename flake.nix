@@ -108,7 +108,9 @@
             packages = pkgs-to-packages pkgs;
             checks = builtins.removeAttrs packages [ "yuzu" ];
             formatter = pkgs.nixfmt-rfc-style;
-            devShells.default = pkgs.mkShell { nativeBuildInputs = [ inputs.nvfetcher.packages."${system}".default ]; };
+            devShells.default = pkgs.mkShell {
+              nativeBuildInputs = [ inputs.nvfetcher.packages."${system}".default ];
+            };
           };
       }
     );
