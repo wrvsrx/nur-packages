@@ -147,20 +147,6 @@
       sha256 = "sha256-c0cbrdAeXmnIFvs6Tg0BTwmcKCbuKD31cWzXsZAred0=";
     };
   };
-  cuda-samples = {
-    pname = "cuda-samples";
-    version = "03309a2d4275a9186b748e033ee5f90a11492a2f";
-    src = fetchFromGitHub {
-      owner = "NVIDIA";
-      repo = "cuda-samples";
-      rev = "03309a2d4275a9186b748e033ee5f90a11492a2f";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ "Common" ];
-      sha256 = "sha256-lt6HpU1hmRf6pISpDnlJ38ovWuVOIFGR9DCC8rDYaiQ=";
-    };
-  };
   cyCodeBase = {
     pname = "cyCodeBase";
     version = "ede026f5c1976faa90709690a4290161ed05c19b";
@@ -238,7 +224,6 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-3VxpJpogPFBmo966GB90sQvcj/Ah56lGyR/y/WV3QT0=";
     };
     date = "2023-03-15";
@@ -274,10 +259,7 @@
       repo = "noto-cjk";
       rev = "Sans2.004";
       fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ "Sans/OTC" ];
-      sha256 = "sha256-GXULnRPsIJRdiL3LdFtHbqTqSvegY2zodBxFm4P55to=";
+      sha256 = "sha256-m/BnqKINE7kG2Ze5+E8UsP9LyM+mUfyN5OAPfbmqe8k=";
     };
   };
   noto-fonts-cjk-serif-fix-weight = {
@@ -288,10 +270,7 @@
       repo = "noto-cjk";
       rev = "Serif2.002";
       fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ "Serif/OTC" ];
-      sha256 = "sha256-ihbhbv875XEHupFUzIdEweukqEmwQXCXCiTG7qisE64=";
+      sha256 = "sha256-+/WEkjJ3xHML/3iNT25AdQz+3pX69gtS3tOsmm1Beac=";
     };
   };
   noto-fonts-emoji-monochrome = {

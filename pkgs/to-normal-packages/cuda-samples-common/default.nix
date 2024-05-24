@@ -4,12 +4,11 @@
   ninja,
   pkg-config,
   haskellPackages,
-  stdenv,
-  source,
+  cudaPackages,
 }:
-stdenv.mkDerivation {
-  inherit (source) pname src;
-  version = "12.2";
+cudaPackages.backendStdenv.mkDerivation {
+  pname = "cuda-samples-common";
+  inherit (cudaPackages.cuda-samples) version src;
   patches = [
     ./meson.patch
     ./cpp20.patch

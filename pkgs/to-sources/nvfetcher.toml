@@ -145,11 +145,6 @@ fetch.git = "https://github.com/AndrewRadev/linediff.vim"
 src.git = "https://github.com/wrvsrx/iCalendar"
 fetch.github = "wrvsrx/iCalendar"
 
-[cuda-samples]
-src.manual = "03309a2d4275a9186b748e033ee5f90a11492a2f"
-git.sparseCheckout = [ "Common" ]
-fetch.github = "NVIDIA/cuda-samples"
-
 [noto-fonts-cjk-sans-fix-weight]
 src.manual = "Sans2.004"
 fetch.github = "notofonts/noto-cjk"
