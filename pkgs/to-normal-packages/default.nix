@@ -30,7 +30,6 @@ rec {
     source = sources.cmdlime;
     inherit sfun seal_lake;
   };
-  cccl = callPackage ./cccl { source = sources.cccl; };
   rsshub = callPackage ./rsshub {
     source = sources.rsshub;
     inherit (pkgs) mkPnpmPackage;

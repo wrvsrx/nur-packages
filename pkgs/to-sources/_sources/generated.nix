@@ -79,18 +79,6 @@
     };
     date = "2024-05-02";
   };
-  cccl = {
-    pname = "cccl";
-    version = "d4ca07a7da2a59e28a1b2a659881c7574146d240";
-    src = fetchFromGitHub {
-      owner = "NVIDIA";
-      repo = "cccl";
-      rev = "d4ca07a7da2a59e28a1b2a659881c7574146d240";
-      fetchSubmodules = false;
-      sha256 = "sha256-D79EWf7//QQ0pTZD6OxqktV9dh3PNKm9UADkKmVRGMA=";
-    };
-    date = "2024-01-30";
-  };
   cmdlime = {
     pname = "cmdlime";
     version = "80d9673456b4cb8223ad9cf176ec88d61a388c70";
@@ -224,6 +212,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-3VxpJpogPFBmo966GB90sQvcj/Ah56lGyR/y/WV3QT0=";
     };
     date = "2023-03-15";
@@ -259,7 +248,10 @@
       repo = "noto-cjk";
       rev = "Sans2.004";
       fetchSubmodules = false;
-      sha256 = "sha256-m/BnqKINE7kG2Ze5+E8UsP9LyM+mUfyN5OAPfbmqe8k=";
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ "Sans/OTC" ];
+      sha256 = "sha256-GXULnRPsIJRdiL3LdFtHbqTqSvegY2zodBxFm4P55to=";
     };
   };
   noto-fonts-cjk-serif-fix-weight = {
@@ -270,7 +262,10 @@
       repo = "noto-cjk";
       rev = "Serif2.002";
       fetchSubmodules = false;
-      sha256 = "sha256-+/WEkjJ3xHML/3iNT25AdQz+3pX69gtS3tOsmm1Beac=";
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ "Serif/OTC" ];
+      sha256 = "sha256-ihbhbv875XEHupFUzIdEweukqEmwQXCXCiTG7qisE64=";
     };
   };
   noto-fonts-emoji-monochrome = {

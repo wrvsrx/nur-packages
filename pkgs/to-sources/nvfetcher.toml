@@ -112,11 +112,6 @@ fetch.github = "kamchatka-volcano/cmdlime"
 src.git = "https://github.com/gabime/spdlog"
 fetch.github = "gabime/spdlog"
 
-[cccl]
-src.git = "https://github.com/NVIDIA/cccl"
-src.branch = "branch/2.3.x"
-fetch.github = "NVIDIA/cccl"
-
 [rsshub]
 src.git = "https://github.com/DIYGod/RSSHub"
 fetch.github = "DIYGod/RSSHub"
