@@ -47,6 +47,8 @@ let
     postFetch = ''
       ${coreutils}/bin/env --chdir=$out git reset 15e6e48bef0216480661444a8d8b348c1cca47bb --hard
       ${coreutils}/bin/env --chdir=$out git submodule update
+      # https://github.com/NixOS/nixpkgs/issues/100498#issuecomment-1846499310
+      # when `fetchSubmodules` and `leaveDotGit` are both true, fetch will be not deterministic
       rm -rf $out/.git
     '';
   };
