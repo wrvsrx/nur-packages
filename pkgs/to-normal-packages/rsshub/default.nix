@@ -15,7 +15,14 @@ let
       inherit (source) pname version src;
       installEnv.PUPPETEER_SKIP_DOWNLOAD = "1";
       noDevDependencies = true;
-    }).passthru.nodeModules;
+    }).passthru.nodeModules.overrideAttrs
+      (old: {
+        installPhase =
+          old.installPhase
+          + ''
+            rm -f $out/node_modules/.pnpm/lock.yaml
+          '';
+      });
   rsshub-website = stdenvNoCC.mkDerivation {
     inherit (source) pname version src;
     patches = [
@@ -51,6 +58,9 @@ let
          export { gitHash, gitDate };
       '')
     ];
+    passthru = {
+      inherit node-modules;
+    };
     buildInputs = [ nodePackages.pnpm ];
     buildPhase = ''
       ln -s ${node-modules}/node_modules node_modules
