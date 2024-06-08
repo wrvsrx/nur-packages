@@ -149,3 +149,8 @@ git.sparseCheckout = [ "Sans/OTC" ]
 src.manual = "Serif2.002"
 fetch.github = "notofonts/noto-cjk"
 git.sparseCheckout = [ "Serif/OTC" ]
+
+[baikal]
+# src.github_tag = "sabre-io/Baikal"
+src.manual = "0.9.5"
+fetch.github = "sabre-io/Baikal"

@@ -119,6 +119,27 @@
         },
         "version": "v1.0.3"
     },
+    "baikal": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "baikal",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "sabre-io",
+            "repo": "Baikal",
+            "rev": "0.9.5",
+            "sha256": "sha256-bCsF61ZBAY2iL3ffLkJ+HocdKOhA3/8RyYVztqoaEVw=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "0.9.5"
+    },
     "calendar-visualization": {
         "cargoLocks": null,
         "date": "2024-05-02",
