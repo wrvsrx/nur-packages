@@ -1,6 +1,8 @@
 {
   source,
   nodePackages,
+  nodejs,
+  pnpm,
   vips,
   lib,
   pkg-config,
@@ -13,11 +15,10 @@ let
 in
 mkPnpmPackage {
   inherit (source) pname src;
-  inherit version;
-  inherit (nodePackages) nodejs;
+  inherit version pnpm nodejs;
   installEnv = {
     # otherwise, node-gyp will try to download node headers from internet
-    npm_config_nodedir = "${nodePackages.nodejs}";
+    npm_config_nodedir = "${nodejs}";
   };
   extraBuildInputs = [
     nodePackages.node-gyp

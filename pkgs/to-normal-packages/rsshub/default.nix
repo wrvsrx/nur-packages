@@ -1,7 +1,8 @@
 {
   mkPnpmPackage,
+  pnpm,
   stdenvNoCC,
-  nodePackages,
+  nodejs,
   writeText,
   writeShellScriptBin,
   bash,
@@ -13,6 +14,7 @@ let
   node-modules =
     (mkPnpmPackage {
       inherit (source) pname version src;
+      inherit pnpm;
       installEnv.PUPPETEER_SKIP_DOWNLOAD = "1";
       noDevDependencies = true;
     }).passthru.nodeModules.overrideAttrs
@@ -61,7 +63,10 @@ let
     passthru = {
       inherit node-modules;
     };
-    buildInputs = [ nodePackages.pnpm ];
+    nativeBuildInputs = [
+      pnpm
+      nodejs
+    ];
     buildPhase = ''
       ln -s ${node-modules}/node_modules node_modules
       pnpm build
@@ -77,7 +82,7 @@ let
       cat > $out/bin/rsshub <<- EOF
       #!${bash}/bin/bash
 
-      TSX_TSCONFIG_PATH=$out/tsconfig.json ${nodePackages.nodejs}/bin/node $out/node_modules/tsx/dist/cli.mjs $out/lib/index.ts
+      TSX_TSCONFIG_PATH=$out/tsconfig.json ${nodejs}/bin/node $out/node_modules/tsx/dist/cli.mjs $out/lib/index.ts
       EOF
       chmod +x $out/bin/rsshub
     '';
