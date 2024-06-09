@@ -242,13 +242,13 @@
   };
   metacubexd = {
     pname = "metacubexd";
-    version = "v1.138.0";
+    version = "v1.140.0";
     src = fetchFromGitHub {
       owner = "MetaCubeX";
       repo = "metacubexd";
-      rev = "v1.138.0";
+      rev = "v1.140.0";
       fetchSubmodules = false;
-      sha256 = "sha256-SFqXmH9buSPak5jjFaf1tSDw9HUmJgIbfjYOXXiQssI=";
+      sha256 = "sha256-OVLG+MHgwWTorPuBTHsHUAY1FSN91j7xWgRDJ7FiO7E=";
     };
   };
   noto-fonts-cjk-sans-fix-weight = {
@@ -325,15 +325,15 @@
   };
   rsshub = {
     pname = "rsshub";
-    version = "db2b5cc326a825072c579c1492b609773dc4687d";
+    version = "9fd5c42951983918e488ff364d7e07e1bd64fe5d";
     src = fetchFromGitHub {
       owner = "DIYGod";
       repo = "RSSHub";
-      rev = "db2b5cc326a825072c579c1492b609773dc4687d";
+      rev = "9fd5c42951983918e488ff364d7e07e1bd64fe5d";
       fetchSubmodules = false;
-      sha256 = "sha256-tzUPUDZux8Z9PZ1WlGlv9Rh+Q8LSuiGPIPlZNv7uwhE=";
+      sha256 = "sha256-C0RME1RCdjcThUQbqsIobmVQDViJcBSAL46z2E95M0E=";
     };
-    date = "2024-04-27";
+    date = "2024-06-09";
   };
   seal_lake = {
     pname = "seal_lake";

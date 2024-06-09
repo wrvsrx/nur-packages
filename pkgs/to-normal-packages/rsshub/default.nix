@@ -16,6 +16,7 @@ let
       inherit (source) pname version src;
       inherit pnpm;
       installEnv.PUPPETEER_SKIP_DOWNLOAD = "1";
+      installEnv.COREPACK_ENABLE_STRICT = "0";
       noDevDependencies = true;
     }).passthru.nodeModules.overrideAttrs
       (old: {

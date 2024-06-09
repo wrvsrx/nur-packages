@@ -435,12 +435,12 @@
             "name": null,
             "owner": "MetaCubeX",
             "repo": "metacubexd",
-            "rev": "v1.138.0",
-            "sha256": "sha256-SFqXmH9buSPak5jjFaf1tSDw9HUmJgIbfjYOXXiQssI=",
+            "rev": "v1.140.0",
+            "sha256": "sha256-OVLG+MHgwWTorPuBTHsHUAY1FSN91j7xWgRDJ7FiO7E=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.138.0"
+        "version": "v1.140.0"
     },
     "noto-fonts-cjk-sans-fix-weight": {
         "cargoLocks": null,
@@ -568,7 +568,7 @@
     },
     "rsshub": {
         "cargoLocks": null,
-        "date": "2024-04-27",
+        "date": "2024-06-09",
         "extract": null,
         "name": "rsshub",
         "passthru": null,
@@ -580,12 +580,12 @@
             "name": null,
             "owner": "DIYGod",
             "repo": "RSSHub",
-            "rev": "db2b5cc326a825072c579c1492b609773dc4687d",
-            "sha256": "sha256-tzUPUDZux8Z9PZ1WlGlv9Rh+Q8LSuiGPIPlZNv7uwhE=",
+            "rev": "9fd5c42951983918e488ff364d7e07e1bd64fe5d",
+            "sha256": "sha256-C0RME1RCdjcThUQbqsIobmVQDViJcBSAL46z2E95M0E=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "db2b5cc326a825072c579c1492b609773dc4687d"
+        "version": "9fd5c42951983918e488ff364d7e07e1bd64fe5d"
     },
     "seal_lake": {
         "cargoLocks": null,

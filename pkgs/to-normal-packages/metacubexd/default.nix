@@ -19,6 +19,10 @@ mkPnpmPackage {
   installEnv = {
     # otherwise, node-gyp will try to download node headers from internet
     npm_config_nodedir = "${nodejs}";
+    COREPACK_ENABLE_STRICT = "0";
+  };
+  env = {
+    COREPACK_ENABLE_STRICT = "0";
   };
   extraBuildInputs = [
     nodePackages.node-gyp

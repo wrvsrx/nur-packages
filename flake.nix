@@ -3,7 +3,7 @@
   inputs = {
     flake-lock.url = "github:wrvsrx/flake-lock";
     pnpm2nix-nzbr = {
-      url = "github:nzbr/pnpm2nix-nzbr";
+      url = "github:wrvsrx/pnpm2nix-nzbr/adapt-to-v9";
       inputs.nixpkgs.follows = "flake-lock/nixpkgs";
       inputs.flake-utils.follows = "flake-lock/flake-utils";
     };
