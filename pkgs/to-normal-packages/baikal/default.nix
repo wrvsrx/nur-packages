@@ -1,10 +1,18 @@
 {
   php,
   fetchpatch,
-  source,
+  fetchFromGitHub,
 }:
 php.buildComposerProject {
-  inherit (source) pname src version;
+  pname = "baikal";
+  version = "0.9.5";
+  src = fetchFromGitHub {
+    owner = "sabre-io";
+    repo = "Baikal";
+    rev = "0.9.5";
+    fetchSubmodules = false;
+    sha256 = "sha256-bCsF61ZBAY2iL3ffLkJ+HocdKOhA3/8RyYVztqoaEVw=";
+  };
   vendorHash = "sha256-ffIKhYVhj5PHAVT5XOa6o219f04ZOL9B2dZVC3eunWc=";
   patches = [
     (fetchpatch {

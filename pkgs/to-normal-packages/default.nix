@@ -39,7 +39,7 @@ rec {
     inherit (pkgs) mkPnpmPackage;
   };
   yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };
-  baikal = callPackage ./baikal { source = sources.baikal; };
+  baikal = callPackage ./baikal { };
   yuzu = import ./yuzu {
     sources = {
       inherit (sources) suyu nx_tzdb compat-list;

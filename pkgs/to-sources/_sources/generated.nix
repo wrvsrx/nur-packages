@@ -55,17 +55,6 @@
       sha256 = "sha256-hdIbEIZrxA5EA3XY4MIazRv3DazUjpuDJRCgq8+kJQg=";
     };
   };
-  baikal = {
-    pname = "baikal";
-    version = "0.9.5";
-    src = fetchFromGitHub {
-      owner = "sabre-io";
-      repo = "Baikal";
-      rev = "0.9.5";
-      fetchSubmodules = false;
-      sha256 = "sha256-bCsF61ZBAY2iL3ffLkJ+HocdKOhA3/8RyYVztqoaEVw=";
-    };
-  };
   calendar-visualization = {
     pname = "calendar-visualization";
     version = "099535c19755f7f26cc9dd7651dbb8e201783e9f";
