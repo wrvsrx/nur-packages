@@ -2,11 +2,6 @@
   description = "My personal NUR repository";
   inputs = {
     flake-lock.url = "github:wrvsrx/flake-lock";
-    pnpm2nix-nzbr = {
-      url = "github:wrvsrx/pnpm2nix-nzbr/adapt-to-v9";
-      inputs.nixpkgs.follows = "flake-lock/nixpkgs";
-      inputs.flake-utils.follows = "flake-lock/flake-utils";
-    };
     nixpkgs.follows = "flake-lock/nixpkgs";
     flake-parts.follows = "flake-lock/flake-parts";
     nvfetcher = {
@@ -22,8 +17,8 @@
     };
   };
   outputs =
-    inputs':
-    inputs'.flake-parts.lib.mkFlake { inputs = inputs'; } (
+    inputs:
+    inputs.flake-parts.lib.mkFlake { inherit inputs; } (
       { withSystem, inputs, ... }:
       let
         inherit (import ./pkgs)
@@ -93,7 +88,7 @@
             final: prev:
             let
               # it seems that using `extend` cause infinite evaluation of overlays
-              pkgs = prev // (inputs.pnpm2nix-nzbr.overlays.default { } prev);
+              pkgs = prev;
             in
             pkgs-to-flat-packages pkgs
             // {
@@ -104,11 +99,23 @@
         };
         perSystem =
           { system, pkgs, ... }:
+          let
+            # support pnpmDeps
+            nix-update-patched = inputs.self.lib.patchFlake {
+              flake = inputs.nix-update;
+              patchesToFetch = [
+                {
+                  url = "https://github.com/Mic92/nix-update/compare/19f968327336e1e438b5b42714ad578605c49d49...43b10443ed4ef38d3ea3907d8d2930f5846246b1.diff";
+                  hash = "sha256-kj9XJBjRC9ZaFgk7KCS76xfr236rRs+qh5Um2xNqSzE=";
+                }
+              ];
+              inherit system;
+            };
+          in
           rec {
             _module.args.pkgs = import inputs.nixpkgs {
               inherit system;
               config.allowUnfree = true;
-              overlays = [ inputs.pnpm2nix-nzbr.overlays.default ];
             };
             packages = pkgs-to-packages pkgs;
             checks = builtins.removeAttrs packages [ "yuzu" ];
@@ -116,7 +123,7 @@
             devShells.default = pkgs.mkShell {
               nativeBuildInputs = [
                 inputs.nvfetcher.packages."${system}".default
-                inputs.nix-update.packages."${system}".default
+                nix-update-patched.packages."${system}".default
               ];
             };
           };
