@@ -15,6 +15,11 @@
       inputs.flake-utils.follows = "flake-lock/flake-utils";
       inputs.flake-compat.follows = "flake-lock/flake-compat";
     };
+    nix-update = {
+      url = "github:Mic92/nix-update";
+      inputs.nixpkgs.follows = "flake-lock/nixpkgs";
+      inputs.flake-parts.follows = "flake-lock/flake-parts";
+    };
   };
   outputs =
     inputs':
@@ -109,7 +114,10 @@
             checks = builtins.removeAttrs packages [ "yuzu" ];
             formatter = pkgs.nixfmt-rfc-style;
             devShells.default = pkgs.mkShell {
-              nativeBuildInputs = [ inputs.nvfetcher.packages."${system}".default ];
+              nativeBuildInputs = [
+                inputs.nvfetcher.packages."${system}".default
+                inputs.nix-update.packages."${system}".default
+              ];
             };
           };
       }

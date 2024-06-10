@@ -120,10 +120,6 @@ fetch.github = "DIYGod/RSSHub"
 src.github_tag = "MetaCubeX/metacubexd"
 fetch.github = "MetaCubeX/metacubexd"
 
-[auth-thu]
-src.git = "https://github.com/z4yx/GoAuthing"
-fetch.github = "z4yx/GoAuthing"
-
 [compat-list]
 src.git = "https://github.com/flathub/org.yuzu_emu.yuzu"
 fetch.github = "flathub/org.yuzu_emu.yuzu"

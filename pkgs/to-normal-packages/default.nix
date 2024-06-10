@@ -6,7 +6,7 @@ let
   mkNotoCJK = callPackage ./noto-fonts-cjk { };
 in
 rec {
-  auth-thu = callPackage ./auth-thu { source = sources.auth-thu; };
+  auth-thu = callPackage ./auth-thu { };
   autodiff = callPackage ./autodiff { source = sources.autodiff; };
   noto-fonts-cjk-sans-fix-weight = mkNotoCJK { source = sources.noto-fonts-cjk-sans-fix-weight; };
   noto-fonts-cjk-serif-fix-weight = mkNotoCJK { source = sources.noto-fonts-cjk-serif-fix-weight; };
@@ -35,7 +35,7 @@ rec {
     inherit (pkgs) mkPnpmPackage;
   };
   metacubexd = callPackage ./metacubexd {
-    source = sources.metacubexd;
+    # source = sources.metacubexd;
     inherit (pkgs) mkPnpmPackage;
   };
   yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };

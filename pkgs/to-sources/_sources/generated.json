@@ -35,27 +35,6 @@
         },
         "version": "1.4.4"
     },
-    "auth-thu": {
-        "cargoLocks": null,
-        "date": "2024-03-02",
-        "extract": null,
-        "name": "auth-thu",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "z4yx",
-            "repo": "GoAuthing",
-            "rev": "d828582922eeecf43baac7d1da4c4e533aa1dd66",
-            "sha256": "sha256-EyeG2jyi4cQ0k8xChW9azipClJMdwUSuT0OPDBS+u28=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "d828582922eeecf43baac7d1da4c4e533aa1dd66"
-    },
     "autobean-format": {
         "cargoLocks": null,
         "date": "2023-09-17",
