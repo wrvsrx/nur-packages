@@ -116,10 +116,6 @@ fetch.github = "gabime/spdlog"
 src.git = "https://github.com/DIYGod/RSSHub"
 fetch.github = "DIYGod/RSSHub"
 
-[metacubexd]
-src.github_tag = "MetaCubeX/metacubexd"
-fetch.github = "MetaCubeX/metacubexd"
-
 [compat-list]
 src.git = "https://github.com/flathub/org.yuzu_emu.yuzu"
 fetch.github = "flathub/org.yuzu_emu.yuzu"

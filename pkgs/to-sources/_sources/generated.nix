@@ -217,17 +217,6 @@
     };
     date = "2023-04-23";
   };
-  metacubexd = {
-    pname = "metacubexd";
-    version = "v1.140.0";
-    src = fetchFromGitHub {
-      owner = "MetaCubeX";
-      repo = "metacubexd";
-      rev = "v1.140.0";
-      fetchSubmodules = false;
-      sha256 = "sha256-OVLG+MHgwWTorPuBTHsHUAY1FSN91j7xWgRDJ7FiO7E=";
-    };
-  };
   noto-fonts-cjk-sans-fix-weight = {
     pname = "noto-fonts-cjk-sans-fix-weight";
     version = "Sans2.004";

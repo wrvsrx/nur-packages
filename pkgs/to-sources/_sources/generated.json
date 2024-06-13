@@ -379,27 +379,6 @@
         },
         "version": "a8bb6e22ea4dcd507292ecdb6443bad23ef7bfeb"
     },
-    "metacubexd": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "metacubexd",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "MetaCubeX",
-            "repo": "metacubexd",
-            "rev": "v1.140.0",
-            "sha256": "sha256-OVLG+MHgwWTorPuBTHsHUAY1FSN91j7xWgRDJ7FiO7E=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "v1.140.0"
-    },
     "noto-fonts-cjk-sans-fix-weight": {
         "cargoLocks": null,
         "date": null,
