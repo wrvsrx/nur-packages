@@ -25,17 +25,16 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1717920738,
-        "narHash": "sha256-bG2nIwNEduXcMa/ZFyXCVHG14zjVmXFc3Byge4ScxUM=",
-        "owner": "wrvsrx",
-        "repo": "flake-lock",
-        "rev": "b5268aefb08abd458c726f17c13643dfdaa1ade7",
-        "type": "github"
+        "dirtyRev": "d004d84c72373ff66e7b3c4f320a9e35a48d6980-dirty",
+        "dirtyShortRev": "d004d84-dirty",
+        "lastModified": 1717244306,
+        "narHash": "sha256-GoDhU0kjaXHnU078diwzP2Ac0EfhuBfxDysl2AKDvh0=",
+        "type": "git",
+        "url": "file:///home/wrvsrx/Documents/flake-lock"
       },
       "original": {
-        "owner": "wrvsrx",
-        "repo": "flake-lock",
-        "type": "github"
+        "type": "git",
+        "url": "file:///home/wrvsrx/Documents/flake-lock"
       }
     },
     "flake-parts": {

@@ -1,7 +1,7 @@
 {
   description = "My personal NUR repository";
   inputs = {
-    flake-lock.url = "github:wrvsrx/flake-lock";
+    flake-lock.url = "/home/wrvsrx/Documents/flake-lock";
     nixpkgs.follows = "flake-lock/nixpkgs";
     flake-parts.follows = "flake-lock/flake-parts";
     nvfetcher = {

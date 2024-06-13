@@ -35,7 +35,6 @@ rec {
     inherit sfun seal_lake;
   };
   rsshub = callPackage ./rsshub { };
-  metacubexd = callPackage ./metacubexd { pnpm = pnpm_9_1_4; };
   yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };
   baikal = callPackage ./baikal { };
   yuzu = import ./yuzu {
