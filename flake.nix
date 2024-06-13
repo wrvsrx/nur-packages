@@ -99,19 +99,6 @@
         };
         perSystem =
           { system, pkgs, ... }:
-          let
-            # support pnpmDeps
-            nix-update-patched = inputs.self.lib.patchFlake {
-              flake = inputs.nix-update;
-              patchesToFetch = [
-                {
-                  url = "https://github.com/Mic92/nix-update/compare/19f968327336e1e438b5b42714ad578605c49d49...43b10443ed4ef38d3ea3907d8d2930f5846246b1.diff";
-                  hash = "sha256-kj9XJBjRC9ZaFgk7KCS76xfr236rRs+qh5Um2xNqSzE=";
-                }
-              ];
-              inherit system;
-            };
-          in
           rec {
             _module.args.pkgs = import inputs.nixpkgs {
               inherit system;
@@ -123,7 +110,7 @@
             devShells.default = pkgs.mkShell {
               nativeBuildInputs = [
                 inputs.nvfetcher.packages."${system}".default
-                nix-update-patched.packages."${system}".default
+                inputs.nix-update.packages."${system}".default
               ];
             };
           };
