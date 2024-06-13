@@ -5,7 +5,7 @@
     nixpkgs.follows = "flake-lock/nixpkgs";
     flake-parts.follows = "flake-lock/flake-parts";
     nvfetcher = {
-      url = "github:wrvsrx/nvfetcher/sparseCheckout";
+      url = "github:berberman/nvfetcher";
       inputs.nixpkgs.follows = "flake-lock/nixpkgs";
       inputs.flake-utils.follows = "flake-lock/flake-utils";
       inputs.flake-compat.follows = "flake-lock/flake-compat";
