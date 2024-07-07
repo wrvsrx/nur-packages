@@ -9,6 +9,17 @@
       sha256 = "sha256-z/zROQYpHvGoGzacHA6Qdkjs0kNjZohzaR9EhmcEqyE=";
     };
   };
+  SillyTavern = {
+    pname = "SillyTavern";
+    version = "1.12.3-fix-lock";
+    src = fetchFromGitHub {
+      owner = "wrvsrx";
+      repo = "SillyTavernFork";
+      rev = "1.12.3-fix-lock";
+      fetchSubmodules = false;
+      sha256 = "sha256-nSR5wykJ9u1WAa+QJoLx1a5O0zH+hymb3wc43a6FiKk=";
+    };
+  };
   amgcl = {
     pname = "amgcl";
     version = "1.4.4";

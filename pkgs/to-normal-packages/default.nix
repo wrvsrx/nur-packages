@@ -43,6 +43,7 @@ rec {
     };
     inherit pkgs;
   };
+  SillyTavern = callPackage ./SillyTavern { source = sources.SillyTavern; };
 
   # my packages
   giraffe-wallpaper = callIFD {
