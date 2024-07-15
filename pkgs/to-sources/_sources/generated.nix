@@ -104,13 +104,13 @@
   };
   coc-markdown = {
     pname = "coc-markdown";
-    version = "c896e77a4ab738e5feed50d2db0c441a6840426b";
+    version = "2b9e5e7cdf2e6d027ab226c36e1175ad5030ce62";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "coc-markdown";
-      rev = "c896e77a4ab738e5feed50d2db0c441a6840426b";
+      rev = "2b9e5e7cdf2e6d027ab226c36e1175ad5030ce62";
       fetchSubmodules = false;
-      sha256 = "sha256-WjB//HEqsmgw++Oa1T+BmbPwqfGgavmFSLTyspxDGBQ=";
+      sha256 = "sha256-LzH2g0T8eqcjsGcv6kYHpbuymmzLOFhB0GWGTdtW0AM=";
     };
     date = "2024-07-15";
   };
