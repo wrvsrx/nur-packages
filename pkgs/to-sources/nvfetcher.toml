@@ -145,3 +145,7 @@ git.sparseCheckout = [ "Serif/OTC" ]
 [SillyTavern]
 src.manual = "1.12.3-fix-lock"
 fetch.github = "wrvsrx/SillyTavernFork"
+
+[vscode-markdown-languageserver]
+src.github = "microsoft/vscode-markdown-languageserver"
+fetch.github = "microsoft/vscode-markdown-languageserver"

@@ -692,6 +692,27 @@
         },
         "version": "46c5622291136be6393654786a6895524e80600f"
     },
+    "vscode-markdown-languageserver": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "vscode-markdown-languageserver",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "microsoft",
+            "repo": "vscode-markdown-languageserver",
+            "rev": "v0.5.0-alpha.7",
+            "sha256": "sha256-qBXpBGdh8ehk/94nbE5Y9ispEz/d5DMXl1OVEH8AmCU=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.5.0-alpha.7"
+    },
     "xclip": {
         "cargoLocks": null,
         "date": "2022-01-29",

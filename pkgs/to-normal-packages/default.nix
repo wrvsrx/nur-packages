@@ -44,6 +44,9 @@ rec {
     inherit pkgs;
   };
   SillyTavern = callPackage ./SillyTavern { source = sources.SillyTavern; };
+  vscode-markdown-languageserver = callPackage ./vscode-markdown-languageserver {
+    source = sources.vscode-markdown-languageserver;
+  };
 
   # my packages
   giraffe-wallpaper = callIFD {

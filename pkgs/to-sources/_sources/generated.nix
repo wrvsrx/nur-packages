@@ -393,6 +393,17 @@
     };
     date = "2023-05-06";
   };
+  vscode-markdown-languageserver = {
+    pname = "vscode-markdown-languageserver";
+    version = "v0.5.0-alpha.7";
+    src = fetchFromGitHub {
+      owner = "microsoft";
+      repo = "vscode-markdown-languageserver";
+      rev = "v0.5.0-alpha.7";
+      fetchSubmodules = false;
+      sha256 = "sha256-qBXpBGdh8ehk/94nbE5Y9ispEz/d5DMXl1OVEH8AmCU=";
+    };
+  };
   xclip = {
     pname = "xclip";
     version = "b372f73579d30f9ba998ffd0a73694e7abe2c313";
