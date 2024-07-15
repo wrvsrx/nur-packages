@@ -182,6 +182,27 @@
         },
         "version": "4e8810b1a8637695171ed346ce68f6984e585ef4"
     },
+    "coc-markdown": {
+        "cargoLocks": null,
+        "date": "2024-07-15",
+        "extract": null,
+        "name": "coc-markdown",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "wrvsrx",
+            "repo": "coc-markdown",
+            "rev": "c896e77a4ab738e5feed50d2db0c441a6840426b",
+            "sha256": "sha256-WjB//HEqsmgw++Oa1T+BmbPwqfGgavmFSLTyspxDGBQ=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "c896e77a4ab738e5feed50d2db0c441a6840426b"
+    },
     "coc-zk": {
         "cargoLocks": null,
         "date": "2024-07-15",

@@ -102,6 +102,18 @@
     };
     date = "2018-05-31";
   };
+  coc-markdown = {
+    pname = "coc-markdown";
+    version = "c896e77a4ab738e5feed50d2db0c441a6840426b";
+    src = fetchFromGitHub {
+      owner = "wrvsrx";
+      repo = "coc-markdown";
+      rev = "c896e77a4ab738e5feed50d2db0c441a6840426b";
+      fetchSubmodules = false;
+      sha256 = "sha256-WjB//HEqsmgw++Oa1T+BmbPwqfGgavmFSLTyspxDGBQ=";
+    };
+    date = "2024-07-15";
+  };
   coc-zk = {
     pname = "coc-zk";
     version = "0e6b90d1809514e853a8e80245b9e7eec71117c6";

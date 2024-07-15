@@ -18,4 +18,8 @@ in
     inherit callPackage;
     source = sources.coc-zk;
   };
+  coc-markdown = callIFD {
+    inherit callPackage;
+    source = sources.coc-markdown;
+  };
 }

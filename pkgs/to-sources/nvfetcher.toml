@@ -149,3 +149,7 @@ fetch.github = "wrvsrx/SillyTavernFork"
 [vscode-markdown-languageserver]
 src.github = "microsoft/vscode-markdown-languageserver"
 fetch.github = "microsoft/vscode-markdown-languageserver"
+
+[coc-markdown]
+src.git = "https://github.com/wrvsrx/coc-markdown"
+fetch.github = "wrvsrx/coc-markdown"
