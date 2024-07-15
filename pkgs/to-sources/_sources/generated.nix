@@ -104,13 +104,13 @@
   };
   coc-zk = {
     pname = "coc-zk";
-    version = "a9133cd9df38b4d08c33651b85c11e5a620f0239";
+    version = "0e6b90d1809514e853a8e80245b9e7eec71117c6";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "coc-zk";
-      rev = "a9133cd9df38b4d08c33651b85c11e5a620f0239";
+      rev = "0e6b90d1809514e853a8e80245b9e7eec71117c6";
       fetchSubmodules = false;
-      sha256 = "sha256-9bbtjrEHXg322XuFco21DHZxJhhYT4wIgqCrZgOB+/Y=";
+      sha256 = "sha256-zdHLynunpi+gxUUYVlslcQ6ckSg3dDmdz/aSdrJFte0=";
     };
     date = "2024-07-15";
   };

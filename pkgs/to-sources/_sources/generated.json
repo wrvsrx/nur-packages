@@ -196,12 +196,12 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "coc-zk",
-            "rev": "a9133cd9df38b4d08c33651b85c11e5a620f0239",
-            "sha256": "sha256-9bbtjrEHXg322XuFco21DHZxJhhYT4wIgqCrZgOB+/Y=",
+            "rev": "0e6b90d1809514e853a8e80245b9e7eec71117c6",
+            "sha256": "sha256-zdHLynunpi+gxUUYVlslcQ6ckSg3dDmdz/aSdrJFte0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "a9133cd9df38b4d08c33651b85c11e5a620f0239"
+        "version": "0e6b90d1809514e853a8e80245b9e7eec71117c6"
     },
     "compat-list": {
         "cargoLocks": null,
