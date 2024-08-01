@@ -143,8 +143,8 @@ fetch.github = "notofonts/noto-cjk"
 git.sparseCheckout = [ "Serif/OTC" ]
 
 [SillyTavern]
-src.manual = "1.12.3-fix-lock"
-fetch.github = "wrvsrx/SillyTavernFork"
+src.github = "SillyTavern/SillyTavern"
+fetch.github = "SillyTavern/SillyTavern"
 
 [vscode-markdown-languageserver]
 src.github = "microsoft/vscode-markdown-languageserver"

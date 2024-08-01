@@ -26,14 +26,14 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "owner": "wrvsrx",
-            "repo": "SillyTavernFork",
-            "rev": "1.12.3-fix-lock",
-            "sha256": "sha256-nSR5wykJ9u1WAa+QJoLx1a5O0zH+hymb3wc43a6FiKk=",
+            "owner": "SillyTavern",
+            "repo": "SillyTavern",
+            "rev": "1.12.4",
+            "sha256": "sha256-jjBeEK/E2PIvtDJB4r4HJcVH2PspAUeF0+0JQA5h4Ss=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1.12.3-fix-lock"
+        "version": "1.12.4"
     },
     "amgcl": {
         "cargoLocks": null,
