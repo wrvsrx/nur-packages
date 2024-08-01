@@ -13,11 +13,25 @@ stdenv.mkDerivation rec {
   patches = [ ./pc.patch ];
   version = lib.removePrefix "v" source.version;
 
-  nativeBuildInputs = [
-    cmake
-    eigen
-    catch2_3
-  ] ++ (if python3 != null then [ python3.pkgs.pybind11 ] else [ ]);
+  nativeBuildInputs =
+    [
+      cmake
+      eigen
+      catch2_3
+    ]
+    ++ (
+      if python3 != null then
+        [
+          (python3.withPackages (
+            ps: with ps; [
+              setuptools
+              pybind11
+            ]
+          ))
+        ]
+      else
+        [ ]
+    );
 
   # Building the tests currently fails on AArch64 due to internal compiler
   # errors (with GCC 9.2):
@@ -33,6 +47,5 @@ stdenv.mkDerivation rec {
     changelog = "https://github.com/autodiff/autodiff/releases/tag/v${version}";
     license = licenses.mit;
     platforms = platforms.all;
-    maintainers = with maintainers; [ ];
   };
 }
