@@ -47,6 +47,9 @@ rec {
   vscode-markdown-languageserver = callPackage ./vscode-markdown-languageserver {
     source = sources.vscode-markdown-languageserver;
   };
+  v2ray-rules-dat = callPackage ./v2ray-rules-dat {
+    inherit (sources) v2ray-rules-dat-geoip v2ray-rules-dat-geosite;
+  };
 
   # my packages
   giraffe-wallpaper = callIFD {

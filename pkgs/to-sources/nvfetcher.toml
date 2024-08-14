@@ -153,3 +153,11 @@ fetch.github = "microsoft/vscode-markdown-languageserver"
 [coc-markdown]
 src.git = "https://github.com/wrvsrx/coc-markdown"
 fetch.github = "wrvsrx/coc-markdown"
+
+[v2ray-rules-dat-geoip]
+src.github_tag = "Loyalsoldier/v2ray-rules-dat"
+fetch.url = "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/$ver/geoip.dat"
+
+[v2ray-rules-dat-geosite]
+src.github_tag = "Loyalsoldier/v2ray-rules-dat"
+fetch.url = "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/$ver/geosite.dat"
