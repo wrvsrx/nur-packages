@@ -370,17 +370,17 @@
       sha256 = "sha256-AyWtJ+EyTN2LEXLM5OSQB3ITzqLLRoirzkWnjwLHOIA=";
     };
   };
-  taskwarrior-utils = {
-    pname = "taskwarrior-utils";
-    version = "911ff711c665153b3ed9ba409671e674797eb481";
+  task-utils = {
+    pname = "task-utils";
+    version = "676b0823551f0944c31240252fe068d36375cfc2";
     src = fetchFromGitHub {
       owner = "wrvsrx";
-      repo = "taskwarrior-to-dot";
-      rev = "911ff711c665153b3ed9ba409671e674797eb481";
+      repo = "task-utils";
+      rev = "676b0823551f0944c31240252fe068d36375cfc2";
       fetchSubmodules = false;
-      sha256 = "sha256-63JOdhdLcoEyUFx6KEMdcB6clXobBgsJ4NRUPYTD4AA=";
+      sha256 = "sha256-h1LKAPgehra2pX/bKwNqG2QcdejPkVcXfnYtOxqqj8g=";
     };
-    date = "2024-04-03";
+    date = "2024-09-04";
   };
   utfcpp = {
     pname = "utfcpp";

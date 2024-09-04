@@ -18,9 +18,9 @@ rec {
     inherit callPackage;
     source = sources.osc52;
   };
-  taskwarrior-utils = callIFD {
+  task-utils = callIFD {
     inherit callPackage;
-    source = sources.taskwarrior-utils;
+    source = sources.task-utils;
   };
   calendar-visualization = callIFD {
     inherit callPackage;

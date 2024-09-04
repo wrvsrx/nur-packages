@@ -11,9 +11,9 @@ fetch.github = "wrvsrx/giraffe-wallpaper"
 src.github_tag = "autodiff/autodiff"
 fetch.github = "autodiff/autodiff"
 
-[taskwarrior-utils]
-src.git = "https://github.com/wrvsrx/taskwarrior-to-dot"
-fetch.github = "wrvsrx/taskwarrior-to-dot"
+[task-utils]
+src.git = "https://github.com/wrvsrx/task-utils"
+fetch.github = "wrvsrx/task-utils"
 
 [noto-fonts-emoji-monochrome]
 src.git = "https://github.com/wrvsrx/noto-emoji"
