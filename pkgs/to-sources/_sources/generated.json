@@ -664,12 +664,12 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "task-utils",
-            "rev": "0ccb1a55499dc54d90dd67d5f848137f76a21189",
-            "sha256": "sha256-PglWBs797kWedMxMsPmW6eBbziUw0D/yVNxfKs3yMXM=",
+            "rev": "d130e63f33e96e7c9fe97128564ef62535156429",
+            "sha256": "sha256-fJsrUrqd0sVwt01ipwFxWYIhZDZ1c179hn9LvyWu3HM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0ccb1a55499dc54d90dd67d5f848137f76a21189"
+        "version": "d130e63f33e96e7c9fe97128564ef62535156429"
     },
     "utfcpp": {
         "cargoLocks": null,
