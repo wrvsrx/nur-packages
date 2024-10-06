@@ -652,7 +652,7 @@
     },
     "task-utils": {
         "cargoLocks": null,
-        "date": "2024-10-04",
+        "date": "2024-10-06",
         "extract": null,
         "name": "task-utils",
         "passthru": null,
@@ -664,12 +664,12 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "task-utils",
-            "rev": "d78db9a091a4be2ce16d6811a09133548ec1c889",
-            "sha256": "sha256-LPKAOF5FRfbq2YwrVy9CY8wn27a9cZ+h69fK2nvQWC0=",
+            "rev": "097f21cc019a5e0e7324b119a9b7df4643302ba5",
+            "sha256": "sha256-jLaPuqunCAiRngDOkq/Y2hcD3db4IUmVzGlWUYS1gTI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "d78db9a091a4be2ce16d6811a09133548ec1c889"
+        "version": "097f21cc019a5e0e7324b119a9b7df4643302ba5"
     },
     "utfcpp": {
         "cargoLocks": null,
