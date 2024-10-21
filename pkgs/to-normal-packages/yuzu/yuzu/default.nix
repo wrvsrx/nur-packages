@@ -30,6 +30,7 @@
   SDL2,
   vulkan-headers,
   vulkan-loader,
+  vulkan-utility-libraries,
   yasm,
   zlib,
   zstd,
@@ -111,6 +112,12 @@ stdenv.mkDerivation (finalAttrs: {
   # This changes `ir/opt` to `ir/var/empty` in `externals/dynarmic/src/dynarmic/CMakeLists.txt`
   # making the build fail, as that path does not exist
   dontFixCmake = true;
+
+  postPatch = ''
+    ls -alh
+    rm -rf externals/Vulkan-Utility-Libraries/
+    cp -r ${vulkan-utility-libraries.src} externals/Vulkan-Utility-Libraries
+  '';
 
   cmakeFlags = [
     # actually has a noticeable performance impact
