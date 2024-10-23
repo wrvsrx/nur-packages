@@ -105,7 +105,7 @@
               config.allowUnfree = true;
             };
             packages = pkgs-to-packages pkgs;
-            checks = builtins.removeAttrs packages [ "yuzu" ];
+            checks = packages;
             formatter = pkgs.nixfmt-rfc-style;
             devShells.default = pkgs.mkShell {
               nativeBuildInputs = [
