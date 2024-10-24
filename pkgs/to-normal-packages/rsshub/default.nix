@@ -18,7 +18,7 @@ stdenvNoCC.mkDerivation rec {
   };
   pnpmDeps = pnpm.fetchDeps {
     inherit pname version src;
-    hash = "sha256-PWLINjZ2dJHILLAXHIXJORxpI8V3CdZ61lcS5v7fCUI=";
+    hash = "sha256-1PkBmBCs/UMjPtkv64Yij+ZAFKJBATSQ/xxffWOw2aI=";
   };
   patches = [
     (writeText "git.patch" ''
