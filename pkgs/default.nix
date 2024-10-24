@@ -26,10 +26,9 @@ let
       };
       python-packages =
         let
-          inherit (pythonWithPackages.pkgs) toPythonApplication vdirsyncer compdb;
+          inherit (pythonWithPackages.pkgs) toPythonApplication compdb;
         in
         {
-          vdirsyncer = toPythonApplication vdirsyncer;
           compdb = toPythonApplication compdb;
           inherit (pythonWithPackages.pkgs)
             autobean-format

@@ -722,27 +722,6 @@
         },
         "version": "202410212212"
     },
-    "vdirsyncer": {
-        "cargoLocks": null,
-        "date": "2023-05-06",
-        "extract": null,
-        "name": "vdirsyncer",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "wrvsrx",
-            "repo": "vdirsyncer",
-            "rev": "46c5622291136be6393654786a6895524e80600f",
-            "sha256": "sha256-IrKMIEZQiccO3//Twh6oG5YS/ybIwNZD3nTaIPfEsDE=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "46c5622291136be6393654786a6895524e80600f"
-    },
     "vscode-markdown-languageserver": {
         "cargoLocks": null,
         "date": null,

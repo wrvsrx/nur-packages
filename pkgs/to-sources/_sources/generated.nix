@@ -409,18 +409,6 @@
       sha256 = "sha256-OMIsZx9IRyZkr3BGSYKEFt0FOsY+dh3c2SHF+1pDkfg=";
     };
   };
-  vdirsyncer = {
-    pname = "vdirsyncer";
-    version = "46c5622291136be6393654786a6895524e80600f";
-    src = fetchFromGitHub {
-      owner = "wrvsrx";
-      repo = "vdirsyncer";
-      rev = "46c5622291136be6393654786a6895524e80600f";
-      fetchSubmodules = false;
-      sha256 = "sha256-IrKMIEZQiccO3//Twh6oG5YS/ybIwNZD3nTaIPfEsDE=";
-    };
-    date = "2023-05-06";
-  };
   vscode-markdown-languageserver = {
     pname = "vscode-markdown-languageserver";
     version = "v0.5.0-alpha.7";

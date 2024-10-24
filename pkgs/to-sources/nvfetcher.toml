@@ -31,11 +31,6 @@ fetch.github = "SEIAROTg/autobean-format"
 src.git = "https://github.com/SEIAROTg/autobean-refactor"
 fetch.github = "SEIAROTg/autobean-refactor"
 
-[vdirsyncer]
-src.git = "https://github.com/wrvsrx/vdirsyncer"
-src.branch = "use-vcard-4"
-fetch.github = "wrvsrx/vdirsyncer"
-
 [nvim-numbertoggle]
 src.git = "https://github.com/sitiom/nvim-numbertoggle"
 fetch.github = "sitiom/nvim-numbertoggle"
