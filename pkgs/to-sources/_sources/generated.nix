@@ -372,13 +372,13 @@
   };
   task-utils = {
     pname = "task-utils";
-    version = "c75156f16d0286473cd8728703d714c0f8fd5637";
+    version = "07c89560bb8da42fcebf2caa518ae174d998fac9";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "task-utils";
-      rev = "c75156f16d0286473cd8728703d714c0f8fd5637";
+      rev = "07c89560bb8da42fcebf2caa518ae174d998fac9";
       fetchSubmodules = false;
-      sha256 = "sha256-bKSNOYrD8epQhgtL1lK6L/uUEI0i6TfVG/uKWNmI008=";
+      sha256 = "sha256-QCBjT5reIfFnFVQoThq93vdFNXJsZiBHxKdQDVoXhGc=";
     };
     date = "2024-10-24";
   };
