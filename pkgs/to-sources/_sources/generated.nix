@@ -372,15 +372,15 @@
   };
   task-utils = {
     pname = "task-utils";
-    version = "07c89560bb8da42fcebf2caa518ae174d998fac9";
+    version = "d95c1aadd4eabf5b479c1b7bc914de5657c82727";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "task-utils";
-      rev = "07c89560bb8da42fcebf2caa518ae174d998fac9";
+      rev = "d95c1aadd4eabf5b479c1b7bc914de5657c82727";
       fetchSubmodules = false;
-      sha256 = "sha256-QCBjT5reIfFnFVQoThq93vdFNXJsZiBHxKdQDVoXhGc=";
+      sha256 = "sha256-22jRFaLG6KFr4tfm9417c763aumVrvAeeJaoiD3YQRk=";
     };
-    date = "2024-10-24";
+    date = "2024-10-30";
   };
   utfcpp = {
     pname = "utfcpp";
