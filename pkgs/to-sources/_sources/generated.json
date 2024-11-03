@@ -359,27 +359,6 @@
         },
         "version": "7e48d2bda0f94fc96b2d8b2917d5ef306ba83c97"
     },
-    "iCalendar": {
-        "cargoLocks": null,
-        "date": "2024-04-13",
-        "extract": null,
-        "name": "iCalendar",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "wrvsrx",
-            "repo": "iCalendar",
-            "rev": "e2f5f700294ae0d205b6bf2e372f3a99f801d7fc",
-            "sha256": "sha256-e2aZr8Vh/HJnTV8GwIDMzGTZBZdYf72NtapHElHw0gg=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "e2f5f700294ae0d205b6bf2e372f3a99f801d7fc"
-    },
     "linediff-vim": {
         "cargoLocks": null,
         "date": "2024-04-22",

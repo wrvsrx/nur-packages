@@ -202,18 +202,6 @@
     };
     date = "2015-10-31";
   };
-  iCalendar = {
-    pname = "iCalendar";
-    version = "e2f5f700294ae0d205b6bf2e372f3a99f801d7fc";
-    src = fetchFromGitHub {
-      owner = "wrvsrx";
-      repo = "iCalendar";
-      rev = "e2f5f700294ae0d205b6bf2e372f3a99f801d7fc";
-      fetchSubmodules = false;
-      sha256 = "sha256-e2aZr8Vh/HJnTV8GwIDMzGTZBZdYf72NtapHElHw0gg=";
-    };
-    date = "2024-04-13";
-  };
   linediff-vim = {
     pname = "linediff-vim";
     version = "ddae71ef5f94775d101c1c70032ebe8799f32745";
