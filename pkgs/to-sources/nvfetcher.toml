@@ -152,3 +152,8 @@ fetch.url = "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/$
 [v2ray-rules-dat-geosite]
 src.github_tag = "Loyalsoldier/v2ray-rules-dat"
 fetch.url = "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/$ver/geosite.dat"
+
+[wezterm]
+src.git = "https://github.com/wez/wezterm"
+fetch.github = "wez/wezterm"
+git.fetchSubmodules = true

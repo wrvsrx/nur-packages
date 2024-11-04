@@ -50,6 +50,10 @@ rec {
   v2ray-rules-dat = callPackage ./v2ray-rules-dat {
     inherit (sources) v2ray-rules-dat-geoip v2ray-rules-dat-geosite;
   };
+  wezterm = callPackage ./wezterm {
+    source = sources.wezterm;
+    inherit (pkgs) wezterm;
+  };
 
   # my packages
   giraffe-wallpaper = callIFD {
@@ -60,4 +64,5 @@ rec {
       height = 2160;
     };
   };
+
 }
