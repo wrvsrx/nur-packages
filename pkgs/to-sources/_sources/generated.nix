@@ -244,16 +244,16 @@
   };
   noto-fonts-cjk-serif-fix-weight = {
     pname = "noto-fonts-cjk-serif-fix-weight";
-    version = "Serif2.002";
+    version = "Serif2.003";
     src = fetchFromGitHub {
       owner = "notofonts";
       repo = "noto-cjk";
-      rev = "Serif2.002";
+      rev = "Serif2.003";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ "Serif/OTC" ];
-      sha256 = "sha256-ihbhbv875XEHupFUzIdEweukqEmwQXCXCiTG7qisE64=";
+      sha256 = "sha256-mfbBSdJrUCZiUUmsmndtEW6H3z6KfBn+dEftBySf2j4=";
     };
   };
   noto-fonts-emoji-monochrome = {

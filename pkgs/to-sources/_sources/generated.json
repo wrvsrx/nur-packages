@@ -437,14 +437,14 @@
             "name": null,
             "owner": "notofonts",
             "repo": "noto-cjk",
-            "rev": "Serif2.002",
-            "sha256": "sha256-ihbhbv875XEHupFUzIdEweukqEmwQXCXCiTG7qisE64=",
+            "rev": "Serif2.003",
+            "sha256": "sha256-mfbBSdJrUCZiUUmsmndtEW6H3z6KfBn+dEftBySf2j4=",
             "sparseCheckout": [
                 "Serif/OTC"
             ],
             "type": "github"
         },
-        "version": "Serif2.002"
+        "version": "Serif2.003"
     },
     "noto-fonts-emoji-monochrome": {
         "cargoLocks": null,

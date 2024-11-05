@@ -129,7 +129,7 @@ fetch.github = "notofonts/noto-cjk"
 git.sparseCheckout = [ "Sans/OTC" ]
 
 [noto-fonts-cjk-serif-fix-weight]
-src.manual = "Serif2.002"
+src.manual = "Serif2.003"
 fetch.github = "notofonts/noto-cjk"
 git.sparseCheckout = [ "Serif/OTC" ]
 
