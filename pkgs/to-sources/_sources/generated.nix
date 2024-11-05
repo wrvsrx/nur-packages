@@ -383,18 +383,18 @@
   };
   v2ray-rules-dat-geoip = {
     pname = "v2ray-rules-dat-geoip";
-    version = "202410212212";
+    version = "202411042211";
     src = fetchurl {
-      url = "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/202410212212/geoip.dat";
-      sha256 = "sha256-LOpOLPF6hqvbDFCCW6m4yCYBqh/pmS+qvywXSd8WbDo=";
+      url = "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/202411042211/geoip.dat";
+      sha256 = "sha256-m1zcSf7t6vHpEoqMKXNgP1Qs3g/Aa8FWqN45z/Epih8=";
     };
   };
   v2ray-rules-dat-geosite = {
     pname = "v2ray-rules-dat-geosite";
-    version = "202410212212";
+    version = "202411042211";
     src = fetchurl {
-      url = "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/202410212212/geosite.dat";
-      sha256 = "sha256-OMIsZx9IRyZkr3BGSYKEFt0FOsY+dh3c2SHF+1pDkfg=";
+      url = "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/202411042211/geosite.dat";
+      sha256 = "sha256-hnr/RgPFDxhHJy7pGI5hKuKoS0MEZ5Q7Kzit1s7wSHA=";
     };
   };
   vscode-markdown-languageserver = {
