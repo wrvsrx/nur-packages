@@ -102,17 +102,7 @@
           rec {
             _module.args.pkgs =
               let
-                nixpkgs-patched = inputs.self.lib.patchFlake {
-                  flake = inputs.nixpkgs;
-                  system = system;
-                  patchesToFetch = [
-                    {
-                      # https://github.com/NixOS/nixpkgs/pull/353272
-                      url = "https://github.com/wrvsrx/nixpkgs/compare/70c41d37ec2e22d43a797a6859e7bf5462898a6d..2f7b6eba4cf10bdebfbd3add70bbc2c0b36f64b6.patch";
-                      sha256 = "sha256-I56z4pGA0dZ482E+CAc3kLE6v5aMSexUKBkSIZee3mI=";
-                    }
-                  ];
-                };
+                nixpkgs-patched = inputs.nixpkgs;
               in
               import nixpkgs-patched {
                 inherit system;
