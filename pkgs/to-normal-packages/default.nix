@@ -54,6 +54,9 @@ rec {
     source = sources.wezterm;
     inherit (pkgs) wezterm;
   };
+  fcitx5-rime = callPackage ./fcitx5-rime {
+    inherit (pkgs) fcitx5-rime;
+  };
 
   # my packages
   giraffe-wallpaper = callIFD {
