@@ -1,14 +1,9 @@
 let
-  to-normal-packages = import ./to-normal-packages;
-  to-override-packages = import ./to-override-packages;
   to-sources = import ./to-sources;
-  to-python-modules = import ./to-python-modules;
-  to-haskell-overlay = import ./to-haskell-overlay;
-  to-vim-plugins = import ./to-vim-plugins;
-  pkgs-to-python-modules = pkgs: to-python-modules { inherit pkgs to-sources; };
-  pkgs-to-haskell-overlay = pkgs: to-haskell-overlay { inherit pkgs to-sources; };
-  pkgs-to-normal-packages = pkgs: to-normal-packages { inherit pkgs to-sources; };
-  pkgs-to-override-packages = pkgs: to-override-packages { inherit pkgs to-sources; };
+  pkgs-to-python-modules = pkgs: (import ./to-python-modules) { inherit pkgs to-sources; };
+  pkgs-to-haskell-overlay = pkgs: (import ./to-haskell-overlay) { inherit pkgs to-sources; };
+  pkgs-to-normal-packages = pkgs: (import ./to-normal-packages) { inherit pkgs to-sources; };
+  pkgs-to-override-packages = pkgs: (import ./to-override-packages) { inherit pkgs to-sources; };
   pkgs-to-toplevel =
     pkgs:
     let
@@ -30,7 +25,7 @@ let
       python3Packages = pkgs.lib.recurseIntoAttrs python3Packages;
       vimPlugins = pkgs.lib.recurseIntoAttrs vimPlugins;
     };
-  pkgs-to-vim-plugins = pkgs: to-vim-plugins { inherit pkgs to-sources; };
+  pkgs-to-vim-plugins = pkgs: (import ./to-vim-plugins) { inherit pkgs to-sources; };
 in
 {
   inherit
