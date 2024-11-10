@@ -91,9 +91,10 @@ self:
                 ( Y.encode
                     ( A.object
                         [ "swither/save_options/+"
-                            .= ( [ "traditionalization"
+                            .= ( [ "ascii_mode"
                                  , "emoji"
                                  , "search_single_char"
+                                 , "traditionalization"
                                  ] ::
                                   [String]
                                )
