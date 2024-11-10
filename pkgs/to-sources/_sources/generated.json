@@ -568,7 +568,7 @@
     },
     "rsshub": {
         "cargoLocks": null,
-        "date": "2024-06-09",
+        "date": "2024-11-10",
         "extract": null,
         "name": "rsshub",
         "passthru": null,
@@ -580,12 +580,12 @@
             "name": null,
             "owner": "DIYGod",
             "repo": "RSSHub",
-            "rev": "9fd5c42951983918e488ff364d7e07e1bd64fe5d",
-            "sha256": "sha256-C0RME1RCdjcThUQbqsIobmVQDViJcBSAL46z2E95M0E=",
+            "rev": "d2905cf94409e04b92ea90f4e0dd99afb4cb9dd9",
+            "sha256": "sha256-gmOSCJWneN0HQOoSoK3FqI/qXKGpuVtmYOR4p9a7lmU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "9fd5c42951983918e488ff364d7e07e1bd64fe5d"
+        "version": "d2905cf94409e04b92ea90f4e0dd99afb4cb9dd9"
     },
     "seal_lake": {
         "cargoLocks": null,
