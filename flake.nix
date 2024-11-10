@@ -109,6 +109,17 @@
                 inherit system;
                 config.allowUnfree = true;
               };
+            checks =
+              let
+                pkgs' = pkgs-to-packages pkgs;
+              in
+              {
+                rimePackagesCheck = pkgs'.rimePackages.withRimeDeps' [
+                  pkgs'.rimePackages.rime-prelude
+                  pkgs'.rimePackages.rime-fcitx5
+                  pkgs'.rimePackages.rime-ice-flypy
+                ];
+              };
             packages = inputs.flake-utils.lib.flattenTree (pkgs-to-packages pkgs);
             formatter = pkgs.nixfmt-rfc-style;
             devShells.default = pkgs.mkShell {
