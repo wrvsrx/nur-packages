@@ -17,19 +17,6 @@ lib.makeScope newScope (
     inherit (hooks) rimeDataBuildHook;
     rime-fcitx5 = callPackage ./rime-fcitx5 { };
     rime-prelude = callPackage ./rime-prelude { source = sources.rime-prelude; };
-    rr = callPackage (
-      {
-        rime-fcitx5,
-        rime-prelude,
-        rime-ice-flypy,
-        withRimeDeps',
-      }:
-      withRimeDeps' [
-        rime-fcitx5
-        rime-prelude
-        rime-ice-flypy
-      ]
-    ) { };
   }
   // (import ./rime-ice { source = sources.rime-ice; } self)
 )
