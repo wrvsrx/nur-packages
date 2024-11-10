@@ -110,7 +110,6 @@
                 config.allowUnfree = true;
               };
             packages = inputs.flake-utils.lib.flattenTree (pkgs-to-packages pkgs);
-            checks = packages;
             formatter = pkgs.nixfmt-rfc-style;
             devShells.default = pkgs.mkShell {
               nativeBuildInputs = [
