@@ -265,7 +265,7 @@ stdenvNoCC.mkDerivation {
   installPhase = ''
     mkdir -p $out/share/rime-data
     mkdir -p build
-    cp -r build/* $out/share/rime-data
+    cp -r build/. $out/share/rime-data/
   '';
 }
 |]
