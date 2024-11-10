@@ -4,6 +4,8 @@
   haskellPackages,
   rimeDataBuildHook,
   librime,
+  # we need default.yaml provided by rime-prelude
+  rime-prelude,
   source,
   rime-ice-flypy
 }:
@@ -12,7 +14,7 @@ let
     stdenvNoCC.mkDerivation {
       inherit (source) src version;
       pname = "rime-ice-all";
-      propagatedBuildInputs = [ rime-ice-flypy ];
+      propagatedBuildInputs = [ rime-prelude rime-ice-flypy ];
       nativeBuildInputs = [
         (haskellPackages.ghcWithPackages (
           ps: with ps; [

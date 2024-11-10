@@ -4,6 +4,8 @@
   haskellPackages,
   rimeDataBuildHook,
   librime,
+  # we need default.yaml provided by rime-prelude
+  rime-prelude,
   source,
   
 }:
@@ -12,7 +14,7 @@ let
     stdenvNoCC.mkDerivation {
       inherit (source) src version;
       pname = "rime-ice-lua";
-      propagatedBuildInputs = [  ];
+      propagatedBuildInputs = [ rime-prelude  ];
       nativeBuildInputs = [
         (haskellPackages.ghcWithPackages (
           ps: with ps; [

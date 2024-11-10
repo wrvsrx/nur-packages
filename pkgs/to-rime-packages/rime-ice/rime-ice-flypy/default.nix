@@ -4,6 +4,8 @@
   haskellPackages,
   rimeDataBuildHook,
   librime,
+  # we need default.yaml provided by rime-prelude
+  rime-prelude,
   source,
   rime-ice-lua, rime-ice-common, rime-ice-opencc, rime-ice-pinyin-dict, rime-ice-melt_eng, rime-ice-radical_pinyin
 }:
@@ -12,7 +14,7 @@ let
     stdenvNoCC.mkDerivation {
       inherit (source) src version;
       pname = "rime-ice-flypy";
-      propagatedBuildInputs = [ rime-ice-lua rime-ice-common rime-ice-opencc rime-ice-pinyin-dict rime-ice-melt_eng rime-ice-radical_pinyin ];
+      propagatedBuildInputs = [ rime-prelude rime-ice-lua rime-ice-common rime-ice-opencc rime-ice-pinyin-dict rime-ice-melt_eng rime-ice-radical_pinyin ];
       nativeBuildInputs = [
         (haskellPackages.ghcWithPackages (
           ps: with ps; [
