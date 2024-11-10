@@ -4,7 +4,7 @@ rimePackages:
 
 let
   inherit (lib.lists) map unique flatten;
-  withDeps = p: [ p ] ++ (p.passthru.rimeDependencies or [ ]);
+  withDeps = p: [ p ] ++ p.propagatedBuildInputs;
   step = ps: unique (flatten (map withDeps ps));
   closure = lib.fix (f: ps: if ps == step ps then ps else f (step ps)) rimePackages;
 in
