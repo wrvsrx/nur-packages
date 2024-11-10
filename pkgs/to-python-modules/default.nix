@@ -2,13 +2,16 @@
 let
   sources = to-sources { inherit pkgs; };
 in
-self: super: {
-  autobean-format = self.callPackage ./autobean-format { source = sources.autobean-format; };
-  autobean-refactor = self.callPackage ./autobean-refactor { source = sources.autobean-refactor; };
-  compdb = self.callPackage ./compdb { source = sources.compdb; };
-  OpenEXR = self.callPackage ./OpenEXR { source = sources.OpenEXR; };
-  googletrans = self.callPackage ./googletrans {
-    inherit (super) googletrans;
+final: prev: rec {
+  autobean-format = prev.callPackage ./autobean-format {
+    source = sources.autobean-format;
+    inherit autobean-refactor;
+  };
+  autobean-refactor = prev.callPackage ./autobean-refactor { source = sources.autobean-refactor; };
+  compdb = prev.callPackage ./compdb { source = sources.compdb; };
+  OpenEXR = prev.callPackage ./OpenEXR { source = sources.OpenEXR; };
+  googletrans = prev.callPackage ./googletrans {
+    inherit (prev) googletrans;
     source = sources.googletrans;
   };
 }

@@ -158,6 +158,10 @@
           "flake-lock",
           "flake-parts"
         ],
+        "flake-utils": [
+          "flake-lock",
+          "flake-utils"
+        ],
         "nix-update": "nix-update",
         "nixpkgs": [
           "flake-lock",

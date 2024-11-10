@@ -20,27 +20,16 @@ let
     pkgs:
     let
       flat-packages = pkgs-to-flat-packages pkgs;
-      pythonWithPackages = pkgs.python311.override {
-        self = pythonWithPackages;
-        packageOverrides = to-python-modules { inherit to-sources pkgs; };
-      };
-      python-packages =
-        let
-          inherit (pythonWithPackages.pkgs) toPythonApplication compdb;
-        in
-        {
-          compdb = toPythonApplication compdb;
-          inherit (pythonWithPackages.pkgs)
-            autobean-format
-            autobean-refactor
-            OpenEXR
-            googletrans
-            ;
-        };
-      haskell-packages = pkgs-to-haskell-overlay pkgs { } pkgs.haskellPackages;
-      vim-plugins = pkgs-to-vim-plugins pkgs;
+      python3Packages = pkgs-to-python-modules pkgs { } pkgs.python3.pkgs;
+      haskellPackages = pkgs-to-haskell-overlay pkgs { } pkgs.haskellPackages;
+      vimPlugins = pkgs-to-vim-plugins pkgs;
     in
-    flat-packages // python-packages // vim-plugins // haskell-packages;
+    flat-packages
+    // {
+      haskellPackages = pkgs.lib.recurseIntoAttrs haskellPackages;
+      python3Packages = pkgs.lib.recurseIntoAttrs python3Packages;
+      vimPlugins = pkgs.lib.recurseIntoAttrs vimPlugins;
+    };
   pkgs-to-vim-plugins = pkgs: to-vim-plugins { inherit pkgs to-sources; };
 in
 {

@@ -4,6 +4,7 @@
     flake-lock.url = "github:wrvsrx/flake-lock";
     nixpkgs.follows = "flake-lock/nixpkgs";
     flake-parts.follows = "flake-lock/flake-parts";
+    flake-utils.follows = "flake-lock/flake-utils";
     nvfetcher = {
       url = "github:berberman/nvfetcher";
       inputs.nixpkgs.follows = "flake-lock/nixpkgs";
@@ -108,7 +109,7 @@
                 inherit system;
                 config.allowUnfree = true;
               };
-            packages = pkgs-to-packages pkgs;
+            packages = inputs.flake-utils.lib.flattenTree (pkgs-to-packages pkgs);
             checks = packages;
             formatter = pkgs.nixfmt-rfc-style;
             devShells.default = pkgs.mkShell {
