@@ -9,7 +9,7 @@ let
   pkgs-to-haskell-overlay = pkgs: to-haskell-overlay { inherit pkgs to-sources; };
   pkgs-to-normal-packages = pkgs: to-normal-packages { inherit pkgs to-sources; };
   pkgs-to-override-packages = pkgs: to-override-packages { inherit pkgs to-sources; };
-  pkgs-to-flat-packages =
+  pkgs-to-toplevel =
     pkgs:
     let
       normal-packages = pkgs-to-normal-packages pkgs;
@@ -19,7 +19,7 @@ let
   pkgs-to-packages =
     pkgs:
     let
-      flat-packages = pkgs-to-flat-packages pkgs;
+      flat-packages = pkgs-to-toplevel pkgs;
       python3Packages = pkgs-to-python-modules pkgs { } pkgs.python3.pkgs;
       haskellPackages = pkgs-to-haskell-overlay pkgs { } pkgs.haskellPackages;
       vimPlugins = pkgs-to-vim-plugins pkgs;
@@ -35,9 +35,9 @@ in
 {
   inherit
     pkgs-to-packages
-    pkgs-to-flat-packages
     pkgs-to-python-modules
     pkgs-to-vim-plugins
     pkgs-to-haskell-overlay
+    pkgs-to-toplevel
     ;
 }

@@ -24,7 +24,7 @@
       let
         inherit (import ./pkgs)
           pkgs-to-packages
-          pkgs-to-flat-packages
+          pkgs-to-toplevel
           pkgs-to-python-modules
           pkgs-to-vim-plugins
           pkgs-to-haskell-overlay
@@ -91,7 +91,7 @@
               # it seems that using `extend` cause infinite evaluation of overlays
               pkgs = prev;
             in
-            pkgs-to-flat-packages pkgs
+            pkgs-to-toplevel pkgs
             // {
               pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [ (pkgs-to-python-modules pkgs) ];
               haskellPackages = prev.haskellPackages.extend (pkgs-to-haskell-overlay prev);
