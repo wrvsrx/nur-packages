@@ -100,7 +100,7 @@
         };
         perSystem =
           { system, pkgs, ... }:
-          rec {
+          {
             _module.args.pkgs =
               let
                 nixpkgs-patched = inputs.nixpkgs;

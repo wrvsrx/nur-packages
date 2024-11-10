@@ -20,7 +20,11 @@ let
     pkgs:
     let
       flat-packages = pkgs-to-toplevel pkgs;
-      python3Packages = pkgs-to-python-modules pkgs { } pkgs.python3.pkgs;
+      python3Packages =
+        let
+          p = pkgs-to-python-modules pkgs pkgs.python3.pkgs pkgs.python3.pkgs;
+        in
+        p;
       haskellPackages = pkgs-to-haskell-overlay pkgs { } pkgs.haskellPackages;
       vimPlugins = pkgs-to-vim-plugins pkgs;
     in
