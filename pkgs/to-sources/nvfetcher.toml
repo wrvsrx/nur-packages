@@ -107,10 +107,6 @@ fetch.github = "kamchatka-volcano/cmdlime"
 src.git = "https://github.com/gabime/spdlog"
 fetch.github = "gabime/spdlog"
 
-[rsshub]
-src.git = "https://github.com/DIYGod/RSSHub"
-fetch.github = "DIYGod/RSSHub"
-
 [compat-list]
 src.git = "https://github.com/flathub/org.yuzu_emu.yuzu"
 fetch.github = "flathub/org.yuzu_emu.yuzu"

@@ -324,18 +324,6 @@
     };
     date = "2024-05-19";
   };
-  rsshub = {
-    pname = "rsshub";
-    version = "d2905cf94409e04b92ea90f4e0dd99afb4cb9dd9";
-    src = fetchFromGitHub {
-      owner = "DIYGod";
-      repo = "RSSHub";
-      rev = "d2905cf94409e04b92ea90f4e0dd99afb4cb9dd9";
-      fetchSubmodules = false;
-      sha256 = "sha256-gmOSCJWneN0HQOoSoK3FqI/qXKGpuVtmYOR4p9a7lmU=";
-    };
-    date = "2024-11-10";
-  };
   seal_lake = {
     pname = "seal_lake";
     version = "ca84d624a8280c5354ea4d90cd29648804c6c489";
