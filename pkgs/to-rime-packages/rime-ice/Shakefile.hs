@@ -213,7 +213,7 @@ __patch:
             writeFileChanged (buildDir </> radicalDerivedId <> ".schema.yaml") radicalDerivedCnt
             writeFileChanged (buildDir </> melgEngDerivedId <> ".schema.yaml") melgEngDerivedCnt
             let
-              cnEnUserDict = "cn_en_" <> name <> ".txt"
+              cnEnUserDict = "en_dicts" </> "cn_en_" <> name <> ".txt"
             copyFileChanged cnEnUserDict (buildDir </> cnEnUserDict)
         }
   all' =
