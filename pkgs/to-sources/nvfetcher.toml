@@ -157,3 +157,11 @@ fetch.url = "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/$
 src.git = "https://github.com/wez/wezterm"
 fetch.github = "wez/wezterm"
 git.fetchSubmodules = true
+
+[rime-ice]
+src.git = "https://github.com/iDvel/rime-ice"
+fetch.github = "iDvel/rime-ice"
+
+[rime-prelude]
+src.git = "https://github.com/rime/rime-prelude"
+fetch.github = "rime/rime-prelude"

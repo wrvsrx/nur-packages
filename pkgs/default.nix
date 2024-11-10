@@ -4,13 +4,18 @@ let
   pkgs-to-haskell-overlay = pkgs: (import ./to-haskell-overlay) { inherit pkgs to-sources; };
   pkgs-to-normal-packages = pkgs: (import ./to-normal-packages) { inherit pkgs to-sources; };
   pkgs-to-override-packages = pkgs: (import ./to-override-packages) { inherit pkgs to-sources; };
+  pkgs-to-rime-packages = pkgs: (import ./to-rime-packages) { inherit pkgs to-sources; };
   pkgs-to-toplevel =
     pkgs:
     let
       normal-packages = pkgs-to-normal-packages pkgs;
       override-packages = pkgs-to-override-packages pkgs;
     in
-    normal-packages // override-packages;
+    normal-packages
+    // override-packages
+    // {
+      rimePackages = pkgs.lib.recurseIntoAttrs (pkgs-to-rime-packages pkgs);
+    };
   pkgs-to-packages =
     pkgs:
     let

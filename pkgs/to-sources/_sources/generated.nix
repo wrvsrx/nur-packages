@@ -300,6 +300,30 @@
     };
     date = "2023-09-12";
   };
+  rime-ice = {
+    pname = "rime-ice";
+    version = "9a2a217bf57f53212b114aa7c0a702e4d8b55519";
+    src = fetchFromGitHub {
+      owner = "iDvel";
+      repo = "rime-ice";
+      rev = "9a2a217bf57f53212b114aa7c0a702e4d8b55519";
+      fetchSubmodules = false;
+      sha256 = "sha256-OyaOriiyIMRsZz59LyOS/LtG1J4DU02NHcaJ6PdaffU=";
+    };
+    date = "2024-11-10";
+  };
+  rime-prelude = {
+    pname = "rime-prelude";
+    version = "3803f09458072e03b9ed396692ce7e1d35c88c95";
+    src = fetchFromGitHub {
+      owner = "rime";
+      repo = "rime-prelude";
+      rev = "3803f09458072e03b9ed396692ce7e1d35c88c95";
+      fetchSubmodules = false;
+      sha256 = "sha256-qLxkijfB/btd2yhUMbxmoNx6fKxpKYHBZoE7YEUKIu4=";
+    };
+    date = "2024-05-19";
+  };
   rsshub = {
     pname = "rsshub";
     version = "9fd5c42951983918e488ff364d7e07e1bd64fe5d";
