@@ -13,6 +13,7 @@ import Data.ByteString.UTF8 qualified as BU
 import Data.Function ((&))
 import Data.List.Extra (intercalate, replace)
 import Data.Maybe (fromJust)
+import Data.Tree qualified as Tr
 import Data.Yaml qualified as Y
 import Development.Shake
 import Development.Shake.Command
@@ -21,11 +22,7 @@ import Development.Shake.Util
 import Text.Printf (printf)
 import Text.RawString.QQ (r)
 
-data ComponentTree = ComponentTree
-  { name :: String
-  , children :: [ComponentTree]
-  , act :: Action ()
-  }
+type Component = Tr.Tree (String, Action ())
 
 main :: IO ()
 main = shakeArgs shakeOptions $ do
@@ -35,7 +32,7 @@ main = shakeArgs shakeOptions $ do
   renderComponentToNix all'
   phony "nix" $ do
     let
-      allName = filter (/= "all-nix") (flattenTree all')
+      allName = filter (/= "all-nix") (map fst (Tr.flatten all'))
     need (map (<> "-nix") allName)
     copyFileChanged "Shakefile.hs" (buildDir </> "nix" </> "Shakefile.hs")
     writeFileChanged
@@ -55,43 +52,32 @@ self:
         )
  where
   buildDir = "build"
-  renderComponentClosure :: ComponentTree -> Rules ()
-  renderComponentClosure ComponentTree{name, children, act} = do
+  renderComponentClosure :: Component -> Rules ()
+  renderComponentClosure (Tr.Node (name, act) children) = do
     phony (name <> "-closure") $ do
-      need (map ((<> "-closure") . (.name)) children)
+      need (map ((<> "-closure") . fst . Tr.rootLabel) children)
       act
     mapM_ renderComponentClosure children
-  renderComponent :: ComponentTree -> Rules ()
-  renderComponent ComponentTree{name, children, act} = do
+  renderComponent :: Component -> Rules ()
+  renderComponent (Tr.Node (name, act) children) = do
     phony name act
     mapM_ renderComponent children
 
-  cnDicts' =
-    ComponentTree
-      { name = "cn_dicts"
-      , children = []
-      , act = copyFolderAction "cn_dicts" "*.dict.yaml"
-      }
-  enDicts' = ComponentTree "en_dicts" [] (copyFolderAction "en_dicts" "*.dict.yaml")
+  cnDicts' = Tr.Node ("cn_dicts", copyFolderAction "cn_dicts" "*.dict.yaml") []
+  enDicts' = Tr.Node ("en_dicts", copyFolderAction "en_dicts" "*.dict.yaml") []
   lua' =
-    ComponentTree
-      { name = "lua"
-      , children = []
-      , act = do
+    Tr.Node
+      ( "lua"
+      , do
           copyFolderAction "lua" "*.lua"
           writeFileChanged (buildDir </> "lua" </> "force_gc.lua") "local function force_gc()\ncollectgarbage(\"step\")\nend\nreturn force_gc"
-      }
-  opencc' =
-    ComponentTree
-      { name = "opencc"
-      , children = []
-      , act = copyFolderAction "opencc" "*"
-      }
+      )
+      []
+  opencc' = Tr.Node ("opencc", copyFolderAction "opencc" "*") []
   common' =
-    ComponentTree
-      { name = "common"
-      , children = []
-      , act = do
+    Tr.Node
+      ( "common"
+      , do
           cnt <- readFile' "default.yaml"
           let
             bs = BU.fromString cnt
@@ -117,51 +103,38 @@ self:
                     )
                 )
             )
-      }
+      )
+      []
   meltEngStr = "melt_eng"
   meltEngSchema' =
-    ComponentTree
-      { name = "melt_eng"
-      , children = [enDicts']
-      , act = do
+    Tr.Node
+      ( meltEngStr
+      , do
           copyFileChanged "melt_eng.dict.yaml" (buildDir </> "melt_eng.dict.yaml")
           copyFileChanged "melt_eng.schema.yaml" (buildDir </> "melt_eng.schema.yaml")
-      }
+      )
+      [enDicts']
   radicalPinyinStr = "radical_pinyin"
   radicalPinyinSchema' =
     let
       dict = radicalPinyinStr <> ".dict.yaml"
       schema = radicalPinyinStr <> ".schema.yaml"
      in
-      ComponentTree
-        { name = radicalPinyinStr
-        , children = []
-        , act = do
+      Tr.Node
+        ( radicalPinyinStr
+        , do
             copyFileChanged dict (buildDir </> dict)
             copyFileChanged schema (buildDir </> schema)
-        }
-  rimeIceDict' =
-    ComponentTree
-      { name = "pinyin-dict"
-      , children = [cnDicts']
-      , act = do
-          copyFileChanged "rime_ice.dict.yaml" (buildDir </> "rime_ice.dict.yaml")
-      }
+        )
+        []
+  rimeIceDict' = Tr.Node ("pinyin-dict", copyFileChanged "rime_ice.dict.yaml" (buildDir </> "rime_ice.dict.yaml")) [cnDicts']
   doubleFly' =
     let
       name = "flypy"
      in
-      ComponentTree
-        { name = name
-        , children =
-            [ lua'
-            , common'
-            , opencc'
-            , rimeIceDict'
-            , meltEngSchema'
-            , radicalPinyinSchema'
-            ]
-        , act = do
+      Tr.Node
+        ( name
+        , do
             cnt <- readFile' ("double_pinyin_" <> name <> ".schema.yaml")
             let
               radicalDerivedId = radicalPinyinStr <> "_" <> name
@@ -215,13 +188,15 @@ __patch:
             let
               cnEnUserDict = "en_dicts" </> "cn_en_" <> name <> ".txt"
             copyFileChanged cnEnUserDict (buildDir </> cnEnUserDict)
-        }
-  all' =
-    ComponentTree
-      { name = "all"
-      , children = [doubleFly']
-      , act = return ()
-      }
+        )
+        [ lua'
+        , common'
+        , opencc'
+        , rimeIceDict'
+        , meltEngSchema'
+        , radicalPinyinSchema'
+        ]
+  all' = Tr.Node ("all", pure ()) [doubleFly']
   copyFolderAction dir pattern = do
     dictList <- getDirectoryFiles "" [dir </> pattern]
     mapM_ (\x -> copyFileChanged x (buildDir </> x)) dictList
@@ -230,8 +205,8 @@ __patch:
     replace "lua_processor@" "lua_processor@*"
       . replace "lua_filter@" "lua_filter@*"
       . replace "lua_translator@" "lua_translator@*"
-  renderComponentToNix :: ComponentTree -> Rules ()
-  renderComponentToNix ComponentTree{name, children, act} = do
+  renderComponentToNix :: Component -> Rules ()
+  renderComponentToNix (Tr.Node (name, act) children) = do
     phony (name <> "-nix") $
       do
         let
@@ -295,12 +270,10 @@ in
     '';
   }
 |]
-              (intercalate ", " (map (("rime-ice-" <>) . (.name)) children))
+              (intercalate ", " (map (("rime-ice-" <>) . fst . Tr.rootLabel) children))
               name
-              (unwords (map (("rime-ice-" <>) . (.name)) children))
+              (unwords (map (("rime-ice-" <>) . fst . Tr.rootLabel) children))
               name
          in
           writeFileChanged (buildDir </> "nix" </> "rime-ice-" <> name </> "default.nix") nixCnt
     mapM_ renderComponentToNix children
-  flattenTree :: ComponentTree -> [String]
-  flattenTree ComponentTree{name, children, act} = name : concatMap flattenTree children
