@@ -70,22 +70,22 @@ self:
     ComponentTree
       { name = "cn_dicts"
       , children = []
-      , act = copyFolderAction "cn_dicts"
+      , act = copyFolderAction "cn_dicts" "*.dict.yaml"
       }
-  enDicts' = ComponentTree "en_dicts" [] (copyFolderAction "en_dicts")
+  enDicts' = ComponentTree "en_dicts" [] (copyFolderAction "en_dicts" "*.dict.yaml")
   lua' =
     ComponentTree
       { name = "lua"
       , children = []
       , act = do
-          copyFolderAction "lua"
+          copyFolderAction "lua" "*.lua"
           writeFileChanged (buildDir </> "lua" </> "force_gc.lua") "local function force_gc()\ncollectgarbage(\"step\")\nend\nreturn force_gc"
       }
   opencc' =
     ComponentTree
       { name = "opencc"
       , children = []
-      , act = copyFolderAction "opencc"
+      , act = copyFolderAction "opencc" "*"
       }
   common' =
     ComponentTree
@@ -212,6 +212,9 @@ __patch:
             writeFileChanged (buildDir </> "rime_ice_double_pinyin_" <> name <> ".schema.yaml") cnt'
             writeFileChanged (buildDir </> radicalDerivedId <> ".schema.yaml") radicalDerivedCnt
             writeFileChanged (buildDir </> melgEngDerivedId <> ".schema.yaml") melgEngDerivedCnt
+            let
+              cnEnUserDict = "cn_en_" <> name <> ".txt"
+            copyFileChanged cnEnUserDict (buildDir </> cnEnUserDict)
         }
   all' =
     ComponentTree
@@ -219,8 +222,8 @@ __patch:
       , children = [doubleFly']
       , act = return ()
       }
-  copyFolderAction dir = do
-    dictList <- getDirectoryFiles "" [dir </> "*"]
+  copyFolderAction dir pattern = do
+    dictList <- getDirectoryFiles "" [dir </> pattern]
     mapM_ (\x -> copyFileChanged x (buildDir </> x)) dictList
   transformDefault :: String -> String
   transformDefault =
