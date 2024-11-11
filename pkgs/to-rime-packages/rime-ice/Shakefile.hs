@@ -90,7 +90,7 @@ self:
             ( BU.toString
                 ( Y.encode
                     ( A.object
-                        [ "swither/save_options/+"
+                        [ "switcher/save_options/+"
                             .= ( [ "ascii_mode"
                                  , "emoji"
                                  , "search_single_char"
