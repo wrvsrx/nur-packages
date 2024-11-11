@@ -5,13 +5,13 @@
 }:
 php.buildComposerProject {
   pname = "baikal";
-  version = "0.10.0";
+  version = "0.10.1";
   src = fetchFromGitHub {
     owner = "sabre-io";
     repo = "Baikal";
-    rev = "0.10.0";
+    rev = "0.10.1";
     fetchSubmodules = false;
-    sha256 = "sha256-7avHpkcbbXAiuOKM49oc5EtndSH0FYgHMqXGfD03R2M=";
+    sha256 = "sha256-YQQwTdwfHQZdUhO5HbScj/Bl8ype7TtPI3lHjvz2k04=";
   };
   patches = [
     (fetchpatch {
