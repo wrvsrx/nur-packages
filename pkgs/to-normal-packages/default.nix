@@ -4,10 +4,6 @@ let
   sources = to-sources { inherit pkgs; };
   callIFD = import ../callIFD.nix;
   mkNotoCJK = callPackage ./noto-fonts-cjk { };
-  pnpm_9_1_4 = pkgs.callPackage "${pkgs.path}/pkgs/development/tools/pnpm/generic.nix" {
-    version = "9.1.4";
-    hash = "sha256-MKGAGsTnI3ee/tE6IfTDn562yfu0ztEBvOBrQiWT18k=";
-  };
 in
 rec {
   auth-thu = callPackage ./auth-thu { };
@@ -54,8 +50,10 @@ rec {
     source = sources.wezterm;
     inherit (pkgs) wezterm;
   };
+  librime = callPackage ./librime { inherit (pkgs) librime; };
   fcitx5-rime = callPackage ./fcitx5-rime {
     inherit (pkgs) fcitx5-rime;
+    inherit librime;
   };
 
   # my packages

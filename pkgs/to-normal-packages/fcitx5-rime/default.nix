@@ -1,4 +1,8 @@
-{ fcitx5-rime, fetchpatch }:
+{
+  fcitx5-rime,
+  fetchpatch,
+  librime,
+}:
 let
   fcitx5-rime' = fcitx5-rime.override (old: {
     stdenv = old.stdenv // {
@@ -32,4 +36,5 @@ let
 in
 fcitx5-rime'.override {
   rimeDataPkgs = [ ];
+  inherit librime;
 }
