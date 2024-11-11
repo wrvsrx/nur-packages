@@ -30,6 +30,45 @@ index 2e1c8b81..94a6b500 100644
  
   protected:
    Engine();
+diff --git a/src/rime/gear/ascii_composer.cc b/src/rime/gear/ascii_composer.cc
+index 18889f3a..ef2e294c 100644
+--- a/src/rime/gear/ascii_composer.cc
++++ b/src/rime/gear/ascii_composer.cc
+@@ -12,6 +12,7 @@
+ #include <rime/key_event.h>
+ #include <rime/schema.h>
+ #include <rime/gear/ascii_composer.h>
++#include <rime/switcher.h>
+ 
+ namespace rime {
+ 
+@@ -234,6 +235,13 @@ void AsciiComposer::SwitchAsciiMode(bool ascii_mode,
+   }
+   // refresh non-confirmed composition with new mode
+   ctx->set_option("ascii_mode", ascii_mode);
++  auto switcher = this->engine_->switcher_;
++  if (switcher->IsAutoSave("ascii_mode")) {
++    if (Config* user_config = switcher->user_config()) {
++      user_config->SetBool("var/option/" + std::string("ascii_mode"),
++                           ascii_mode);
++    }
++  }
+ }
+ 
+ void AsciiComposer::OnContextUpdate(Context* ctx) {
+@@ -241,6 +249,12 @@ void AsciiComposer::OnContextUpdate(Context* ctx) {
+     connection_.disconnect();
+     // quit temporary ascii mode
+     ctx->set_option("ascii_mode", false);
++    auto switcher = this->engine_->switcher_;
++    if (switcher->IsAutoSave("ascii_mode")) {
++      if (Config* user_config = switcher->user_config()) {
++        user_config->SetBool("var/option/" + std::string("ascii_mode"), false);
++      }
++    }
+   }
+ }
+ 
 diff --git a/src/rime/service.h b/src/rime/service.h
 index 2b3111af..95ca87dc 100644
 --- a/src/rime/service.h
