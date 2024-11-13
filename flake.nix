@@ -20,7 +20,7 @@
           pkgs-to-packages
           pkgs-to-toplevel
           pkgs-to-python-modules
-          pkgs-to-vim-plugins
+          pkgs-to-vim-plugins-overlay
           pkgs-to-haskell-overlay
           ;
         templates = import ./templates;
@@ -89,7 +89,7 @@
             // {
               pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [ (pkgs-to-python-modules pkgs) ];
               haskellPackages = prev.haskellPackages.extend (pkgs-to-haskell-overlay prev);
-              vimPlugins = prev.vimPlugins // (pkgs-to-vim-plugins pkgs);
+              vimPlugins = prev.vimPlugins.extend (pkgs-to-vim-plugins-overlay pkgs);
             };
         };
         perSystem =

@@ -26,7 +26,7 @@ let
         in
         p;
       haskellPackages = pkgs-to-haskell-overlay pkgs { } pkgs.haskellPackages;
-      vimPlugins = pkgs-to-vim-plugins pkgs;
+      vimPlugins = pkgs-to-vim-plugins-overlay pkgs { } pkgs.vimPlugins;
     in
     flat-packages
     // {
@@ -34,13 +34,13 @@ let
       python3Packages = pkgs.lib.recurseIntoAttrs python3Packages;
       vimPlugins = pkgs.lib.recurseIntoAttrs vimPlugins;
     };
-  pkgs-to-vim-plugins = pkgs: (import ./to-vim-plugins) { inherit pkgs to-sources; };
+  pkgs-to-vim-plugins-overlay = pkgs: (import ./to-vim-plugins) { inherit pkgs to-sources; };
 in
 {
   inherit
     pkgs-to-packages
     pkgs-to-python-modules
-    pkgs-to-vim-plugins
+    pkgs-to-vim-plugins-overlay
     pkgs-to-haskell-overlay
     pkgs-to-toplevel
     ;

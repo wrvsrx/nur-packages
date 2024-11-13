@@ -1,9 +1,10 @@
 { pkgs, to-sources }:
+final: prev:
 let
   sources = to-sources { inherit pkgs; };
-  inherit (pkgs.vimUtils) buildVimPlugin;
-  inherit (pkgs) callPackage;
   callIFD = import ../callIFD.nix;
+  inherit (pkgs) callPackage;
+  inherit (pkgs.vimUtils) buildVimPlugin;
 in
 {
   nvim-numbertoggle = buildVimPlugin {
