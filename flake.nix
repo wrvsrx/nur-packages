@@ -18,10 +18,7 @@
       let
         inherit (import ./pkgs { inherit inputs; })
           pkgs-to-packages
-          pkgs-to-toplevel
-          pkgs-to-python-modules
-          pkgs-to-vim-plugins-overlay
-          pkgs-to-haskell-overlay
+          overlay
           ;
       in
       {
@@ -29,14 +26,7 @@
         flake = {
           templates = import ./templates;
           lib = import ./lib { inherit inputs; };
-          overlays.default =
-            final: prev:
-            pkgs-to-toplevel prev
-            // {
-              pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [ (pkgs-to-python-modules prev) ];
-              haskellPackages = prev.haskellPackages.extend (pkgs-to-haskell-overlay prev);
-              vimPlugins = prev.vimPlugins.extend (pkgs-to-vim-plugins-overlay prev);
-            };
+          overlays.default = overlay;
         };
         perSystem =
           { system, pkgs, ... }:
