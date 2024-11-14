@@ -81,28 +81,16 @@
           };
           overlays.default =
             final: prev:
-            let
-              # it seems that using `extend` cause infinite evaluation of overlays
-              pkgs = prev;
-            in
-            pkgs-to-toplevel pkgs
+            pkgs-to-toplevel prev
             // {
-              pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [ (pkgs-to-python-modules pkgs) ];
+              pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [ (pkgs-to-python-modules prev) ];
               haskellPackages = prev.haskellPackages.extend (pkgs-to-haskell-overlay prev);
-              vimPlugins = prev.vimPlugins.extend (pkgs-to-vim-plugins-overlay pkgs);
+              vimPlugins = prev.vimPlugins.extend (pkgs-to-vim-plugins-overlay prev);
             };
         };
         perSystem =
           { system, pkgs, ... }:
           {
-            _module.args.pkgs =
-              let
-                nixpkgs-patched = inputs.nixpkgs;
-              in
-              import nixpkgs-patched {
-                inherit system;
-                config.allowUnfree = true;
-              };
             checks =
               let
                 pkgs' = pkgs-to-packages pkgs;
