@@ -39,6 +39,10 @@
         perSystem =
           { system, pkgs, ... }:
           {
+            _module.args.pkgs = import inputs.nixpkgs {
+              inherit system;
+              config.allowUnfree = true;
+            };
             checks =
               let
                 pkgs' = pkgs-to-packages pkgs;
