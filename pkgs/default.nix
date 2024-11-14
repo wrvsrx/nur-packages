@@ -1,3 +1,4 @@
+{ inputs }:
 let
   to-sources = import ./to-sources;
   pkgs-to-python-modules = pkgs: (import ./to-python-modules) { inherit pkgs to-sources; };

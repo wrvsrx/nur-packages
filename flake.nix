@@ -16,7 +16,7 @@
     inputs.flake-parts.lib.mkFlake { inherit inputs; } (
       { withSystem, inputs, ... }:
       let
-        inherit (import ./pkgs)
+        inherit (import ./pkgs { inherit inputs; })
           pkgs-to-packages
           pkgs-to-toplevel
           pkgs-to-python-modules
