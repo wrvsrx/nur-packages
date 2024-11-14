@@ -5,6 +5,14 @@
     nixpkgs.follows = "flake-lock/nixpkgs";
     flake-parts.follows = "flake-lock/flake-parts";
     flake-utils.follows = "flake-lock/flake-utils";
+    linyinfeng = {
+      url = "github:linyinfeng/nur-packages";
+      flake = false;
+    };
+    ilya-fedin = {
+      url = "github:ilya-fedin/nur-repository";
+      flake = false;
+    };
     nix-update = {
       url = "github:Mic92/nix-update";
       inputs.nixpkgs.follows = "flake-lock/nixpkgs";
