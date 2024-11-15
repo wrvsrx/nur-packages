@@ -11,7 +11,7 @@ rec {
     ;
   easylpac = linyinfeng.easylpac.overrideAttrs {
     postInstall = ''
-      cp ${lpac}/bin/lpac $out/bin/
+      ln -s ${lpac}/bin/lpac $out/bin/lpac
     '';
   };
   inherit (ilya-fedin)
