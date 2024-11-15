@@ -9,11 +9,12 @@ rec {
     wemeet
     lpac
     ;
-  easylpac = linyinfeng.easylpac.overrideAttrs {
+  easylpac = linyinfeng.easylpac.overrideAttrs (old: {
+    nativeBuildInputs = old.nativeBuildInputs ++ [ pkgs.wrapGAppsHook ];
     postInstall = ''
       ln -s ${lpac}/bin/lpac $out/bin/lpac
     '';
-  };
+  });
   inherit (ilya-fedin)
     qt5ct
     qt6ct
