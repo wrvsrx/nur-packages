@@ -99,11 +99,11 @@
     "linyinfeng": {
       "flake": false,
       "locked": {
-        "lastModified": 1731522574,
-        "narHash": "sha256-2GHAk5toTetqc+nwXvR0R6z2VnAYdeqBDwdosKYlHgE=",
+        "lastModified": 1731695587,
+        "narHash": "sha256-nR/x7APuuL1N7ehf1iaiUUoCBOeDRGteakGxHi1lydw=",
         "owner": "linyinfeng",
         "repo": "nur-packages",
-        "rev": "bfd85e91daf007409679d862ccd24d9aa6da4692",
+        "rev": "2c16df84189bc985fc2d651c30108d657457c8f4",
         "type": "github"
       },
       "original": {
