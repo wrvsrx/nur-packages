@@ -19,7 +19,6 @@ rec {
     inherit (pkgs) fcitx5-rime;
     inherit librime;
   };
-  neovim-unwrapped = callPackage ./neovim-unwrapped {
-    inherit (pkgs) neovim-unwrapped;
-  };
+  neovim-unwrapped = callPackage ./neovim-unwrapped { inherit (pkgs) neovim-unwrapped; };
+  rustdesk-flutter = callPackage ./rustdesk-flutter { inherit (pkgs) rustdesk-flutter; };
 }
