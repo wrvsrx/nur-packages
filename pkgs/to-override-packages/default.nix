@@ -19,4 +19,7 @@ rec {
     inherit (pkgs) fcitx5-rime;
     inherit librime;
   };
+  neovim-unwrapped = callPackage ./neovim-unwrapped {
+    inherit (pkgs) neovim-unwrapped;
+  };
 }
