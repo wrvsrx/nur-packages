@@ -21,4 +21,5 @@ rec {
   };
   neovim-unwrapped = callPackage ./neovim-unwrapped { inherit (pkgs) neovim-unwrapped; };
   rustdesk-flutter = callPackage ./rustdesk-flutter { inherit (pkgs) rustdesk-flutter; };
+  calibre = callPackage ./calibre { inherit (pkgs) calibre; };
 }
