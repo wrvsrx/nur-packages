@@ -1,7 +1,8 @@
 { inputs }:
 let
   to-sources = import ./to-sources;
-  pkgs-to-other-nur = pkgs: import ./to-other-nur { inherit inputs; } { inherit pkgs; };
+  pkgs-to-other-nur-packages =
+    pkgs: import ./to-other-nur-packages { inherit inputs; } { inherit pkgs; };
   pkgs-to-python-modules = pkgs: (import ./to-python-modules) { inherit pkgs to-sources; };
   pkgs-to-haskell-overlay = pkgs: (import ./to-haskell-overlay) { inherit pkgs to-sources; };
   pkgs-to-normal-packages = pkgs: (import ./to-normal-packages) { inherit pkgs to-sources; };
@@ -12,7 +13,7 @@ let
     let
       normal-packages = pkgs-to-normal-packages pkgs;
       override-packages = pkgs-to-override-packages pkgs;
-      other-nur = pkgs-to-other-nur pkgs;
+      other-nur = pkgs-to-other-nur-packages pkgs;
     in
     normal-packages
     // override-packages
