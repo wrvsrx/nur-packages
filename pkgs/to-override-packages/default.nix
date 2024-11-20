@@ -20,8 +20,6 @@ rec {
     inherit librime;
   };
   neovim-unwrapped = callPackage ./neovim-unwrapped { inherit (pkgs) neovim-unwrapped; };
-  rustdesk-flutter = callPackage ./rustdesk-flutter { inherit (pkgs) rustdesk-flutter; };
-  calibre = callPackage ./calibre { inherit (pkgs) calibre; };
   p7zip = pkgs.p7zip.override { enableUnfree = true; };
   remmina = pkgs.remmina.override { withKf5Wallet = false; };
 }
