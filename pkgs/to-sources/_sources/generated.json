@@ -461,27 +461,6 @@
         },
         "version": "Serif2.003"
     },
-    "noto-fonts-emoji-monochrome": {
-        "cargoLocks": null,
-        "date": "2023-03-28",
-        "extract": null,
-        "name": "noto-fonts-emoji-monochrome",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "wrvsrx",
-            "repo": "noto-emoji",
-            "rev": "d5f498241b3b77beddce3a53ee802c34b1fa46c4",
-            "sha256": "sha256-NpT4SUUq7JfenAfz+XvV/My2rxTntX99zdwp9RKcySo=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "d5f498241b3b77beddce3a53ee802c34b1fa46c4"
-    },
     "nvim-numbertoggle": {
         "cargoLocks": null,
         "date": "2024-03-29",

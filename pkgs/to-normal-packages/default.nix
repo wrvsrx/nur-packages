@@ -10,9 +10,6 @@ rec {
   autodiff = callPackage ./autodiff { source = sources.autodiff; };
   noto-fonts-cjk-sans-fix-weight = mkNotoCJK { source = sources.noto-fonts-cjk-sans-fix-weight; };
   noto-fonts-cjk-serif-fix-weight = mkNotoCJK { source = sources.noto-fonts-cjk-serif-fix-weight; };
-  noto-fonts-emoji-monochrome = callPackage ./noto-fonts-emoji-monochrome {
-    source = sources.noto-fonts-emoji-monochrome;
-  };
   cyCodeBase = callPackage ./cyCodeBase { source = sources.cyCodeBase; };
   hougeo = callPackage ./hougeo { source = sources.hougeo; };
   happly = callPackage ./happly { source = sources.happly; };
