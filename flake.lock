@@ -154,6 +154,35 @@
         "type": "github"
       }
     },
+    "nvfetcher": {
+      "inputs": {
+        "flake-compat": [
+          "flake-lock",
+          "flake-compat"
+        ],
+        "flake-utils": [
+          "flake-lock",
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "flake-lock",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1718252448,
+        "narHash": "sha256-xZZBdKqe1ByITzvx65pVgGQ5jeb73MybjgrcfI84lEo=",
+        "owner": "berberman",
+        "repo": "nvfetcher",
+        "rev": "fa7609950023462c6f91c425de7610c0bb6b86ba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "berberman",
+        "repo": "nvfetcher",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flake-lock": "flake-lock",
@@ -171,7 +200,8 @@
         "nixpkgs": [
           "flake-lock",
           "nixpkgs"
-        ]
+        ],
+        "nvfetcher": "nvfetcher"
       }
     },
     "systems": {

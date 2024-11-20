@@ -5,6 +5,12 @@
     nixpkgs.follows = "flake-lock/nixpkgs";
     flake-parts.follows = "flake-lock/flake-parts";
     flake-utils.follows = "flake-lock/flake-utils";
+    nvfetcher = {
+      url = "github:berberman/nvfetcher";
+      inputs.nixpkgs.follows = "flake-lock/nixpkgs";
+      inputs.flake-utils.follows = "flake-lock/flake-utils";
+      inputs.flake-compat.follows = "flake-lock/flake-compat";
+    };
     linyinfeng = {
       url = "github:linyinfeng/nur-packages";
       flake = false;
@@ -61,7 +67,7 @@
             formatter = pkgs.nixfmt-rfc-style;
             devShells.default = pkgs.mkShell {
               nativeBuildInputs = [
-                pkgs.haskellPackages.nvfetcher
+                inputs.nvfetcher.packages."${system}".default
                 inputs.nix-update.packages."${system}".default
               ];
             };
