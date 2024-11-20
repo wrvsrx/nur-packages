@@ -158,6 +158,14 @@
     };
     date = "2023-07-26";
   };
+  e3nn-jax = {
+    pname = "e3nn-jax";
+    version = "0.20.7";
+    src = fetchurl {
+      url = "https://pypi.org/packages/source/e/e3nn_jax/e3nn_jax-0.20.7.tar.gz";
+      sha256 = "sha256-d2TtuZ0ZRl5XSiOFfl+XQgtNcg8GuovBigH58rgwHRw=";
+    };
+  };
   giraffe-wallpaper = {
     pname = "giraffe-wallpaper";
     version = "6fc686fe7b43cb6be8eaf3a9dc42177eb355eadd";
@@ -201,6 +209,14 @@
       sha256 = "sha256-QbPT7oJH835hfdP+o2ON9gQliuktDu4vmS5zzyG8Wfg=";
     };
     date = "2015-10-31";
+  };
+  jax-md = {
+    pname = "jax-md";
+    version = "0.2.8";
+    src = fetchurl {
+      url = "https://pypi.org/packages/source/j/jax-md/jax-md-0.2.8.tar.gz";
+      sha256 = "sha256-rXTkQ8jomTPjiw4mVLUvf1rqu9gaCTTHZfCUF+qi6Vs=";
+    };
   };
   jraph = {
     pname = "jraph";

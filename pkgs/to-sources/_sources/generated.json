@@ -281,6 +281,21 @@
         },
         "version": "ede026f5c1976faa90709690a4290161ed05c19b"
     },
+    "e3nn-jax": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "e3nn-jax",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-d2TtuZ0ZRl5XSiOFfl+XQgtNcg8GuovBigH58rgwHRw=",
+            "type": "url",
+            "url": "https://pypi.org/packages/source/e/e3nn_jax/e3nn_jax-0.20.7.tar.gz"
+        },
+        "version": "0.20.7"
+    },
     "giraffe-wallpaper": {
         "cargoLocks": null,
         "date": "2023-05-20",
@@ -358,6 +373,21 @@
             "type": "github"
         },
         "version": "7e48d2bda0f94fc96b2d8b2917d5ef306ba83c97"
+    },
+    "jax-md": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "jax-md",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-rXTkQ8jomTPjiw4mVLUvf1rqu9gaCTTHZfCUF+qi6Vs=",
+            "type": "url",
+            "url": "https://pypi.org/packages/source/j/jax-md/jax-md-0.2.8.tar.gz"
+        },
+        "version": "0.2.8"
     },
     "jraph": {
         "cargoLocks": null,

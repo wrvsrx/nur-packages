@@ -161,3 +161,11 @@ fetch.github = "rime/rime-prelude"
 [jraph]
 src.manual = "0.0.6.dev0"
 fetch.pypi = "jraph"
+
+[jax-md]
+src.pypi = "jax-md"
+fetch.pypi = "jax-md"
+
+[e3nn-jax]
+src.pypi = "e3nn-jax"
+fetch.pypi = "e3nn_jax"
