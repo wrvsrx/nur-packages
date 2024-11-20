@@ -161,3 +161,7 @@ fetch.github = "iDvel/rime-ice"
 [rime-prelude]
 src.git = "https://github.com/rime/rime-prelude"
 fetch.github = "rime/rime-prelude"
+
+[jraph]
+src.manual = "0.0.6.dev0"
+fetch.pypi = "jraph"

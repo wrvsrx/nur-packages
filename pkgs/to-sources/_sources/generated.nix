@@ -202,6 +202,14 @@
     };
     date = "2015-10-31";
   };
+  jraph = {
+    pname = "jraph";
+    version = "0.0.6.dev0";
+    src = fetchurl {
+      url = "https://pypi.org/packages/source/j/jraph/jraph-0.0.6.dev0.tar.gz";
+      sha256 = "sha256-w6w6CyJLNE6202fovDEtlepBv4JdAeoxuA3YwiwN2Lg=";
+    };
+  };
   linediff-vim = {
     pname = "linediff-vim";
     version = "ddae71ef5f94775d101c1c70032ebe8799f32745";
@@ -211,7 +219,6 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-ZyQzLpzvS887J1Gdxv1edC9MhPj1EEITh27rUPuFugU=";
     };
     date = "2024-04-22";
@@ -236,10 +243,7 @@
       repo = "noto-cjk";
       rev = "Sans2.004";
       fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ "Sans/OTC" ];
-      sha256 = "sha256-GXULnRPsIJRdiL3LdFtHbqTqSvegY2zodBxFm4P55to=";
+      sha256 = "sha256-m/BnqKINE7kG2Ze5+E8UsP9LyM+mUfyN5OAPfbmqe8k=";
     };
   };
   noto-fonts-cjk-serif-fix-weight = {
@@ -250,10 +254,7 @@
       repo = "noto-cjk";
       rev = "Serif2.003";
       fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ "Serif/OTC" ];
-      sha256 = "sha256-mfbBSdJrUCZiUUmsmndtEW6H3z6KfBn+dEftBySf2j4=";
+      sha256 = "sha256-WWuxOZSWBsVcQV8X43tRddj5fmWAnoIIHeg1HcaKnzc=";
     };
   };
   noto-fonts-emoji-monochrome = {
