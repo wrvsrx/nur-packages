@@ -12,7 +12,6 @@ lib.makeScope newScope (
   in
   {
     inherit librime;
-    withRimeDeps = callPackage ./with-rime-deps { };
     withRimeDeps' = callPackage ./with-rime-deps-prime { };
     inherit (hooks) rimeDataBuildHook;
     rime-fcitx5 = callPackage ./rime-fcitx5 { };
