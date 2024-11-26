@@ -33,12 +33,6 @@ rec {
           };
           version = "0.5";
         };
+        inherit iCalendar;
       });
-  calendar-visualization = callIFD {
-    inherit callPackage;
-    source = sources.calendar-visualization;
-    otherArgs = {
-      inherit iCalendar;
-    };
-  };
 }

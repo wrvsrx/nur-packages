@@ -66,18 +66,6 @@
       sha256 = "sha256-hdIbEIZrxA5EA3XY4MIazRv3DazUjpuDJRCgq8+kJQg=";
     };
   };
-  calendar-visualization = {
-    pname = "calendar-visualization";
-    version = "099535c19755f7f26cc9dd7651dbb8e201783e9f";
-    src = fetchFromGitHub {
-      owner = "wrvsrx";
-      repo = "calendar-visualization";
-      rev = "099535c19755f7f26cc9dd7651dbb8e201783e9f";
-      fetchSubmodules = false;
-      sha256 = "sha256-PcOeBPW53BtZSuz0AD+jMmlGlFvZBaZT71AFo83wRJU=";
-    };
-    date = "2024-05-02";
-  };
   cmdlime = {
     pname = "cmdlime";
     version = "80d9673456b4cb8223ad9cf176ec88d61a388c70";
@@ -384,15 +372,15 @@
   };
   task-utils = {
     pname = "task-utils";
-    version = "d95c1aadd4eabf5b479c1b7bc914de5657c82727";
+    version = "780178eaf8745f637360b2f1fcbcf20d9ba400de";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "task-utils";
-      rev = "d95c1aadd4eabf5b479c1b7bc914de5657c82727";
+      rev = "780178eaf8745f637360b2f1fcbcf20d9ba400de";
       fetchSubmodules = false;
-      sha256 = "sha256-22jRFaLG6KFr4tfm9417c763aumVrvAeeJaoiD3YQRk=";
+      sha256 = "sha256-zzb6ackTbaCITeulYi89dnrFhR7/aeVPdw5iDTMY54U=";
     };
-    date = "2024-10-30";
+    date = "2024-11-26";
   };
   utfcpp = {
     pname = "utfcpp";

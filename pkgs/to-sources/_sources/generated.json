@@ -119,27 +119,6 @@
         },
         "version": "v1.0.3"
     },
-    "calendar-visualization": {
-        "cargoLocks": null,
-        "date": "2024-05-02",
-        "extract": null,
-        "name": "calendar-visualization",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "wrvsrx",
-            "repo": "calendar-visualization",
-            "rev": "099535c19755f7f26cc9dd7651dbb8e201783e9f",
-            "sha256": "sha256-PcOeBPW53BtZSuz0AD+jMmlGlFvZBaZT71AFo83wRJU=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "099535c19755f7f26cc9dd7651dbb8e201783e9f"
-    },
     "cmdlime": {
         "cargoLocks": null,
         "date": "2023-08-29",
@@ -676,7 +655,7 @@
     },
     "task-utils": {
         "cargoLocks": null,
-        "date": "2024-10-30",
+        "date": "2024-11-26",
         "extract": null,
         "name": "task-utils",
         "passthru": null,
@@ -688,12 +667,12 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "task-utils",
-            "rev": "d95c1aadd4eabf5b479c1b7bc914de5657c82727",
-            "sha256": "sha256-22jRFaLG6KFr4tfm9417c763aumVrvAeeJaoiD3YQRk=",
+            "rev": "780178eaf8745f637360b2f1fcbcf20d9ba400de",
+            "sha256": "sha256-zzb6ackTbaCITeulYi89dnrFhR7/aeVPdw5iDTMY54U=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "d95c1aadd4eabf5b479c1b7bc914de5657c82727"
+        "version": "780178eaf8745f637360b2f1fcbcf20d9ba400de"
     },
     "utfcpp": {
         "cargoLocks": null,
