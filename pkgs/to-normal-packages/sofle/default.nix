@@ -13,4 +13,13 @@ in
 (callPackage (source.src) {
   zephyr = zephyr-nix';
   inherit (west2nix') mkWestDependencies;
-}).packages.default
+}).packages.default.overrideAttrs
+  (old: {
+    # record IFD as buildInputs to avoid gc
+    buildInputs = (old.buildInputs or [ ]) ++ [
+      west2nix
+      zephyr-nix
+      pyproject-nix
+      source.src
+    ];
+  })
