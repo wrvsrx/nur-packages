@@ -12,7 +12,7 @@ let
 in
 (callPackage (source.src) {
   zephyr = zephyr-nix';
-  inherit (west2nix') mkWestDependencies;
+  inherit (west2nix') mkWest2nixHook;
 }).packages.default.overrideAttrs
   (old: {
     # record IFD as buildInputs to avoid gc
