@@ -434,13 +434,13 @@
   };
   west2nix = {
     pname = "west2nix";
-    version = "93079cdd5cca004842a1981a9b9785a2db2c28c8";
+    version = "cb15f4526ce4635e96e6e49956f71d26b0b0cfbe";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "west2nix";
-      rev = "93079cdd5cca004842a1981a9b9785a2db2c28c8";
+      rev = "cb15f4526ce4635e96e6e49956f71d26b0b0cfbe";
       fetchSubmodules = false;
-      sha256 = "sha256-nnotjwL601i3PfA0I1zvYSVTHjFU/Xyq5VgAgINM43I=";
+      sha256 = "sha256-JUv2vp5cGOCqojDVCWg4XhGjiY9NSPdKSabB4cDsLvU=";
     };
     date = "2024-12-02";
   };
@@ -493,13 +493,13 @@
   };
   zmk-sofle = {
     pname = "zmk-sofle";
-    version = "231bd901658a688b23bef64cdac96ca31f027239";
+    version = "f1cd5f59210269668eeedee56c25e1ad9d8bca39";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "zmk-sofle";
-      rev = "231bd901658a688b23bef64cdac96ca31f027239";
+      rev = "f1cd5f59210269668eeedee56c25e1ad9d8bca39";
       fetchSubmodules = false;
-      sha256 = "sha256-J5XrqSoIPyJBjpgs8oo8MCVFdB1lkehdCjE7g1M3JdU=";
+      sha256 = "sha256-a34PGj9IlQ4/NepjLbjxgo2XSeyLEOEOhbDMBRK+ZRc=";
     };
     date = "2024-12-02";
   };

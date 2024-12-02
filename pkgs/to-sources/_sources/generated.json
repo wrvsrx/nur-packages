@@ -781,12 +781,12 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "west2nix",
-            "rev": "93079cdd5cca004842a1981a9b9785a2db2c28c8",
-            "sha256": "sha256-nnotjwL601i3PfA0I1zvYSVTHjFU/Xyq5VgAgINM43I=",
+            "rev": "cb15f4526ce4635e96e6e49956f71d26b0b0cfbe",
+            "sha256": "sha256-JUv2vp5cGOCqojDVCWg4XhGjiY9NSPdKSabB4cDsLvU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "93079cdd5cca004842a1981a9b9785a2db2c28c8"
+        "version": "cb15f4526ce4635e96e6e49956f71d26b0b0cfbe"
     },
     "wezterm": {
         "cargoLocks": null,
@@ -886,11 +886,11 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "zmk-sofle",
-            "rev": "231bd901658a688b23bef64cdac96ca31f027239",
-            "sha256": "sha256-J5XrqSoIPyJBjpgs8oo8MCVFdB1lkehdCjE7g1M3JdU=",
+            "rev": "f1cd5f59210269668eeedee56c25e1ad9d8bca39",
+            "sha256": "sha256-a34PGj9IlQ4/NepjLbjxgo2XSeyLEOEOhbDMBRK+ZRc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "231bd901658a688b23bef64cdac96ca31f027239"
+        "version": "f1cd5f59210269668eeedee56c25e1ad9d8bca39"
     }
 }
