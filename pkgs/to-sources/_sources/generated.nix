@@ -300,6 +300,18 @@
     };
     date = "2023-09-12";
   };
+  pyproject-nix = {
+    pname = "pyproject-nix";
+    version = "9ec41f2fde25b69aa32231047a0cb9e7ed748501";
+    src = fetchFromGitHub {
+      owner = "wrvsrx";
+      repo = "pyproject.nix";
+      rev = "9ec41f2fde25b69aa32231047a0cb9e7ed748501";
+      fetchSubmodules = false;
+      sha256 = "sha256-qQd6K8RYZpwEeawyqSnDkFCPZAIbz8c7BP9490EsgQM=";
+    };
+    date = "2024-12-02";
+  };
   rime-ice = {
     pname = "rime-ice";
     version = "9a2a217bf57f53212b114aa7c0a702e4d8b55519";
@@ -420,6 +432,18 @@
       sha256 = "sha256-qBXpBGdh8ehk/94nbE5Y9ispEz/d5DMXl1OVEH8AmCU=";
     };
   };
+  west2nix = {
+    pname = "west2nix";
+    version = "93079cdd5cca004842a1981a9b9785a2db2c28c8";
+    src = fetchFromGitHub {
+      owner = "wrvsrx";
+      repo = "west2nix";
+      rev = "93079cdd5cca004842a1981a9b9785a2db2c28c8";
+      fetchSubmodules = false;
+      sha256 = "sha256-nnotjwL601i3PfA0I1zvYSVTHjFU/Xyq5VgAgINM43I=";
+    };
+    date = "2024-12-02";
+  };
   wezterm = {
     pname = "wezterm";
     version = "c57b3ee28bd4394b2ff2ddf059798d4c84966633";
@@ -454,5 +478,29 @@
       fetchSubmodules = false;
       sha256 = "sha256-Su3mnC7hsw0T0u6HfsnYAwXml2T7CABySv7a18+KnK0=";
     };
+  };
+  zephyr-nix = {
+    pname = "zephyr-nix";
+    version = "5b8b315a0b78e56362e336d5d2f0ec350fffb830";
+    src = fetchFromGitHub {
+      owner = "wrvsrx";
+      repo = "zephyr-nix";
+      rev = "5b8b315a0b78e56362e336d5d2f0ec350fffb830";
+      fetchSubmodules = false;
+      sha256 = "sha256-Yiy19VVMl1FBNxIUn3lu0FMl50Gtxj7AGdsdp3FSftc=";
+    };
+    date = "2024-12-02";
+  };
+  zmk-sofle = {
+    pname = "zmk-sofle";
+    version = "231bd901658a688b23bef64cdac96ca31f027239";
+    src = fetchFromGitHub {
+      owner = "wrvsrx";
+      repo = "zmk-sofle";
+      rev = "231bd901658a688b23bef64cdac96ca31f027239";
+      fetchSubmodules = false;
+      sha256 = "sha256-J5XrqSoIPyJBjpgs8oo8MCVFdB1lkehdCjE7g1M3JdU=";
+    };
+    date = "2024-12-02";
   };
 }

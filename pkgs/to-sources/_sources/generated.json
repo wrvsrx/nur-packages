@@ -527,6 +527,27 @@
         },
         "version": "477b99c8a1053183ede9978b2fe00dbcdb7c4b91"
     },
+    "pyproject-nix": {
+        "cargoLocks": null,
+        "date": "2024-12-02",
+        "extract": null,
+        "name": "pyproject-nix",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "wrvsrx",
+            "repo": "pyproject.nix",
+            "rev": "9ec41f2fde25b69aa32231047a0cb9e7ed748501",
+            "sha256": "sha256-qQd6K8RYZpwEeawyqSnDkFCPZAIbz8c7BP9490EsgQM=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "9ec41f2fde25b69aa32231047a0cb9e7ed748501"
+    },
     "rime-ice": {
         "cargoLocks": null,
         "date": "2024-11-10",
@@ -746,6 +767,27 @@
         },
         "version": "v0.5.0-alpha.7"
     },
+    "west2nix": {
+        "cargoLocks": null,
+        "date": "2024-12-02",
+        "extract": null,
+        "name": "west2nix",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "wrvsrx",
+            "repo": "west2nix",
+            "rev": "93079cdd5cca004842a1981a9b9785a2db2c28c8",
+            "sha256": "sha256-nnotjwL601i3PfA0I1zvYSVTHjFU/Xyq5VgAgINM43I=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "93079cdd5cca004842a1981a9b9785a2db2c28c8"
+    },
     "wezterm": {
         "cargoLocks": null,
         "date": "2024-11-03",
@@ -808,5 +850,47 @@
             "type": "github"
         },
         "version": "v0.3.0"
+    },
+    "zephyr-nix": {
+        "cargoLocks": null,
+        "date": "2024-12-02",
+        "extract": null,
+        "name": "zephyr-nix",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "wrvsrx",
+            "repo": "zephyr-nix",
+            "rev": "5b8b315a0b78e56362e336d5d2f0ec350fffb830",
+            "sha256": "sha256-Yiy19VVMl1FBNxIUn3lu0FMl50Gtxj7AGdsdp3FSftc=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "5b8b315a0b78e56362e336d5d2f0ec350fffb830"
+    },
+    "zmk-sofle": {
+        "cargoLocks": null,
+        "date": "2024-12-02",
+        "extract": null,
+        "name": "zmk-sofle",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "wrvsrx",
+            "repo": "zmk-sofle",
+            "rev": "231bd901658a688b23bef64cdac96ca31f027239",
+            "sha256": "sha256-J5XrqSoIPyJBjpgs8oo8MCVFdB1lkehdCjE7g1M3JdU=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "231bd901658a688b23bef64cdac96ca31f027239"
     }
 }

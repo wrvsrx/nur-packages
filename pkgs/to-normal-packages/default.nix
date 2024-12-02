@@ -53,5 +53,10 @@ rec {
       height = 2160;
     };
   };
-
+  sofle = callPackage ./sofle {
+    west2nix = sources.west2nix.src;
+    zephyr-nix = sources.zephyr-nix.src;
+    pyproject-nix = sources.pyproject-nix.src;
+    source = sources.zmk-sofle;
+  };
 }
