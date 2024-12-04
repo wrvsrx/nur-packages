@@ -383,6 +383,21 @@
         },
         "version": "0.0.6.dev0"
     },
+    "keymap-drawer": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "keymap-drawer",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-/+QWhDXJeS/qJGzHb8K9Fa5EyqEl5zI2it/vPl9AtO4=",
+            "type": "url",
+            "url": "https://pypi.org/packages/source/k/keymap_drawer/keymap_drawer-0.19.0.tar.gz"
+        },
+        "version": "0.19.0"
+    },
     "linediff-vim": {
         "cargoLocks": null,
         "date": "2024-04-22",
@@ -694,6 +709,27 @@
             "type": "github"
         },
         "version": "99372ec79a82e757d559c0a91d821f0da7555462"
+    },
+    "tree-sitter-devicetree": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "tree-sitter-devicetree",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "joelspadin",
+            "repo": "tree-sitter-devicetree",
+            "rev": "v0.11.1",
+            "sha256": "sha256-2uJEItLwoBoiB49r2XuO216Dhu9AnAa0p7Plmm4JNY8=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.11.1"
     },
     "utfcpp": {
         "cargoLocks": null,

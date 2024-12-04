@@ -214,6 +214,14 @@
       sha256 = "sha256-w6w6CyJLNE6202fovDEtlepBv4JdAeoxuA3YwiwN2Lg=";
     };
   };
+  keymap-drawer = {
+    pname = "keymap-drawer";
+    version = "0.19.0";
+    src = fetchurl {
+      url = "https://pypi.org/packages/source/k/keymap_drawer/keymap_drawer-0.19.0.tar.gz";
+      sha256 = "sha256-/+QWhDXJeS/qJGzHb8K9Fa5EyqEl5zI2it/vPl9AtO4=";
+    };
+  };
   linediff-vim = {
     pname = "linediff-vim";
     version = "ddae71ef5f94775d101c1c70032ebe8799f32745";
@@ -393,6 +401,17 @@
       sha256 = "sha256-YG1ES90OTd0Toss4CP/Q68yJJ2t5bxAJfoQ/cZTwEXo=";
     };
     date = "2024-12-01";
+  };
+  tree-sitter-devicetree = {
+    pname = "tree-sitter-devicetree";
+    version = "v0.11.1";
+    src = fetchFromGitHub {
+      owner = "joelspadin";
+      repo = "tree-sitter-devicetree";
+      rev = "v0.11.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-2uJEItLwoBoiB49r2XuO216Dhu9AnAa0p7Plmm4JNY8=";
+    };
   };
   utfcpp = {
     pname = "utfcpp";

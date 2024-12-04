@@ -183,3 +183,11 @@ fetch.github = "wrvsrx/west2nix"
 src.git = "https://github.com/wrvsrx/zmk-sofle"
 src.branch = "customed-nix"
 fetch.github = "wrvsrx/zmk-sofle"
+
+[keymap-drawer]
+src.pypi = "keymap_drawer"
+fetch.pypi = "keymap_drawer"
+
+[tree-sitter-devicetree]
+src.github = "joelspadin/tree-sitter-devicetree" 
+fetch.github = "joelspadin/tree-sitter-devicetree"
