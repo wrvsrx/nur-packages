@@ -544,7 +544,7 @@
     },
     "pyproject-nix": {
         "cargoLocks": null,
-        "date": "2024-12-02",
+        "date": "2024-12-04",
         "extract": null,
         "name": "pyproject-nix",
         "passthru": null,
@@ -554,14 +554,14 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "owner": "wrvsrx",
+            "owner": "nix-community",
             "repo": "pyproject.nix",
-            "rev": "9ec41f2fde25b69aa32231047a0cb9e7ed748501",
-            "sha256": "sha256-qQd6K8RYZpwEeawyqSnDkFCPZAIbz8c7BP9490EsgQM=",
+            "rev": "4d9ea95787accffb9d61d2bef38e1df191140d4d",
+            "sha256": "sha256-ATUeMHGz4atOO4M93GQYbqJ/zNpG5QXJQTIHb358LoY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "9ec41f2fde25b69aa32231047a0cb9e7ed748501"
+        "version": "4d9ea95787accffb9d61d2bef38e1df191140d4d"
     },
     "rime-ice": {
         "cargoLocks": null,
@@ -805,7 +805,7 @@
     },
     "west2nix": {
         "cargoLocks": null,
-        "date": "2024-12-02",
+        "date": "2024-12-04",
         "extract": null,
         "name": "west2nix",
         "passthru": null,
@@ -817,12 +817,12 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "west2nix",
-            "rev": "cb15f4526ce4635e96e6e49956f71d26b0b0cfbe",
-            "sha256": "sha256-JUv2vp5cGOCqojDVCWg4XhGjiY9NSPdKSabB4cDsLvU=",
+            "rev": "3141a10d3cb4a90b4f96bc1c07f43707aa7c779a",
+            "sha256": "sha256-cstR8Iq8lSZgqA6vlV7oV0OQDE31kMgXHyEfueGBm/U=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "cb15f4526ce4635e96e6e49956f71d26b0b0cfbe"
+        "version": "3141a10d3cb4a90b4f96bc1c07f43707aa7c779a"
     },
     "wezterm": {
         "cargoLocks": null,
@@ -889,7 +889,7 @@
     },
     "zephyr-nix": {
         "cargoLocks": null,
-        "date": "2024-12-02",
+        "date": "2024-11-11",
         "extract": null,
         "name": "zephyr-nix",
         "passthru": null,
@@ -899,18 +899,18 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "owner": "wrvsrx",
+            "owner": "adisbladis",
             "repo": "zephyr-nix",
-            "rev": "5b8b315a0b78e56362e336d5d2f0ec350fffb830",
-            "sha256": "sha256-Yiy19VVMl1FBNxIUn3lu0FMl50Gtxj7AGdsdp3FSftc=",
+            "rev": "d54fd58912e8d3f5787c01831ccefd0349bfdd0e",
+            "sha256": "sha256-lFY/q8f6fZYZNHHshUUqgi92BsHIwgoVtqXIFa8zhxE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "5b8b315a0b78e56362e336d5d2f0ec350fffb830"
+        "version": "d54fd58912e8d3f5787c01831ccefd0349bfdd0e"
     },
     "zmk-sofle": {
         "cargoLocks": null,
-        "date": "2024-12-02",
+        "date": "2024-12-04",
         "extract": null,
         "name": "zmk-sofle",
         "passthru": null,
@@ -922,11 +922,11 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "zmk-sofle",
-            "rev": "f1cd5f59210269668eeedee56c25e1ad9d8bca39",
-            "sha256": "sha256-a34PGj9IlQ4/NepjLbjxgo2XSeyLEOEOhbDMBRK+ZRc=",
+            "rev": "6b14609b6baf6112e7b97f0d7b51bcb770230c1a",
+            "sha256": "sha256-hE7qW/TJwCF/loGba/7Ce3sXmi6YV3TMcVrJZA4FOlA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "f1cd5f59210269668eeedee56c25e1ad9d8bca39"
+        "version": "6b14609b6baf6112e7b97f0d7b51bcb770230c1a"
     }
 }

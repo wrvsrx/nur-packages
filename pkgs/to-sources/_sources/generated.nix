@@ -310,15 +310,15 @@
   };
   pyproject-nix = {
     pname = "pyproject-nix";
-    version = "9ec41f2fde25b69aa32231047a0cb9e7ed748501";
+    version = "4d9ea95787accffb9d61d2bef38e1df191140d4d";
     src = fetchFromGitHub {
-      owner = "wrvsrx";
+      owner = "nix-community";
       repo = "pyproject.nix";
-      rev = "9ec41f2fde25b69aa32231047a0cb9e7ed748501";
+      rev = "4d9ea95787accffb9d61d2bef38e1df191140d4d";
       fetchSubmodules = false;
-      sha256 = "sha256-qQd6K8RYZpwEeawyqSnDkFCPZAIbz8c7BP9490EsgQM=";
+      sha256 = "sha256-ATUeMHGz4atOO4M93GQYbqJ/zNpG5QXJQTIHb358LoY=";
     };
-    date = "2024-12-02";
+    date = "2024-12-04";
   };
   rime-ice = {
     pname = "rime-ice";
@@ -453,15 +453,15 @@
   };
   west2nix = {
     pname = "west2nix";
-    version = "cb15f4526ce4635e96e6e49956f71d26b0b0cfbe";
+    version = "3141a10d3cb4a90b4f96bc1c07f43707aa7c779a";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "west2nix";
-      rev = "cb15f4526ce4635e96e6e49956f71d26b0b0cfbe";
+      rev = "3141a10d3cb4a90b4f96bc1c07f43707aa7c779a";
       fetchSubmodules = false;
-      sha256 = "sha256-JUv2vp5cGOCqojDVCWg4XhGjiY9NSPdKSabB4cDsLvU=";
+      sha256 = "sha256-cstR8Iq8lSZgqA6vlV7oV0OQDE31kMgXHyEfueGBm/U=";
     };
-    date = "2024-12-02";
+    date = "2024-12-04";
   };
   wezterm = {
     pname = "wezterm";
@@ -500,26 +500,26 @@
   };
   zephyr-nix = {
     pname = "zephyr-nix";
-    version = "5b8b315a0b78e56362e336d5d2f0ec350fffb830";
+    version = "d54fd58912e8d3f5787c01831ccefd0349bfdd0e";
     src = fetchFromGitHub {
-      owner = "wrvsrx";
+      owner = "adisbladis";
       repo = "zephyr-nix";
-      rev = "5b8b315a0b78e56362e336d5d2f0ec350fffb830";
+      rev = "d54fd58912e8d3f5787c01831ccefd0349bfdd0e";
       fetchSubmodules = false;
-      sha256 = "sha256-Yiy19VVMl1FBNxIUn3lu0FMl50Gtxj7AGdsdp3FSftc=";
+      sha256 = "sha256-lFY/q8f6fZYZNHHshUUqgi92BsHIwgoVtqXIFa8zhxE=";
     };
-    date = "2024-12-02";
+    date = "2024-11-11";
   };
   zmk-sofle = {
     pname = "zmk-sofle";
-    version = "f1cd5f59210269668eeedee56c25e1ad9d8bca39";
+    version = "6b14609b6baf6112e7b97f0d7b51bcb770230c1a";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "zmk-sofle";
-      rev = "f1cd5f59210269668eeedee56c25e1ad9d8bca39";
+      rev = "6b14609b6baf6112e7b97f0d7b51bcb770230c1a";
       fetchSubmodules = false;
-      sha256 = "sha256-a34PGj9IlQ4/NepjLbjxgo2XSeyLEOEOhbDMBRK+ZRc=";
+      sha256 = "sha256-hE7qW/TJwCF/loGba/7Ce3sXmi6YV3TMcVrJZA4FOlA=";
     };
-    date = "2024-12-02";
+    date = "2024-12-04";
   };
 }
