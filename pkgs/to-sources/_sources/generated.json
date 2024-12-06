@@ -565,7 +565,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2024-11-10",
+        "date": "2024-12-06",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -577,12 +577,12 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "9a2a217bf57f53212b114aa7c0a702e4d8b55519",
-            "sha256": "sha256-OyaOriiyIMRsZz59LyOS/LtG1J4DU02NHcaJ6PdaffU=",
+            "rev": "d189ef2a68c6e01fad7b264cd0323597c544afe5",
+            "sha256": "sha256-GMQjEgeXMsqyGLG1Xj9NrT6t3I882g2E5lZbQh+vk18=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "9a2a217bf57f53212b114aa7c0a702e4d8b55519"
+        "version": "d189ef2a68c6e01fad7b264cd0323597c544afe5"
     },
     "rime-prelude": {
         "cargoLocks": null,
@@ -646,6 +646,27 @@
             "type": "github"
         },
         "version": "v5.0.0"
+    },
+    "sofle-firmware": {
+        "cargoLocks": null,
+        "date": "2024-12-04",
+        "extract": null,
+        "name": "sofle-firmware",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "wrvsrx",
+            "repo": "zmk-sofle",
+            "rev": "6b14609b6baf6112e7b97f0d7b51bcb770230c1a",
+            "sha256": "sha256-hE7qW/TJwCF/loGba/7Ce3sXmi6YV3TMcVrJZA4FOlA=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "6b14609b6baf6112e7b97f0d7b51bcb770230c1a"
     },
     "spdlog": {
         "cargoLocks": null,
@@ -907,26 +928,5 @@
             "type": "github"
         },
         "version": "d54fd58912e8d3f5787c01831ccefd0349bfdd0e"
-    },
-    "zmk-sofle": {
-        "cargoLocks": null,
-        "date": "2024-12-04",
-        "extract": null,
-        "name": "zmk-sofle",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "wrvsrx",
-            "repo": "zmk-sofle",
-            "rev": "6b14609b6baf6112e7b97f0d7b51bcb770230c1a",
-            "sha256": "sha256-hE7qW/TJwCF/loGba/7Ce3sXmi6YV3TMcVrJZA4FOlA=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "6b14609b6baf6112e7b97f0d7b51bcb770230c1a"
     }
 }

@@ -322,15 +322,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "9a2a217bf57f53212b114aa7c0a702e4d8b55519";
+    version = "d189ef2a68c6e01fad7b264cd0323597c544afe5";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "9a2a217bf57f53212b114aa7c0a702e4d8b55519";
+      rev = "d189ef2a68c6e01fad7b264cd0323597c544afe5";
       fetchSubmodules = false;
-      sha256 = "sha256-OyaOriiyIMRsZz59LyOS/LtG1J4DU02NHcaJ6PdaffU=";
+      sha256 = "sha256-GMQjEgeXMsqyGLG1Xj9NrT6t3I882g2E5lZbQh+vk18=";
     };
-    date = "2024-11-10";
+    date = "2024-12-06";
   };
   rime-prelude = {
     pname = "rime-prelude";
@@ -366,6 +366,18 @@
       fetchSubmodules = false;
       sha256 = "sha256-HJo7rlKv0NaF6hC46EK5xlcAlCXeQIQiXRJaQoANqpA=";
     };
+  };
+  sofle-firmware = {
+    pname = "sofle-firmware";
+    version = "6b14609b6baf6112e7b97f0d7b51bcb770230c1a";
+    src = fetchFromGitHub {
+      owner = "wrvsrx";
+      repo = "zmk-sofle";
+      rev = "6b14609b6baf6112e7b97f0d7b51bcb770230c1a";
+      fetchSubmodules = false;
+      sha256 = "sha256-hE7qW/TJwCF/loGba/7Ce3sXmi6YV3TMcVrJZA4FOlA=";
+    };
+    date = "2024-12-04";
   };
   spdlog = {
     pname = "spdlog";
@@ -509,17 +521,5 @@
       sha256 = "sha256-lFY/q8f6fZYZNHHshUUqgi92BsHIwgoVtqXIFa8zhxE=";
     };
     date = "2024-11-11";
-  };
-  zmk-sofle = {
-    pname = "zmk-sofle";
-    version = "6b14609b6baf6112e7b97f0d7b51bcb770230c1a";
-    src = fetchFromGitHub {
-      owner = "wrvsrx";
-      repo = "zmk-sofle";
-      rev = "6b14609b6baf6112e7b97f0d7b51bcb770230c1a";
-      fetchSubmodules = false;
-      sha256 = "sha256-hE7qW/TJwCF/loGba/7Ce3sXmi6YV3TMcVrJZA4FOlA=";
-    };
-    date = "2024-12-04";
   };
 }

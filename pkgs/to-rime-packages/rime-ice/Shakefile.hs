@@ -142,7 +142,6 @@ self:
               melgEngDerivedId = meltEngStr <> "_" <> name
               cnt' =
                 cnt
-                  & transformDefault
                   & replace ("double_pinyin_" <> name) ("rime_ice_double_pinyin_" <> name)
                   & replace ("- " <> meltEngStr) ("- " <> melgEngDerivedId)
                   & replace
@@ -201,11 +200,6 @@ __patch:
   copyFolderAction dir pattern = do
     dictList <- getDirectoryFiles "" [dir </> pattern]
     mapM_ (\x -> copyFileChanged x (buildDir </> x)) dictList
-  transformDefault :: String -> String
-  transformDefault =
-    replace "lua_processor@" "lua_processor@*"
-      . replace "lua_filter@" "lua_filter@*"
-      . replace "lua_translator@" "lua_translator@*"
   renderComponentToNix :: Component -> Rules ()
   renderComponentToNix (Tr.Node (name, act) children) = do
     phony (name <> "-nix") $
