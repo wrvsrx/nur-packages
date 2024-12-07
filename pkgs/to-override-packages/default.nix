@@ -19,6 +19,9 @@ rec {
     inherit (pkgs) fcitx5-rime;
     inherit librime;
   };
+  systemd = callPackage ./systemd {
+    inherit (pkgs) systemd;
+  };
   neovim-unwrapped = callPackage ./neovim-unwrapped { inherit (pkgs) neovim-unwrapped; };
   p7zip = pkgs.p7zip.override { enableUnfree = true; };
   remmina = pkgs.remmina.override { withKf5Wallet = false; };
