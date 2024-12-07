@@ -19,8 +19,9 @@ rec {
     inherit (pkgs) fcitx5-rime;
     inherit librime;
   };
-  systemd = callPackage ./systemd {
-    inherit (pkgs) systemd;
+  # I don't know why, but if I call it using `callPackage`, it gives me an error saying "called with an unexpected argument 'pname'"
+  systemd = import ./systemd {
+    inherit (pkgs) systemd fetchpatch;
   };
   neovim-unwrapped = callPackage ./neovim-unwrapped { inherit (pkgs) neovim-unwrapped; };
   p7zip = pkgs.p7zip.override { enableUnfree = true; };
