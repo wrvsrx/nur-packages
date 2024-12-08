@@ -11,13 +11,13 @@
   };
   SillyTavern = {
     pname = "SillyTavern";
-    version = "1.12.4";
+    version = "1.12.9";
     src = fetchFromGitHub {
       owner = "SillyTavern";
       repo = "SillyTavern";
-      rev = "1.12.4";
+      rev = "1.12.9";
       fetchSubmodules = false;
-      sha256 = "sha256-jjBeEK/E2PIvtDJB4r4HJcVH2PspAUeF0+0JQA5h4Ss=";
+      sha256 = "sha256-zC1C6A3+G3ZRlV8T9Hpzwk3N3ZLjcoI3XczhG6ulqds=";
     };
   };
   amgcl = {
@@ -404,13 +404,13 @@
   };
   task-utils = {
     pname = "task-utils";
-    version = "99685226f033f6a55d09382ac8b65d7e075f1b0e";
+    version = "e04f9a71b6a276c1bc3516b998f940fdea2ddf35";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "task-utils";
-      rev = "99685226f033f6a55d09382ac8b65d7e075f1b0e";
+      rev = "e04f9a71b6a276c1bc3516b998f940fdea2ddf35";
       fetchSubmodules = false;
-      sha256 = "sha256-8gvZ5RWVodMKKrpgtYpKdPvnSf73pEPORPWHyBQXub0=";
+      sha256 = "sha256-BeoT1GAtrLzFq5FPz4IsRxv4rfVZsZXFGgjpUWY38+M=";
     };
     date = "2024-12-08";
   };
