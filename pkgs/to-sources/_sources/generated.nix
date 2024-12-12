@@ -310,15 +310,15 @@
   };
   pyproject-nix = {
     pname = "pyproject-nix";
-    version = "4d9ea95787accffb9d61d2bef38e1df191140d4d";
+    version = "e2393999b79ea26c1d399f8fcc34db4a01665e9b";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "pyproject.nix";
-      rev = "4d9ea95787accffb9d61d2bef38e1df191140d4d";
+      rev = "e2393999b79ea26c1d399f8fcc34db4a01665e9b";
       fetchSubmodules = false;
-      sha256 = "sha256-ATUeMHGz4atOO4M93GQYbqJ/zNpG5QXJQTIHb358LoY=";
+      sha256 = "sha256-UAW/Rs8hx6ai+lAv2c0fP21NXi3SWuJO9p0DNiEYS90=";
     };
-    date = "2024-12-04";
+    date = "2024-12-07";
   };
   rime-ice = {
     pname = "rime-ice";
@@ -369,15 +369,15 @@
   };
   sofle-firmware = {
     pname = "sofle-firmware";
-    version = "6b14609b6baf6112e7b97f0d7b51bcb770230c1a";
+    version = "817c2615061682bf073e4405ded12f3d9a2f4c4c";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "zmk-sofle";
-      rev = "6b14609b6baf6112e7b97f0d7b51bcb770230c1a";
+      rev = "817c2615061682bf073e4405ded12f3d9a2f4c4c";
       fetchSubmodules = false;
-      sha256 = "sha256-hE7qW/TJwCF/loGba/7Ce3sXmi6YV3TMcVrJZA4FOlA=";
+      sha256 = "sha256-iay5vEMuabxIWGCY+PhDR/16kN7dNJN+SIjVY9hESQw=";
     };
-    date = "2024-12-04";
+    date = "2024-12-12";
   };
   spdlog = {
     pname = "spdlog";
@@ -465,15 +465,15 @@
   };
   west2nix = {
     pname = "west2nix";
-    version = "3141a10d3cb4a90b4f96bc1c07f43707aa7c779a";
+    version = "a2fc7a6f5be7f4f6ca6d8f6617388b732c385e3d";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "west2nix";
-      rev = "3141a10d3cb4a90b4f96bc1c07f43707aa7c779a";
+      rev = "a2fc7a6f5be7f4f6ca6d8f6617388b732c385e3d";
       fetchSubmodules = false;
-      sha256 = "sha256-cstR8Iq8lSZgqA6vlV7oV0OQDE31kMgXHyEfueGBm/U=";
+      sha256 = "sha256-rdxelA48alTvs6fRn+brsijwVWZbSo2l/AYOoYMW+/E=";
     };
-    date = "2024-12-04";
+    date = "2024-12-12";
   };
   wezterm = {
     pname = "wezterm";

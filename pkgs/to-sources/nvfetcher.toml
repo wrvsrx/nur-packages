@@ -180,7 +180,6 @@ fetch.github = "wrvsrx/west2nix"
 
 [sofle-firmware]
 src.git = "https://github.com/wrvsrx/zmk-sofle"
-src.branch = "customed-nix"
 fetch.github = "wrvsrx/zmk-sofle"
 
 [keymap-drawer]
