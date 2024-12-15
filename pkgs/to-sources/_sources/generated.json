@@ -724,12 +724,12 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "task-utils",
-            "rev": "99792fadc8077dee66b226c7523a5dc2d57d7c48",
-            "sha256": "sha256-A0+3zFcm5HPQIfbWXloIXgEV5aRVr49x2XZPMhhX8/Q=",
+            "rev": "599d18d6cc4a55324b67bdd224e6fbf5a624dd6c",
+            "sha256": "sha256-OId/+xlfveG9Y5vcLknkPyOTjHadh8LYQcVEoYnL2j4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "99792fadc8077dee66b226c7523a5dc2d57d7c48"
+        "version": "599d18d6cc4a55324b67bdd224e6fbf5a624dd6c"
     },
     "tree-sitter-devicetree": {
         "cargoLocks": null,
