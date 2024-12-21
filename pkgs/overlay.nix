@@ -125,7 +125,7 @@ toplevelPackages
   inherit rimePackages;
   nur-wrvsrx._packageNames = {
     _packageNames = builtins.attrNames toplevelPackages;
-    pythonPackages._packageNames = builtins.attrNames (
+    python3Packages._packageNames = builtins.attrNames (
       python-overlay prev.python3.pkgs prev.python3.pkgs
     );
     haskellPackages._packageNames = builtins.attrNames (
