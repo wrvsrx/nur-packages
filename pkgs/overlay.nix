@@ -76,10 +76,6 @@ let
         inherit (prev) fcitx5-rime;
         inherit (final) librime;
       };
-      # I don't know why, but if I call it using `callPackage`, it gives me an error saying "called with an unexpected argument 'pname'"
-      systemd = import ./systemd {
-        inherit (prev) systemd fetchpatch;
-      };
       neovim-unwrapped = callPackage ./neovim-unwrapped { inherit (prev) neovim-unwrapped; };
       p7zip = prev.p7zip.override { enableUnfree = true; };
       remmina = prev.remmina.override { withKf5Wallet = false; };
