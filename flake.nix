@@ -30,10 +30,7 @@
     inputs.flake-parts.lib.mkFlake { inherit inputs; } (
       { withSystem, inputs, ... }:
       let
-        inherit (import ./pkgs { inherit inputs; })
-          pkgs-to-packages
-          overlay
-          ;
+        overlay = import ./pkgs/overlay.nix { inherit inputs; };
       in
       {
         systems = [ "x86_64-linux" ];
@@ -48,22 +45,27 @@
             _module.args.pkgs = import inputs.nixpkgs {
               inherit system;
               config.allowUnfree = true;
+              overlays = [ overlay ];
             };
-            checks =
+            packages = inputs.flake-utils.lib.flattenTree (
               let
-                pkgs' = pkgs-to-packages pkgs;
+                getAllPackages =
+                  packageNames: packages:
+                  let
+                    toplevelPackageNames = packageNames._packageNames;
+                    nestPackageNames = pkgs.lib.attrsets.filterAttrs (
+                      name: value: name != "_packageNames"
+                    ) packageNames;
+                    toplevelPackages = pkgs.lib.attrsets.getAttrs toplevelPackageNames packages;
+                    nestPackages = pkgs.lib.attrsets.mapAttrs (
+                      nestName: nestPackageNames:
+                      pkgs.lib.recurseIntoAttrs (getAllPackages nestPackageNames packages.${nestName})
+                    ) nestPackageNames;
+                  in
+                  toplevelPackages // nestPackages;
               in
-              {
-                rimePackagesCheck = pkgs'.rimePackages.withRimeDeps' (
-                  with pkgs'.rimePackages;
-                  [
-                    rime-prelude
-                    rime-fcitx5
-                    rime-ice-flypy
-                  ]
-                );
-              };
-            packages = inputs.flake-utils.lib.flattenTree (pkgs-to-packages pkgs);
+              getAllPackages pkgs."nur-wrvsrx"._packageNames pkgs
+            );
             formatter = pkgs.nixfmt-rfc-style;
             devShells.default = pkgs.mkShell {
               nativeBuildInputs = [

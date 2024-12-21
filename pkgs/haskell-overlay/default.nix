@@ -1,10 +1,6 @@
-{
-  pkgs,
-  to-sources,
-}:
+{ sources, pkgs }:
 final: prev:
 let
-  sources = to-sources { inherit pkgs; };
   inherit (prev) callPackage;
   callIFD = import ../callIFD.nix;
 in

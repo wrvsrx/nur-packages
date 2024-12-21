@@ -1,7 +1,4 @@
-{ pkgs, to-sources }:
-let
-  sources = to-sources { inherit pkgs; };
-in
+{ sources }:
 final: prev: rec {
   # we can only use `final.callPackage` here if we want the overlay works well
   autobean-format = final.callPackage ./autobean-format {

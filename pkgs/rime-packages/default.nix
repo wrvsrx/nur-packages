@@ -1,7 +1,6 @@
-{ to-sources, pkgs }:
+{ sources, pkgs }:
 let
   inherit (pkgs) librime lib newScope;
-  sources = to-sources { inherit pkgs; };
 in
 
 lib.makeScope newScope (
