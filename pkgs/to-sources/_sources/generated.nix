@@ -369,15 +369,15 @@
   };
   sofle-firmware = {
     pname = "sofle-firmware";
-    version = "817c2615061682bf073e4405ded12f3d9a2f4c4c";
+    version = "f121499174c6e76e65c68db21569c3717e8ff40d";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "zmk-sofle";
-      rev = "817c2615061682bf073e4405ded12f3d9a2f4c4c";
+      rev = "f121499174c6e76e65c68db21569c3717e8ff40d";
       fetchSubmodules = false;
-      sha256 = "sha256-iay5vEMuabxIWGCY+PhDR/16kN7dNJN+SIjVY9hESQw=";
+      sha256 = "sha256-wmHzT+ti2eTlyZYjE8W0mdnCPk5JcqyfQdhZZYQTB/Y=";
     };
-    date = "2024-12-12";
+    date = "2024-12-21";
   };
   spdlog = {
     pname = "spdlog";
