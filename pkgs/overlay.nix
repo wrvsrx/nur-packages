@@ -70,7 +70,6 @@ let
         inherit (prev) fcitx5-rime;
         inherit (final) librime;
       };
-      neovim-unwrapped = callPackage ./neovim-unwrapped { inherit (prev) neovim-unwrapped; };
       p7zip = prev.p7zip.override { enableUnfree = true; };
       remmina = prev.remmina.override { withKf5Wallet = false; };
     }
