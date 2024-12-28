@@ -37,6 +37,9 @@ let
       v2ray-rules-dat = callPackage ./v2ray-rules-dat {
         inherit (sources) v2ray-rules-dat-geoip v2ray-rules-dat-geosite;
       };
+      ttrss-data-migration = callPackage ./ttrss-data-migration {
+        source = sources.ttrss-data-migration;
+      };
 
       # my packages
       giraffe-wallpaper = callIFD {
@@ -72,6 +75,7 @@ let
       };
       p7zip = prev.p7zip.override { enableUnfree = true; };
       remmina = prev.remmina.override { withKf5Wallet = false; };
+
     }
     # other nur packages
     // (

@@ -405,6 +405,20 @@
       sha256 = "sha256-2uJEItLwoBoiB49r2XuO216Dhu9AnAa0p7Plmm4JNY8=";
     };
   };
+  ttrss-data-migration = {
+    pname = "ttrss-data-migration";
+    version = "e13d5f97b4887ce7b57b3d76228d838dec15963d";
+    src = fetchgit {
+      url = "https://git.tt-rss.org/fox/ttrss-data-migration.git";
+      rev = "e13d5f97b4887ce7b57b3d76228d838dec15963d";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-xnbR5IQ0h7ilxchNj55ROZdq1L7MIAwv3/00k09WTTs=";
+    };
+    date = "2023-11-01";
+  };
   utfcpp = {
     pname = "utfcpp";
     version = "v4.0.5";

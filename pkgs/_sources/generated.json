@@ -716,6 +716,26 @@
         },
         "version": "v0.11.1"
     },
+    "ttrss-data-migration": {
+        "cargoLocks": null,
+        "date": "2023-11-01",
+        "extract": null,
+        "name": "ttrss-data-migration",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "e13d5f97b4887ce7b57b3d76228d838dec15963d",
+            "sha256": "sha256-xnbR5IQ0h7ilxchNj55ROZdq1L7MIAwv3/00k09WTTs=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://git.tt-rss.org/fox/ttrss-data-migration.git"
+        },
+        "version": "e13d5f97b4887ce7b57b3d76228d838dec15963d"
+    },
     "utfcpp": {
         "cargoLocks": null,
         "date": null,
