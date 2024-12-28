@@ -203,27 +203,6 @@
         },
         "version": "0e6b90d1809514e853a8e80245b9e7eec71117c6"
     },
-    "compat-list": {
-        "cargoLocks": null,
-        "date": "2024-03-04",
-        "extract": null,
-        "name": "compat-list",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "flathub",
-            "repo": "org.yuzu_emu.yuzu",
-            "rev": "4abf1d239aba843180abfed58fa8541432fece5b",
-            "sha256": "sha256-rBnsW8ijDEPCXzIkbfQnyhSFhIv91+jIkNPosVHJ2UY=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "4abf1d239aba843180abfed58fa8541432fece5b"
-    },
     "compdb": {
         "cargoLocks": null,
         "date": null,
@@ -505,21 +484,6 @@
             "type": "github"
         },
         "version": "c5827153f8a955886f1b38eaea6998c067d2992f"
-    },
-    "nx_tzdb": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "nx_tzdb",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-mRzW+iIwrU1zsxHmf+0RArU8BShAoEMvCz+McXFFK3c=",
-            "type": "url",
-            "url": "https://github.com/lat9nq/tzdb_to_nx/releases/download/221202/221202.zip"
-        },
-        "version": "221202"
     },
     "osc52": {
         "cargoLocks": null,

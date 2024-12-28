@@ -114,18 +114,6 @@
     };
     date = "2024-07-15";
   };
-  compat-list = {
-    pname = "compat-list";
-    version = "4abf1d239aba843180abfed58fa8541432fece5b";
-    src = fetchFromGitHub {
-      owner = "flathub";
-      repo = "org.yuzu_emu.yuzu";
-      rev = "4abf1d239aba843180abfed58fa8541432fece5b";
-      fetchSubmodules = false;
-      sha256 = "sha256-rBnsW8ijDEPCXzIkbfQnyhSFhIv91+jIkNPosVHJ2UY=";
-    };
-    date = "2024-03-04";
-  };
   compdb = {
     pname = "compdb";
     version = "0.2.0";
@@ -287,14 +275,6 @@
       sha256 = "sha256-IkJ9KRrikJZvijjfqgnJ2/QYAuF8KX2/zFX1oUbE3aI=";
     };
     date = "2024-03-29";
-  };
-  nx_tzdb = {
-    pname = "nx_tzdb";
-    version = "221202";
-    src = fetchurl {
-      url = "https://github.com/lat9nq/tzdb_to_nx/releases/download/221202/221202.zip";
-      sha256 = "sha256-mRzW+iIwrU1zsxHmf+0RArU8BShAoEMvCz+McXFFK3c=";
-    };
   };
   osc52 = {
     pname = "osc52";

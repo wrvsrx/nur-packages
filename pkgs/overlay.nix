@@ -30,12 +30,6 @@ let
       rsshub = callPackage ./rsshub { };
       yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };
       baikal = callPackage ./baikal { };
-      yuzu = import ./yuzu {
-        sources = {
-          inherit (sources) suyu nx_tzdb compat-list;
-        };
-        pkgs = prev;
-      };
       SillyTavern = callPackage ./SillyTavern { source = sources.SillyTavern; };
       vscode-markdown-languageserver = callPackage ./vscode-markdown-languageserver {
         source = sources.vscode-markdown-languageserver;
