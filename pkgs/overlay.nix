@@ -4,14 +4,17 @@ let
   inherit (final) callPackage;
   sources = callPackage ./_sources/generated.nix { };
   callIFD = import ./callIFD.nix;
-  mkNotoCJK = callPackage ./noto-fonts-cjk { };
   toplevelPackages =
     {
       # toplevel packages
       auth-thu = callPackage ./auth-thu { };
       autodiff = callPackage ./autodiff { source = sources.autodiff; };
-      noto-fonts-cjk-sans-fix-weight = mkNotoCJK { source = sources.noto-fonts-cjk-sans-fix-weight; };
-      noto-fonts-cjk-serif-fix-weight = mkNotoCJK { source = sources.noto-fonts-cjk-serif-fix-weight; };
+      noto-fonts-cjk-sans-fix-weight = callPackage ./noto-fonts-cjk-sans-fix-weight {
+        source = sources.noto-fonts-cjk-sans-fix-weight;
+      };
+      noto-fonts-cjk-serif-fix-weight = callPackage ./noto-fonts-cjk-serif-fix-weight {
+        source = sources.noto-fonts-cjk-serif-fix-weight;
+      };
       cyCodeBase = callPackage ./cyCodeBase { source = sources.cyCodeBase; };
       hougeo = callPackage ./hougeo { source = sources.hougeo; };
       happly = callPackage ./happly { source = sources.happly; };
