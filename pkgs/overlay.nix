@@ -103,7 +103,6 @@ let
       in
       {
         inherit (linyinfeng)
-          wemeet
           lpac
           easylpac
           ;
