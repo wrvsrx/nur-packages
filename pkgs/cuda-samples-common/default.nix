@@ -1,16 +1,26 @@
 {
+  lib,
   meson,
   cmake,
   ninja,
   pkg-config,
   haskellPackages,
   cudaPackages,
+  substituteAll,
+  source,
 }:
+let
+  version = lib.removePrefix "v" source.version;
+in
 cudaPackages.backendStdenv.mkDerivation {
   pname = "cuda-samples-common";
-  inherit (cudaPackages.cuda-samples) version src;
+  inherit (source) src;
+  inherit version;
   patches = [
-    ./meson.patch
+    (substituteAll {
+      src = ./meson.patch;
+      inherit version;
+    })
     ./cpp20.patch
   ];
   generateMesonPhase = ''

@@ -3,7 +3,7 @@ new file mode 100644
 index 00000000..42fe5263
 --- /dev/null
 +++ b/Main.hs
-@@ -0,0 +1,73 @@
+@@ -0,0 +1,74 @@
 +{-# LANGUAGE QuasiQuotes #-}
 +
 +import Control.Monad.Extra (concatMapM)
@@ -37,6 +37,7 @@ index 00000000..42fe5263
 +pkg.generate(
 +  subdirs: 'cuda-samples',
 +  filebase: 'cuda-samples',
++  version: '@version@',
 +  name : meson.project_name(),
 +  description : 'Samples for CUDA Developers which demonstrates features in CUDA Toolkit',
 +  libraries: [%s],
