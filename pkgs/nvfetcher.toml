@@ -158,18 +158,6 @@ fetch.pypi = "jax-md"
 src.pypi = "e3nn-jax"
 fetch.pypi = "e3nn_jax"
 
-[pyproject-nix]
-src.git = "https://github.com/nix-community/pyproject.nix"
-fetch.github = "nix-community/pyproject.nix"
-
-[zephyr-nix]
-src.git = "https://github.com/adisbladis/zephyr-nix"
-fetch.github = "adisbladis/zephyr-nix"
-
-[west2nix]
-src.git = "https://github.com/wrvsrx/west2nix"
-fetch.github = "wrvsrx/west2nix"
-
 [sofle-firmware]
 src.git = "https://github.com/wrvsrx/zmk-sofle"
 fetch.github = "wrvsrx/zmk-sofle"

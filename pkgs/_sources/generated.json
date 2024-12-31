@@ -527,27 +527,6 @@
         },
         "version": "477b99c8a1053183ede9978b2fe00dbcdb7c4b91"
     },
-    "pyproject-nix": {
-        "cargoLocks": null,
-        "date": "2024-12-07",
-        "extract": null,
-        "name": "pyproject-nix",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "nix-community",
-            "repo": "pyproject.nix",
-            "rev": "e2393999b79ea26c1d399f8fcc34db4a01665e9b",
-            "sha256": "sha256-UAW/Rs8hx6ai+lAv2c0fP21NXi3SWuJO9p0DNiEYS90=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "e2393999b79ea26c1d399f8fcc34db4a01665e9b"
-    },
     "rime-ice": {
         "cargoLocks": null,
         "date": "2024-12-06",
@@ -829,27 +808,6 @@
         },
         "version": "v0.5.0-alpha.7"
     },
-    "west2nix": {
-        "cargoLocks": null,
-        "date": "2024-12-12",
-        "extract": null,
-        "name": "west2nix",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "wrvsrx",
-            "repo": "west2nix",
-            "rev": "a2fc7a6f5be7f4f6ca6d8f6617388b732c385e3d",
-            "sha256": "sha256-rdxelA48alTvs6fRn+brsijwVWZbSo2l/AYOoYMW+/E=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "a2fc7a6f5be7f4f6ca6d8f6617388b732c385e3d"
-    },
     "wezterm": {
         "cargoLocks": null,
         "date": "2024-11-03",
@@ -912,26 +870,5 @@
             "type": "github"
         },
         "version": "v0.3.0"
-    },
-    "zephyr-nix": {
-        "cargoLocks": null,
-        "date": "2024-11-11",
-        "extract": null,
-        "name": "zephyr-nix",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "adisbladis",
-            "repo": "zephyr-nix",
-            "rev": "d54fd58912e8d3f5787c01831ccefd0349bfdd0e",
-            "sha256": "sha256-lFY/q8f6fZYZNHHshUUqgi92BsHIwgoVtqXIFa8zhxE=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "d54fd58912e8d3f5787c01831ccefd0349bfdd0e"
     }
 }

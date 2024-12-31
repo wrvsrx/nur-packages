@@ -299,18 +299,6 @@
     };
     date = "2023-09-12";
   };
-  pyproject-nix = {
-    pname = "pyproject-nix";
-    version = "e2393999b79ea26c1d399f8fcc34db4a01665e9b";
-    src = fetchFromGitHub {
-      owner = "nix-community";
-      repo = "pyproject.nix";
-      rev = "e2393999b79ea26c1d399f8fcc34db4a01665e9b";
-      fetchSubmodules = false;
-      sha256 = "sha256-UAW/Rs8hx6ai+lAv2c0fP21NXi3SWuJO9p0DNiEYS90=";
-    };
-    date = "2024-12-07";
-  };
   rime-ice = {
     pname = "rime-ice";
     version = "d189ef2a68c6e01fad7b264cd0323597c544afe5";
@@ -468,18 +456,6 @@
       sha256 = "sha256-qBXpBGdh8ehk/94nbE5Y9ispEz/d5DMXl1OVEH8AmCU=";
     };
   };
-  west2nix = {
-    pname = "west2nix";
-    version = "a2fc7a6f5be7f4f6ca6d8f6617388b732c385e3d";
-    src = fetchFromGitHub {
-      owner = "wrvsrx";
-      repo = "west2nix";
-      rev = "a2fc7a6f5be7f4f6ca6d8f6617388b732c385e3d";
-      fetchSubmodules = false;
-      sha256 = "sha256-rdxelA48alTvs6fRn+brsijwVWZbSo2l/AYOoYMW+/E=";
-    };
-    date = "2024-12-12";
-  };
   wezterm = {
     pname = "wezterm";
     version = "c57b3ee28bd4394b2ff2ddf059798d4c84966633";
@@ -514,17 +490,5 @@
       fetchSubmodules = false;
       sha256 = "sha256-Su3mnC7hsw0T0u6HfsnYAwXml2T7CABySv7a18+KnK0=";
     };
-  };
-  zephyr-nix = {
-    pname = "zephyr-nix";
-    version = "d54fd58912e8d3f5787c01831ccefd0349bfdd0e";
-    src = fetchFromGitHub {
-      owner = "adisbladis";
-      repo = "zephyr-nix";
-      rev = "d54fd58912e8d3f5787c01831ccefd0349bfdd0e";
-      fetchSubmodules = false;
-      sha256 = "sha256-lFY/q8f6fZYZNHHshUUqgi92BsHIwgoVtqXIFa8zhxE=";
-    };
-    date = "2024-11-11";
   };
 }
