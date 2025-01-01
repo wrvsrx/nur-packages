@@ -158,7 +158,7 @@ fetch.pypi = "jax-md"
 src.pypi = "e3nn-jax"
 fetch.pypi = "e3nn_jax"
 
-[sofle-firmware]
+[eyelash_sofle_firmware]
 src.git = "https://github.com/wrvsrx/zmk-sofle"
 fetch.github = "wrvsrx/zmk-sofle"
 

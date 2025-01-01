@@ -70,8 +70,8 @@ let
           height = 2160;
         };
       };
-      sofle-firmware = callPackage ./sofle-firmware {
-        source = sources.sofle-firmware;
+      eyelash_sofle_firmware = callPackage ./eyelash_sofle_firmware {
+        source = sources.eyelash_sofle_firmware;
         inherit (final.python3Packages) keymap-drawer;
       };
 

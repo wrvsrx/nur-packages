@@ -275,6 +275,27 @@
         },
         "version": "0.20.7"
     },
+    "eyelash_sofle_firmware": {
+        "cargoLocks": null,
+        "date": "2025-01-01",
+        "extract": null,
+        "name": "eyelash_sofle_firmware",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "wrvsrx",
+            "repo": "zmk-sofle",
+            "rev": "c7c1fe5d477c0fa6c006421e8c2f1bab79d94150",
+            "sha256": "sha256-VHgjYR0rNyyvdEJOhYYDDlfZFq6IeU/SyXIbAxhNy1s=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "c7c1fe5d477c0fa6c006421e8c2f1bab79d94150"
+    },
     "giraffe-wallpaper": {
         "cargoLocks": null,
         "date": "2023-05-20",
@@ -610,27 +631,6 @@
             "type": "github"
         },
         "version": "v5.0.0"
-    },
-    "sofle-firmware": {
-        "cargoLocks": null,
-        "date": "2024-12-31",
-        "extract": null,
-        "name": "sofle-firmware",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "wrvsrx",
-            "repo": "zmk-sofle",
-            "rev": "d2a44f8af8097068ae66208b4f8a30b8315568ee",
-            "sha256": "sha256-jTgI3X+t00HadpzomtkFyJN+Yr80hThEgQNxvo6zfwg=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "d2a44f8af8097068ae66208b4f8a30b8315568ee"
     },
     "spdlog": {
         "cargoLocks": null,
