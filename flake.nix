@@ -71,6 +71,7 @@
               nativeBuildInputs = [
                 inputs.nvfetcher.packages."${system}".default
                 inputs.nix-update.packages."${system}".default
+                pkgs.treefmt
               ];
             };
           };
