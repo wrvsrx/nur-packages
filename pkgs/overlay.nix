@@ -59,6 +59,9 @@ let
       tt-rss-plugin-data-migration = callPackage ./tt-rss-plugin-data-migration {
         source = sources.tt-rss-plugin-data-migration;
       };
+      tt-rss-plugin-freshapi = callPackage ./tt-rss-plugin-freshapi {
+        source = sources.tt-rss-plugin-freshapi;
+      };
       wechat-uos-bwrapped = callPackage ./wechat-uos-bwrapped {
         inherit (prev) wechat-uos;
       };
