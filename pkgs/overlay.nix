@@ -82,10 +82,6 @@ let
         source = sources.xclip;
       };
       lyra = callPackage ./lyra { source = sources.lyra; };
-      wezterm = callPackage ./wezterm {
-        source = sources.wezterm;
-        inherit (prev) wezterm;
-      };
       librime = callPackage ./librime { inherit (prev) librime; };
       fcitx5-rime = callPackage ./fcitx5-rime {
         inherit (prev) fcitx5-rime;

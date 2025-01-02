@@ -456,18 +456,6 @@
       sha256 = "sha256-qBXpBGdh8ehk/94nbE5Y9ispEz/d5DMXl1OVEH8AmCU=";
     };
   };
-  wezterm = {
-    pname = "wezterm";
-    version = "c57b3ee28bd4394b2ff2ddf059798d4c84966633";
-    src = fetchFromGitHub {
-      owner = "wez";
-      repo = "wezterm";
-      rev = "c57b3ee28bd4394b2ff2ddf059798d4c84966633";
-      fetchSubmodules = true;
-      sha256 = "sha256-c3b7cWofjYIHlbJO+ZwfI9b+pMeRz+tWTUZKyulgbPE=";
-    };
-    date = "2024-11-03";
-  };
   xclip = {
     pname = "xclip";
     version = "b372f73579d30f9ba998ffd0a73694e7abe2c313";
