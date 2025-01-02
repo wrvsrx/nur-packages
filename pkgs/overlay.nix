@@ -59,6 +59,9 @@ let
       ttrss-data-migration = callPackage ./ttrss-data-migration {
         source = sources.ttrss-data-migration;
       };
+      wechat-uos-bwrapped = callPackage ./wechat-uos-bwrapped {
+        inherit (prev) wechat-uos;
+      };
 
       # my packages
       giraffe-wallpaper = callIFD {
