@@ -47,7 +47,6 @@ let
       cmdlime = callPackage ./cmdlime {
         source = sources.cmdlime;
       };
-      rsshub = callPackage ./rsshub { };
       yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };
       baikal = callPackage ./baikal { };
       SillyTavern = callPackage ./SillyTavern { source = sources.SillyTavern; };
