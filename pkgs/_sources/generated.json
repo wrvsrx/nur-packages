@@ -716,11 +716,11 @@
         },
         "version": "v0.11.1"
     },
-    "ttrss-data-migration": {
+    "tt-rss-plugin-data-migration": {
         "cargoLocks": null,
         "date": "2023-11-01",
         "extract": null,
-        "name": "ttrss-data-migration",
+        "name": "tt-rss-plugin-data-migration",
         "passthru": null,
         "pinned": false,
         "src": {

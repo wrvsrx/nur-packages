@@ -404,8 +404,8 @@
       sha256 = "sha256-2uJEItLwoBoiB49r2XuO216Dhu9AnAa0p7Plmm4JNY8=";
     };
   };
-  ttrss-data-migration = {
-    pname = "ttrss-data-migration";
+  tt-rss-plugin-data-migration = {
+    pname = "tt-rss-plugin-data-migration";
     version = "e13d5f97b4887ce7b57b3d76228d838dec15963d";
     src = fetchgit {
       url = "https://git.tt-rss.org/fox/ttrss-data-migration.git";

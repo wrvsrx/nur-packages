@@ -165,7 +165,7 @@ fetch.pypi = "keymap_drawer"
 src.github = "joelspadin/tree-sitter-devicetree" 
 fetch.github = "joelspadin/tree-sitter-devicetree"
 
-[ttrss-data-migration]
+[tt-rss-plugin-data-migration]
 src.git = "https://git.tt-rss.org/fox/ttrss-data-migration.git"
 fetch.git = "https://git.tt-rss.org/fox/ttrss-data-migration.git"
 

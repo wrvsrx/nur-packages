@@ -56,8 +56,8 @@ let
       v2ray-rules-dat = callPackage ./v2ray-rules-dat {
         inherit (sources) v2ray-rules-dat-geoip v2ray-rules-dat-geosite;
       };
-      ttrss-data-migration = callPackage ./ttrss-data-migration {
-        source = sources.ttrss-data-migration;
+      tt-rss-plugin-data-migration = callPackage ./tt-rss-plugin-data-migration {
+        source = sources.tt-rss-plugin-data-migration;
       };
       wechat-uos-bwrapped = callPackage ./wechat-uos-bwrapped {
         inherit (prev) wechat-uos;
