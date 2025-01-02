@@ -11,13 +11,13 @@
   };
   SillyTavern = {
     pname = "SillyTavern";
-    version = "1.12.9";
+    version = "1.12.10";
     src = fetchFromGitHub {
       owner = "SillyTavern";
       repo = "SillyTavern";
-      rev = "1.12.9";
+      rev = "1.12.10";
       fetchSubmodules = false;
-      sha256 = "sha256-zC1C6A3+G3ZRlV8T9Hpzwk3N3ZLjcoI3XczhG6ulqds=";
+      sha256 = "sha256-eCGDqG0dLCkOPfSunzdskE9PbmXnii96X10KwIMUaeY=";
     };
   };
   amgcl = {
