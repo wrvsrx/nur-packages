@@ -134,7 +134,7 @@ src.github_tag = "Loyalsoldier/v2ray-rules-dat"
 fetch.url = "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/$ver/geosite.dat"
 
 [rime-ice]
-src.git = "https://github.com/iDvel/rime-ice"
+src.manual = "2024.12.12"
 fetch.github = "iDvel/rime-ice"
 
 [rime-prelude]
