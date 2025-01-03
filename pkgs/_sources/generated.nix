@@ -68,15 +68,14 @@
   };
   cmdlime = {
     pname = "cmdlime";
-    version = "80d9673456b4cb8223ad9cf176ec88d61a388c70";
+    version = "v2.6.0";
     src = fetchFromGitHub {
       owner = "kamchatka-volcano";
       repo = "cmdlime";
-      rev = "80d9673456b4cb8223ad9cf176ec88d61a388c70";
+      rev = "v2.6.0";
       fetchSubmodules = false;
-      sha256 = "sha256-SHum/OoVEaktqmR7tgNozGSQ8Ct14FHeycuL8mAnZbM=";
+      sha256 = "sha256-EVNh+bze6m8fTf0s1BoC5TuNTca7ZoH1IiU9AaiSWXU=";
     };
-    date = "2023-08-29";
   };
   cnpy = {
     pname = "cnpy";
@@ -337,25 +336,24 @@
   };
   seal_lake = {
     pname = "seal_lake";
-    version = "ca84d624a8280c5354ea4d90cd29648804c6c489";
+    version = "v0.2.0";
     src = fetchFromGitHub {
       owner = "kamchatka-volcano";
       repo = "seal_lake";
-      rev = "ca84d624a8280c5354ea4d90cd29648804c6c489";
+      rev = "v0.2.0";
       fetchSubmodules = false;
-      sha256 = "sha256-h146QkqgOuZkqj8mJwuMVVbE+dclQrT3bo9dp3K0QUU=";
+      sha256 = "sha256-9vZOaZx9ozHOf8g4zpj2zNzZJ4c1BPHpEYq3gp7BmyE=";
     };
-    date = "2023-01-18";
   };
   sfun = {
     pname = "sfun";
-    version = "v5.0.0";
+    version = "v5.1.0";
     src = fetchFromGitHub {
       owner = "kamchatka-volcano";
       repo = "sfun";
-      rev = "v5.0.0";
+      rev = "v5.1.0";
       fetchSubmodules = false;
-      sha256 = "sha256-HJo7rlKv0NaF6hC46EK5xlcAlCXeQIQiXRJaQoANqpA=";
+      sha256 = "sha256-/8HCmoKFyLrFPADzFRCUnx4bvGjrUx9IsdAit6uZhkg=";
     };
   };
   spdlog = {

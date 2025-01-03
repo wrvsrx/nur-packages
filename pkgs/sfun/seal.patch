@@ -1,11 +1,10 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 4492e76..642014c 100644
+index 28d4f93..31d98ba 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -1,20 +1,7 @@
+@@ -1,19 +1,6 @@
  cmake_minimum_required(VERSION 3.18)
- project(sfun VERSION 5.0.0 DESCRIPTION "stuff from unnamed namespace - a c++17 helper library")
- include(GNUInstallDirs)
+ project(sfun VERSION 5.1.0 DESCRIPTION "stuff from unnamed namespace - a c++17 helper library")
 -include(external/seal_lake)
 -
 -SealLake_Bundle(
