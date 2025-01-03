@@ -1,7 +1,9 @@
-{ sources, pkgs }:
-let
-  inherit (pkgs) librime lib newScope;
-in
+{
+  sources,
+  librime,
+  lib,
+  newScope,
+}:
 
 lib.makeScope newScope (
   self:

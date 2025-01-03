@@ -124,7 +124,7 @@ let
   };
   rimePackages = callPackage ./rime-packages {
     sources = sources;
-    pkgs = prev;
+    inherit (final) librime;
   };
 in
 toplevelPackages
