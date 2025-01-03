@@ -419,13 +419,11 @@
   tt-rss-plugin-freshapi = {
     pname = "tt-rss-plugin-freshapi";
     version = "44c98f12e8a4423501fc6d8cb7903cca11094dc6";
-    src = fetchgit {
-      url = "https://github.com/eric-pierce/freshapi";
+    src = fetchFromGitHub {
+      owner = "eric-pierce";
+      repo = "freshapi";
       rev = "44c98f12e8a4423501fc6d8cb7903cca11094dc6";
       fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-1cQ4QMrXOdtelAbmMEuhWJPFi5XrAoR3IGlFzb8122k=";
     };
     date = "2024-11-13";

@@ -748,11 +748,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
+            "owner": "eric-pierce",
+            "repo": "freshapi",
             "rev": "44c98f12e8a4423501fc6d8cb7903cca11094dc6",
             "sha256": "sha256-1cQ4QMrXOdtelAbmMEuhWJPFi5XrAoR3IGlFzb8122k=",
             "sparseCheckout": [],
-            "type": "git",
-            "url": "https://github.com/eric-pierce/freshapi"
+            "type": "github"
         },
         "version": "44c98f12e8a4423501fc6d8cb7903cca11094dc6"
     },

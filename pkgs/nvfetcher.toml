@@ -167,7 +167,7 @@ fetch.github = "joelspadin/tree-sitter-devicetree"
 
 [tt-rss-plugin-freshapi]
 src.git = "https://github.com/eric-pierce/freshapi"
-fetch.git = "https://github.com/eric-pierce/freshapi"
+fetch.github = "eric-pierce/freshapi"
 
 [tt-rss-plugin-data-migration]
 src.git = "https://git.tt-rss.org/fox/ttrss-data-migration.git"
