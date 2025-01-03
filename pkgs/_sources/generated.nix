@@ -432,13 +432,13 @@
   };
   utfcpp = {
     pname = "utfcpp";
-    version = "v4.0.5";
+    version = "v4.0.6";
     src = fetchFromGitHub {
       owner = "nemtrif";
       repo = "utfcpp";
-      rev = "v4.0.5";
+      rev = "v4.0.6";
       fetchSubmodules = false;
-      sha256 = "sha256-oKVFUjCvkHjqifZe98aUe68IBUaAZYWU2S2rxyAA9Cg=";
+      sha256 = "sha256-TqtJfmxk+dgAy5I0Lnii0pPB570a0dCX7TSQTVy/dkM=";
     };
   };
   v2ray-rules-dat-geoip = {

@@ -770,12 +770,12 @@
             "name": null,
             "owner": "nemtrif",
             "repo": "utfcpp",
-            "rev": "v4.0.5",
-            "sha256": "sha256-oKVFUjCvkHjqifZe98aUe68IBUaAZYWU2S2rxyAA9Cg=",
+            "rev": "v4.0.6",
+            "sha256": "sha256-TqtJfmxk+dgAy5I0Lnii0pPB570a0dCX7TSQTVy/dkM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v4.0.5"
+        "version": "v4.0.6"
     },
     "v2ray-rules-dat-geoip": {
         "cargoLocks": null,
