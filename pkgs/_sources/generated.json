@@ -419,26 +419,6 @@
         },
         "version": "0.19.0"
     },
-    "linediff-vim": {
-        "cargoLocks": null,
-        "date": "2024-04-22",
-        "extract": null,
-        "name": "linediff-vim",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "ddae71ef5f94775d101c1c70032ebe8799f32745",
-            "sha256": "sha256-ZyQzLpzvS887J1Gdxv1edC9MhPj1EEITh27rUPuFugU=",
-            "sparseCheckout": [],
-            "type": "git",
-            "url": "https://github.com/AndrewRadev/linediff.vim"
-        },
-        "version": "ddae71ef5f94775d101c1c70032ebe8799f32745"
-    },
     "lyra": {
         "cargoLocks": null,
         "date": "2023-04-23",
@@ -505,27 +485,6 @@
             "type": "github"
         },
         "version": "Serif2.003"
-    },
-    "nvim-numbertoggle": {
-        "cargoLocks": null,
-        "date": "2024-03-29",
-        "extract": null,
-        "name": "nvim-numbertoggle",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "sitiom",
-            "repo": "nvim-numbertoggle",
-            "rev": "c5827153f8a955886f1b38eaea6998c067d2992f",
-            "sha256": "sha256-IkJ9KRrikJZvijjfqgnJ2/QYAuF8KX2/zFX1oUbE3aI=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "c5827153f8a955886f1b38eaea6998c067d2992f"
     },
     "osc52": {
         "cargoLocks": null,

@@ -232,20 +232,6 @@
       sha256 = "sha256-/+QWhDXJeS/qJGzHb8K9Fa5EyqEl5zI2it/vPl9AtO4=";
     };
   };
-  linediff-vim = {
-    pname = "linediff-vim";
-    version = "ddae71ef5f94775d101c1c70032ebe8799f32745";
-    src = fetchgit {
-      url = "https://github.com/AndrewRadev/linediff.vim";
-      rev = "ddae71ef5f94775d101c1c70032ebe8799f32745";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ ];
-      sha256 = "sha256-ZyQzLpzvS887J1Gdxv1edC9MhPj1EEITh27rUPuFugU=";
-    };
-    date = "2024-04-22";
-  };
   lyra = {
     pname = "lyra";
     version = "a8bb6e22ea4dcd507292ecdb6443bad23ef7bfeb";
@@ -285,18 +271,6 @@
       sparseCheckout = [ "Serif/OTC" ];
       sha256 = "sha256-mfbBSdJrUCZiUUmsmndtEW6H3z6KfBn+dEftBySf2j4=";
     };
-  };
-  nvim-numbertoggle = {
-    pname = "nvim-numbertoggle";
-    version = "c5827153f8a955886f1b38eaea6998c067d2992f";
-    src = fetchFromGitHub {
-      owner = "sitiom";
-      repo = "nvim-numbertoggle";
-      rev = "c5827153f8a955886f1b38eaea6998c067d2992f";
-      fetchSubmodules = false;
-      sha256 = "sha256-IkJ9KRrikJZvijjfqgnJ2/QYAuF8KX2/zFX1oUbE3aI=";
-    };
-    date = "2024-03-29";
   };
   osc52 = {
     pname = "osc52";
