@@ -3,9 +3,11 @@
   autobean-refactor,
   pdm-pep517,
   source,
+  lib,
 }:
 buildPythonPackage {
-  inherit (source) pname version src;
+  inherit (source) pname src;
+  version = lib.removePrefix "v" source.version;
   format = "pyproject";
 
   propagatedBuildInputs = [

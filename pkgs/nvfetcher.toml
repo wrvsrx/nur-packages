@@ -20,11 +20,11 @@ src.git = "https://github.com/astrand/xclip"
 fetch.github = "astrand/xclip"
 
 [autobean-format]
-src.git = "https://github.com/SEIAROTg/autobean-format"
+src.github_tag = "SEIAROTg/autobean-format"
 fetch.github = "SEIAROTg/autobean-format"
 
 [autobean-refactor]
-src.git = "https://github.com/SEIAROTg/autobean-refactor"
+src.github_tag = "SEIAROTg/autobean-refactor"
 fetch.github = "SEIAROTg/autobean-refactor"
 
 [coc-zk]

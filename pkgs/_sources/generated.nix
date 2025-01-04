@@ -33,27 +33,25 @@
   };
   autobean-format = {
     pname = "autobean-format";
-    version = "7849d89eefb433036736bbb1c3168eb02337d34c";
+    version = "v0.1.6";
     src = fetchFromGitHub {
       owner = "SEIAROTg";
       repo = "autobean-format";
-      rev = "7849d89eefb433036736bbb1c3168eb02337d34c";
+      rev = "v0.1.6";
       fetchSubmodules = false;
-      sha256 = "sha256-UvPHcJjgLJzhvh+CGPO8oco0eXc5gTJ1wHXV5pYwnV0=";
+      sha256 = "sha256-ecB2biqKqBOay1xc4O36WsdyZkKdQcdb8cfMQKSP/A8=";
     };
-    date = "2023-09-17";
   };
   autobean-refactor = {
     pname = "autobean-refactor";
-    version = "36fedaf8e7104d6da06b28936bcf6dae2b5267bf";
+    version = "v0.2.5";
     src = fetchFromGitHub {
       owner = "SEIAROTg";
       repo = "autobean-refactor";
-      rev = "36fedaf8e7104d6da06b28936bcf6dae2b5267bf";
+      rev = "v0.2.5";
       fetchSubmodules = false;
-      sha256 = "sha256-MxCVuk7kuAA0GixII4XbWGPDk54mwKUeK7s0gGVgnF8=";
+      sha256 = "sha256-oFUmmQQ/1dkyNQUPLUKQaiMQBFlxK55eTg5jC7CpfKs=";
     };
-    date = "2023-07-01";
   };
   autodiff = {
     pname = "autodiff";
