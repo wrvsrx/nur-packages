@@ -9,7 +9,7 @@ stdenvNoCC.mkDerivation {
   nativeBuildInputs = [ zstd ];
   inherit (fcitx5-rime) src version;
   installPhase = ''
-    mkdir -p $out/share/rime-data
-    cp -r data/fcitx5.yaml $out/share/rime-data/
+    install --mode=644 -D data/fcitx5.yaml $out/share/rime-data/fcitx5.yaml
+    install --mode=644 -D data/fcitx5.yaml $out/share/rime-data/build/fcitx5.yaml
   '';
 }
