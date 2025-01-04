@@ -68,13 +68,13 @@
   };
   cmdlime = {
     pname = "cmdlime";
-    version = "v2.6.0";
+    version = "v2.7.0";
     src = fetchFromGitHub {
       owner = "kamchatka-volcano";
       repo = "cmdlime";
-      rev = "v2.6.0";
+      rev = "v2.7.0";
       fetchSubmodules = false;
-      sha256 = "sha256-EVNh+bze6m8fTf0s1BoC5TuNTca7ZoH1IiU9AaiSWXU=";
+      sha256 = "sha256-D29j9AfAL9y7YEZYqiAIAcB2BPlHxLUUZHy0ied8OTk=";
     };
   };
   cnpy = {
