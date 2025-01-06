@@ -4,12 +4,7 @@ let
   inherit (prev) callPackage;
   callIFD = import ../callIFD.nix;
 in
-rec {
-  iCalendar = prev.iCalendar.overrideAttrs (old: {
-    meta = old.meta // {
-      broken = false;
-    };
-  });
+{
   osc52 = callIFD {
     inherit callPackage;
     source = sources.osc52;
@@ -30,7 +25,6 @@ rec {
             };
             version = "0.5";
           };
-          inherit iCalendar;
         });
     }
   );
