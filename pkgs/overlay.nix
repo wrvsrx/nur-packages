@@ -94,7 +94,7 @@ let
       };
       p7zip = prev.p7zip.override { enableUnfree = true; };
       remmina = prev.remmina.override { withKf5Wallet = false; };
-
+      systemd' = callPackage ./systemd-patched { };
     }
     # other nur packages
     // (
