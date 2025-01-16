@@ -68,10 +68,11 @@
             );
             formatter = pkgs.nixfmt-rfc-style;
             devShells.default = pkgs.mkShell {
-              nativeBuildInputs = [
+              nativeBuildInputs = with pkgs; [
                 inputs.nvfetcher.packages."${system}".default
                 inputs.nix-update.packages."${system}".default
-                pkgs.treefmt
+                treefmt
+                taplo
               ];
             };
           };

@@ -98,12 +98,12 @@ fetch.github = "gabime/spdlog"
 [noto-fonts-cjk-sans-fix-weight]
 src.manual = "Sans2.004"
 fetch.github = "notofonts/noto-cjk"
-git.sparseCheckout = [ "Sans/OTC" ]
+git.sparseCheckout = ["Sans/OTC"]
 
 [noto-fonts-cjk-serif-fix-weight]
 src.manual = "Serif2.003"
 fetch.github = "notofonts/noto-cjk"
-git.sparseCheckout = [ "Serif/OTC" ]
+git.sparseCheckout = ["Serif/OTC"]
 
 [SillyTavern]
 src.github = "SillyTavern/SillyTavern"
@@ -154,7 +154,7 @@ src.pypi = "keymap_drawer"
 fetch.pypi = "keymap_drawer"
 
 [tree-sitter-devicetree]
-src.github = "joelspadin/tree-sitter-devicetree" 
+src.github = "joelspadin/tree-sitter-devicetree"
 fetch.github = "joelspadin/tree-sitter-devicetree"
 
 [tt-rss-plugin-freshapi]

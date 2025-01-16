@@ -52,13 +52,25 @@ command = "nix"
 # Command-line arguments for the command
 options = ["fmt"]
 # Glob pattern of files to include
-includes = [ "*.nix" ]
+includes = ["*.nix"]
 # Glob patterns of files to exclude
 # Avoids formatting generated files
-excludes = [
-  "pkgs/_sources/generated.nix",
-  "pkgs/rime-packages/rime-ice/*",
-]
+excludes = ["pkgs/_sources/generated.nix", "pkgs/rime-packages/rime-ice/*"]
+# Controls the order of application when multiple formatters match the same file
+# Lower the number, the higher the precedence
+# Default is 0
+priority = 0
+
+[formatter.toml]
+# Command to execute
+command = "taplo"
+# Command-line arguments for the command
+options = ["format"]
+# Glob pattern of files to include
+includes = ["*.toml"]
+# Glob patterns of files to exclude
+# Avoids formatting generated files
+excludes = []
 # Controls the order of application when multiple formatters match the same file
 # Lower the number, the higher the precedence
 # Default is 0
