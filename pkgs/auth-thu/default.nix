@@ -5,7 +5,7 @@
 }:
 buildGoModule {
   pname = "auth-thu";
-  version = "e42c2fd7f02b157538940795597d82a8b8802ca8";
+  version = "2.3.3";
   src = fetchFromGitHub {
     owner = "z4yx";
     repo = "GoAuthing";
