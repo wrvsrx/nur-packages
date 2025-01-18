@@ -38,6 +38,7 @@
           templates = import ./templates;
           lib = import ./lib { inherit inputs; };
           overlays.default = overlay;
+          nixosModules.default = ./modules;
         };
         perSystem =
           { system, pkgs, ... }:
