@@ -9,6 +9,8 @@ let
   cfg = config.services.taskchampion-sync-server;
 in
 {
+  disabledModules = [ "services/misc/taskchampion-sync-server.nix" ];
+
   options.services.taskchampion-sync-server = {
     enable = lib.mkEnableOption "TaskChampion Sync Server for Taskwarrior 3";
     package = lib.mkPackageOption pkgs "taskchampion-sync-server" { };
