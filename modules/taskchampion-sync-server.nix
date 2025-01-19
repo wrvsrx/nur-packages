@@ -50,7 +50,7 @@ in
     allow-client-ids = lib.mkOption {
       description = "Allow clients to specify their own UUIDs";
       type = types.listOf types.str;
-      default = false;
+      default = [ ];
     };
   };
 
