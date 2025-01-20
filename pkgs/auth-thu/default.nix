@@ -3,17 +3,17 @@
   fetchFromGitHub,
   lib,
 }:
-buildGoModule {
+buildGoModule rec {
   pname = "auth-thu";
-  version = "2.3.3";
+  version = "2.3.4";
   src = fetchFromGitHub {
     owner = "z4yx";
     repo = "GoAuthing";
-    rev = "e42c2fd7f02b157538940795597d82a8b8802ca8";
+    tag = "v${version}";
     fetchSubmodules = false;
-    sha256 = "sha256-D5WhTAZTsYXK3k0dtrC9xFDEY7R8p5LTM1mj68H2/0A=";
+    sha256 = "sha256-BUvbUvkowbzS+m8CFtG1oimD/DmYUKTrLGfP2a2JA3U=";
   };
-  vendorHash = "sha256-GRviH+w9WjjuvE0078NU4b9Hf/ZqBaQ9BxiWXeiGeWU=";
+  vendorHash = "sha256-FRLpeOYOTSnq66qjljfomdSSHZhIxA0n3EcIqcoxn4c=";
   subPackages = [ "cli" ];
   postInstall = "mv $out/bin/cli $out/bin/$pname";
   meta = with lib; {
