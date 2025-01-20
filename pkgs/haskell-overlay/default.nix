@@ -17,15 +17,7 @@ in
     transform =
       x:
       x.override (old: {
-        doclayout = pkgs.haskell.lib.overrideSrc old.doclayout {
-          src = pkgs.fetchFromGitHub {
-            owner = "jgm";
-            repo = "doclayout";
-            rev = "0.5";
-            hash = "sha256-gTJhoM0WEF+5sbA3bEH+eYAjixNQf1oi2WbcBJpwLZg=";
-          };
-          version = "0.5";
-        };
+        doclayout = prev.doclayout_0_5;
       });
   };
 }
