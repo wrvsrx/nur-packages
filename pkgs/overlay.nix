@@ -107,11 +107,11 @@ let
         linyinfeng = import inputs.linyinfeng { pkgs = prev; };
         ilya-fedin = import inputs.ilya-fedin { pkgs = prev; };
       in
-      {
-        inherit (linyinfeng)
-          lpac
-          easylpac
-          ;
+      rec {
+        lpac = linyinfeng.lpac.overrideAttrs (old: {
+          version = prev.lib.removePrefix "v" old.version;
+        });
+        easylpac = linyinfeng.easylpac.override { inherit lpac; };
         inherit (ilya-fedin)
           qt5ct
           qt6ct
