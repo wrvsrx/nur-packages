@@ -67,9 +67,10 @@ let
       };
 
       # my packages
-      giraffe-wallpaper = callIFD {
+      giraffe-wallpaper = callIFD rec {
         inherit callPackage;
         source = sources.giraffe-wallpaper;
+        version = "0-unstable-" + source.date;
         otherArgs = {
           width = 3840;
           height = 2160;

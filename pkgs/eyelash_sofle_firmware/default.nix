@@ -24,7 +24,10 @@ in
   zephyr = zephyr-nix;
   inherit (west2nix) mkWest2nixHook;
 }).packages.default.overrideAttrs
-  (old: {
+  (old: rec {
+    inherit (source) pname;
+    version = "0-unstable-" + source.date;
+    name = "${pname}-${version}";
     # record IFD as buildInputs to avoid gc
     buildInputs = (old.buildInputs or [ ]) ++ [
       source.src
