@@ -65,6 +65,13 @@ let
       wechat-uos-bwrapped = callPackage ./wechat-uos-bwrapped {
         inherit (prev) wechat-uos;
       };
+      wemeet = callPackage (import (
+        prev.fetchurl {
+          # https://github.com/NixOS/nixpkgs/pull/360662
+          url = "https://raw.githubusercontent.com/wrvsrx/nixpkgs/tag_wemeet/pkgs/by-name/we/wemeet/package.nix";
+          hash = "sha256-McFOrbbeT9B6muL/NfqxnF9TveBWo63YlQnJNluiY3o=";
+        }
+      )) { };
 
       # my packages
       giraffe-wallpaper = callIFD rec {
