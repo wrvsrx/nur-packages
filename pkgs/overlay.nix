@@ -103,6 +103,7 @@ let
       p7zip = prev.p7zip.override { enableUnfree = true; };
       remmina = prev.remmina.override { withKf5Wallet = false; };
       systemd' = callPackage ./systemd-patched { };
+      meson' = callPackage ./meson-patched { };
       taskchampion-sync-server = callPackage ./taskchampion-sync-server {
         inherit (prev) taskchampion-sync-server;
         source = sources.taskchampion-sync-server;
