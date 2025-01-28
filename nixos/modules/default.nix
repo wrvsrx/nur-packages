@@ -1,3 +1,6 @@
 {
-  imports = [ ./taskchampion-sync-server.nix ];
+  imports = [
+    ./taskchampion-sync-server.nix
+    ./wpa_supplicant.nix
+  ];
 }
