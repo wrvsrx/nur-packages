@@ -23,6 +23,9 @@ final: prev: rec {
   ml-collections = final.callPackage ./ml-collections {
     inherit (prev) ml-collections;
   };
+  anytree = final.callPackage ./anytree {
+    inherit (prev) anytree;
+  };
   keymap-drawer = final.callPackage ./keymap-drawer {
     source = sources.keymap-drawer;
     inherit tree-sitter-devicetree;
