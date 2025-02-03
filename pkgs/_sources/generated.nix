@@ -224,10 +224,10 @@
   };
   keymap-drawer = {
     pname = "keymap-drawer";
-    version = "0.19.0";
+    version = "0.20.0";
     src = fetchurl {
-      url = "https://pypi.org/packages/source/k/keymap_drawer/keymap_drawer-0.19.0.tar.gz";
-      sha256 = "sha256-/+QWhDXJeS/qJGzHb8K9Fa5EyqEl5zI2it/vPl9AtO4=";
+      url = "https://pypi.org/packages/source/k/keymap_drawer/keymap_drawer-0.20.0.tar.gz";
+      sha256 = "sha256-M800wKnH2UsQ4brEFdjjMIB31aXTAfEdBnU5uk0ZUL8=";
     };
   };
   lyra = {
