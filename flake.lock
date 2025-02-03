@@ -112,32 +112,6 @@
         "type": "github"
       }
     },
-    "nix-update": {
-      "inputs": {
-        "flake-parts": [
-          "flake-lock",
-          "flake-parts"
-        ],
-        "nixpkgs": [
-          "flake-lock",
-          "nixpkgs"
-        ],
-        "treefmt-nix": "treefmt-nix"
-      },
-      "locked": {
-        "lastModified": 1737360453,
-        "narHash": "sha256-lF21NcOhjOZgsdsC4h/Qunvig3BatpDujbvKS3Wstac=",
-        "owner": "Mic92",
-        "repo": "nix-update",
-        "rev": "6891656de32dd135c5883e8d2556d5a9806023ce",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Mic92",
-        "repo": "nix-update",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1738410390,
@@ -154,35 +128,6 @@
         "type": "github"
       }
     },
-    "nvfetcher": {
-      "inputs": {
-        "flake-compat": [
-          "flake-lock",
-          "flake-compat"
-        ],
-        "flake-utils": [
-          "flake-lock",
-          "flake-utils"
-        ],
-        "nixpkgs": [
-          "flake-lock",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1732501185,
-        "narHash": "sha256-Z0BpHelaGQsE5VD9hBsBHsvMU9h+Xt0kfkDJyFivZOU=",
-        "owner": "berberman",
-        "repo": "nvfetcher",
-        "rev": "bdb14eab6fe9cefc29efe01e60c3a3f616d6b62a",
-        "type": "github"
-      },
-      "original": {
-        "owner": "berberman",
-        "repo": "nvfetcher",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "flake-lock": "flake-lock",
@@ -196,12 +141,10 @@
         ],
         "ilya-fedin": "ilya-fedin",
         "linyinfeng": "linyinfeng",
-        "nix-update": "nix-update",
         "nixpkgs": [
           "flake-lock",
           "nixpkgs"
-        ],
-        "nvfetcher": "nvfetcher"
+        ]
       }
     },
     "systems": {
@@ -216,27 +159,6 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
-        "type": "github"
-      }
-    },
-    "treefmt-nix": {
-      "inputs": {
-        "nixpkgs": [
-          "nix-update",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1734704479,
-        "narHash": "sha256-MMi74+WckoyEWBRcg/oaGRvXC9BVVxDZNRMpL+72wBI=",
-        "owner": "numtide",
-        "repo": "treefmt-nix",
-        "rev": "65712f5af67234dad91a5a4baee986a8b62dbf8f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "treefmt-nix",
         "type": "github"
       }
     }
