@@ -9,8 +9,6 @@ let
   cfg = config.services.taskchampion-sync-server;
 in
 {
-  disabledModules = [ "services/misc/taskchampion-sync-server.nix" ];
-
   options.services.taskchampion-sync-server = {
     enable = lib.mkEnableOption "TaskChampion Sync Server for Taskwarrior 3";
     package = lib.mkPackageOption pkgs "taskchampion-sync-server" { };
@@ -47,8 +45,8 @@ in
         default = 14;
       };
     };
-    allow-client-ids = lib.mkOption {
-      description = "Allow clients to specify their own UUIDs";
+    allowClientIds = lib.mkOption {
+      description = "Client IDs to allow (can be repeated; if not specified, all clients are allowed)";
       type = types.listOf types.str;
       default = [ ];
     };
@@ -85,7 +83,7 @@ in
             --data-dir ${cfg.dataDir} \
             --snapshot-versions ${builtins.toString cfg.snapshot.versions} \
             --snapshot-days ${builtins.toString cfg.snapshot.days} \
-            ${lib.concatStringsSep " " (lib.map (id: "--allow-client-id ${id}") cfg.allow-client-ids)}
+            ${lib.concatMapStringsSep " " (id: "--allow-client-id ${id}") cfg.allowClientIds}
         '';
       };
     };
