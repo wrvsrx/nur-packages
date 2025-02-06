@@ -1,4 +1,4 @@
-final: prev: rec {
+pkgs-final: pkgs-prev: final: prev: rec {
   # this function is modified from nix official implementation
   # https://github.com/NixOS/nix/blob/56dc6ed8410510033b835d48b3bd22766e8349a0/src/libexpr/flake/call-flake.nix#L7-L61
   importFlake =
@@ -23,14 +23,14 @@ final: prev: rec {
       patchesToFetch,
     }:
     let
-      src = prev.applyPatches {
+      src = pkgs-prev.applyPatches {
         name = "patched-flake";
         src = flake;
-        patches = [ (map prev.fetchpatch patchesToFetch) ];
+        patches = [ (map pkgs-prev.fetchpatch patchesToFetch) ];
       };
-      narHashDrv = prev.stdenvNoCC.mkDerivation {
+      narHashDrv = pkgs-prev.stdenvNoCC.mkDerivation {
         name = "narHash";
-        nativeBuildInputs = [ prev.nix ];
+        nativeBuildInputs = [ pkgs-prev.nix ];
         unpackPhase = "true";
         installPhase = ''
           echo \"sha256- > $out

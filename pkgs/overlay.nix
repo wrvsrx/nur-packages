@@ -127,7 +127,7 @@ let
     inherit sources callIFD callPackage;
     inherit (prev.vimUtils) buildVimPlugin;
   };
-  lib-overlay = import ./lib-overlay;
+  lib-overlay = import ./lib-overlay final prev;
   rimePackages = callPackage ./rime-packages {
     sources = sources;
     inherit (final) librime;
