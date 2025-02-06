@@ -1,4 +1,6 @@
-{ pkgs }:
+{
+  pkgs ? import <nixpkgs> { },
+}:
 let
   overlay = import ./pkgs/overlay.nix;
   pkgs' = pkgs.extend overlay;

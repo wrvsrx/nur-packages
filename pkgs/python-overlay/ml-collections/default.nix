@@ -5,7 +5,7 @@ ml-collections.override (old: {
     old.buildPythonPackage (
       x
       // {
-        propagatedBuildInputs = x.propagatedBuildInputs ++ [ six ];
+        propagatedBuildInputs = (x.propagatedBuildInputs or [ ]) ++ [ six ];
       }
     );
 })
