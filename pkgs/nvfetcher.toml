@@ -169,3 +169,11 @@ fetch.github = "NVIDIA/cuda-samples"
 [taskchampion-sync-server]
 src.github = "GothenburgBitFactory/taskchampion-sync-server"
 fetch.github = "GothenburgBitFactory/taskchampion-sync-server"
+
+[linyinfeng]
+src.git = "https://github.com/linyinfeng/nur-packages"
+fetch.github = "linyinfeng/nur-packages"
+
+[ilya-fedin]
+src.git = "https://github.com/ilya-fedin/nur-repository"
+fetch.github = "ilya-fedin/nur-repository"

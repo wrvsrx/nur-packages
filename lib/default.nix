@@ -1,5 +1,4 @@
-{ inputs }:
-{
+rec {
   # this function is modified from nix official implementation
   # https://github.com/NixOS/nix/blob/56dc6ed8410510033b835d48b3bd22766e8349a0/src/libexpr/flake/call-flake.nix#L7-L61
   importFlake =
@@ -20,20 +19,22 @@
     result;
   patchFlake =
     {
+      stdenvNoCC,
+      applyPatches,
+      fetchpatch,
+      nix,
       flake,
-      system,
       patchesToFetch,
     }:
     let
-      initial-pkgs = import inputs.nixpkgs { inherit system; };
-      src = initial-pkgs.applyPatches {
+      src = applyPatches {
         name = "patched-flake";
         src = flake;
-        patches = [ (map initial-pkgs.fetchpatch patchesToFetch) ];
+        patches = [ (map fetchpatch patchesToFetch) ];
       };
-      narHashDrv = initial-pkgs.stdenvNoCC.mkDerivation {
+      narHashDrv = stdenvNoCC.mkDerivation {
         name = "narHash";
-        nativeBuildInputs = [ initial-pkgs.nix ];
+        nativeBuildInputs = [ nix ];
         unpackPhase = "true";
         installPhase = ''
           echo \"sha256- > $out
@@ -43,7 +44,7 @@
       };
       narHash = import "${narHashDrv}";
     in
-    inputs.self.lib.importFlake {
+    importFlake {
       inherit narHash;
       inherit (flake) inputs;
       path = src;

@@ -1,4 +1,3 @@
-{ inputs }:
 final: prev:
 let
   inherit (final) callPackage;
@@ -105,8 +104,8 @@ let
     # other nur packages
     // (
       let
-        linyinfeng = import inputs.linyinfeng { pkgs = prev; };
-        ilya-fedin = import inputs.ilya-fedin { pkgs = prev; };
+        linyinfeng = import sources.linyinfeng.src { pkgs = prev; };
+        ilya-fedin = import sources.ilya-fedin.src { pkgs = prev; };
       in
       rec {
         lpac = linyinfeng.lpac.overrideAttrs (old: {

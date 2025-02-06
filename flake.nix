@@ -5,28 +5,19 @@
     nixpkgs.follows = "flake-lock/nixpkgs";
     flake-parts.follows = "flake-lock/flake-parts";
     flake-utils.follows = "flake-lock/flake-utils";
-
-    linyinfeng = {
-      url = "github:linyinfeng/nur-packages";
-      flake = false;
-    };
-    ilya-fedin = {
-      url = "github:ilya-fedin/nur-repository";
-      flake = false;
-    };
   };
   outputs =
     inputs:
     inputs.flake-parts.lib.mkFlake { inherit inputs; } (
       { withSystem, inputs, ... }:
       let
-        overlay = import ./pkgs/overlay.nix { inherit inputs; };
+        overlay = import ./pkgs/overlay.nix;
       in
       {
         systems = [ "x86_64-linux" ];
         flake = {
           templates = import ./templates;
-          lib = import ./lib { inherit inputs; };
+          lib = import ./lib;
           overlays.default = overlay;
           nixosModules.default = ./nixos/modules;
         };
