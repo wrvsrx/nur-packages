@@ -1,5 +1,6 @@
 {
   callPackage,
+  fetchFromGitHub,
   keymap-drawer,
   source,
 }:
@@ -7,10 +8,10 @@ let
   lock = builtins.fromJSON (builtins.readFile "${source.src}/flake.lock");
   toSource =
     nodeName:
-    fetchTarball {
-      url = "https://github.com/${lock.nodes.${nodeName}.locked.owner}/${
-        lock.nodes.${nodeName}.locked.repo
-      }/archive/${lock.nodes.${nodeName}.locked.rev}.tar.gz";
+    fetchFromGitHub {
+      owner = lock.nodes.${nodeName}.locked.owner;
+      repo = lock.nodes.${nodeName}.locked.repo;
+      rev = lock.nodes.${nodeName}.locked.rev;
       sha256 = lock.nodes.${nodeName}.locked.narHash;
     };
   west2nix = callPackage (toSource "west2nix") { };
