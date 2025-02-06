@@ -152,15 +152,15 @@
   };
   eyelash_sofle_firmware = {
     pname = "eyelash_sofle_firmware";
-    version = "7434a3f41bae46b8cf51c7fb5150948569bae808";
+    version = "b36cbde5c12debb2130856bda4f3a64f371b71dc";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "zmk-sofle";
-      rev = "7434a3f41bae46b8cf51c7fb5150948569bae808";
+      rev = "b36cbde5c12debb2130856bda4f3a64f371b71dc";
       fetchSubmodules = false;
-      sha256 = "sha256-yQftDXx17wjxX9Jh241R5Y/OLLwzxIjX4oVm1uIwQOs=";
+      sha256 = "sha256-378Alr+jAq0JAyogyX2+AE9wTKmymBuMPVZG+qTrSVc=";
     };
-    date = "2025-02-03";
+    date = "2025-02-06";
   };
   giraffe-wallpaper = {
     pname = "giraffe-wallpaper";
