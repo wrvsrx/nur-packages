@@ -21,32 +21,9 @@
           nixosModules.default = ./nixos/modules;
         };
         perSystem =
-          { system, pkgs, ... }:
+          { pkgs, ... }:
           {
-            _module.args.pkgs = import inputs.nixpkgs {
-              inherit system;
-              config.allowUnfree = true;
-              overlays = [ overlay ];
-            };
-            packages = inputs.flake-utils.lib.flattenTree (
-              let
-                getAllPackages =
-                  packageNames: packages:
-                  let
-                    toplevelPackageNames = packageNames._packageNames;
-                    nestPackageNames = pkgs.lib.attrsets.filterAttrs (
-                      name: value: name != "_packageNames"
-                    ) packageNames;
-                    toplevelPackages = pkgs.lib.attrsets.getAttrs toplevelPackageNames packages;
-                    nestPackages = pkgs.lib.attrsets.mapAttrs (
-                      nestName: nestPackageNames:
-                      pkgs.lib.recurseIntoAttrs (getAllPackages nestPackageNames packages.${nestName})
-                    ) nestPackageNames;
-                  in
-                  toplevelPackages // nestPackages;
-              in
-              getAllPackages pkgs."nur-wrvsrx"._packageNames pkgs
-            );
+            packages = inputs.flake-utils.lib.flattenTree (import ./. { inherit pkgs; });
             formatter = pkgs.nixfmt-rfc-style;
             devShells.default = pkgs.mkShell {
               nativeBuildInputs = with pkgs; [
