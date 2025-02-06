@@ -17,7 +17,6 @@
         systems = [ "x86_64-linux" ];
         flake = {
           templates = import ./templates;
-          lib = import ./lib;
           overlays.default = overlay;
           nixosModules.default = ./nixos/modules;
         };

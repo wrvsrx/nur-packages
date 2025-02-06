@@ -127,6 +127,7 @@ let
     inherit sources callIFD callPackage;
     inherit (prev.vimUtils) buildVimPlugin;
   };
+  lib-overlay = import ./lib-overlay;
   rimePackages = callPackage ./rime-packages {
     sources = sources;
     inherit (final) librime;
@@ -138,6 +139,7 @@ toplevelPackages
   pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [ python-overlay ];
   haskellPackages = prev.haskellPackages.extend haskell-overlay;
   vimPlugins = prev.vimPlugins.extend vim-plugins-overlay;
+  lib = prev.lib.extend lib-overlay;
   inherit rimePackages;
   nur-wrvsrx._packageNames = {
     _packageNames = builtins.attrNames toplevelPackages;

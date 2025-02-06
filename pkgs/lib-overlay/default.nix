@@ -1,4 +1,4 @@
-rec {
+final: prev: rec {
   # this function is modified from nix official implementation
   # https://github.com/NixOS/nix/blob/56dc6ed8410510033b835d48b3bd22766e8349a0/src/libexpr/flake/call-flake.nix#L7-L61
   importFlake =
@@ -19,22 +19,18 @@ rec {
     result;
   patchFlake =
     {
-      stdenvNoCC,
-      applyPatches,
-      fetchpatch,
-      nix,
       flake,
       patchesToFetch,
     }:
     let
-      src = applyPatches {
+      src = prev.applyPatches {
         name = "patched-flake";
         src = flake;
-        patches = [ (map fetchpatch patchesToFetch) ];
+        patches = [ (map prev.fetchpatch patchesToFetch) ];
       };
-      narHashDrv = stdenvNoCC.mkDerivation {
+      narHashDrv = prev.stdenvNoCC.mkDerivation {
         name = "narHash";
-        nativeBuildInputs = [ nix ];
+        nativeBuildInputs = [ prev.nix ];
         unpackPhase = "true";
         installPhase = ''
           echo \"sha256- > $out
