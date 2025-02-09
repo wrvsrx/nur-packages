@@ -100,6 +100,9 @@ let
       remmina = prev.remmina.override { withKf5Wallet = false; };
       systemd' = callPackage ./systemd-patched { };
       meson' = callPackage ./meson-patched { };
+      khal = callPackage ./khal {
+        inherit (prev) khal;
+      };
     }
     # other nur packages
     // (
