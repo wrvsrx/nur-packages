@@ -3,4 +3,3 @@ builds:
     - packages.x86_64-linux.python3Packages/jax-md
     - packages.x86_64-linux.python3Packages/e3nn-jax
     - packages.x86_64-linux.python3Packages/jraph
-    - packages.x86_64-linux.python3Packages/ml-collections

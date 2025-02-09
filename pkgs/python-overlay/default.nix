@@ -20,9 +20,6 @@ final: prev: rec {
     inherit (prev) googletrans;
     source = sources.googletrans;
   };
-  ml-collections = final.callPackage ./ml-collections {
-    inherit (prev) ml-collections;
-  };
   anytree = final.callPackage ./anytree {
     inherit (prev) anytree;
   };
