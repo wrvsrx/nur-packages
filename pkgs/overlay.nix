@@ -115,10 +115,10 @@ let
           version = prev.lib.removePrefix "v" old.version;
         });
         easylpac = linyinfeng.easylpac.override { inherit lpac; };
-        inherit (ilya-fedin)
-          qt5ct
-          qt6ct
-          ;
+        qt5ct = ilya-fedin.qt5ct.overrideAttrs {
+          patches = [ ./qt5ct/qt5ct-shenanigans.patch ];
+        };
+        inherit (ilya-fedin) qt6ct;
       }
     );
   python-overlay = import ./python-overlay { inherit sources; };
