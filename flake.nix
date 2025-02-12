@@ -1,10 +1,12 @@
 {
   description = "My personal NUR repository";
   inputs = {
-    flake-lock.url = "github:wrvsrx/flake-lock";
-    nixpkgs.follows = "flake-lock/nixpkgs";
-    flake-parts.follows = "flake-lock/flake-parts";
-    flake-utils.follows = "flake-lock/flake-utils";
+    nixpkgs.url = "github:wrvsrx/nixpkgs/patched-nixos-unstable";
+    flake-parts = {
+      url = "github:hercules-ci/flake-parts";
+      inputs.nixpkgs-lib.follows = "nixpkgs";
+    };
+    flake-utils.url = "github:numtide/flake-utils";
   };
   outputs =
     inputs:

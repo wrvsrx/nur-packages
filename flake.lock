@@ -1,47 +1,8 @@
 {
   "nodes": {
-    "flake-compat": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1733328505,
-        "narHash": "sha256-NeCCThCEP3eCl2l/+27kNNK7QrwZB1IJCrXfrbv5oqU=",
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "rev": "ff81ac966bb2cae68946d5ed5fc4994f96d0ffec",
-        "type": "github"
-      },
-      "original": {
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "type": "github"
-      }
-    },
-    "flake-lock": {
-      "inputs": {
-        "flake-compat": "flake-compat",
-        "flake-parts": "flake-parts",
-        "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs",
-        "systems": "systems"
-      },
-      "locked": {
-        "lastModified": 1739079799,
-        "narHash": "sha256-MJoGV1qmEpZzfCy1hyfJfYDBohKHsequQaiLItyYs6w=",
-        "owner": "wrvsrx",
-        "repo": "flake-lock",
-        "rev": "2a88652f48f738b65177c4b361a6d107220ee9fb",
-        "type": "github"
-      },
-      "original": {
-        "owner": "wrvsrx",
-        "repo": "flake-lock",
-        "type": "github"
-      }
-    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
-          "flake-lock",
           "nixpkgs"
         ]
       },
@@ -61,10 +22,7 @@
     },
     "flake-utils": {
       "inputs": {
-        "systems": [
-          "flake-lock",
-          "systems"
-        ]
+        "systems": "systems"
       },
       "locked": {
         "lastModified": 1731533236,
@@ -82,35 +40,25 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1739020877,
-        "narHash": "sha256-mIvECo/NNdJJ/bXjNqIh8yeoSjVLAuDuTUzAo7dzs8Y=",
-        "owner": "NixOS",
+        "lastModified": 1739214665,
+        "narHash": "sha256-26L8VAu3/1YRxS8MHgBOyOM8xALdo6N0I04PgorE7UM=",
+        "owner": "wrvsrx",
         "repo": "nixpkgs",
-        "rev": "a79cfe0ebd24952b580b1cf08cd906354996d547",
+        "rev": "64e75cd44acf21c7933d61d7721e812eac1b5a0a",
         "type": "github"
       },
       "original": {
-        "owner": "NixOS",
-        "ref": "nixos-unstable",
+        "owner": "wrvsrx",
+        "ref": "patched-nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
     },
     "root": {
       "inputs": {
-        "flake-lock": "flake-lock",
-        "flake-parts": [
-          "flake-lock",
-          "flake-parts"
-        ],
-        "flake-utils": [
-          "flake-lock",
-          "flake-utils"
-        ],
-        "nixpkgs": [
-          "flake-lock",
-          "nixpkgs"
-        ]
+        "flake-parts": "flake-parts",
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs"
       }
     },
     "systems": {
