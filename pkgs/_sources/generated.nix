@@ -111,14 +111,6 @@
     };
     date = "2024-07-15";
   };
-  compdb = {
-    pname = "compdb";
-    version = "0.2.0";
-    src = fetchurl {
-      url = "https://pypi.org/packages/source/c/compdb/compdb-0.2.0.tar.gz";
-      sha256 = "sha256-c0cbrdAeXmnIFvs6Tg0BTwmcKCbuKD31cWzXsZAred0=";
-    };
-  };
   cuda-samples = {
     pname = "cuda-samples";
     version = "v12.4";

@@ -6,7 +6,6 @@ final: prev: rec {
     inherit autobean-refactor;
   };
   autobean-refactor = final.callPackage ./autobean-refactor { source = sources.autobean-refactor; };
-  compdb = final.callPackage ./compdb { source = sources.compdb; };
   OpenEXR = final.callPackage ./OpenEXR { source = sources.OpenEXR; };
   jraph = final.callPackage ./jraph { source = sources.jraph; };
   jax-md = final.callPackage ./jax-md {
