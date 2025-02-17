@@ -198,18 +198,6 @@
     };
     date = "2015-10-31";
   };
-  ilya-fedin = {
-    pname = "ilya-fedin";
-    version = "36b840e35f75f512011bcc630feba79ead5e395d";
-    src = fetchFromGitHub {
-      owner = "ilya-fedin";
-      repo = "nur-repository";
-      rev = "36b840e35f75f512011bcc630feba79ead5e395d";
-      fetchSubmodules = false;
-      sha256 = "sha256-iZckmU587yAphcHXsV3Fmeq1GaHvVt7hPirjSaO6IaU=";
-    };
-    date = "2024-11-03";
-  };
   jax-md = {
     pname = "jax-md";
     version = "0.2.8";
@@ -233,18 +221,6 @@
       url = "https://pypi.org/packages/source/k/keymap_drawer/keymap_drawer-0.20.0.tar.gz";
       sha256 = "sha256-M800wKnH2UsQ4brEFdjjMIB31aXTAfEdBnU5uk0ZUL8=";
     };
-  };
-  linyinfeng = {
-    pname = "linyinfeng";
-    version = "0a6a6fe08d45f98e9abd82aa5fd95feac12cef88";
-    src = fetchFromGitHub {
-      owner = "linyinfeng";
-      repo = "nur-packages";
-      rev = "0a6a6fe08d45f98e9abd82aa5fd95feac12cef88";
-      fetchSubmodules = false;
-      sha256 = "sha256-R5cAl1qRjiVLW06fqCYes0p9YQl7FoB9Uq9he8OL2yE=";
-    };
-    date = "2025-02-05";
   };
   lyra = {
     pname = "lyra";

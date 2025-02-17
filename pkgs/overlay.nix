@@ -18,99 +18,81 @@ let
         install -m444 -Dt $out/share/fonts/opentype/noto-cjk ${typeface}/OTC/*.ttc
       '';
     };
-  toplevelPackages =
-    {
-      # toplevel packages
-      auth-thu = callPackage ./auth-thu { };
-      autodiff = callPackage ./autodiff { source = sources.autodiff; };
-      noto-fonts-cjk-sans-fix-weight = mkNotoCJK {
-        source = sources.noto-fonts-cjk-sans-fix-weight;
-      };
-      noto-fonts-cjk-serif-fix-weight = mkNotoCJK {
-        source = sources.noto-fonts-cjk-serif-fix-weight;
-      };
-      cyCodeBase = callPackage ./cyCodeBase { source = sources.cyCodeBase; };
-      hougeo = callPackage ./hougeo { source = sources.hougeo; };
-      happly = callPackage ./happly { source = sources.happly; };
-      cnpy = callPackage ./cnpy { source = sources.cnpy; };
-      amgcl = callPackage ./amgcl { source = sources.amgcl; };
-      cuda-samples-common = callPackage ./cuda-samples-common {
-        source = sources.cuda-samples;
-      };
-      structopt = callPackage ./structopt { source = sources.structopt; };
-      utfcpp = callPackage ./utfcpp { source = sources.utfcpp; };
-      seal_lake = callPackage ./seal_lake { source = sources.seal_lake; };
-      sfun = callPackage ./sfun {
-        source = sources.sfun;
-      };
-      cmdlime = callPackage ./cmdlime {
-        source = sources.cmdlime;
-      };
-      yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };
-      baikal = callPackage ./baikal { };
-      SillyTavern = callPackage ./SillyTavern { source = sources.SillyTavern; };
-      vscode-markdown-languageserver = callPackage ./vscode-markdown-languageserver {
-        source = sources.vscode-markdown-languageserver;
-      };
-      v2ray-rules-dat = callPackage ./v2ray-rules-dat {
-        inherit (sources) v2ray-rules-dat-geoip v2ray-rules-dat-geosite;
-      };
-      tt-rss-plugin-freshapi = callPackage ./tt-rss-plugin-freshapi {
-        source = sources.tt-rss-plugin-freshapi;
-      };
-      wechat-uos-bwrapped = callPackage ./wechat-uos-bwrapped {
-        inherit (prev) wechat-uos;
-      };
+  toplevelPackages = {
+    # toplevel packages
+    auth-thu = callPackage ./auth-thu { };
+    autodiff = callPackage ./autodiff { source = sources.autodiff; };
+    noto-fonts-cjk-sans-fix-weight = mkNotoCJK {
+      source = sources.noto-fonts-cjk-sans-fix-weight;
+    };
+    noto-fonts-cjk-serif-fix-weight = mkNotoCJK {
+      source = sources.noto-fonts-cjk-serif-fix-weight;
+    };
+    cyCodeBase = callPackage ./cyCodeBase { source = sources.cyCodeBase; };
+    hougeo = callPackage ./hougeo { source = sources.hougeo; };
+    happly = callPackage ./happly { source = sources.happly; };
+    cnpy = callPackage ./cnpy { source = sources.cnpy; };
+    amgcl = callPackage ./amgcl { source = sources.amgcl; };
+    cuda-samples-common = callPackage ./cuda-samples-common {
+      source = sources.cuda-samples;
+    };
+    structopt = callPackage ./structopt { source = sources.structopt; };
+    utfcpp = callPackage ./utfcpp { source = sources.utfcpp; };
+    seal_lake = callPackage ./seal_lake { source = sources.seal_lake; };
+    sfun = callPackage ./sfun {
+      source = sources.sfun;
+    };
+    cmdlime = callPackage ./cmdlime {
+      source = sources.cmdlime;
+    };
+    yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };
+    baikal = callPackage ./baikal { };
+    SillyTavern = callPackage ./SillyTavern { source = sources.SillyTavern; };
+    vscode-markdown-languageserver = callPackage ./vscode-markdown-languageserver {
+      source = sources.vscode-markdown-languageserver;
+    };
+    v2ray-rules-dat = callPackage ./v2ray-rules-dat {
+      inherit (sources) v2ray-rules-dat-geoip v2ray-rules-dat-geosite;
+    };
+    tt-rss-plugin-freshapi = callPackage ./tt-rss-plugin-freshapi {
+      source = sources.tt-rss-plugin-freshapi;
+    };
+    wechat-uos-bwrapped = callPackage ./wechat-uos-bwrapped {
+      inherit (prev) wechat-uos;
+    };
 
-      # my packages
-      giraffe-wallpaper = callIFD rec {
-        inherit callPackage;
-        source = sources.giraffe-wallpaper;
-        version = "0-unstable-" + source.date;
-        otherArgs = {
-          width = 3840;
-          height = 2160;
-        };
+    # my packages
+    giraffe-wallpaper = callIFD rec {
+      inherit callPackage;
+      source = sources.giraffe-wallpaper;
+      version = "0-unstable-" + source.date;
+      otherArgs = {
+        width = 3840;
+        height = 2160;
       };
-      eyelash_sofle_firmware = callPackage ./eyelash_sofle_firmware {
-        source = sources.eyelash_sofle_firmware;
-        inherit (final.python3Packages) keymap-drawer;
-      };
+    };
+    eyelash_sofle_firmware = callPackage ./eyelash_sofle_firmware {
+      source = sources.eyelash_sofle_firmware;
+      inherit (final.python3Packages) keymap-drawer;
+    };
 
-      # override packages
-      pam_ssh_agent_auth = callPackage ./pam_ssh_agent_auth { inherit (prev) pam_ssh_agent_auth; };
-      xclip = callPackage ./xclip {
-        inherit (prev) xclip;
-        source = sources.xclip;
-      };
-      lyra = callPackage ./lyra { source = sources.lyra; };
-      librime = callPackage ./librime { inherit (prev) librime; };
-      fcitx5-rime = callPackage ./fcitx5-rime {
-        inherit (prev) fcitx5-rime;
-        inherit (final) librime;
-      };
-      p7zip = prev.p7zip.override { enableUnfree = true; };
-      remmina = prev.remmina.override { withKf5Wallet = false; };
-      systemd' = callPackage ./systemd-patched { };
-      meson' = callPackage ./meson-patched { };
-    }
-    # other nur packages
-    // (
-      let
-        linyinfeng = import sources.linyinfeng.src { pkgs = prev; };
-        ilya-fedin = import sources.ilya-fedin.src { pkgs = prev; };
-      in
-      rec {
-        lpac = linyinfeng.lpac.overrideAttrs (old: {
-          version = prev.lib.removePrefix "v" old.version;
-        });
-        easylpac = linyinfeng.easylpac.override { inherit lpac; };
-        qt5ct = ilya-fedin.qt5ct.overrideAttrs {
-          patches = [ ./qt5ct/qt5ct-shenanigans.patch ];
-        };
-        inherit (ilya-fedin) qt6ct;
-      }
-    );
+    # override packages
+    pam_ssh_agent_auth = callPackage ./pam_ssh_agent_auth { inherit (prev) pam_ssh_agent_auth; };
+    xclip = callPackage ./xclip {
+      inherit (prev) xclip;
+      source = sources.xclip;
+    };
+    lyra = callPackage ./lyra { source = sources.lyra; };
+    librime = callPackage ./librime { inherit (prev) librime; };
+    fcitx5-rime = callPackage ./fcitx5-rime {
+      inherit (prev) fcitx5-rime;
+      inherit (final) librime;
+    };
+    p7zip = prev.p7zip.override { enableUnfree = true; };
+    remmina = prev.remmina.override { withKf5Wallet = false; };
+    systemd' = callPackage ./systemd-patched { };
+    meson' = callPackage ./meson-patched { };
+  };
   python-overlay = import ./python-overlay { inherit sources; };
   haskell-overlay = import ./haskell-overlay {
     inherit sources;

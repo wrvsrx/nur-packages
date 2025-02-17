@@ -359,27 +359,6 @@
         },
         "version": "7e48d2bda0f94fc96b2d8b2917d5ef306ba83c97"
     },
-    "ilya-fedin": {
-        "cargoLocks": null,
-        "date": "2024-11-03",
-        "extract": null,
-        "name": "ilya-fedin",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "ilya-fedin",
-            "repo": "nur-repository",
-            "rev": "36b840e35f75f512011bcc630feba79ead5e395d",
-            "sha256": "sha256-iZckmU587yAphcHXsV3Fmeq1GaHvVt7hPirjSaO6IaU=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "36b840e35f75f512011bcc630feba79ead5e395d"
-    },
     "jax-md": {
         "cargoLocks": null,
         "date": null,
@@ -424,27 +403,6 @@
             "url": "https://pypi.org/packages/source/k/keymap_drawer/keymap_drawer-0.20.0.tar.gz"
         },
         "version": "0.20.0"
-    },
-    "linyinfeng": {
-        "cargoLocks": null,
-        "date": "2025-02-05",
-        "extract": null,
-        "name": "linyinfeng",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "linyinfeng",
-            "repo": "nur-packages",
-            "rev": "0a6a6fe08d45f98e9abd82aa5fd95feac12cef88",
-            "sha256": "sha256-R5cAl1qRjiVLW06fqCYes0p9YQl7FoB9Uq9he8OL2yE=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "0a6a6fe08d45f98e9abd82aa5fd95feac12cef88"
     },
     "lyra": {
         "cargoLocks": null,
