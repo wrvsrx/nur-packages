@@ -260,27 +260,6 @@
         },
         "version": "0.20.7"
     },
-    "eyelash_sofle_firmware": {
-        "cargoLocks": null,
-        "date": "2025-02-06",
-        "extract": null,
-        "name": "eyelash_sofle_firmware",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "wrvsrx",
-            "repo": "zmk-sofle",
-            "rev": "d7788b0a8beeddb7f12aedf9070e7b1371415293",
-            "sha256": "sha256-40YdMv61tveVnnxylgf+WoSbbOUbvcQYnrWfkSJ5vJA=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "d7788b0a8beeddb7f12aedf9070e7b1371415293"
-    },
     "giraffe-wallpaper": {
         "cargoLocks": null,
         "date": "2023-05-20",

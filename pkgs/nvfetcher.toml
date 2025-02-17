@@ -141,10 +141,6 @@ fetch.pypi = "jax-md"
 src.pypi = "e3nn-jax"
 fetch.pypi = "e3nn_jax"
 
-[eyelash_sofle_firmware]
-src.git = "https://github.com/wrvsrx/zmk-sofle"
-fetch.github = "wrvsrx/zmk-sofle"
-
 [keymap-drawer]
 src.pypi = "keymap_drawer"
 fetch.pypi = "keymap_drawer"

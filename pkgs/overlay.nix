@@ -65,10 +65,6 @@ let
     giraffe-wallpaper = callPackage ./giraffe-wallpaper {
       source = sources.giraffe-wallpaper;
     };
-    eyelash_sofle_firmware = callPackage ./eyelash_sofle_firmware {
-      source = sources.eyelash_sofle_firmware;
-      inherit (final.python3Packages) keymap-drawer;
-    };
 
     # override packages
     pam_ssh_agent_auth = callPackage ./pam_ssh_agent_auth { inherit (prev) pam_ssh_agent_auth; };
