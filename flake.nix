@@ -23,8 +23,12 @@
           nixosModules.default = ./nixos/modules;
         };
         perSystem =
-          { pkgs, ... }:
+          { pkgs, system, ... }:
           {
+            _module.args.pkgs = import inputs.nixpkgs {
+              inherit system;
+              config.allowUnfree = true;
+            };
             packages = inputs.flake-utils.lib.flattenTree (import ./. { inherit pkgs; });
             formatter = pkgs.nixfmt-rfc-style;
             devShells.default = pkgs.mkShell {

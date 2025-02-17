@@ -93,7 +93,7 @@ let
     pkgs = prev;
   };
   vim-plugins-overlay = import ./vim-plugins-overlay {
-    inherit sources callIFD callPackage;
+    inherit sources callPackage;
     inherit (prev.vimUtils) buildVimPlugin;
   };
   lib-overlay = import ./lib-overlay final prev;
