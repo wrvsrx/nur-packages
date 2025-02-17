@@ -62,14 +62,8 @@ let
     };
 
     # my packages
-    giraffe-wallpaper = callIFD rec {
-      inherit callPackage;
+    giraffe-wallpaper = callPackage ./giraffe-wallpaper {
       source = sources.giraffe-wallpaper;
-      version = "0-unstable-" + source.date;
-      otherArgs = {
-        width = 3840;
-        height = 2160;
-      };
     };
     eyelash_sofle_firmware = callPackage ./eyelash_sofle_firmware {
       source = sources.eyelash_sofle_firmware;
