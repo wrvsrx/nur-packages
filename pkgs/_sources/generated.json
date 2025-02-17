@@ -274,12 +274,12 @@
             "name": null,
             "owner": "wrvsrx",
             "repo": "zmk-sofle",
-            "rev": "b36cbde5c12debb2130856bda4f3a64f371b71dc",
-            "sha256": "sha256-378Alr+jAq0JAyogyX2+AE9wTKmymBuMPVZG+qTrSVc=",
+            "rev": "d7788b0a8beeddb7f12aedf9070e7b1371415293",
+            "sha256": "sha256-40YdMv61tveVnnxylgf+WoSbbOUbvcQYnrWfkSJ5vJA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b36cbde5c12debb2130856bda4f3a64f371b71dc"
+        "version": "d7788b0a8beeddb7f12aedf9070e7b1371415293"
     },
     "giraffe-wallpaper": {
         "cargoLocks": null,

@@ -144,13 +144,13 @@
   };
   eyelash_sofle_firmware = {
     pname = "eyelash_sofle_firmware";
-    version = "b36cbde5c12debb2130856bda4f3a64f371b71dc";
+    version = "d7788b0a8beeddb7f12aedf9070e7b1371415293";
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "zmk-sofle";
-      rev = "b36cbde5c12debb2130856bda4f3a64f371b71dc";
+      rev = "d7788b0a8beeddb7f12aedf9070e7b1371415293";
       fetchSubmodules = false;
-      sha256 = "sha256-378Alr+jAq0JAyogyX2+AE9wTKmymBuMPVZG+qTrSVc=";
+      sha256 = "sha256-40YdMv61tveVnnxylgf+WoSbbOUbvcQYnrWfkSJ5vJA=";
     };
     date = "2025-02-06";
   };
