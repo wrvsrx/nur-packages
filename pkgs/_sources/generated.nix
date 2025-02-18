@@ -9,17 +9,6 @@
       sha256 = "sha256-z/zROQYpHvGoGzacHA6Qdkjs0kNjZohzaR9EhmcEqyE=";
     };
   };
-  SillyTavern = {
-    pname = "SillyTavern";
-    version = "1.12.10";
-    src = fetchFromGitHub {
-      owner = "SillyTavern";
-      repo = "SillyTavern";
-      rev = "1.12.10";
-      fetchSubmodules = false;
-      sha256 = "sha256-eCGDqG0dLCkOPfSunzdskE9PbmXnii96X10KwIMUaeY=";
-    };
-  };
   amgcl = {
     pname = "amgcl";
     version = "1.4.4";
@@ -401,17 +390,6 @@
     src = fetchurl {
       url = "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/202501152211/geosite.dat";
       sha256 = "sha256-fJrUPpiociZylxtnQ7p6m6blgf2/HHpfuAg8KCtZqH4=";
-    };
-  };
-  vscode-markdown-languageserver = {
-    pname = "vscode-markdown-languageserver";
-    version = "v0.5.0-alpha.7";
-    src = fetchFromGitHub {
-      owner = "microsoft";
-      repo = "vscode-markdown-languageserver";
-      rev = "v0.5.0-alpha.7";
-      fetchSubmodules = false;
-      sha256 = "sha256-qBXpBGdh8ehk/94nbE5Y9ispEz/d5DMXl1OVEH8AmCU=";
     };
   };
   xclip = {

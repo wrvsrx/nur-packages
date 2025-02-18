@@ -101,14 +101,6 @@ src.manual = "Serif2.003"
 fetch.github = "notofonts/noto-cjk"
 git.sparseCheckout = ["Serif/OTC"]
 
-[SillyTavern]
-src.github = "SillyTavern/SillyTavern"
-fetch.github = "SillyTavern/SillyTavern"
-
-[vscode-markdown-languageserver]
-src.github = "microsoft/vscode-markdown-languageserver"
-fetch.github = "microsoft/vscode-markdown-languageserver"
-
 [coc-markdown]
 src.git = "https://github.com/wrvsrx/coc-markdown"
 fetch.github = "wrvsrx/coc-markdown"
