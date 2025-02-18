@@ -2,7 +2,6 @@ final: prev:
 let
   inherit (final) callPackage;
   sources = callPackage ./_sources/generated.nix { };
-  callIFD = import ./callIFD.nix;
   mkNotoCJK =
     { source }:
     let
@@ -47,9 +46,8 @@ let
     };
     yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };
     baikal = callPackage ./baikal { };
-    SillyTavern = callPackage ./SillyTavern { source = sources.SillyTavern; };
+    sillytavern = callPackage ./sillytavern { };
     vscode-markdown-languageserver = callPackage ./vscode-markdown-languageserver {
-      source = sources.vscode-markdown-languageserver;
     };
     v2ray-rules-dat = callPackage ./v2ray-rules-dat {
       inherit (sources) v2ray-rules-dat-geoip v2ray-rules-dat-geosite;

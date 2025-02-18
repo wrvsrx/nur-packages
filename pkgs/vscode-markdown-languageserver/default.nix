@@ -1,14 +1,19 @@
 {
   buildNpmPackage,
-  importNpmLock,
   nodejs,
   bash,
-  source,
+  fetchFromGitHub,
 }:
-buildNpmPackage {
-  inherit (source) pname version src;
-  inherit (importNpmLock) npmConfigHook;
-  npmDeps = importNpmLock { npmRoot = source.src; };
+buildNpmPackage rec {
+  pname = "vscode-markdown-languageserver";
+  version = "0.5.0-alpha.7";
+  src = fetchFromGitHub {
+    owner = "microsoft";
+    repo = "vscode-markdown-languageserver";
+    tag = "v${version}";
+    sha256 = "sha256-qBXpBGdh8ehk/94nbE5Y9ispEz/d5DMXl1OVEH8AmCU=";
+  };
+  npmDepsHash = "sha256-mkM30n3ieOI/E4lRGQxCao5fPf13RnXJz5QzmEc4KPE=";
   buildPhase = "npm run dist";
   installPhase = ''
     mkdir -p $out/bin
