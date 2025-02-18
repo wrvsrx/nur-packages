@@ -5,5 +5,8 @@ let
 in
 {
   osc52 = callPackage ./osc52 { source = sources.osc52; };
-  task-utils = callPackage ./task-utils { source = sources.task-utils; };
+  task-utils = callPackage ./task-utils {
+    source = sources.task-utils;
+    doclayout = prev.doclayout_0_5;
+  };
 }
