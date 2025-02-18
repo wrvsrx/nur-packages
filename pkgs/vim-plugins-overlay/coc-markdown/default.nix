@@ -3,10 +3,12 @@
   fetchYarnDeps,
   source,
 }:
-mkYarnPackage {
+mkYarnPackage rec {
   inherit (source) pname src;
-  packageJSON = ./package.json;
-  offlineCache = fetchYarnDeps { yarnLock = ./yarn.lock; };
+  offlineCache = fetchYarnDeps {
+    yarnLock = "${src}" + "/yarn.lock";
+    hash = "sha256-JCNHywyaARqjp5YRjkj451TI2wBdleUK/bw2z2e5UBE=";
+  };
   version = "0-unstable-" + source.date;
   buildPhase = "yarn --offline build";
   installPhase = ''
