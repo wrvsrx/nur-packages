@@ -5,6 +5,7 @@
 }:
 mkYarnPackage rec {
   inherit (source) pname src;
+  packageJSON = ./package.json;
   offlineCache = fetchYarnDeps {
     yarnLock = "${src}" + "/yarn.lock";
     hash = "sha256-1JEcBNCztsAwYgxzdBtWbquuuWnb2vL8hbzAlRBnHKc=";
