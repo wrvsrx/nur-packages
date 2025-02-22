@@ -143,14 +143,6 @@
     };
     date = "2023-05-20";
   };
-  googletrans = {
-    pname = "googletrans";
-    version = "4.0.0rc1";
-    src = fetchurl {
-      url = "https://pypi.org/packages/source/g/googletrans/googletrans-4.0.0rc1.tar.gz";
-      sha256 = "sha256-dN9HsJLi1WZSIBnRSePx11cyVwrXbq+OFK6+/8Emw3I=";
-    };
-  };
   happly = {
     pname = "happly";
     version = "8a606309daaa680eee495c8279feb0b704148f4a";

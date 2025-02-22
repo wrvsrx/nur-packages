@@ -260,21 +260,6 @@
         },
         "version": "6fc686fe7b43cb6be8eaf3a9dc42177eb355eadd"
     },
-    "googletrans": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "googletrans",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-dN9HsJLi1WZSIBnRSePx11cyVwrXbq+OFK6+/8Emw3I=",
-            "type": "url",
-            "url": "https://pypi.org/packages/source/g/googletrans/googletrans-4.0.0rc1.tar.gz"
-        },
-        "version": "4.0.0rc1"
-    },
     "happly": {
         "cargoLocks": null,
         "date": "2024-02-06",

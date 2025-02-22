@@ -15,10 +15,6 @@ final: prev: rec {
   e3nn-jax = final.callPackage ./e3nn-jax {
     source = sources.e3nn-jax;
   };
-  googletrans = final.callPackage ./googletrans {
-    inherit (prev) googletrans;
-    source = sources.googletrans;
-  };
   keymap-drawer = final.callPackage ./keymap-drawer {
     source = sources.keymap-drawer;
     inherit tree-sitter-devicetree;
