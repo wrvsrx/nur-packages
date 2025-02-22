@@ -19,9 +19,6 @@ final: prev: rec {
     inherit (prev) googletrans;
     source = sources.googletrans;
   };
-  anytree = final.callPackage ./anytree {
-    inherit (prev) anytree;
-  };
   keymap-drawer = final.callPackage ./keymap-drawer {
     source = sources.keymap-drawer;
     inherit tree-sitter-devicetree;
