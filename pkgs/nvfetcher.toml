@@ -145,7 +145,3 @@ fetch.github = "eric-pierce/freshapi"
 # src.github = "NVIDIA/cuda-samples"
 src.manual = "v12.4"
 fetch.github = "NVIDIA/cuda-samples"
-
-[taskchampion-sync-server]
-src.github = "GothenburgBitFactory/taskchampion-sync-server"
-fetch.github = "GothenburgBitFactory/taskchampion-sync-server"

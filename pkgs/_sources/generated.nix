@@ -323,17 +323,6 @@
     };
     date = "2024-12-27";
   };
-  taskchampion-sync-server = {
-    pname = "taskchampion-sync-server";
-    version = "v0.5.0";
-    src = fetchFromGitHub {
-      owner = "GothenburgBitFactory";
-      repo = "taskchampion-sync-server";
-      rev = "v0.5.0";
-      fetchSubmodules = false;
-      sha256 = "sha256-uOlubcQ5LAECvQEqgUR/5aLuDGQrdHy+K6vSapACmoo=";
-    };
-  };
   tree-sitter-devicetree = {
     pname = "tree-sitter-devicetree";
     version = "v0.11.1";
