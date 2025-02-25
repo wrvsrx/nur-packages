@@ -12,7 +12,8 @@
 let
   src_ =
     stdenvNoCC.mkDerivation {
-      inherit (source) src version;
+      inherit (source) src;
+      version = "0-unstable-" + source.date;
       pname = "rime-ice-radical_pinyin";
       propagatedBuildInputs = [ rime-prelude  ];
       nativeBuildInputs = [
