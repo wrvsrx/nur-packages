@@ -193,15 +193,15 @@
   };
   lyra = {
     pname = "lyra";
-    version = "a8bb6e22ea4dcd507292ecdb6443bad23ef7bfeb";
+    version = "d97a4dc917ef4c5f598b62d08aebad343b5d5003";
     src = fetchFromGitHub {
       owner = "bfgroup";
       repo = "Lyra";
-      rev = "a8bb6e22ea4dcd507292ecdb6443bad23ef7bfeb";
+      rev = "d97a4dc917ef4c5f598b62d08aebad343b5d5003";
       fetchSubmodules = false;
-      sha256 = "sha256-8Y2p6A73UvWr0mKVgMW5LchRRp5DtAg/R1vZB6q2zOA=";
+      sha256 = "sha256-jLB7IkAAoh8g8P/+k45h6PhpaaYn9aMONSW3PShPGLA=";
     };
-    date = "2023-04-23";
+    date = "2025-02-28";
   };
   noto-fonts-cjk-sans-fix-weight = {
     pname = "noto-fonts-cjk-sans-fix-weight";
