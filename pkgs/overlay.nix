@@ -70,7 +70,10 @@ let
       inherit (prev) xclip;
       source = sources.xclip;
     };
-    lyra = callPackage ./lyra { source = sources.lyra; };
+    lyra = callPackage ./lyra {
+      inherit (prev) lyra;
+      source = sources.lyra;
+    };
     librime = callPackage ./librime { inherit (prev) librime; };
     fcitx5-rime = callPackage ./fcitx5-rime {
       inherit (prev) fcitx5-rime;
