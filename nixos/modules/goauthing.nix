@@ -5,12 +5,12 @@
   ...
 }:
 let
-  cfg = config.goauthing;
+  cfg = config.services.goauthing;
   common-name = "goauthing";
   goauthing = pkgs.callPackage ../../pkgs/goauthing { };
 in
 {
-  options.goauthing = {
+  options.services.goauthing = {
     enable = lib.mkEnableOption "Enable goauthing service";
     package = lib.mkOption {
       type = lib.types.package;
@@ -31,7 +31,7 @@ in
       description = "Group to run goauthing as";
     };
   };
-  config.goauthing = lib.mkIf cfg.enable {
+  config = lib.mkIf cfg.enable {
     systemd.services."goauthing" = {
       enable = true;
       unitConfig = {
