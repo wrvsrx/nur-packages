@@ -42,10 +42,10 @@ in
         Type = "simple";
         User = cfg.user;
         ExecStartPre = [
-          "${cfg.goauthing}/bin/auth-thu --config-file ${cfg.configFile} deauth"
-          "${cfg.goauthing}/bin/auth-thu --config-file ${cfg.configFile} auth"
+          "${cfg.package}/bin/auth-thu --config-file ${cfg.configFile} deauth"
+          "${cfg.package}/bin/auth-thu --config-file ${cfg.configFile} auth"
         ];
-        ExecStart = "${pkgs.auth-thu}/bin/auth-thu --config-file ${cfg.configFile} online";
+        ExecStart = "${cfg.package}/bin/auth-thu --config-file ${cfg.configFile} online";
         Restart = "always";
         RestartSec = 5;
       };
