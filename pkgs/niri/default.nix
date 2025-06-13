@@ -1,6 +1,6 @@
 { niri, fetchFromGitHub }:
 niri.overrideAttrs (
-  oldAttrs: finalAttrs: {
+  finalAttrs: oldAttrs: {
     version = "25.01.1-wrvsrx-patched.01";
     src = fetchFromGitHub {
       owner = "wrvsrx";
