@@ -14,6 +14,7 @@ stdenvNoCC.mkDerivation {
         raw-strings-qq
         extra
         utf8-string
+        aeson-pretty
       ]
     ))
   ];

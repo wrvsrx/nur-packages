@@ -53,11 +53,11 @@ in
 {
   inherit (components')
     rime-ice-pinyin
-    rime-ice-double_pinyin
-    rime-ice-double_pinyin_flypy
-    rime-ice-double_pinyin_abc
-    rime-ice-double_pinyin_mspy
-    rime-ice-double_pinyin_sogou
-    rime-ice-double_pinyin_ziguang
+    rime-ice-double-pinyin
+    rime-ice-double-pinyin-flypy
+    rime-ice-double-pinyin-abc
+    rime-ice-double-pinyin-mspy
+    rime-ice-double-pinyin-sogou
+    rime-ice-double-pinyin-ziguang
     ;
 }
