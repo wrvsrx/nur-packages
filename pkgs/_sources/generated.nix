@@ -258,6 +258,17 @@
       sha256 = "sha256-s3r8cdEliiPnKWs64Wgi0rC9Ngl1mkIrLnr2tIcyXWw=";
     };
   };
+  rime-ice-modular = {
+    pname = "rime-ice-modular";
+    version = "2025.04.06-03";
+    src = fetchFromGitHub {
+      owner = "wrvsrx";
+      repo = "rime-ice-modular";
+      rev = "2025.04.06-03";
+      fetchSubmodules = true;
+      sha256 = "sha256-D7Zjthh5ovvG9ihBtx/lFFR5WDh8BAW8O9PqEDWEEmA=";
+    };
+  };
   rime-prelude = {
     pname = "rime-prelude";
     version = "3803f09458072e03b9ed396692ce7e1d35c88c95";
