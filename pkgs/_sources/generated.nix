@@ -247,6 +247,17 @@
     };
     date = "2025-05-16";
   };
+  ptrace-time-hook = {
+    pname = "ptrace-time-hook";
+    version = "0.1.0";
+    src = fetchFromGitHub {
+      owner = "wrvsrx";
+      repo = "ptrace-time-hook";
+      rev = "0.1.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-NGf+t8OU4dkznxSGU6bRsPKRffhR9Dyb3ygjNqxWYQI=";
+    };
+  };
   rime-ice = {
     pname = "rime-ice";
     version = "2025.04.06";
@@ -337,17 +348,6 @@
       sha256 = "sha256-MKqY0Bp00pFr/mkTsfqsDJ+Tsz9w0WolYEg4ob8iHkQ=";
     };
     date = "2025-07-01";
-  };
-  time-hook = {
-    pname = "time-hook";
-    version = "0.0.1";
-    src = fetchFromGitHub {
-      owner = "wrvsrx";
-      repo = "time-hook";
-      rev = "0.0.1";
-      fetchSubmodules = false;
-      sha256 = "sha256-vcMYBZ8NCeIuqYMnHn4t677AlEo6Bgc/MT7qU8CIWQk=";
-    };
   };
   tree-sitter-devicetree = {
     pname = "tree-sitter-devicetree";

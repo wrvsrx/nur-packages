@@ -55,8 +55,8 @@ let
     giraffe-wallpaper = callPackage ./giraffe-wallpaper {
       source = sources.giraffe-wallpaper;
     };
-    time-hook = callPackage ./time-hook {
-      source = sources.time-hook;
+    ptrace-time-hook = callPackage ./ptrace-time-hook {
+      source = sources.ptrace-time-hook;
     };
 
     # override packages
