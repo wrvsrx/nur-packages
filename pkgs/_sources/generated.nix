@@ -207,34 +207,6 @@
     };
     date = "2025-02-28";
   };
-  noto-fonts-cjk-sans-fix-weight = {
-    pname = "noto-fonts-cjk-sans-fix-weight";
-    version = "Sans2.004";
-    src = fetchFromGitHub {
-      owner = "notofonts";
-      repo = "noto-cjk";
-      rev = "Sans2.004";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ "Sans/OTC" ];
-      sha256 = "sha256-GXULnRPsIJRdiL3LdFtHbqTqSvegY2zodBxFm4P55to=";
-    };
-  };
-  noto-fonts-cjk-serif-fix-weight = {
-    pname = "noto-fonts-cjk-serif-fix-weight";
-    version = "Serif2.003";
-    src = fetchFromGitHub {
-      owner = "notofonts";
-      repo = "noto-cjk";
-      rev = "Serif2.003";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ "Serif/OTC" ];
-      sha256 = "sha256-mfbBSdJrUCZiUUmsmndtEW6H3z6KfBn+dEftBySf2j4=";
-    };
-  };
   osc52 = {
     pname = "osc52";
     version = "49fbbb3d297dc8c50f8c35cb4402502713494573";

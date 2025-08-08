@@ -374,52 +374,6 @@
         },
         "version": "d97a4dc917ef4c5f598b62d08aebad343b5d5003"
     },
-    "noto-fonts-cjk-sans-fix-weight": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "noto-fonts-cjk-sans-fix-weight",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "notofonts",
-            "repo": "noto-cjk",
-            "rev": "Sans2.004",
-            "sha256": "sha256-GXULnRPsIJRdiL3LdFtHbqTqSvegY2zodBxFm4P55to=",
-            "sparseCheckout": [
-                "Sans/OTC"
-            ],
-            "type": "github"
-        },
-        "version": "Sans2.004"
-    },
-    "noto-fonts-cjk-serif-fix-weight": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "noto-fonts-cjk-serif-fix-weight",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "notofonts",
-            "repo": "noto-cjk",
-            "rev": "Serif2.003",
-            "sha256": "sha256-mfbBSdJrUCZiUUmsmndtEW6H3z6KfBn+dEftBySf2j4=",
-            "sparseCheckout": [
-                "Serif/OTC"
-            ],
-            "type": "github"
-        },
-        "version": "Serif2.003"
-    },
     "osc52": {
         "cargoLocks": null,
         "date": "2025-05-16",
