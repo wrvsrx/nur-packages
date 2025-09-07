@@ -14,7 +14,6 @@ let
     nativeBuildInputs = [
       nodejs
       pnpm.configHook
-      makeWrapper
     ];
 
     sourceRoot = "source/ui"; # Point to the ui subdirectory
@@ -69,12 +68,9 @@ stdenv.mkDerivation (finalAttrs: {
     runHook preBuild
 
     pnpm build
+    cp ${ui}/index.html dist/
 
     runHook postBuild
-  '';
-
-  postBuild = ''
-    cp ${ui}/index.html dist/
   '';
 
   installPhase = ''
@@ -84,7 +80,6 @@ stdenv.mkDerivation (finalAttrs: {
 
     # Copy built files
     cp -r dist $out/lib/node_modules/$pname/dist
-    # cp package.json $out/lib/node_modules/@musistudio/claude-code-router/
     makeWrapper ${lib.getExe nodejs} $out/bin/ccr \
       --add-flags $out/lib/node_modules/$pname/dist/cli.js
 
