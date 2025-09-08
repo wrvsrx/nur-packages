@@ -39,8 +39,6 @@ let
       inherit (prev) fcitx5-rime;
       inherit (final) librime;
     };
-    p7zip = prev.p7zip.override { enableUnfree = true; };
-    remmina = prev.remmina.override { withKf5Wallet = false; };
     niri = callPackage ./niri { inherit (prev) niri; };
   };
   python-overlay = import ./python-overlay { inherit sources; };
