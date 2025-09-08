@@ -15,28 +15,18 @@ let
     structopt = callPackage ./structopt { source = sources.structopt; };
     utfcpp = callPackage ./utfcpp { source = sources.utfcpp; };
     seal_lake = callPackage ./seal_lake { source = sources.seal_lake; };
-    sfun = callPackage ./sfun {
-      source = sources.sfun;
-    };
-    cmdlime = callPackage ./cmdlime {
-      source = sources.cmdlime;
-    };
+    sfun = callPackage ./sfun { source = sources.sfun; };
+    cmdlime = callPackage ./cmdlime { source = sources.cmdlime; };
     yalantinglibs = callPackage ./yalantinglibs { source = sources.yalantinglibs; };
     vscode-markdown-languageserver = callPackage ./vscode-markdown-languageserver { };
     v2ray-rules-dat = callPackage ./v2ray-rules-dat {
       inherit (sources) v2ray-rules-dat-geoip v2ray-rules-dat-geosite;
     };
-    claude-code-router = callPackage ./claude-code-router {
-      source = sources.claude-code-router;
-    };
+    claude-code-router = callPackage ./claude-code-router { source = sources.claude-code-router; };
 
     # my packages
-    giraffe-wallpaper = callPackage ./giraffe-wallpaper {
-      source = sources.giraffe-wallpaper;
-    };
-    ptrace-time-hook = callPackage ./ptrace-time-hook {
-      source = sources.ptrace-time-hook;
-    };
+    giraffe-wallpaper = callPackage ./giraffe-wallpaper { source = sources.giraffe-wallpaper; };
+    ptrace-time-hook = callPackage ./ptrace-time-hook { source = sources.ptrace-time-hook; };
 
     # override packages
     pam_ssh_agent_auth = callPackage ./pam_ssh_agent_auth { inherit (prev) pam_ssh_agent_auth; };
