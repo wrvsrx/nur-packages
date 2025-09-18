@@ -47,10 +47,10 @@
   };
   claude-code-router = {
     pname = "claude-code-router";
-    version = "1.0.47";
+    version = "1.0.49";
     src = fetchTarball {
-      url = "https://github.com/musistudio/claude-code-router/archive/e6b3e2a1947083aaf4e16036734678b49d8420c5.tar.gz";
-      sha256 = "sha256-2eOu+xdUy+v8Qq0MFDuiGLPnt/Y/mCMleqLuJH2eEaQ=";
+      url = "https://github.com/musistudio/claude-code-router/archive/f7adb7b28e6f7f11a21d642f4f422cdb30fef9e3.tar.gz";
+      sha256 = "sha256-XXGt5p2CxkD7bftpfLe8YHrlbw33kRV4BEI1yxqqmXY=";
     };
   };
   cmdlime = {
