@@ -15,6 +15,9 @@ buildNpmPackage {
   dontNpmBuild = true;
 
   meta = {
+    description = "GitHub Copilot CLI brings AI-powered coding assistance directly to your command line";
+    homepage = "https://github.com/github/copilot-cli";
+    license = "unfree"; # GitHub Pre-release License Terms
     mainProgram = "copilot";
   };
 }
