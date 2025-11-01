@@ -19,7 +19,7 @@ stdenv.mkDerivation (finalAttrs: {
     builtins.toJSON [
       {
         name = "batteries";
-        dir = "${batteries}/src";
+        dir = "${batteries}/lib/lean-packages/batteries";
       }
     ]
   );

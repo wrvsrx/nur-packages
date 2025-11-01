@@ -20,9 +20,8 @@ function lakeInstallHook {
   echo "Executing lakeInstallHook"
   runHook preInstall
 
-  mkdir -p $out/src
-  mv .* * $out/src
-  ln -s $out/src/.lake/build/* $out/
+  mkdir -p $out/lib/lean-packages/$pname
+  mv .* * $out/lib/lean-packages/$pname
 
   runHook postInstall
   echo "Finished executing lakeInstallHook"
