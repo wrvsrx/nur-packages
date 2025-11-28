@@ -4,7 +4,6 @@
   lean4,
   lakeSetupHook,
   writeText,
-  batteries,
 }:
 stdenv.mkDerivation (finalAttrs: {
   pname = "Qq";
