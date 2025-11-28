@@ -32,7 +32,7 @@ def patchManifest : IO Unit := do
       Lean.FromJson.fromJson? x
     let manifestOverrided := overrideManifest manifestOverride manifest
     let manifestOverridedStr := toString (Lean.ToJson.toJson manifestOverrided) 
-    IO.FS.writeFile "lake-manifest-override.json" manifestOverridedStr
+    IO.FS.writeFile "lake-manifest-overrided.json" manifestOverridedStr
   | none => pure ()
 
 def main : IO Unit := do
