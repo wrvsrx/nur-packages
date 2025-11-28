@@ -13,7 +13,7 @@ stdenv.mkDerivation (finalAttrs: {
     tag = "v${finalAttrs.version}";
     hash = "sha256-pYDj12ZapvYvfRXGudwEwC6RstDNGgr3lSs3aWAGkW4=";
   };
-  env.NIX_LAKE_TARGETS = "@/+Cli:c.o @/+Cli.Basic:c.o @/+Cli.Extensions:c.o";
+  env.NIX_LAKE_TARGETS = "+Cli:o +Cli.Basic:o +Cli.Extensions:o";
   nativeBuildInputs = [
     lean4
     lakeSetupHook
