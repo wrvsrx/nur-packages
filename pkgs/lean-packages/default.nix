@@ -15,6 +15,7 @@ lib.makeScope newScope (
     xdg = callPackage ./xdg { };
     batteries = callPackage ./batteries { };
     aesop = callPackage ./aesop { };
+    Cli = callPackage ./Cli { };
     Qq = callPackage ./Qq { };
   }
 )
