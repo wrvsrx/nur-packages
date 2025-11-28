@@ -12,9 +12,9 @@ lib.makeScope newScope (
   in
   {
     inherit (hooks) lakeSetupHook;
-    xdg = callPackage ./xdg { };
-    batteries = callPackage ./batteries { };
     aesop = callPackage ./aesop { };
+    batteries = callPackage ./batteries { };
+    xdg = callPackage ./xdg { };
     Cli = callPackage ./Cli { };
     Qq = callPackage ./Qq { };
   }
