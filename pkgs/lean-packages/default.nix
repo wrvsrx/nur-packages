@@ -18,6 +18,7 @@ lib.makeScope newScope (
     plausible = callPackage ./plausible { };
     xdg = callPackage ./xdg { };
     Cli = callPackage ./Cli { };
+    LeanSearchClient = callPackage ./LeanSearchClient { };
     Qq = callPackage ./Qq { };
   }
 )
