@@ -3,13 +3,13 @@
 {
   Cli = {
     pname = "Cli";
-    version = "v4.25.0";
+    version = "v4.26.0";
     src = fetchFromGitHub {
       owner = "leanprover";
       repo = "lean4-cli";
-      rev = "v4.25.0";
+      rev = "v4.26.0";
       fetchSubmodules = false;
-      sha256 = "sha256-pYDj12ZapvYvfRXGudwEwC6RstDNGgr3lSs3aWAGkW4=";
+      sha256 = "sha256-paEOFOWnatP4uQJWVXNDd+s8z7bXOfIGMi0iVQPVZqg=";
     };
   };
   LeanSearchClient = {
@@ -25,24 +25,24 @@
   };
   Qq = {
     pname = "Qq";
-    version = "v4.25.0";
+    version = "v4.26.0";
     src = fetchFromGitHub {
       owner = "leanprover-community";
       repo = "quote4";
-      rev = "v4.25.0";
+      rev = "v4.26.0";
       fetchSubmodules = false;
-      sha256 = "sha256-mx2+EwL7Sxj3tqEE/D5CFfKUOjvRSRSmzupe4qwY5XY=";
+      sha256 = "sha256-g6BrhUs3Rx2PugvCYsTjz0CMklES5oRhK+rVERf3NmQ=";
     };
   };
   aesop = {
     pname = "aesop";
-    version = "v4.25.0";
+    version = "v4.26.0";
     src = fetchFromGitHub {
       owner = "leanprover-community";
       repo = "aesop";
-      rev = "v4.25.0";
+      rev = "v4.26.0";
       fetchSubmodules = false;
-      sha256 = "sha256-sMdd17zbLunwfDUk4FSsJa9SUJCLXbP9H4wN+Wl6JeQ=";
+      sha256 = "sha256-cGkaUz1eHeIrOL6hGzvTZQ9zxhdQlrnaQqdaadyk5X8=";
     };
   };
   amgcl = {
@@ -92,13 +92,13 @@
   };
   batteries = {
     pname = "batteries";
-    version = "v4.25.1";
+    version = "v4.26.0";
     src = fetchFromGitHub {
       owner = "leanprover-community";
       repo = "batteries";
-      rev = "v4.25.1";
+      rev = "v4.26.0";
       fetchSubmodules = false;
-      sha256 = "sha256-DI302mb2jQgt/Cxo4OiCDrrjPL1vgwijgpePvdWPQvU=";
+      sha256 = "sha256-uqKmyyv1QlhwnhMRNlMi+BXWHUvHbUrHFZJ4VRgSlCg=";
     };
   };
   cmdlime = {
@@ -206,13 +206,13 @@
   };
   importGraph = {
     pname = "importGraph";
-    version = "v4.25.0";
+    version = "v4.26.0";
     src = fetchFromGitHub {
       owner = "leanprover-community";
       repo = "import-graph";
-      rev = "v4.25.0";
+      rev = "v4.26.0";
       fetchSubmodules = false;
-      sha256 = "sha256-1xdvh1QvXbNoUXyfCe7gTmOV+sZzkGeqFrKTaS9wiGw=";
+      sha256 = "sha256-82XY60WB3t/gcm/nbUtQwK1Ys7giOcaM28oFTrBsrZo=";
     };
   };
   jax-md = {
@@ -241,13 +241,13 @@
   };
   mathlib = {
     pname = "mathlib";
-    version = "v4.25.0";
+    version = "v4.26.0";
     src = fetchFromGitHub {
       owner = "leanprover-community";
       repo = "mathlib4";
-      rev = "v4.25.0";
+      rev = "v4.26.0";
       fetchSubmodules = false;
-      sha256 = "sha256-eRKlJjd8Hn/kuYbigxrMdCxBHZfNEk1UN61+13N66Qg=";
+      sha256 = "sha256-eYl3wXgTZEvkTwhyu3W5bYeQxQvwYsnfYpP+2DoojKQ=";
     };
   };
   osc52 = {
@@ -264,24 +264,24 @@
   };
   plausible = {
     pname = "plausible";
-    version = "v4.25.0";
+    version = "v4.26.0";
     src = fetchFromGitHub {
       owner = "leanprover-community";
       repo = "plausible";
-      rev = "v4.25.0";
+      rev = "v4.26.0";
       fetchSubmodules = false;
-      sha256 = "sha256-SLcDytxk2qCHznP/OS1gZQ31B1V4DdwzrDsQYVUFE1E=";
+      sha256 = "sha256-THm3uQgzYJSitPEW/mz3Jb5HFpx842RcYlRK/LlKlkw=";
     };
   };
   proofwidgets = {
     pname = "proofwidgets";
-    version = "v0.0.79";
+    version = "v0.0.83";
     src = fetchFromGitHub {
       owner = "leanprover-community";
       repo = "ProofWidgets4";
-      rev = "v0.0.79";
+      rev = "v0.0.83";
       fetchSubmodules = false;
-      sha256 = "sha256-4Ka7d98xdbDoX/tyFyygtks0Qpx5ZlXNraGj2Lh5siE=";
+      sha256 = "sha256-+53ZX0jvkBU4TR67YPyULtJWVxSsJJDV8G2N7GFwUD0=";
     };
   };
   ptrace-time-hook = {
