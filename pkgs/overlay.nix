@@ -71,6 +71,10 @@ let
   lean-overlay = import ./lean-packages {
     inherit sources;
   };
+  vim-plugins-overlay = import ./vim-plugins-overlay {
+    inherit sources;
+    inherit (prev) callPackage;
+  };
 in
 toplevelPackages
 # nested packages
@@ -80,6 +84,7 @@ toplevelPackages
   libsForQt5 = prev.libsForQt5.overrideScope qt5-overlay;
   kdePackages = prev.kdePackages.overrideScope kde-overlay;
   leanPackages = prev.leanPackages.overrideScope lean-overlay;
+  vimPlugins = prev.vimPlugins.extend vim-plugins-overlay;
   lib = prev.lib.extend lib-overlay;
   inherit rimePackages;
 
@@ -95,5 +100,6 @@ toplevelPackages
     kdePackages._packageNames = builtins.attrNames (kde-overlay prev.kdePackages prev.kdePackages);
     libsForQt5._packageNames = builtins.attrNames (qt5-overlay prev.libsForQt5 prev.libsForQt5);
     leanPackages._packageNames = builtins.attrNames (lean-overlay prev.leanPackages prev.leanPackages);
+    vimPlugins._packageNames = builtins.attrNames (vim-plugins-overlay prev.vimPlugins prev.vimPlugins);
   };
 }
