@@ -38,6 +38,7 @@ let
       inherit (final) librime;
     };
     niri = callPackage ./niri { inherit (prev) niri; };
+    iwe = callPackage ./iwe { };
   };
   python-overlay = import ./python-overlay { inherit sources; };
   haskell-overlay = import ./haskell-overlay {
