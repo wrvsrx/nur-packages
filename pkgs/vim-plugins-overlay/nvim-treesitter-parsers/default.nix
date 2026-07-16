@@ -50,6 +50,8 @@ let
     };
   };
 
+  # Mirrors vimPlugins.nvim-treesitter.buildQueries from nixpkgs. That helper
+  # only reads nvim-treesitter's runtime, so use the grammar's own queries here.
   query = vimUtils.toVimPlugin (
     runCommandLocal "nvim-treesitter-queries-plumb"
       {
