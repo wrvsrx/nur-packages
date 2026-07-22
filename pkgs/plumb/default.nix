@@ -8,12 +8,12 @@
 }:
 
 let
-  version = "0.9.0";
+  version = "0.10.0";
   src = fetchFromGitHub {
     owner = "wrvsrx";
     repo = "plumb";
     tag = version;
-    hash = "sha256-CLODKYZfF8rChCj7WQnsbj40gR35mSriPPTXbSNXtD4=";
+    hash = "sha256-ZeuZ0FF+1Zelv1TItXoA2Jv1vbfOZcO3qU/gVf7LraU=";
   };
 
   generatedSource = stdenvNoCC.mkDerivation {
