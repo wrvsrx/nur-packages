@@ -11,7 +11,7 @@ final: prev: {
     source = sources.iwe-nvim;
   };
 
-  plumb = plumb-plugin;
+  plumb-nvim = plumb-plugin;
 
   nvim-treesitter-parsers = callPackage ./nvim-treesitter-parsers {
     inherit (prev) nvim-treesitter-parsers;
