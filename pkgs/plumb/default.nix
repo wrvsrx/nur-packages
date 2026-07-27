@@ -54,7 +54,7 @@ let
     };
   };
 
-  vimPlugin = vimUtils.buildVimPlugin {
+  neovim-plugin = vimUtils.buildVimPlugin {
     pname = "plumb.nvim";
     inherit version;
     src = src + "/contrib/nvim";
@@ -72,7 +72,7 @@ rustPlatform.buildRustPackage {
   '';
 
   passthru = {
-    inherit tree-sitter-plumb vimPlugin;
+    inherit neovim-plugin tree-sitter-plumb;
   };
 
   meta = {
