@@ -6,6 +6,10 @@
       url = "github:hercules-ci/flake-parts";
       inputs.nixpkgs-lib.follows = "nixpkgs";
     };
+    linyinfeng = {
+      url = "github:linyinfeng/nur-packages";
+      flake = false;
+    };
     flake-utils.url = "github:numtide/flake-utils";
   };
   outputs =
