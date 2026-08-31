@@ -71,7 +71,6 @@ rustPlatform.buildRustPackage {
 
   preCheck = ''
     export PLUMB_CACHE_DIR="$TMPDIR/plumb-cache"
-    export RUST_TEST_THREADS=1
   '';
 
   postInstall = ''
