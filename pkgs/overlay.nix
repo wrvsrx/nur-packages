@@ -46,9 +46,7 @@ let
     };
     niri = callPackage ./niri { inherit (prev) niri; };
     neovim-unwrapped = callPackage ./neovim-unwrapped { inherit (prev) neovim-unwrapped; };
-    zellij = callPackage ./zellij {
-      inherit (prev) zellij zellij-unwrapped;
-    };
+    zellij-unwrapped = callPackage ./zellij-unwrapped { inherit (prev) zellij-unwrapped; };
   };
   python-overlay = import ./python-overlay { inherit sources; };
   haskell-overlay = import ./haskell-overlay {
