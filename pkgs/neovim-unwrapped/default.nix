@@ -15,7 +15,7 @@ neovim-unwrapped.overrideAttrs (
     src = fetchFromGitHub {
       owner = "wrvsrx";
       repo = "neovim";
-      rev = finalAttrs.version;
+      tag = finalAttrs.version;
       hash = "sha256-p/CuO/MMz57H1OSMHc22v/qwr2uM7/74wiSdnkicytU=";
     };
 
